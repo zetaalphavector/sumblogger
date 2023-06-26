@@ -1,0 +1,88 @@
+components:
+  schemas:
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          title: Detail
+          type: array
+      title: HTTPValidationError
+      type: object
+    TextCompletionUsecaseForm:
+      properties:
+        prompt_params:
+          additionalProperties:
+            type: string
+          title: Prompt Params
+          type: object
+        usecase:
+          title: Usecase
+          type: string
+        variant:
+          title: Variant
+          type: string
+      required:
+      - usecase
+      - variant
+      - prompt_params
+      title: TextCompletionUsecaseForm
+      type: object
+    TextCompletionUsecaseItem:
+      properties:
+        response:
+          title: Response
+          type: string
+      required:
+      - response
+      title: TextCompletionUsecaseItem
+      type: object
+    ValidationError:
+      properties:
+        loc:
+          items:
+            type: string
+          title: Location
+          type: array
+        msg:
+          title: Message
+          type: string
+        type:
+          title: Error Type
+          type: string
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+      type: object
+info:
+  title: FastAPI
+  version: 0.1.0
+openapi: 3.0.2
+paths:
+  /v1/text_completion/pass_through:
+    post:
+      operationId: get_single_docs_summaries
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TextCompletionUsecaseForm'
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TextCompletionUsecaseItem'
+          description: Successful Response
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+          description: Validation Error
+      summary: Get Single Docs Summaries
+      tags:
+      - text_completion

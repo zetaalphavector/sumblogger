@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  api:
+    image: sumblogger
+    command:
+      - cat
+    tty: true
+    volumes:
+      - ./:/opt/app
+    env_file:
+      - dev.env

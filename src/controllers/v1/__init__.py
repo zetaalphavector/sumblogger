@@ -1,0 +1,1 @@
+from src.controllers.v1.text_completion import text_completion_router
