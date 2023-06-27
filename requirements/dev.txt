@@ -7,7 +7,15 @@
 -e ./shared/api
     # via -r requirements/prod.in
 aiohttp==3.8.4
-    # via langchain
+    # via
+    #   aiohttp-jinja2
+    #   aioresponses
+    #   openai
+    #   pytest-aiohttp
+aiohttp-jinja2==1.4.2
+    # via -r requirements/prod.in
+aioresponses==0.7.2
+    # via -r requirements/dev.in
 aiosignal==1.3.1
     # via aiohttp
 alembic==1.8.1
@@ -25,7 +33,11 @@ async-timeout==4.0.2
 asyncpg==0.25.0
     # via zav-domain-model-repo
 attrs==22.2.0
-    # via aiohttp
+    # via
+    #   aiohttp
+    #   pytest
+backoff==2.2.1
+    # via -r requirements/prod.in
 bandit==1.7.0
     # via -r requirements/dev.in
 black==21.7b0
@@ -45,8 +57,12 @@ click==8.0.4
     # via
     #   black
     #   uvicorn
-dataclasses-json==0.5.7
-    # via langchain
+colorama==0.4.6
+    # via pytest-watch
+coverage==7.2.7
+    # via pytest-cov
+docopt==0.6.2
+    # via pytest-watch
 fastapi==0.73.0
     # via zav-api
 flake8==3.9.2
@@ -92,20 +108,18 @@ isort==5.9.3
     # via
     #   -r requirements/dev.in
     #   flake8-isort
-langchain==0.0.101
-    # via -r requirements/prod.in
+jinja2==3.1.2
+    # via aiohttp-jinja2
 mako==1.2.4
     # via alembic
 markupsafe==2.1.2
-    # via mako
-marshmallow==3.19.0
     # via
-    #   dataclasses-json
-    #   marshmallow-enum
-marshmallow-enum==1.5.1
-    # via dataclasses-json
+    #   jinja2
+    #   mako
 mccabe==0.6.1
     # via flake8
+more-itertools==9.1.0
+    # via pytest
 multidict==6.0.4
     # via
     #   aiohttp
@@ -116,36 +130,57 @@ mypy-extensions==0.4.3
     # via
     #   black
     #   mypy
-    #   typing-inspect
-numpy==1.24.1
-    # via langchain
+openai==0.27.2
+    # via -r requirements/prod.in
 packaging==23.0
-    # via marshmallow
+    # via pytest
 pathspec==0.11.0
     # via black
 pbr==5.11.1
     # via stevedore
 pep8-naming==0.12.0
     # via -r requirements/dev.in
+pluggy==0.13.1
+    # via pytest
+py==1.11.0
+    # via pytest
 pycodestyle==2.7.0
     # via flake8
 pydantic==1.10.4
     # via
     #   fastapi
-    #   langchain
     #   sqlmodel
 pyflakes==2.3.1
     # via flake8
+pytest==5.4.1
+    # via
+    #   -r requirements/dev.in
+    #   pytest-aiohttp
+    #   pytest-asyncio
+    #   pytest-cov
+    #   pytest-mock
+    #   pytest-only
+    #   pytest-watch
+pytest-aiohttp==0.3.0
+    # via -r requirements/dev.in
+pytest-asyncio==0.10.0
+    # via -r requirements/dev.in
+pytest-cov==2.8.1
+    # via -r requirements/dev.in
+pytest-mock==3.1.0
+    # via -r requirements/dev.in
+pytest-only==1.2.2
+    # via -r requirements/dev.in
+pytest-watch==4.2.0
+    # via -r requirements/dev.in
 python-json-logger==0.1.11
     # via zav-logging
 pyyaml==6.0
-    # via
-    #   bandit
-    #   langchain
+    # via bandit
 regex==2022.10.31
     # via black
 requests==2.28.2
-    # via langchain
+    # via openai
 rfc3986[idna2008]==1.5.0
     # via httpx
 six==1.16.0
@@ -160,7 +195,6 @@ sniffio==1.3.0
 sqlalchemy==1.4.35
     # via
     #   alembic
-    #   langchain
     #   sqlmodel
     #   zav-domain-model-repo
 sqlalchemy2-stubs==0.0.2a32
@@ -171,8 +205,6 @@ starlette==0.17.1
     # via fastapi
 stevedore==4.1.1
     # via bandit
-tenacity==8.2.2
-    # via langchain
 testfixtures==6.18.5
     # via flake8-isort
 toml==0.10.2
@@ -181,18 +213,24 @@ tomli==1.2.3
     # via
     #   black
     #   mypy
+tqdm==4.65.0
+    # via openai
 typing-extensions==4.4.0
     # via
+    #   aiohttp-jinja2
     #   mypy
     #   pydantic
     #   sqlalchemy2-stubs
-    #   typing-inspect
-typing-inspect==0.8.0
-    # via dataclasses-json
 urllib3==1.26.14
     # via requests
+urllib3-mock==0.3.3
+    # via -r requirements/dev.in
 uvicorn==0.17.1
     # via zav-api
+watchdog==3.0.0
+    # via pytest-watch
+wcwidth==0.2.6
+    # via pytest
 yarl==1.8.2
     # via aiohttp
 -e ./shared/domain-model-repo
