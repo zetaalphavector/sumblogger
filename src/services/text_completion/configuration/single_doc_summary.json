@@ -6,6 +6,9 @@
         "usecase_params": [
             "document"
         ],
+        "output_params": [
+            "summary"
+        ],
         "llm_identifier_2_config": {
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
@@ -45,6 +48,9 @@
             "document",
             "number_of_words"
         ],
+        "output_params": [
+            "summary"
+        ],
         "llm_identifier_2_config": {
             "gpt-3.5-turbo": {
                 "call_params": {
@@ -73,6 +79,9 @@
         "usecase_params": [
             "document",
             "number_of_words"
+        ],
+        "output_params": [
+            "summary"
         ],
         "llm_identifier_2_config": {
             "gpt-3.5-turbo": {

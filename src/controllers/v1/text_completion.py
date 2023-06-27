@@ -16,17 +16,21 @@ text_completion_router = APIRouter(tags=["text_completion"])
     response_model=TextCompletionUsecaseItem,
     status_code=200,
 )
-async def get_single_docs_summaries(
+async def pass_through_usecase(
     body: TextCompletionUsecaseForm,
     message_bus: MessageBus = Depends(get_message_bus),
 ):
-
-    responses = await message_bus.handle(
-        ExecuteTextCompletionUsecase(
-            usecase=body["usecase"],
-            variant=body["variant"],
-            prompt_params=body["prompt_params"],
+    try:
+        responses = await message_bus.handle(
+            ExecuteTextCompletionUsecase(
+                usecase=body["usecase"],
+                variant=body["variant"],
+                prompt_params_list=body["prompt_params_list"],
+                params_mapping=body["params_mapping"],
+            )
         )
-    )
-    response: TextCompletionUsecaseItem = responses.pop(0)
-    return response
+        response: TextCompletionUsecaseItem = responses.pop(0)
+        return response
+    except Exception as e:
+        print(e)
+        return {"error": str(e)}

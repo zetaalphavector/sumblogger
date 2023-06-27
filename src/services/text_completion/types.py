@@ -51,6 +51,7 @@ class TextCompletionUsecaseConfig(BaseModel):
     variant: str
     version: int
     usecase_params: List[str]
+    output_params: List[str]
     llm_identifier_2_config: Dict[str, LLMConfig]
 
 

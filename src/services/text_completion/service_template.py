@@ -1,4 +1,4 @@
-from typing import Generic, List, Optional, TypeVar, cast
+from typing import Any, Dict, Generic, List, Optional, TypeVar, cast
 
 from typing_extensions import TypedDict
 
@@ -91,19 +91,23 @@ class TextCompletionServiceTemplate(Generic[SERVICE_RESPONSE_TYPE]):
 
         return [TextCompletionRequest(llm_config=llm_config_merged)]
 
-    def service_response_from(
-        self, text_completion_responses: List[ClientResponse[TextCompletionResponse]]
-    ) -> Optional[SERVICE_RESPONSE_TYPE]:
+    def service_responses_from(
+        self,
+        text_completion_responses: List[ClientResponse[TextCompletionResponse]],
+        output_params: List[str],
+    ) -> Optional[List[Dict[str, Any]]]:
         raise NotImplementedError
 
     def postprocess(
-        self, service_response: SERVICE_RESPONSE_TYPE
-    ) -> Optional[SERVICE_RESPONSE_TYPE]:
+        self,
+        service_responses: Optional[List[Dict[str, Any]]],
+        output_params: List[str],
+    ) -> Optional[List[Dict[str, Any]]]:
         raise NotImplementedError
 
     async def execute(
         self, request: TextCompletionServiceRequest
-    ) -> Optional[SERVICE_RESPONSE_TYPE]:
+    ) -> Optional[List[Dict[str, Any]]]:
         for param in request["usecase_config"].usecase_params:
             for params in request["params_list"]:
                 if param not in params:
@@ -123,12 +127,17 @@ class TextCompletionServiceTemplate(Generic[SERVICE_RESPONSE_TYPE]):
                 llm_config, request["params_list"]
             )
             client = self.text_completion_client_from(llm_identifier)
-            print(f"client: {client}")
             text_completion_responses = await client.complete(text_completion_requests)
-            service_response = self.service_response_from(text_completion_responses)
-            if service_response is None:
+            service_responses = self.service_responses_from(
+                text_completion_responses,
+                request["usecase_config"].output_params,
+            )
+            if service_responses is None:
                 return None
 
-            return self.postprocess(service_response)
+            return self.postprocess(
+                service_responses,
+                request["usecase_config"].output_params,
+            )
         except Exception as e:
             raise e

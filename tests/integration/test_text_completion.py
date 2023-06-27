@@ -30,7 +30,8 @@ class TestTextCompletionUsecase:
         text_completion_client_mock,
     ):
         input_doc = "This is a document"
-        expected_output = "This is the summary"
+        expected_summary = "This is the summary"
+        expected_output = [{"single_doc_summary": expected_summary}]
 
         text_completion_client_factory_mock.create.return_value = (
             text_completion_client_mock
@@ -38,7 +39,7 @@ class TestTextCompletionUsecase:
         text_completion_client_mock.complete.side_effect = lambda _: [
             ClientResponse(
                 response=TextCompletionResponse(
-                    answer="This is the summary", token_scores=None
+                    answer=expected_summary, token_scores=None
                 ),
                 error=None,
             )
@@ -47,8 +48,13 @@ class TestTextCompletionUsecase:
         payload = {
             "usecase": "single_doc_summary",
             "variant": "scitldr_vanilla",
-            "prompt_params": {
-                "document": input_doc,
+            "prompt_params_list": [
+                {
+                    "document": input_doc,
+                }
+            ],
+            "params_mapping": {
+                "summary": "single_doc_summary",
             },
         }
 
@@ -56,11 +62,10 @@ class TestTextCompletionUsecase:
             f"{base_path}/text_completion/pass_through",
             data=json.dumps(payload),
         )
-
         assert resp.status_code == 200
         json_resp = resp.json()
 
-        assert json_resp["response"] == expected_output
+        assert json_resp["output_params"] == expected_output
 
         text_completion_client_mock.complete.assert_called_once_with(
             [

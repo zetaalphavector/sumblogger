@@ -1,13 +1,14 @@
-from typing import Dict
+from typing import Dict, List, Optional
 
-from typing_extensions import TypedDict
+from typing_extensions import NotRequired, TypedDict
 
 
 class TextCompletionUsecaseForm(TypedDict):
     usecase: str
     variant: str
-    prompt_params: Dict[str, str]
+    prompt_params_list: List[Dict[str, str]]
+    params_mapping: NotRequired[Dict[str, str]]
 
 
 class TextCompletionUsecaseItem(TypedDict):
-    response: str
+    output_params: List[Dict[str, str]]
