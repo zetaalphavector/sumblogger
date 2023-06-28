@@ -21,3 +21,11 @@ class TextCompletionChainForm(TypedDict):
 
 class TextCompletionChainItem(TypedDict):
     output_params_list: List[Dict[str, Any]]
+
+
+class TextCompletionParallelForm(TypedDict):
+    usecase_forms: List[TextCompletionUsecaseForm]
+
+
+class TextCompletionParallelItem(TypedDict):
+    usecase_items: List[TextCompletionUsecaseItem]

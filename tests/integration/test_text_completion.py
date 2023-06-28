@@ -204,7 +204,7 @@ class TestTextCompletionUsecase:
         ]
         single_doc_summary_client_mock.complete.side_effect = lambda _: [
             text_completion_response_from(summary_for(index))
-            for index in range(number_of_docs + 1)
+            for index in range(number_of_docs)
         ]
         multi_doc_summary_client_mock.complete.side_effect = lambda _: [
             text_completion_response_from("This is the multi-doc summary")
@@ -272,11 +272,11 @@ class TestTextCompletionUsecase:
         ]
         single_doc_summary_client_mock_1.complete.side_effect = lambda _: [
             text_completion_response_from(summary_for(index))
-            for index in range(number_of_docs + 1)
+            for index in range(number_of_docs)
         ]
         single_doc_summary_client_mock_2.complete.side_effect = lambda _: [
             text_completion_response_from(f"This is the summary of the summary {index}")
-            for index in range(number_of_docs + 1)
+            for index in range(number_of_docs)
         ]
 
         resp = await test_client.post(
@@ -294,4 +294,78 @@ class TestTextCompletionUsecase:
                 "summary": summary_for(i),
             }
             for i in range(number_of_docs)
+        ]
+
+    @patch(
+        "src.services.text_completion.service_template.TextCompletionClientFactory",
+        return_value=text_completion_client_factory_mock,
+    )
+    @mark.asyncio
+    async def test_should_execute_text_completion_requests_in_parallel(
+        self,
+        text_completion_client_factory_mock,
+        test_client,
+        base_path,
+        text_completion_client_mock,
+    ):
+        number_of_docs = 2
+        payload = {
+            "usecase_forms": [
+                {
+                    **summary_request_for(number_of_docs, should_flatten=False),
+                    "params_mapping": {
+                        "summary": "first_batch_summary",
+                    },
+                },
+                {
+                    **summary_request_for(number_of_docs, should_flatten=False),
+                    "params_mapping": {
+                        "summary": "second_batch_summary",
+                    },
+                },
+            ]
+        }
+
+        single_doc_summary_client_mock_1 = text_completion_client_mock.create()
+        single_doc_summary_client_mock_2 = text_completion_client_mock.create()
+        text_completion_client_factory_mock.create.side_effect = [
+            single_doc_summary_client_mock_1,
+            single_doc_summary_client_mock_2,
+        ]
+        single_doc_summary_client_mock_1.complete.side_effect = lambda _: [
+            text_completion_response_from(summary_for(index))
+            for index in range(number_of_docs)
+        ]
+        single_doc_summary_client_mock_2.complete.side_effect = lambda _: [
+            text_completion_response_from(summary_for(index))
+            for index in range(number_of_docs)
+        ]
+
+        resp = await test_client.post(
+            f"{base_path}/text_completion/parallel",
+            data=json.dumps(payload),
+        )
+
+        assert resp.status_code == 200
+        json_resp = resp.json()
+
+        assert json_resp["usecase_items"] == [
+            {
+                "output_params_list": [
+                    {
+                        "document": document_for(i),
+                        "first_batch_summary": summary_for(i),
+                    }
+                    for i in range(number_of_docs)
+                ]
+            },
+            {
+                "output_params_list": [
+                    {
+                        "document": document_for(i),
+                        "second_batch_summary": summary_for(i),
+                    }
+                    for i in range(number_of_docs)
+                ]
+            },
         ]

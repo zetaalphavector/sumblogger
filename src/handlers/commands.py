@@ -16,3 +16,8 @@ class ExecuteTextCompletionUsecase(Command):
 @dataclass
 class ExecuteTextCompletionChain(Command):
     usecase_commands: List[ExecuteTextCompletionUsecase]
+
+
+@dataclass
+class ExecuteTextCompletionParallel(Command):
+    usecase_commands: List[ExecuteTextCompletionUsecase]

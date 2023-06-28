@@ -5,11 +5,14 @@ from zav.message_bus import MessageBus
 from src.controllers.v1.api_types import (
     TextCompletionChainForm,
     TextCompletionChainItem,
+    TextCompletionParallelForm,
+    TextCompletionParallelItem,
     TextCompletionUsecaseForm,
     TextCompletionUsecaseItem,
 )
 from src.handlers.commands import (
     ExecuteTextCompletionChain,
+    ExecuteTextCompletionParallel,
     ExecuteTextCompletionUsecase,
 )
 
@@ -62,6 +65,30 @@ async def pass_through_chain(
             )
         )
         response: TextCompletionChainItem = responses.pop(0)
+        return response
+    except Exception as e:
+        print(f"Exception: {e}")
+        return {"error": str(e)}
+
+
+@text_completion_router.post(
+    "/text_completion/parallel",
+    response_model=TextCompletionParallelItem,
+    status_code=200,
+)
+async def pass_through_parallel(
+    body: TextCompletionParallelForm,
+    message_bus: MessageBus = Depends(get_message_bus),
+):
+    try:
+        responses = await message_bus.handle(
+            ExecuteTextCompletionParallel(
+                usecase_commands=[
+                    usecase_command_from(cmd) for cmd in body["usecase_forms"]
+                ]
+            )
+        )
+        response: TextCompletionParallelItem = responses.pop(0)
         return response
     except Exception as e:
         print(f"Exception: {e}")
