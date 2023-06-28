@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from zav.message_bus import Command
 
@@ -20,4 +20,6 @@ class ExecuteTextCompletionChain(Command):
 
 @dataclass
 class ExecuteTextCompletionParallel(Command):
-    usecase_commands: List[ExecuteTextCompletionUsecase]
+    usecase_commands: List[
+        Union[ExecuteTextCompletionUsecase, ExecuteTextCompletionChain]
+    ]

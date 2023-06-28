@@ -1,3 +1,5 @@
+from typing import Union, cast
+
 from fastapi import APIRouter, Depends
 from zav.api.dependencies import get_message_bus
 from zav.message_bus import MessageBus
@@ -29,7 +31,7 @@ async def pass_through_usecase(
     message_bus: MessageBus = Depends(get_message_bus),
 ):
     try:
-        responses = await message_bus.handle(usecase_command_from(body))
+        responses = await message_bus.handle(__usecase_command_from(body))
         response: TextCompletionUsecaseItem = responses.pop(0)
         return response
     except Exception as e:
@@ -37,7 +39,7 @@ async def pass_through_usecase(
         return {"error": str(e)}
 
 
-def usecase_command_from(body: TextCompletionUsecaseForm):
+def __usecase_command_from(body: TextCompletionUsecaseForm):
     return ExecuteTextCompletionUsecase(
         usecase=body["usecase"],
         variant=body["variant"],
@@ -60,7 +62,7 @@ async def pass_through_chain(
         responses = await message_bus.handle(
             ExecuteTextCompletionChain(
                 usecase_commands=[
-                    usecase_command_from(cmd) for cmd in body["usecase_forms"]
+                    __usecase_command_from(cmd) for cmd in body["chain_usecase_forms"]
                 ]
             )
         )
@@ -69,6 +71,21 @@ async def pass_through_chain(
     except Exception as e:
         print(f"Exception: {e}")
         return {"error": str(e)}
+
+
+def __command_from(
+    form: Union[TextCompletionUsecaseForm, TextCompletionChainForm],
+):
+    if "chain_usecase_forms" in form:
+        form = cast(TextCompletionChainForm, form)
+        return ExecuteTextCompletionChain(
+            usecase_commands=[
+                __usecase_command_from(cmd) for cmd in form["chain_usecase_forms"]
+            ]
+        )
+    else:
+        form = cast(TextCompletionUsecaseForm, form)
+        return __usecase_command_from(form)
 
 
 @text_completion_router.post(
@@ -84,7 +101,7 @@ async def pass_through_parallel(
         responses = await message_bus.handle(
             ExecuteTextCompletionParallel(
                 usecase_commands=[
-                    usecase_command_from(cmd) for cmd in body["usecase_forms"]
+                    __command_from(cmd) for cmd in body["parallel_usecase_forms"]
                 ]
             )
         )

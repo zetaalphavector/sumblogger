@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 from typing_extensions import NotRequired, TypedDict
 
@@ -16,7 +16,7 @@ class TextCompletionUsecaseItem(TypedDict):
 
 
 class TextCompletionChainForm(TypedDict):
-    usecase_forms: List[TextCompletionUsecaseForm]
+    chain_usecase_forms: List[TextCompletionUsecaseForm]
 
 
 class TextCompletionChainItem(TypedDict):
@@ -24,7 +24,9 @@ class TextCompletionChainItem(TypedDict):
 
 
 class TextCompletionParallelForm(TypedDict):
-    usecase_forms: List[TextCompletionUsecaseForm]
+    parallel_usecase_forms: List[
+        Union[TextCompletionUsecaseForm, TextCompletionChainForm]
+    ]
 
 
 class TextCompletionParallelItem(TypedDict):
