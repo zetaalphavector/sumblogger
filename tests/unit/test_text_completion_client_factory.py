@@ -34,7 +34,7 @@ class TestTextCompletionClientFactory:
             ),
         ],
     )
-    def test_should_return_the_requested_client(
+    def test_should_return_the_same_requested_client_for_the_same_config(
         self,
         provider_name,
         model_type,
@@ -47,3 +47,10 @@ class TestTextCompletionClientFactory:
         )
 
         assert isinstance(client, expected_instance_type)
+
+        client_2 = TextCompletionClientFactory.create(
+            provider_name=provider_name,
+            model_type=model_type,
+            config=text_completion_client_config,
+        )
+        assert client == client_2

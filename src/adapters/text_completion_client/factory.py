@@ -1,4 +1,5 @@
 import enum
+import json
 from typing import Callable, Dict, Tuple, Type
 
 from src.services.text_completion.client import (
@@ -23,8 +24,18 @@ class TextCompletionClientFactory:
         Type[TextCompletionClient],
     ] = {}
 
+    clients: Dict[
+        Tuple[
+            TextCompletionProviderName,
+            TextCompletionModelType,
+            str,
+        ],
+        TextCompletionClient,
+    ] = {}
+
     def __init_subclass__(cls):
         cls.registry = {}
+        cls.clients = {}
 
     @classmethod
     def register(
@@ -41,10 +52,20 @@ class TextCompletionClientFactory:
         return text_completion_inner_wrapper
 
     @classmethod
+    def __hashed(cls, config: TextCompletionClientConfig):
+        return json.dumps(config, sort_keys=True)
+
+    @classmethod
     def create(
         cls,
         provider_name: TextCompletionProviderName,
         model_type: TextCompletionModelType,
         config: TextCompletionClientConfig,
     ) -> TextCompletionClient:
-        return cls.registry[(provider_name, model_type)](**config)
+        if (provider_name, model_type, cls.__hashed(config)) not in cls.clients:
+            client = cls.registry[(provider_name, model_type)](**config)
+            cls.clients[(provider_name, model_type, cls.__hashed(config))] = client
+        else:
+            client = cls.clients[(provider_name, model_type, cls.__hashed(config))]
+
+        return client
