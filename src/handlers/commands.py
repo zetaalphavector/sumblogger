@@ -23,3 +23,4 @@ class ExecuteTextCompletionParallel(Command):
     usecase_commands: List[
         Union[ExecuteTextCompletionUsecase, ExecuteTextCompletionChain]
     ]
+    should_flatten: Optional[bool] = False

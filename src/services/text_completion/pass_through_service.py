@@ -26,8 +26,8 @@ class PassThroughTextCompletionService(TextCompletionServiceTemplate):
 
     def postprocess(
         self,
-        service_responses: Optional[List[PromptParams]],
+        service_responses: List[PromptParams],
         params_list: List[PromptParams],
         output_params: List[str],
-    ) -> Optional[List[PromptParams]]:
+    ) -> List[PromptParams]:
         return service_responses

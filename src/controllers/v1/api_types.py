@@ -19,14 +19,14 @@ class TextCompletionChainForm(TypedDict):
     chain_usecase_forms: List[TextCompletionUsecaseForm]
 
 
-class TextCompletionChainItem(TypedDict):
-    output_params_list: List[Dict[str, Any]]
+TextCompletionChainItem = TextCompletionUsecaseItem
 
 
 class TextCompletionParallelForm(TypedDict):
     parallel_usecase_forms: List[
         Union[TextCompletionUsecaseForm, TextCompletionChainForm]
     ]
+    should_flatten: NotRequired[bool]
 
 
 class TextCompletionParallelItem(TypedDict):

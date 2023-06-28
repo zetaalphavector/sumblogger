@@ -104,7 +104,6 @@ class TextCompletionServiceTemplate:
         text_completion_responses: List[ClientResponse[TextCompletionResponse]],
         params_list: List[PromptParams],
         output_params: List[str],
-        should_flatten: bool = False,
     ) -> Optional[List[PromptParams]]:
         responses = []
         for client_response, params in zip(text_completion_responses, params_list):
@@ -114,24 +113,14 @@ class TextCompletionServiceTemplate:
             responses.append(
                 self.service_response_from(client_response, params, output_params)
             )
-
-        if should_flatten:
-            flattened = {}
-            for response in responses:
-                for key, value in response.items():
-                    if key not in flattened:
-                        flattened[key] = []
-                    flattened[key].append(value)
-            return [cast(PromptParams, flattened)]
-        else:
-            return responses
+        return responses
 
     def postprocess(
         self,
-        service_responses: Optional[List[PromptParams]],
+        service_responses: List[PromptParams],
         params_list: List[PromptParams],
         output_params: List[str],
-    ) -> Optional[List[PromptParams]]:
+    ) -> List[PromptParams]:
         raise NotImplementedError
 
     async def execute(
@@ -161,15 +150,26 @@ class TextCompletionServiceTemplate:
                 text_completion_responses,
                 request["params_list"],
                 request["usecase_config"].output_params,
-                request["should_flatten"],
             )
             if service_responses is None:
                 return None
 
-            return self.postprocess(
+            service_responses = self.postprocess(
                 service_responses,
                 request["params_list"],
                 request["usecase_config"].output_params,
             )
+
+            if request["should_flatten"]:
+                flattened = {}
+                for response in service_responses:
+                    for key, value in response.items():
+                        if key not in flattened:
+                            flattened[key] = []
+                        flattened[key].append(value)
+                return [cast(PromptParams, flattened)]
+            else:
+                return service_responses
+
         except Exception as e:
             raise e

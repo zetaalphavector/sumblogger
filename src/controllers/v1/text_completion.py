@@ -102,7 +102,8 @@ async def pass_through_parallel(
             ExecuteTextCompletionParallel(
                 usecase_commands=[
                     __command_from(cmd) for cmd in body["parallel_usecase_forms"]
-                ]
+                ],
+                should_flatten=body["should_flatten"],
             )
         )
         response: TextCompletionParallelItem = responses.pop(0)
