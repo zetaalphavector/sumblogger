@@ -3,10 +3,15 @@ from zav.api.dependencies import get_message_bus
 from zav.message_bus import MessageBus
 
 from src.controllers.v1.api_types import (
+    TextCompletionChainForm,
+    TextCompletionChainItem,
     TextCompletionUsecaseForm,
     TextCompletionUsecaseItem,
 )
-from src.handlers.commands import ExecuteTextCompletionUsecase
+from src.handlers.commands import (
+    ExecuteTextCompletionChain,
+    ExecuteTextCompletionUsecase,
+)
 
 text_completion_router = APIRouter(tags=["text_completion"])
 
@@ -37,3 +42,27 @@ def usecase_command_from(body: TextCompletionUsecaseForm):
         params_mapping=body["params_mapping"] if "params_mapping" in body else None,
         should_flatten=body["should_flatten"] if "should_flatten" in body else False,
     )
+
+
+@text_completion_router.post(
+    "/text_completion/chain",
+    response_model=TextCompletionChainItem,
+    status_code=200,
+)
+async def pass_through_chain(
+    body: TextCompletionChainForm,
+    message_bus: MessageBus = Depends(get_message_bus),
+):
+    try:
+        responses = await message_bus.handle(
+            ExecuteTextCompletionChain(
+                usecase_commands=[
+                    usecase_command_from(cmd) for cmd in body["usecase_forms"]
+                ]
+            )
+        )
+        response: TextCompletionChainItem = responses.pop(0)
+        return response
+    except Exception as e:
+        print(f"Exception: {e}")
+        return {"error": str(e)}

@@ -34,22 +34,23 @@ async def handle_text_completion_usecase(
         cast(PromptParams, prompt_params) for prompt_params in cmd.prompt_params_list
     ]
 
-    responses = await pass_through_text_completion_service.execute(
+    response_params_list = await pass_through_text_completion_service.execute(
         TextCompletionServiceRequest(
             usecase_config=usecase_config,
             params_list=prompt_params_list,
             should_flatten=cmd.should_flatten,
         )
     )
-    if responses is None:
+    if response_params_list is None:
         raise ValueError("No response from text completion service.")
 
     output_params_list = []
-    for response in responses:
+    for response_params in response_params_list:
         if cmd.params_mapping is not None:
-            for key, value in cmd.params_mapping.items():
-                if key in response:
-                    response[value] = response.pop(key)
-        output_params_list.append(response)
+            for key, new_key in cmd.params_mapping.items():
+                if key in response_params:
+                    response_params[new_key] = response_params.pop(key)
+
+        output_params_list.append(response_params)
 
     return TextCompletionUsecaseItem(output_params_list=output_params_list)

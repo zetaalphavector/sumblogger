@@ -131,11 +131,11 @@ class TestTextCompletionUsecase:
             number_of_docs=number_of_docs,
             should_flatten=should_flatten,
         )
-
+        single_doc_summary_client_mock = text_completion_client_mock.create()
         text_completion_client_factory_mock.create.return_value = (
-            text_completion_client_mock
+            single_doc_summary_client_mock
         )
-        text_completion_client_mock.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock.complete.side_effect = lambda _: [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
@@ -150,9 +150,148 @@ class TestTextCompletionUsecase:
 
         assert json_resp["output_params_list"] == expected_output
 
-        text_completion_client_mock.complete.asssert_has_calls(
+        single_doc_summary_client_mock.complete.asssert_has_calls(
             [
                 mock.call(text_completion_request_for(document_for(index)))
                 for index in range(number_of_docs)
             ],
         )
+
+    @patch(
+        "src.services.text_completion.service_template.TextCompletionClientFactory",
+        return_value=text_completion_client_factory_mock,
+    )
+    @mark.asyncio
+    async def test_should_chain_two_text_completion_requests_in_a_map_reduce_fashion(
+        self,
+        text_completion_client_factory_mock,
+        test_client,
+        base_path,
+        text_completion_client_mock,
+    ):
+        number_of_docs = 2
+        payload = {
+            "usecase_forms": [
+                {
+                    **summary_request_for(number_of_docs, should_flatten=True),
+                    "params_mapping": {
+                        "document": "input_documents",
+                        "summary": "ref_documents",
+                    },
+                },
+                {
+                    "usecase": "multi_doc_summary",
+                    "variant": "multi_xscience_two_step",
+                    "prompt_params_list": [
+                        {
+                            "main_document": "This is the main document",
+                            "number_of_words": 100,
+                            "ref_document_ids": [str(i) for i in range(number_of_docs)],
+                        }
+                    ],
+                    "params_mapping": {
+                        "summary": "multi_doc_summary",
+                    },
+                },
+            ]
+        }
+
+        single_doc_summary_client_mock = text_completion_client_mock.create()
+        multi_doc_summary_client_mock = text_completion_client_mock.create()
+        text_completion_client_factory_mock.create.side_effect = [
+            single_doc_summary_client_mock,
+            multi_doc_summary_client_mock,
+        ]
+        single_doc_summary_client_mock.complete.side_effect = lambda _: [
+            text_completion_response_from(summary_for(index))
+            for index in range(number_of_docs + 1)
+        ]
+        multi_doc_summary_client_mock.complete.side_effect = lambda _: [
+            text_completion_response_from("This is the multi-doc summary")
+        ]
+
+        resp = await test_client.post(
+            f"{base_path}/text_completion/chain",
+            data=json.dumps(payload),
+        )
+
+        assert resp.status_code == 200
+        json_resp = resp.json()
+
+        assert json_resp["output_params_list"] == [
+            {
+                "input_documents": [document_for(id) for id in range(number_of_docs)],
+                "ref_documents": [summary_for(i) for i in range(number_of_docs)],
+                "main_document": "This is the main document",
+                "number_of_words": 100,
+                "ref_document_ids": [str(i) for i in range(number_of_docs)],
+                "multi_doc_summary": "This is the multi-doc summary",
+            }
+        ]
+
+    @patch(
+        "src.services.text_completion.service_template.TextCompletionClientFactory",
+        return_value=text_completion_client_factory_mock,
+    )
+    @mark.asyncio
+    async def test_should_chain_two_text_completion_requests(
+        self,
+        text_completion_client_factory_mock,
+        test_client,
+        base_path,
+        text_completion_client_mock,
+    ):
+        number_of_docs = 2
+        payload = {
+            "usecase_forms": [
+                {
+                    **summary_request_for(number_of_docs, should_flatten=False),
+                    "params_mapping": {
+                        "document": "input_document",
+                        "summary": "document",
+                    },
+                },
+                {
+                    "usecase": "single_doc_summary",
+                    "variant": "scitldr_vanilla",
+                    "prompt_params_list": [],
+                    "params_mapping": {
+                        "summary": "summary_of_summary",
+                        "document": "summary",
+                    },
+                    "should_flatten": False,
+                },
+            ]
+        }
+
+        single_doc_summary_client_mock_1 = text_completion_client_mock.create()
+        single_doc_summary_client_mock_2 = text_completion_client_mock.create()
+        text_completion_client_factory_mock.create.side_effect = [
+            single_doc_summary_client_mock_1,
+            single_doc_summary_client_mock_2,
+        ]
+        single_doc_summary_client_mock_1.complete.side_effect = lambda _: [
+            text_completion_response_from(summary_for(index))
+            for index in range(number_of_docs + 1)
+        ]
+        single_doc_summary_client_mock_2.complete.side_effect = lambda _: [
+            text_completion_response_from(f"This is the summary of the summary {index}")
+            for index in range(number_of_docs + 1)
+        ]
+
+        resp = await test_client.post(
+            f"{base_path}/text_completion/chain",
+            data=json.dumps(payload),
+        )
+
+        assert resp.status_code == 200
+        json_resp = resp.json()
+
+        assert json_resp["output_params_list"] == [
+            {
+                "input_document": document_for(i),
+                "summary_of_summary": f"This is the summary of the summary {i}",
+                "summary": summary_for(i),
+            }
+            for i in range(number_of_docs)
+        ]

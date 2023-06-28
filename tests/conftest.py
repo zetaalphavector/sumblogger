@@ -56,7 +56,11 @@ def test_client(mock_bootstrap):
 
 @pytest.fixture()
 def text_completion_client_mock():
-    return AsyncMock(TextCompletionClient)
+    class CreateClientMockWrapper:
+        def create(self):
+            return AsyncMock(TextCompletionClient)
+
+    return CreateClientMockWrapper()
 
 
 @pytest.fixture
