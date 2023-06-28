@@ -1,4 +1,4 @@
-from typing import Any, Dict, Generic, List, Optional, TypeVar, cast
+from typing import List, Optional, TypeVar, cast
 
 from typing_extensions import TypedDict
 
@@ -32,7 +32,7 @@ class TextModelParams(TypedDict):
 SERVICE_RESPONSE_TYPE = TypeVar("SERVICE_RESPONSE_TYPE")
 
 
-class TextCompletionServiceTemplate(Generic[SERVICE_RESPONSE_TYPE]):
+class TextCompletionServiceTemplate:
     def __init__(
         self,
         text_completion_client_config: TextCompletionClientConfig,
@@ -91,23 +91,52 @@ class TextCompletionServiceTemplate(Generic[SERVICE_RESPONSE_TYPE]):
 
         return [TextCompletionRequest(llm_config=llm_config_merged)]
 
+    def service_response_from(
+        self,
+        text_completion_response: ClientResponse[TextCompletionResponse],
+        params: PromptParams,
+        output_params: List[str],
+    ) -> Optional[PromptParams]:
+        raise NotImplementedError
+
     def service_responses_from(
         self,
         text_completion_responses: List[ClientResponse[TextCompletionResponse]],
+        params_list: List[PromptParams],
         output_params: List[str],
-    ) -> Optional[List[Dict[str, Any]]]:
-        raise NotImplementedError
+        should_flatten: bool = False,
+    ) -> Optional[List[PromptParams]]:
+        responses = []
+        for client_response, params in zip(text_completion_responses, params_list):
+            if client_response["response"] is None:
+                return None
+
+            responses.append(
+                self.service_response_from(client_response, params, output_params)
+            )
+
+        if should_flatten:
+            flattened = {}
+            for response in responses:
+                for key, value in response.items():
+                    if key not in flattened:
+                        flattened[key] = []
+                    flattened[key].append(value)
+            return [cast(PromptParams, flattened)]
+        else:
+            return responses
 
     def postprocess(
         self,
-        service_responses: Optional[List[Dict[str, Any]]],
+        service_responses: Optional[List[PromptParams]],
+        params_list: List[PromptParams],
         output_params: List[str],
-    ) -> Optional[List[Dict[str, Any]]]:
+    ) -> Optional[List[PromptParams]]:
         raise NotImplementedError
 
     async def execute(
         self, request: TextCompletionServiceRequest
-    ) -> Optional[List[Dict[str, Any]]]:
+    ) -> Optional[List[PromptParams]]:
         for param in request["usecase_config"].usecase_params:
             for params in request["params_list"]:
                 if param not in params:
@@ -130,13 +159,16 @@ class TextCompletionServiceTemplate(Generic[SERVICE_RESPONSE_TYPE]):
             text_completion_responses = await client.complete(text_completion_requests)
             service_responses = self.service_responses_from(
                 text_completion_responses,
+                request["params_list"],
                 request["usecase_config"].output_params,
+                request["should_flatten"],
             )
             if service_responses is None:
                 return None
 
             return self.postprocess(
                 service_responses,
+                request["params_list"],
                 request["usecase_config"].output_params,
             )
         except Exception as e:

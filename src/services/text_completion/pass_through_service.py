@@ -1,36 +1,33 @@
-from typing import Any, Dict, List, Optional
+from typing import List, Optional, cast
 
 from src.services.text_completion.client import ClientResponse, TextCompletionResponse
 from src.services.text_completion.service_template import TextCompletionServiceTemplate
-from src.services.text_completion.types import TextCompletionServiceResponse
+from src.services.text_completion.types import PromptParams
 
 
-class PassThroughTextCompletionServiceResponse(TextCompletionServiceResponse):
-    answers: List[str]
-
-
-class PassThroughTextCompletionService(
-    TextCompletionServiceTemplate[PassThroughTextCompletionServiceResponse]
-):
-    def service_responses_from(
+class PassThroughTextCompletionService(TextCompletionServiceTemplate):
+    def service_response_from(
         self,
-        text_completion_responses: List[ClientResponse[TextCompletionResponse]],
+        text_completion_response: ClientResponse[TextCompletionResponse],
+        params: PromptParams,
         output_params: List[str],
-    ) -> Optional[List[Dict[str, Any]]]:
-        answers = []
-        for client_response in text_completion_responses:
-            if client_response["response"] is None:
-                return None
-            else:
-                answers.append(
-                    {output_params[0]: client_response["response"]["answer"]}
-                )
+    ) -> Optional[PromptParams]:
 
-        return answers
+        if text_completion_response["response"] is None:
+            return None
+        else:
+            return cast(
+                PromptParams,
+                {
+                    **params,
+                    output_params[0]: text_completion_response["response"]["answer"],
+                },
+            )
 
     def postprocess(
         self,
-        service_responses: Optional[List[Dict[str, Any]]],
+        service_responses: Optional[List[PromptParams]],
+        params_list: List[PromptParams],
         output_params: List[str],
-    ) -> Optional[List[Dict[str, Any]]]:
+    ) -> Optional[List[PromptParams]]:
         return service_responses

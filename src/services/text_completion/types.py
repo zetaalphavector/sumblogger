@@ -55,7 +55,7 @@ class TextCompletionUsecaseConfig(BaseModel):
     llm_identifier_2_config: Dict[str, LLMConfig]
 
 
-class PromptParams(Dict[str, str]):
+class PromptParams(Dict[str, Any]):
     ...
 
 
@@ -67,6 +67,7 @@ class SingleDocSummaryParams(PromptParams):
 class TextCompletionServiceRequest(TypedDict):
     usecase_config: TextCompletionUsecaseConfig
     params_list: List[PromptParams]
+    should_flatten: bool
 
 
 class TextCompletionServiceResponse(TypedDict):

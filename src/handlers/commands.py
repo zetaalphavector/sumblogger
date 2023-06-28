@@ -10,3 +10,4 @@ class ExecuteTextCompletionUsecase(Command):
     variant: str
     prompt_params_list: List[Dict[str, str]]
     params_mapping: Optional[Dict[str, str]] = None
+    should_flatten: bool = False
