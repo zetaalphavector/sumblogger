@@ -1,9 +1,9 @@
-from typing import Any, Dict, List, Optional, Union
+from typing import Any, Dict, List, Union
 
 from typing_extensions import NotRequired, TypedDict
 
 
-class TextCompletionUsecaseForm(TypedDict):
+class TextCompletionSingleUsecaseForm(TypedDict):
     usecase: str
     variant: str
     prompt_params_list: List[Dict[str, Any]]
@@ -16,7 +16,7 @@ class TextCompletionUsecaseItem(TypedDict):
 
 
 class TextCompletionChainForm(TypedDict):
-    chain_usecase_forms: List[TextCompletionUsecaseForm]
+    chain_usecase_forms: List[TextCompletionSingleUsecaseForm]
 
 
 TextCompletionChainItem = TextCompletionUsecaseItem
@@ -24,7 +24,7 @@ TextCompletionChainItem = TextCompletionUsecaseItem
 
 class TextCompletionParallelForm(TypedDict):
     parallel_usecase_forms: List[
-        Union[TextCompletionUsecaseForm, TextCompletionChainForm]
+        Union[TextCompletionSingleUsecaseForm, TextCompletionChainForm]
     ]
     should_flatten: NotRequired[bool]
 

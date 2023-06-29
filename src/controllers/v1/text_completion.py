@@ -9,7 +9,7 @@ from src.controllers.v1.api_types import (
     TextCompletionChainItem,
     TextCompletionParallelForm,
     TextCompletionParallelItem,
-    TextCompletionUsecaseForm,
+    TextCompletionSingleUsecaseForm,
     TextCompletionUsecaseItem,
 )
 from src.handlers.commands import (
@@ -27,7 +27,7 @@ text_completion_router = APIRouter(tags=["text_completion"])
     status_code=200,
 )
 async def pass_through_usecase(
-    body: TextCompletionUsecaseForm,
+    body: TextCompletionSingleUsecaseForm,
     message_bus: MessageBus = Depends(get_message_bus),
 ):
     try:
@@ -39,7 +39,7 @@ async def pass_through_usecase(
         return {"error": str(e)}
 
 
-def __usecase_command_from(body: TextCompletionUsecaseForm):
+def __usecase_command_from(body: TextCompletionSingleUsecaseForm):
     return ExecuteTextCompletionUsecase(
         usecase=body["usecase"],
         variant=body["variant"],
@@ -74,7 +74,7 @@ async def pass_through_chain(
 
 
 def __command_from(
-    form: Union[TextCompletionUsecaseForm, TextCompletionChainForm],
+    form: Union[TextCompletionSingleUsecaseForm, TextCompletionChainForm],
 ):
     if "chain_usecase_forms" in form:
         form = cast(TextCompletionChainForm, form)
@@ -84,7 +84,7 @@ def __command_from(
             ]
         )
     else:
-        form = cast(TextCompletionUsecaseForm, form)
+        form = cast(TextCompletionSingleUsecaseForm, form)
         return __usecase_command_from(form)
 
 
