@@ -21,21 +21,12 @@ class TitlePerDocumentService(TextCompletionServiceTemplate):
             return cast(
                 PromptParams,
                 {
-                    **params,
                     output_params[0]: self.__titles_from(
                         text_completion_response["response"]["answer"],
                         params,
                     ),
                 },
             )
-
-    def postprocess(
-        self,
-        service_responses: List[PromptParams],
-        params_list: List[PromptParams],
-        output_params: List[str],
-    ) -> List[PromptParams]:
-        return service_responses
 
     def __titles_from(self, answer: str, params: PromptParams) -> List[str]:
         titles = []

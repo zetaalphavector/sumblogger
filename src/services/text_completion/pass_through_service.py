@@ -16,20 +16,13 @@ class PassThroughTextCompletionService(TextCompletionServiceTemplate):
     ) -> Optional[PromptParams]:
 
         if text_completion_response["response"] is None:
-            return None
+            raise Exception(
+                f"Text Completion Error: {text_completion_response['error']}"
+            )
         else:
             return cast(
                 PromptParams,
                 {
-                    **params,
                     output_params[0]: text_completion_response["response"]["answer"],
                 },
             )
-
-    def postprocess(
-        self,
-        service_responses: List[PromptParams],
-        params_list: List[PromptParams],
-        output_params: List[str],
-    ) -> List[PromptParams]:
-        return service_responses

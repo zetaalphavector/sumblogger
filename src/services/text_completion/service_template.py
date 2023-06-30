@@ -108,18 +108,33 @@ class TextCompletionServiceTemplate(TextCompletionService):
             if client_response["response"] is None:
                 return None
 
-            responses.append(
-                self.service_response_from(client_response, params, output_params)
+            service_response = self.service_response_from(
+                client_response,
+                params,
+                output_params,
             )
+            if service_response is not None:
+                service_response = self.__merge_with_input_params(
+                    service_response,
+                    params,
+                )
+            responses.append(service_response)
+
         return responses
 
     def postprocess(
         self,
         service_responses: List[PromptParams],
-        params_list: List[PromptParams],
-        output_params: List[str],
+        request: TextCompletionServiceRequest,
     ) -> List[PromptParams]:
-        raise NotImplementedError
+        return service_responses
+
+    def __merge_with_input_params(
+        self,
+        service_responses: PromptParams,
+        input_params_list: PromptParams,
+    ) -> PromptParams:
+        return cast(PromptParams, {**service_responses, **input_params_list})
 
     async def execute(
         self, request: TextCompletionServiceRequest
@@ -152,11 +167,7 @@ class TextCompletionServiceTemplate(TextCompletionService):
             if service_responses is None:
                 return None
 
-            service_responses = self.postprocess(
-                service_responses,
-                request["params_list"],
-                request["usecase_config"].output_params,
-            )
+            service_responses = self.postprocess(service_responses, request)
 
             if request["should_flatten"]:
                 flattened = {}
