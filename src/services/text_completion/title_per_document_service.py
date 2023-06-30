@@ -15,14 +15,14 @@ class TitlePerDocumentService(TextCompletionServiceTemplate):
         output_params: List[str],
     ) -> Optional[PromptParams]:
 
-        if text_completion_response["response"] is None:
+        if text_completion_response.response is None:
             return None
         else:
             return cast(
                 PromptParams,
                 {
                     output_params[0]: self.__titles_from(
-                        text_completion_response["response"]["answer"],
+                        text_completion_response.response["answer"],
                         params,
                     ),
                 },

@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
 from typing import Dict, Generic, List, Optional, TypeVar
 
 from typing_extensions import TypedDict, Unpack
@@ -10,20 +11,25 @@ class TextCompletionRequest(TypedDict):
     llm_config: LLMConfig
 
 
+TokenScore = Dict[str, float]
+
 RESPONSE_TYPE = TypeVar("RESPONSE_TYPE")
 
 
-class ClientResponse(TypedDict, Generic[RESPONSE_TYPE]):
+@dataclass
+class ClientResponse(Generic[RESPONSE_TYPE]):
     response: Optional[RESPONSE_TYPE]
     error: Optional[Exception]
-
-
-TokenScore = Dict[str, float]
 
 
 class TextCompletionResponse(TypedDict):
     answer: str
     token_scores: Optional[List[TokenScore]]
+
+
+# class ClientResponse(TypedDict):
+#     response: Optional[TextCompletionResponse]
+#     error: Optional[Exception]
 
 
 # class TextCompletionWithLogitsResponse(TextCompletionResponse):

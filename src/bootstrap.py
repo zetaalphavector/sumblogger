@@ -5,7 +5,6 @@ from src.adapters.text_completion_repo.file_repo import (
     FileTextCompletionUsecaseConfigRepository,
 )
 from src.handlers import CommandHandlerRegistry, EventHandlerRegistry
-from src.services.text_completion.client_factory import TextCompletionClientConfig
 
 text_completion_usecase_config_repo = FileTextCompletionUsecaseConfigRepository(
     config_dir="src/services/text_completion/configuration"

@@ -1,5 +1,5 @@
 import asyncio
-from typing import Awaitable, List, Optional, cast
+from typing import Any, Awaitable, Dict, List, Optional, cast
 
 from typing_extensions import TypedDict
 
@@ -20,7 +20,6 @@ from src.services.text_completion.service_factory import TextCompletionService
 from src.services.text_completion.types import (
     LLMConfig,
     PromptParams,
-    TextCompletionConfig,
     TextCompletionServiceRequest,
 )
 
@@ -71,7 +70,7 @@ class TextCompletionServiceTemplate(TextCompletionService):
                 return None
 
             if request["should_flatten"]:
-                flattened = {}
+                flattened: Dict[str, Any] = {}
                 for response in service_responses:
                     for key, value in response.items():
                         if key not in flattened:

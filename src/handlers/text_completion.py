@@ -45,7 +45,7 @@ async def __execute_single(
     if response_params_list is None:
         raise ValueError("No response from text completion service.")
 
-    output_params_list = []
+    output_params_list: List[Dict[str, Any]] = []
     for response_params in response_params_list:
         if cmd.params_mapping is not None:
             for key, new_key in cmd.params_mapping.items():
@@ -141,7 +141,7 @@ async def handle_text_completion_usecases(
 def __merge_output_params_lists(
     usecase_items: List[TextCompletionUsecasesItem],
 ) -> TextCompletionUsecasesItem:
-    merged = {
+    merged: Dict[str, List[Dict[str, Any]]] = {
         "output_params_list": [{} for _ in usecase_items[0]["output_params_list"]]
     }
     for item in usecase_items:
