@@ -1,0 +1,34 @@
+[
+    {
+        "usecase": "title_generation",
+        "variant": "title_per_intro_summary",
+        "version": 1,
+        "usecase_params": [
+            "documents"
+        ],
+        "output_params": [
+            "titles"
+        ],
+        "service_name": "title_per_document",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 256
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": null,
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Given the following summaries, create one very short topic title for each summary using at most 2-3 words. Avoid using verbs.\nThe topic titles should be representative of the summary. Avoid repetition across topic titles and make each title unique. Focus on what makes each topic different than the others.\n\n{% for doc in documents %}\n{{ loop.index }}.{{ doc }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+]

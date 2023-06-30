@@ -21,7 +21,7 @@ text_completion_router = APIRouter(tags=["text_completion"])
 
 
 @text_completion_router.post(
-    "/text_completion/pass_through",
+    "/text_completion",
     response_model=TextCompletionUsecasesItem,
     status_code=200,
 )
