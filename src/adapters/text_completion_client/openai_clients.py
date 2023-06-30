@@ -1,6 +1,5 @@
-import asyncio
 import re
-from typing import Awaitable, List, Optional, cast
+from typing import Optional
 
 import openai
 from typing_extensions import Unpack
@@ -61,17 +60,9 @@ class OpenAiPromptClient(TextCompletionClient):
         self.__model_temperature = config["openai_temperature"]
 
     async def complete(
-        self, requests: List[TextCompletionRequest]
-    ) -> List[ClientResponse[TextCompletionResponse]]:
-        return await asyncio.gather(
-            *[
-                cast(
-                    Awaitable[TextCompletionResponse],
-                    self.__complete_single_request(request),
-                )
-                for request in requests
-            ]
-        )
+        self, request: TextCompletionRequest
+    ) -> ClientResponse[TextCompletionResponse]:
+        return await self.__complete_single_request(request)
 
     async def __complete_single_request(
         self, request: TextCompletionRequest
@@ -132,17 +123,9 @@ class OpenAiPromptWithLogitsClient(TextCompletionClient):
         self.__model_temperature = config["openai_temperature"]
 
     async def complete(
-        self, requests: List[TextCompletionRequest]
-    ) -> List[ClientResponse[TextCompletionResponse]]:
-        return await asyncio.gather(
-            *[
-                cast(
-                    Awaitable[TextCompletionResponse],
-                    self.__complete_single_request(request),
-                )
-                for request in requests
-            ]
-        )
+        self, request: TextCompletionRequest
+    ) -> ClientResponse[TextCompletionResponse]:
+        return await self.__complete_single_request(request)
 
     async def __complete_single_request(
         self, request: TextCompletionRequest
@@ -221,17 +204,9 @@ class OpenAiChatClient(TextCompletionClient):
         self.__model_temperature = config["openai_temperature"]
 
     async def complete(
-        self, requests: List[TextCompletionRequest]
-    ) -> List[ClientResponse[TextCompletionResponse]]:
-        return await asyncio.gather(
-            *[
-                cast(
-                    Awaitable[TextCompletionResponse],
-                    self.__complete_single_request(request),
-                )
-                for request in requests
-            ]
-        )
+        self, request: TextCompletionRequest
+    ) -> ClientResponse[TextCompletionResponse]:
+        return await self.__complete_single_request(request)
 
     async def __complete_single_request(
         self, request: TextCompletionRequest

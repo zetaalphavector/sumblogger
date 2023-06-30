@@ -274,7 +274,7 @@ class TestTextCompletionUsecase:
         text_completion_client_factory_mock.create.return_value = (
             single_doc_summary_client_mock
         )
-        single_doc_summary_client_mock.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
@@ -321,11 +321,11 @@ class TestTextCompletionUsecase:
             single_doc_summary_client_mock,
             multi_doc_summary_client_mock,
         ]
-        single_doc_summary_client_mock.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
-        multi_doc_summary_client_mock.complete.side_effect = lambda _: [
+        multi_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from("This is the multi-doc summary")
         ]
 
@@ -366,11 +366,11 @@ class TestTextCompletionUsecase:
             single_doc_summary_client_mock_1,
             single_doc_summary_client_mock_2,
         ]
-        single_doc_summary_client_mock_1.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock_1.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
-        single_doc_summary_client_mock_2.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock_2.complete.side_effect = [
             text_completion_response_from(f"This is the summary of the summary {index}")
             for index in range(number_of_docs)
         ]
@@ -425,11 +425,11 @@ class TestTextCompletionUsecase:
             single_doc_summary_client_mock_1,
             single_doc_summary_client_mock_2,
         ]
-        single_doc_summary_client_mock_1.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock_1.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
-        single_doc_summary_client_mock_2.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock_2.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
@@ -497,14 +497,14 @@ class TestTextCompletionUsecase:
             multi_doc_summary_client_mock_2,
         ]
 
-        single_doc_summary_client_mock.complete.side_effect = lambda _: [
+        single_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
-        multi_doc_summary_client_mock_1.complete.side_effect = lambda _: [
+        multi_doc_summary_client_mock_1.complete.side_effect = [
             text_completion_response_from("This is the intro summary")
         ]
-        multi_doc_summary_client_mock_2.complete.side_effect = lambda _: [
+        multi_doc_summary_client_mock_2.complete.side_effect = [
             text_completion_response_from("This is the detailed summary")
         ]
 
@@ -567,11 +567,11 @@ class TestTextCompletionUsecase:
             text_comletion_client_mock,
         ]
 
-        text_comletion_client_mock.complete.side_effect = lambda _: [
+        text_comletion_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
         ]
-        text_comletion_client_mock.complete.side_effect = lambda _: [
+        text_comletion_client_mock.complete.side_effect = [
             text_completion_response_from("1. Title A\n2. Title B\n3. Title C")
         ]
 

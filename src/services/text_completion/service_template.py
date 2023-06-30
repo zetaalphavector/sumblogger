@@ -1,4 +1,5 @@
-from typing import List, Optional, cast
+import asyncio
+from typing import Awaitable, List, Optional, cast
 
 from typing_extensions import TypedDict
 
@@ -37,13 +38,111 @@ class TextCompletionServiceTemplate(TextCompletionService):
     ):
         self.__text_completion_client_config = text_completion_client_config
 
-    def __parse_config(
-        self, text_completion_config: TextCompletionConfig, params: PromptParams
-    ) -> TextCompletionConfig:
-        return TextCompletionConfigParser.parse(
-            text_completion_config,
-            params,
+    def service_response_from(
+        self,
+        text_completion_response: ClientResponse[TextCompletionResponse],
+        params: PromptParams,
+        output_params: List[str],
+    ) -> Optional[PromptParams]:
+        raise NotImplementedError
+
+    async def execute(
+        self, request: TextCompletionServiceRequest
+    ) -> Optional[List[PromptParams]]:
+        for param in request["usecase_config"].usecase_params:
+            for params in request["params_list"]:
+                if param not in params:
+                    raise Exception(
+                        f"Param {param} not given for usecase {request['usecase_config'].usecase}"  # noqa: E501
+                    )
+
+        llms = iter(request["usecase_config"].llm_identifier_2_config.items())
+        llm_identifier, llm_config = next(llms)
+        if llm_identifier is None or llm_config is None:
+            raise Exception(
+                f"No LLM given for usecase {request['usecase_config'].usecase}"
+            )
+
+        try:
+            client = self.text_completion_client_from(llm_identifier)
+            service_responses = await self.execute_all(request, client, llm_config)
+
+            if service_responses is None:
+                return None
+
+            if request["should_flatten"]:
+                flattened = {}
+                for response in service_responses:
+                    for key, value in response.items():
+                        if key not in flattened:
+                            flattened[key] = []
+                        flattened[key].append(value)
+                return [cast(PromptParams, flattened)]
+            else:
+                return service_responses
+
+        except Exception as e:
+            raise e
+
+    async def execute_all(
+        self,
+        request: TextCompletionServiceRequest,
+        client: TextCompletionClient,
+        llm_config_template: LLMConfig,
+    ) -> Optional[List[PromptParams]]:
+        return await asyncio.gather(
+            *[
+                cast(
+                    Awaitable[TextCompletionResponse],
+                    self.execute_one(
+                        params,
+                        llm_config_template,
+                        request["usecase_config"].output_params,
+                        client,
+                    ),
+                )
+                for params in request["params_list"]
+            ]
         )
+
+    async def execute_one(
+        self,
+        params: PromptParams,
+        llm_config_template: LLMConfig,
+        output_params: List[str],
+        client: TextCompletionClient,
+    ) -> Optional[PromptParams]:
+        client_request = self.text_completion_request_from(llm_config_template, params)
+        client_response = await client.complete(client_request)
+        service_response = self.service_response_from(
+            client_response,
+            params,
+            output_params,
+        )
+        if service_response is None:
+            raise Exception("TextCompletionService response is None")
+
+        service_response = self.__merge_with_input_params(service_response, params)
+
+        service_response = await self.postprocess_one(
+            service_response,
+            client_response,
+            client_request,
+            client,
+            output_params,
+        )
+
+        return service_response
+
+    async def postprocess_one(
+        self,
+        service_response: PromptParams,
+        client_response: ClientResponse[TextCompletionResponse],
+        client_request: TextCompletionRequest,
+        client: TextCompletionClient,
+        output_params: List[str],
+    ) -> PromptParams:
+        return service_response
 
     def __model_params_from(self, model_identifier: str) -> TextModelParams:
         model_type, provider_name, model_name = model_identifier.split(":")
@@ -69,65 +168,20 @@ class TextCompletionServiceTemplate(TextCompletionService):
             ),
         )
 
-    def text_completion_configs_from(
-        self, config_template: TextCompletionConfig, params_list: List[PromptParams]
-    ) -> List[TextCompletionConfig]:
-        return [self.__parse_config(config_template, params) for params in params_list]
-
-    def text_completion_requests_from(
-        self, llm_config_template: LLMConfig, params_list: List[PromptParams]
-    ) -> List[TextCompletionRequest]:
-        text_completion_configs = TextCompletionConfigParser.parse_many(
-            llm_config_template.text_completion_config, params_list
+    def text_completion_request_from(
+        self, llm_config_template: LLMConfig, params: PromptParams
+    ) -> TextCompletionRequest:
+        text_completion_config = TextCompletionConfigParser.parse(
+            llm_config_template.text_completion_config, params
         )
         llm_config_merged = LLMConfig.parse_obj(
             {
                 **llm_config_template.dict(exclude={"text_completion_config"}),
-                "text_completion_config": text_completion_configs[0],
+                "text_completion_config": text_completion_config,
             }
         )
 
-        return [TextCompletionRequest(llm_config=llm_config_merged)]
-
-    def service_response_from(
-        self,
-        text_completion_response: ClientResponse[TextCompletionResponse],
-        params: PromptParams,
-        output_params: List[str],
-    ) -> Optional[PromptParams]:
-        raise NotImplementedError
-
-    def service_responses_from(
-        self,
-        text_completion_responses: List[ClientResponse[TextCompletionResponse]],
-        params_list: List[PromptParams],
-        output_params: List[str],
-    ) -> Optional[List[PromptParams]]:
-        responses = []
-        for client_response, params in zip(text_completion_responses, params_list):
-            if client_response["response"] is None:
-                return None
-
-            service_response = self.service_response_from(
-                client_response,
-                params,
-                output_params,
-            )
-            if service_response is not None:
-                service_response = self.__merge_with_input_params(
-                    service_response,
-                    params,
-                )
-            responses.append(service_response)
-
-        return responses
-
-    def postprocess(
-        self,
-        service_responses: List[PromptParams],
-        request: TextCompletionServiceRequest,
-    ) -> List[PromptParams]:
-        return service_responses
+        return TextCompletionRequest(llm_config=llm_config_merged)
 
     def __merge_with_input_params(
         self,
@@ -135,50 +189,3 @@ class TextCompletionServiceTemplate(TextCompletionService):
         input_params_list: PromptParams,
     ) -> PromptParams:
         return cast(PromptParams, {**service_responses, **input_params_list})
-
-    async def execute(
-        self, request: TextCompletionServiceRequest
-    ) -> Optional[List[PromptParams]]:
-        for param in request["usecase_config"].usecase_params:
-            for params in request["params_list"]:
-                if param not in params:
-                    raise Exception(
-                        f"Param {param} not given for usecase {request['usecase_config'].usecase}"  # noqa: E501
-                    )
-
-        llms = iter(request["usecase_config"].llm_identifier_2_config.items())
-        llm_identifier, llm_config = next(llms)
-        if llm_identifier is None or llm_config is None:
-            raise Exception(
-                f"No LLM given for usecase {request['usecase_config'].usecase}"
-            )
-
-        try:
-            text_completion_requests = self.text_completion_requests_from(
-                llm_config, request["params_list"]
-            )
-            client = self.text_completion_client_from(llm_identifier)
-            text_completion_responses = await client.complete(text_completion_requests)
-            service_responses = self.service_responses_from(
-                text_completion_responses,
-                request["params_list"],
-                request["usecase_config"].output_params,
-            )
-            if service_responses is None:
-                return None
-
-            service_responses = self.postprocess(service_responses, request)
-
-            if request["should_flatten"]:
-                flattened = {}
-                for response in service_responses:
-                    for key, value in response.items():
-                        if key not in flattened:
-                            flattened[key] = []
-                        flattened[key].append(value)
-                return [cast(PromptParams, flattened)]
-            else:
-                return service_responses
-
-        except Exception as e:
-            raise e

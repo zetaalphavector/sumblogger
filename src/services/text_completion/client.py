@@ -60,8 +60,8 @@ class TextCompletionClient(ABC):
     @abstractmethod
     async def complete(
         self,
-        text_completion_requests: List[TextCompletionRequest],
-    ) -> List[ClientResponse[TextCompletionResponse]]:
+        text_completion_request: TextCompletionRequest,
+    ) -> ClientResponse[TextCompletionResponse]:
         raise NotImplementedError
 
 
