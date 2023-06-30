@@ -5,11 +5,6 @@ from typing import Awaitable, List, Optional, cast
 import openai
 from typing_extensions import Unpack
 
-from src.adapters.text_completion_client.factory import (
-    TextCompletionClientFactory,
-    TextCompletionModelType,
-    TextCompletionProviderName,
-)
 from src.services.text_completion.client import (
     ClientResponse,
     ContextLengthExceededError,
@@ -17,6 +12,11 @@ from src.services.text_completion.client import (
     TextCompletionClient,
     TextCompletionRequest,
     TextCompletionResponse,
+)
+from src.services.text_completion.client_factory import (
+    TextCompletionClientFactory,
+    TextCompletionModelType,
+    TextCompletionProviderName,
 )
 from src.services.text_completion.types import BotConversation, ChatMessageSender
 

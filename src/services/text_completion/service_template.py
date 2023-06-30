@@ -2,11 +2,6 @@ from typing import List, Optional, cast
 
 from typing_extensions import TypedDict
 
-from src.adapters.text_completion_client.factory import (
-    TextCompletionClientFactory,
-    TextCompletionModelType,
-    TextCompletionProviderName,
-)
 from src.services.text_completion.client import (
     ClientResponse,
     TextCompletionClient,
@@ -14,8 +9,13 @@ from src.services.text_completion.client import (
     TextCompletionRequest,
     TextCompletionResponse,
 )
+from src.services.text_completion.client_factory import (
+    TextCompletionClientFactory,
+    TextCompletionModelType,
+    TextCompletionProviderName,
+)
 from src.services.text_completion.config_parser import TextCompletionConfigParser
-from src.services.text_completion.factory import TextCompletionService
+from src.services.text_completion.service_factory import TextCompletionService
 from src.services.text_completion.types import (
     LLMConfig,
     PromptParams,

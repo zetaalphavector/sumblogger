@@ -5,13 +5,13 @@ from httpx import AsyncClient
 from zav.message_bus import Bootstrap
 from zav.message_bus.bootstrap import BootstrapDependency
 
-from src.adapters.text_completion_client.factory import TextCompletionClientFactory
 from src.adapters.text_completion_repo.file_repo import (
     FileTextCompletionUsecaseConfigRepository,
 )
 from src.app import app, routers, setup_api
 from src.bootstrap import CommandHandlerRegistry, EventHandlerRegistry
 from src.services.text_completion.client import TextCompletionClient
+from src.services.text_completion.client_factory import TextCompletionClientFactory
 
 
 @pytest.fixture(scope="session")

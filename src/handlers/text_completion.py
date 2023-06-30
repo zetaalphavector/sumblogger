@@ -6,10 +6,10 @@ from zav.message_bus import CommandHandlerRegistry, Message
 
 from src.controllers.v1.api_types import TextCompletionUsecasesItem
 from src.handlers import commands
-from src.services.text_completion.factory import TextCompletionServiceFactory
 from src.services.text_completion.repository.usecase_config_repo import (
     TextCompletionUsecaseConfigRepository,
 )
+from src.services.text_completion.service_factory import TextCompletionServiceFactory
 from src.services.text_completion.types import (
     PromptParams,
     TextCompletionServiceRequest,

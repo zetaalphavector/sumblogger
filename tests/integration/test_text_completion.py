@@ -513,7 +513,6 @@ class TestTextCompletionUsecase:
             data=json.dumps(payload),
         )
         json_resp = resp.json()
-        print(f"json_resp: {json_resp}")
         assert resp.status_code == 200
 
         assert json_resp["output_params_list"] == [

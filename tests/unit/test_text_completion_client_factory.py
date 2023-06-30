@@ -1,14 +1,14 @@
 from pytest import mark
 
-from src.adapters.text_completion_client.factory import (
-    TextCompletionClientFactory,
-    TextCompletionModelType,
-    TextCompletionProviderName,
-)
 from src.adapters.text_completion_client.openai_clients import (
     OpenAiChatClient,
     OpenAiPromptClient,
     OpenAiPromptWithLogitsClient,
+)
+from src.services.text_completion.client_factory import (
+    TextCompletionClientFactory,
+    TextCompletionModelType,
+    TextCompletionProviderName,
 )
 from src.settings import DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG
 
