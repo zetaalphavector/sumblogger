@@ -5,17 +5,16 @@ from zav.api.dependencies import get_message_bus
 from zav.message_bus import MessageBus
 
 from src.controllers.v1.api_types import (
-    TextCompletionChainForm,
-    TextCompletionChainItem,
-    TextCompletionParallelForm,
-    TextCompletionParallelItem,
     TextCompletionSingleUsecaseForm,
-    TextCompletionUsecaseItem,
+    TextCompletionUsecasesForm,
+    TextCompletionUsecasesFormBase,
+    TextCompletionUsecasesItem,
+    UsecasesExecutionType,
 )
 from src.handlers.commands import (
-    ExecuteTextCompletionChain,
-    ExecuteTextCompletionParallel,
-    ExecuteTextCompletionUsecase,
+    ExecuteTextCompletionSingleUsecase,
+    ExecuteTextCompletionUsecases,
+    UsecaseCommandsExecutionType,
 )
 
 text_completion_router = APIRouter(tags=["text_completion"])
@@ -23,91 +22,60 @@ text_completion_router = APIRouter(tags=["text_completion"])
 
 @text_completion_router.post(
     "/text_completion/pass_through",
-    response_model=TextCompletionUsecaseItem,
+    response_model=TextCompletionUsecasesItem,
     status_code=200,
 )
 async def pass_through_usecase(
-    body: TextCompletionSingleUsecaseForm,
+    body: TextCompletionUsecasesFormBase,
     message_bus: MessageBus = Depends(get_message_bus),
 ):
     try:
-        responses = await message_bus.handle(__usecase_command_from(body))
-        response: TextCompletionUsecaseItem = responses.pop(0)
-        return response
-    except Exception as e:
-        print(f"Exception: {e}")
-        return {"error": str(e)}
-
-
-def __usecase_command_from(body: TextCompletionSingleUsecaseForm):
-    return ExecuteTextCompletionUsecase(
-        usecase=body["usecase"],
-        variant=body["variant"],
-        prompt_params_list=body["prompt_params_list"],
-        params_mapping=body["params_mapping"] if "params_mapping" in body else None,
-        should_flatten=body["should_flatten"] if "should_flatten" in body else False,
-    )
-
-
-@text_completion_router.post(
-    "/text_completion/chain",
-    response_model=TextCompletionChainItem,
-    status_code=200,
-)
-async def pass_through_chain(
-    body: TextCompletionChainForm,
-    message_bus: MessageBus = Depends(get_message_bus),
-):
-    try:
+        body = cast(TextCompletionUsecasesForm, body)
         responses = await message_bus.handle(
-            ExecuteTextCompletionChain(
+            ExecuteTextCompletionUsecases(
                 usecase_commands=[
-                    __usecase_command_from(cmd) for cmd in body["chain_usecase_forms"]
-                ]
+                    __usecase_command_from(form) for form in body["usecase_forms"]
+                ],
+                execution_type=UsecaseCommandsExecutionType(
+                    body["execution_type"].value
+                ),
+                prompt_params_list=body["prompt_params_list"],
             )
         )
-        response: TextCompletionChainItem = responses.pop(0)
+        response: TextCompletionUsecasesItem = responses.pop(0)
         return response
     except Exception as e:
+        raise e
         print(f"Exception: {e}")
         return {"error": str(e)}
 
 
-def __command_from(
-    form: Union[TextCompletionSingleUsecaseForm, TextCompletionChainForm],
+def __usecase_command_from(
+    form: Union[TextCompletionSingleUsecaseForm, TextCompletionUsecasesForm]
 ):
-    if "chain_usecase_forms" in form:
-        form = cast(TextCompletionChainForm, form)
-        return ExecuteTextCompletionChain(
+    if "usecase_forms" in form:
+        usecases_form = cast(TextCompletionUsecasesForm, form)
+        return ExecuteTextCompletionUsecases(
             usecase_commands=[
-                __usecase_command_from(cmd) for cmd in form["chain_usecase_forms"]
-            ]
+                __usecase_command_from(form) for form in usecases_form["usecase_forms"]
+            ],
+            execution_type=UsecaseCommandsExecutionType(
+                usecases_form["execution_type"].value
+                if isinstance(usecases_form["execution_type"], UsecasesExecutionType)
+                else usecases_form["execution_type"]
+            ),
+            prompt_params_list=usecases_form["prompt_params_list"],
         )
     else:
-        form = cast(TextCompletionSingleUsecaseForm, form)
-        return __usecase_command_from(form)
-
-
-@text_completion_router.post(
-    "/text_completion/parallel",
-    response_model=TextCompletionParallelItem,
-    status_code=200,
-)
-async def pass_through_parallel(
-    body: TextCompletionParallelForm,
-    message_bus: MessageBus = Depends(get_message_bus),
-):
-    try:
-        responses = await message_bus.handle(
-            ExecuteTextCompletionParallel(
-                usecase_commands=[
-                    __command_from(cmd) for cmd in body["parallel_usecase_forms"]
-                ],
-                should_flatten=body["should_flatten"],
-            )
+        single_form = cast(TextCompletionSingleUsecaseForm, form)
+        return ExecuteTextCompletionSingleUsecase(
+            usecase=single_form["usecase"],
+            variant=single_form["variant"],
+            prompt_params_list=single_form["prompt_params_list"],
+            should_flatten=single_form["should_flatten"]
+            if "should_flatten" in single_form
+            else False,
+            params_mapping=single_form["params_mapping"]
+            if "params_mapping" in single_form
+            else None,
         )
-        response: TextCompletionParallelItem = responses.pop(0)
-        return response
-    except Exception as e:
-        print(f"Exception: {e}")
-        return {"error": str(e)}

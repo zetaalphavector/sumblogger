@@ -1,3 +1,4 @@
+import enum
 from typing import Any, Dict, List, Union
 
 from typing_extensions import NotRequired, TypedDict
@@ -11,23 +12,24 @@ class TextCompletionSingleUsecaseForm(TypedDict):
     should_flatten: NotRequired[bool]
 
 
-class TextCompletionUsecaseItem(TypedDict):
-    output_params_list: List[Dict[str, Any]]
+class UsecasesExecutionType(enum.Enum):
+    CHAIN = "chain"
+    PARALLEL = "parallel"
 
 
-class TextCompletionChainForm(TypedDict):
-    chain_usecase_forms: List[TextCompletionSingleUsecaseForm]
+class TextCompletionUsecasesFormBase(TypedDict):
+    prompt_params_list: List[Dict[str, Any]]
+    usecase_forms: List[Any]
+    execution_type: UsecasesExecutionType
 
 
-TextCompletionChainItem = TextCompletionUsecaseItem
-
-
-class TextCompletionParallelForm(TypedDict):
-    parallel_usecase_forms: List[
-        Union[TextCompletionSingleUsecaseForm, TextCompletionChainForm]
+class TextCompletionUsecasesForm(TypedDict):
+    prompt_params_list: List[Dict[str, Any]]
+    usecase_forms: List[
+        Union[TextCompletionSingleUsecaseForm, "TextCompletionUsecasesForm"]
     ]
-    should_flatten: NotRequired[bool]
+    execution_type: UsecasesExecutionType
 
 
-class TextCompletionParallelItem(TypedDict):
-    usecase_items: List[TextCompletionUsecaseItem]
+class TextCompletionUsecasesItem(TypedDict):
+    output_params_list: List[Dict[str, Any]]

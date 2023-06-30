@@ -1,3 +1,4 @@
+import enum
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Union
 
@@ -5,7 +6,7 @@ from zav.message_bus import Command
 
 
 @dataclass
-class ExecuteTextCompletionUsecase(Command):
+class ExecuteTextCompletionSingleUsecase(Command):
     usecase: str
     variant: str
     prompt_params_list: List[Dict[str, Any]]
@@ -13,14 +14,15 @@ class ExecuteTextCompletionUsecase(Command):
     should_flatten: bool = False
 
 
-@dataclass
-class ExecuteTextCompletionChain(Command):
-    usecase_commands: List[ExecuteTextCompletionUsecase]
+class UsecaseCommandsExecutionType(enum.Enum):
+    CHAIN = "chain"
+    PARALLEL = "parallel"
 
 
 @dataclass
-class ExecuteTextCompletionParallel(Command):
+class ExecuteTextCompletionUsecases(Command):
     usecase_commands: List[
-        Union[ExecuteTextCompletionUsecase, ExecuteTextCompletionChain]
+        Union[ExecuteTextCompletionSingleUsecase, "ExecuteTextCompletionUsecases"]
     ]
-    should_flatten: Optional[bool] = False
+    execution_type: UsecaseCommandsExecutionType
+    prompt_params_list: Optional[List[Dict[str, Any]]] = None
