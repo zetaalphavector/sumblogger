@@ -1,0 +1,5 @@
+## Concerns
+- Order of `params_mapping` matters if the user wants to rename a field that has already given in a previous usecase
+- no objects are allowed in the prompt templates, so if we want a list of document objects that contain doc id and content, we should create two template input variables: doc_ids, doc_contents which match one by one to each document
+- when creating a TextCompletionClient, we cannot know if the usecase is compatible with the client at hand during build time. Instead, it will break during run time, so when we configure a usecase we should already know which types of text completion clients are supported (e.g. prompt_with_logits etc)
+- the LLMConfig passed to the TextCompletionClient contains any kind of template that might be needed by any client. That results in having many optional fields like prompt_template, or bot_conversation. Each client should handle how it will use these fields and when it will raise an error. This error though will be triggered at runtime.
