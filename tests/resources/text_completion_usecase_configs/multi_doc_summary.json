@@ -134,5 +134,39 @@
                 }
             }
         }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "refine_summary",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents",
+            "retries"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "refined_multi_doc_summary",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 3200
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": null,
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Summarize the following documents in {{ number_of_words }} words.\n\nDocuments:\n {% for doc in documents %}\n{{ doc }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     }
 ]

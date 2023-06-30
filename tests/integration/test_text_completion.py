@@ -568,10 +568,6 @@ class TestTextCompletionUsecase:
         ]
 
         text_comletion_client_mock.complete.side_effect = [
-            text_completion_response_from(summary_for(index))
-            for index in range(number_of_docs)
-        ]
-        text_comletion_client_mock.complete.side_effect = [
             text_completion_response_from("1. Title A\n2. Title B\n3. Title C")
         ]
 
@@ -586,5 +582,66 @@ class TestTextCompletionUsecase:
             {
                 "documents": [document_for(i) for i in range(number_of_docs)],
                 "titles": ["Title A", "Title B", "Title C"],
+            }
+        ]
+
+    @patch(
+        "src.services.text_completion.service_template.TextCompletionClientFactory",
+        return_value=text_completion_client_factory_mock,
+    )
+    @mark.asyncio
+    async def test_should_execute_a_custom_usecase_that_refines_the_output(
+        self,
+        text_completion_client_factory_mock,
+        test_client,
+        base_path,
+        text_completion_client_mock,
+    ):
+        number_of_docs = 3
+        payload = {
+            "execution_type": "chain",
+            "prompt_params_list": [],
+            "usecase_forms": [
+                {
+                    "usecase": "multi_doc_summary",
+                    "variant": "refine_summary",
+                    "prompt_params_list": [
+                        {
+                            "documents": [
+                                document_for(doc_id) for doc_id in range(number_of_docs)
+                            ],
+                            "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+                            "retries": 1,
+                        }
+                    ],
+                    "should_flatten": False,
+                }
+            ],
+        }
+        text_comletion_client_mock = text_completion_client_mock.create()
+        text_completion_client_factory_mock.create.side_effect = [
+            text_comletion_client_mock,
+        ]
+
+        text_comletion_client_mock.complete.side_effect = [
+            text_completion_response_from("This summary has no citations."),
+            text_completion_response_from(
+                "The refined summary has all the needed citations [0], [1], [2]"
+            ),
+        ]
+
+        resp = await test_client.post(
+            f"{base_path}/text_completion",
+            data=json.dumps(payload),
+        )
+        json_resp = resp.json()
+        assert resp.status_code == 200
+
+        assert json_resp["output_params_list"] == [
+            {
+                "documents": [document_for(i) for i in range(number_of_docs)],
+                "summary": "The refined summary has all the needed citations [0], [1], [2]",  # noqa
+                "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+                "retries": 1,
             }
         ]

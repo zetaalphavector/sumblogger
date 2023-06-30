@@ -12,7 +12,7 @@ from src.services.text_completion.types import (
 
 class TextCompletionConfigParser:
     @staticmethod
-    def __parse_template(
+    def parse_template(
         template: Optional[str],
         params: PromptParams,
     ) -> Optional[str]:
@@ -26,14 +26,14 @@ class TextCompletionConfigParser:
         if description is None:
             return None
 
-        return TextCompletionConfigParser.__parse_template(description, params)
+        return TextCompletionConfigParser.parse_template(description, params)
 
     @staticmethod
     def __parse_chat_message(message: ChatMessage, params: PromptParams):
         return ChatMessage.parse_obj(
             {
                 **message.dict(exclude={"content"}),
-                "content": TextCompletionConfigParser.__parse_template(
+                "content": TextCompletionConfigParser.parse_template(
                     message.content, params
                 ),
             },
@@ -66,7 +66,7 @@ class TextCompletionConfigParser:
         return TextCompletionConfig.parse_obj(
             {
                 **config.dict(exclude={"prompt_template", "bot_conversation"}),
-                "prompt_template": TextCompletionConfigParser.__parse_template(
+                "prompt_template": TextCompletionConfigParser.parse_template(
                     config.prompt_template, params
                 ),
                 "bot_conversation": TextCompletionConfigParser.__parse_bot_conversation(
