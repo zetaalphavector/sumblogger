@@ -10,11 +10,7 @@ from src.adapters.text_completion_repo.file_repo import (
     FileTextCompletionUsecaseConfigRepository,
 )
 from src.app import app, routers, setup_api
-from src.bootstrap import (
-    CommandHandlerRegistry,
-    EventHandlerRegistry,
-    pass_through_text_completion_service,
-)
+from src.bootstrap import CommandHandlerRegistry, EventHandlerRegistry
 from src.services.text_completion.client import TextCompletionClient
 
 
@@ -28,10 +24,6 @@ def mock_text_completion_usecase_config_repo():
 def mock_bootstrap(mock_text_completion_usecase_config_repo):
     return Bootstrap(
         dependencies=[
-            BootstrapDependency(
-                name="pass_through_text_completion_service",
-                value=pass_through_text_completion_service,
-            ),
             BootstrapDependency(
                 name="text_completion_usecase_config_repo",
                 value=mock_text_completion_usecase_config_repo,

@@ -1,9 +1,8 @@
-from typing import List, Optional, TypeVar, cast
+from typing import List, Optional, cast
 
 from typing_extensions import TypedDict
 
 from src.adapters.text_completion_client.factory import (
-    TextCompletionClientConfig,
     TextCompletionClientFactory,
     TextCompletionModelType,
     TextCompletionProviderName,
@@ -11,10 +10,12 @@ from src.adapters.text_completion_client.factory import (
 from src.services.text_completion.client import (
     ClientResponse,
     TextCompletionClient,
+    TextCompletionClientConfig,
     TextCompletionRequest,
     TextCompletionResponse,
 )
 from src.services.text_completion.config_parser import TextCompletionConfigParser
+from src.services.text_completion.factory import TextCompletionService
 from src.services.text_completion.types import (
     LLMConfig,
     PromptParams,
@@ -29,10 +30,7 @@ class TextModelParams(TypedDict):
     model_name: str
 
 
-SERVICE_RESPONSE_TYPE = TypeVar("SERVICE_RESPONSE_TYPE")
-
-
-class TextCompletionServiceTemplate:
+class TextCompletionServiceTemplate(TextCompletionService):
     def __init__(
         self,
         text_completion_client_config: TextCompletionClientConfig,

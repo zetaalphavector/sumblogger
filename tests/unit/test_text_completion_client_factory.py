@@ -10,7 +10,7 @@ from src.adapters.text_completion_client.openai_clients import (
     OpenAiPromptClient,
     OpenAiPromptWithLogitsClient,
 )
-from src.bootstrap import text_completion_client_config
+from src.settings import DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG
 
 
 class TestTextCompletionClientFactory:
@@ -43,7 +43,7 @@ class TestTextCompletionClientFactory:
         client = TextCompletionClientFactory.create(
             provider_name=provider_name,
             model_type=model_type,
-            config=text_completion_client_config,
+            config=DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG,
         )
 
         assert isinstance(client, expected_instance_type)
@@ -51,6 +51,6 @@ class TestTextCompletionClientFactory:
         client_2 = TextCompletionClientFactory.create(
             provider_name=provider_name,
             model_type=model_type,
-            config=text_completion_client_config,
+            config=DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG,
         )
         assert client == client_2

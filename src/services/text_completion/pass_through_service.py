@@ -1,10 +1,12 @@
 from typing import List, Optional, cast
 
 from src.services.text_completion.client import ClientResponse, TextCompletionResponse
+from src.services.text_completion.factory import TextCompletionServiceFactory
 from src.services.text_completion.service_template import TextCompletionServiceTemplate
 from src.services.text_completion.types import PromptParams
 
 
+@TextCompletionServiceFactory.register("pass_through")
 class PassThroughTextCompletionService(TextCompletionServiceTemplate):
     def service_response_from(
         self,

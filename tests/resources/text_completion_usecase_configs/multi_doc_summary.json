@@ -12,6 +12,7 @@
         "output_params": [
             "summary"
         ],
+        "service_name": "pass_through",
         "llm_identifier_2_config": {
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
@@ -46,6 +47,7 @@
         "output_params": [
             "summary"
         ],
+        "service_name": "pass_through",
         "llm_identifier_2_config": {
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
@@ -60,6 +62,72 @@
                             {
                                 "sender": "user",
                                 "content": "You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.\nYou want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.\nBe fluent. Avoid repetitive information.\nRefer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their short summaries.\n\nScientific Article abstract:\n{{ main_document }}\n\nReferenced documents summaries:\n {% for i in range(ref_documents|length) %}\n[{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "intro_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 3200
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are an expert in summarizing multiple documents",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Summarize the general idea of the following documents in {{ number_of_words }} words.\n\nDocuments:\n {% for doc in documents %}\n{{ doc }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "detailed_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 3200
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are an expert in summarizing multiple documents",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a detailed summary of the following documents in {{ number_of_words }} words.\n\nDocuments:\n {% for doc in documents %}\n{{ doc }}\n{% endfor %}"
                             }
                         ]
                     }

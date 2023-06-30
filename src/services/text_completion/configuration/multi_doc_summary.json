@@ -12,6 +12,7 @@
         "output_params": [
             "summary"
         ],
+        "service_name": "pass_through",
         "llm_identifier_2_config": {
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
@@ -46,6 +47,7 @@
         "output_params": [
             "summary"
         ],
+        "service_name": "pass_through",
         "llm_identifier_2_config": {
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {

@@ -6,9 +6,7 @@ from zav.message_bus import CommandHandlerRegistry, Message
 
 from src.controllers.v1.api_types import TextCompletionUsecasesItem
 from src.handlers import commands
-from src.services.text_completion.pass_through_service import (
-    PassThroughTextCompletionService,
-)
+from src.services.text_completion.factory import TextCompletionServiceFactory
 from src.services.text_completion.repository.usecase_config_repo import (
     TextCompletionUsecaseConfigRepository,
 )
@@ -16,11 +14,11 @@ from src.services.text_completion.types import (
     PromptParams,
     TextCompletionServiceRequest,
 )
+from src.settings import DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG
 
 
 async def __execute_single(
     cmd: commands.ExecuteTextCompletionSingleUsecase,
-    pass_through_text_completion_service: PassThroughTextCompletionService,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
 
@@ -33,7 +31,11 @@ async def __execute_single(
         cast(PromptParams, prompt_params) for prompt_params in cmd.prompt_params_list
     ]
 
-    response_params_list = await pass_through_text_completion_service.execute(
+    service = TextCompletionServiceFactory.create(
+        usecase_config.service_name,
+        DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG,
+    )
+    response_params_list = await service.execute(
         TextCompletionServiceRequest(
             usecase_config=usecase_config,
             params_list=prompt_params_list,
@@ -57,7 +59,6 @@ async def __execute_single(
 
 async def execute_chain(
     cmd: commands.ExecuteTextCompletionUsecases,
-    pass_through_text_completion_service: PassThroughTextCompletionService,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
     params_list = merge_two_params_lists([], cmd.prompt_params_list)
@@ -69,7 +70,6 @@ async def execute_chain(
 
         usecase_item = await __execute(
             usecase_cmd,
-            pass_through_text_completion_service,
             text_completion_usecase_config_repo,
         )
 
@@ -80,7 +80,6 @@ async def execute_chain(
 
 async def execute_parallel(
     cmd: commands.ExecuteTextCompletionUsecases,
-    pass_through_text_completion_service: PassThroughTextCompletionService,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
     for usecase_cmd in cmd.usecase_commands:
@@ -92,7 +91,6 @@ async def execute_parallel(
         *[
             __execute(
                 usecase_cmd,
-                pass_through_text_completion_service,
                 text_completion_usecase_config_repo,
             )
             for usecase_cmd in cmd.usecase_commands
@@ -113,20 +111,17 @@ async def __execute(
         commands.ExecuteTextCompletionSingleUsecase,
         commands.ExecuteTextCompletionUsecases,
     ],
-    pass_through_text_completion_service: PassThroughTextCompletionService,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
     if isinstance(cmd, commands.ExecuteTextCompletionSingleUsecase):
         return await __execute_single(
             cmd,
-            pass_through_text_completion_service,
             text_completion_usecase_config_repo,
         )
     elif isinstance(cmd, commands.ExecuteTextCompletionUsecases):
         handler = EXECUTION_TYPE_TO_HANDLER[cmd.execution_type]
         return await handler(
             cmd,
-            pass_through_text_completion_service,
             text_completion_usecase_config_repo,
         )
 
@@ -135,12 +130,10 @@ async def __execute(
 async def handle_text_completion_usecases(
     cmd: commands.ExecuteTextCompletionUsecases,
     queue: List[Message],
-    pass_through_text_completion_service: PassThroughTextCompletionService,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
     return await __execute(
         cmd,
-        pass_through_text_completion_service,
         text_completion_usecase_config_repo,
     )
 
