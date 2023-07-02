@@ -1,5 +1,6 @@
 shared/
 experiments/
+results/
 dev.env
 launch.json
 *prompts_history_*
