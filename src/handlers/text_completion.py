@@ -45,6 +45,18 @@ async def __execute_single(
     if response_params_list is None:
         raise ValueError("No response from text completion service.")
 
+    output_params_list = map_output_params_list(cmd, response_params_list)
+
+    return TextCompletionUsecasesItem(output_params_list=output_params_list)
+
+
+def map_output_params_list(
+    cmd: Union[
+        commands.ExecuteTextCompletionUsecases,
+        commands.ExecuteTextCompletionSingleUsecase,
+    ],
+    response_params_list,
+):
     output_params_list: List[Dict[str, Any]] = []
     for response_params in response_params_list:
         if cmd.params_mapping is not None:
@@ -53,8 +65,7 @@ async def __execute_single(
                     response_params[new_key] = response_params.pop(key)
 
         output_params_list.append(response_params)
-
-    return TextCompletionUsecasesItem(output_params_list=output_params_list)
+    return output_params_list
 
 
 async def execute_chain(
@@ -97,7 +108,9 @@ async def execute_parallel(
         ]
     )
 
-    return __merge_output_params_lists(usecases_items)
+    item = __merge_output_params_lists(usecases_items)
+    output_params_list = map_output_params_list(cmd, item["output_params_list"])
+    return TextCompletionUsecasesItem(output_params_list=output_params_list)
 
 
 EXECUTION_TYPE_TO_HANDLER = {

@@ -26,3 +26,4 @@ class ExecuteTextCompletionUsecases(Command):
     ]
     execution_type: UsecaseCommandsExecutionType
     prompt_params_list: Optional[List[Dict[str, Any]]] = None
+    params_mapping: Optional[Dict[str, str]] = None
