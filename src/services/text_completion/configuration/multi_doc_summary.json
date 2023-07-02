@@ -36,7 +36,7 @@
     },
     {
         "usecase": "multi_doc_summary",
-        "variant": "multi_xscience_two_step",
+        "variant": "multi_xscience_mds_step",
         "version": 1,
         "usecase_params": [
             "number_of_words",

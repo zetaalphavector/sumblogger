@@ -54,7 +54,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 200
@@ -87,7 +87,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 200
@@ -116,6 +116,39 @@
                             {
                                 "sender": "user",
                                 "content": "Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "single_doc_summary",
+        "variant": "multi_science_sds_step",
+        "version": 1,
+        "usecase_params": [
+            "main_document",
+            "ref_document"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 256
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous researcher in writing the related work section of a given scientific article. Your summaries are concise, informative and of high quality.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.\nYou want to create one short sentence for the referenced article, which can appear in the related work section of your article.\nYour article is either based on the ideas of the referenced article or it challenges them.\n\nScientific Article abstract:\n{{ main_document }}\n\nReferenced document abstract:\n{{ ref_document }}"
                             }
                         ]
                     }
