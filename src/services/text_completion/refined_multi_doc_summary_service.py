@@ -12,11 +12,7 @@ from src.services.text_completion.pass_through_service import (
     PassThroughTextCompletionService,
 )
 from src.services.text_completion.service_factory import TextCompletionServiceFactory
-from src.services.text_completion.types import (
-    ChatMessage,
-    ChatMessageSender,
-    PromptParams,
-)
+from src.types.text_completion import ChatMessage, ChatMessageSender, PromptParams
 
 
 @TextCompletionServiceFactory.register("refined_multi_doc_summary")

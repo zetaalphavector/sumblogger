@@ -17,7 +17,7 @@ from src.services.text_completion.client_factory import (
 )
 from src.services.text_completion.config_parser import TextCompletionConfigParser
 from src.services.text_completion.service_factory import TextCompletionService
-from src.services.text_completion.types import (
+from src.types.text_completion import (
     LLMConfig,
     PromptParams,
     TextCompletionServiceRequest,

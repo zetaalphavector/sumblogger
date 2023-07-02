@@ -4,7 +4,7 @@ from typing import Dict, Generic, List, Optional, TypeVar
 
 from typing_extensions import TypedDict, Unpack
 
-from src.services.text_completion.types import LLMConfig
+from src.types.text_completion import LLMConfig
 
 
 class TextCompletionRequest(TypedDict):

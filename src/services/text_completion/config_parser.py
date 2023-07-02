@@ -2,7 +2,7 @@ from typing import List, Optional
 
 from jinja2 import Template
 
-from src.services.text_completion.types import (
+from src.types.text_completion import (
     BotConversation,
     ChatMessage,
     PromptParams,

@@ -10,11 +10,8 @@ from src.services.text_completion.repository.usecase_config_repo import (
     TextCompletionUsecaseConfigRepository,
 )
 from src.services.text_completion.service_factory import TextCompletionServiceFactory
-from src.services.text_completion.types import (
-    PromptParams,
-    TextCompletionServiceRequest,
-)
 from src.settings import DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG
+from src.types.text_completion import PromptParams, TextCompletionServiceRequest
 
 
 async def __execute_single(

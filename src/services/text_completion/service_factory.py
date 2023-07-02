@@ -1,10 +1,7 @@
 from typing import Callable, Dict, List, Optional, Type
 
 from src.services.text_completion.client import TextCompletionClientConfig
-from src.services.text_completion.types import (
-    PromptParams,
-    TextCompletionServiceRequest,
-)
+from src.types.text_completion import PromptParams, TextCompletionServiceRequest
 
 
 class TextCompletionService:

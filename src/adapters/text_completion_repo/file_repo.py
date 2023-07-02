@@ -8,7 +8,7 @@ from pydantic import parse_obj_as
 from src.services.text_completion.repository.usecase_config_repo import (
     TextCompletionUsecaseConfigRepository,
 )
-from src.services.text_completion.types import TextCompletionUsecaseConfig
+from src.types.text_completion import TextCompletionUsecaseConfig
 
 
 class FileTextCompletionUsecaseConfigRepository(TextCompletionUsecaseConfigRepository):

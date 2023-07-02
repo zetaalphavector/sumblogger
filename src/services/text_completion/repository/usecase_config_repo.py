@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from src.services.text_completion.types import TextCompletionUsecaseConfig
+from src.types.text_completion import TextCompletionUsecaseConfig
 
 
 class TextCompletionUsecaseConfigRepository(ABC):

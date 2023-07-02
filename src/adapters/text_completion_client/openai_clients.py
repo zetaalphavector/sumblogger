@@ -17,7 +17,7 @@ from src.services.text_completion.client_factory import (
     TextCompletionModelType,
     TextCompletionProviderName,
 )
-from src.services.text_completion.types import BotConversation, ChatMessageSender
+from src.types.text_completion import BotConversation, ChatMessageSender
 
 CHARACTERS_PER_TOKEN = 4
 

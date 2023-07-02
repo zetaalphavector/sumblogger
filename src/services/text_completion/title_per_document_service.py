@@ -3,7 +3,7 @@ from typing import List, Optional, cast
 from src.services.text_completion.client import ClientResponse, TextCompletionResponse
 from src.services.text_completion.service_factory import TextCompletionServiceFactory
 from src.services.text_completion.service_template import TextCompletionServiceTemplate
-from src.services.text_completion.types import PromptParams
+from src.types.text_completion import PromptParams
 
 
 @TextCompletionServiceFactory.register("title_per_document")
