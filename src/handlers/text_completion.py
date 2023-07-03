@@ -24,56 +24,57 @@ async def __execute_single(
         variant=cmd.variant,
     )
 
-    prompt_params_list = [
-        cast(PromptParams, prompt_params) for prompt_params in cmd.prompt_params_list
-    ]
+    prompt_params = cast(PromptParams, cmd.prompt_params)
 
     service = TextCompletionServiceFactory.create(
         usecase_config.service_name,
         DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG,
     )
-    response_params_list = await service.execute(
+    response_params = await service.execute(
         TextCompletionServiceRequest(
             usecase_config=usecase_config,
-            params_list=prompt_params_list,
+            params=prompt_params,
             should_flatten=cmd.should_flatten,
         )
     )
-    if response_params_list is None:
+    if response_params is None:
         raise ValueError("No response from text completion service.")
 
-    output_params_list = map_output_params_list(cmd, response_params_list)
+    output_params = __map_output_params_list(cmd, response_params)
 
-    return TextCompletionUsecasesItem(output_params_list=output_params_list)
+    return TextCompletionUsecasesItem(output_params=output_params)
 
 
-def map_output_params_list(
+def __map_output_params_list(
     cmd: Union[
         commands.ExecuteTextCompletionUsecases,
         commands.ExecuteTextCompletionSingleUsecase,
     ],
-    response_params_list,
-):
-    output_params_list: List[Dict[str, Any]] = []
-    for response_params in response_params_list:
-        if cmd.params_mapping is not None:
-            for key, new_key in cmd.params_mapping.items():
-                if key in response_params:
-                    response_params[new_key] = response_params.pop(key)
+    response_params: Dict[str, Any],
+) -> Dict[str, Any]:
 
-        output_params_list.append(response_params)
-    return output_params_list
+    if cmd.params_mapping is None:
+        return response_params
+
+    output_params: Dict[str, Any] = {}
+    for key, value in response_params.items():
+        if key in cmd.params_mapping:
+            output_params[cmd.params_mapping[key]] = value
+        else:
+            output_params[key] = value
+
+    return output_params
 
 
 async def execute_chain(
     cmd: commands.ExecuteTextCompletionUsecases,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
-    params_list = merge_two_params_lists([], cmd.prompt_params_list)
+    params = merge_two_param_dicts(cmd.prompt_params, {})
 
     for usecase_cmd in cmd.usecase_commands:
-        usecase_cmd.prompt_params_list = merge_two_params_lists(
-            params_list, usecase_cmd.prompt_params_list
+        usecase_cmd.prompt_params = merge_two_param_dicts(
+            params, usecase_cmd.prompt_params
         )
 
         usecase_item = await __execute(
@@ -81,9 +82,9 @@ async def execute_chain(
             text_completion_usecase_config_repo,
         )
 
-        params_list = usecase_item["output_params_list"]
+        params = usecase_item["output_params"]
 
-    return TextCompletionUsecasesItem(output_params_list=params_list)
+    return TextCompletionUsecasesItem(output_params=params)
 
 
 async def execute_parallel(
@@ -91,8 +92,10 @@ async def execute_parallel(
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
     for usecase_cmd in cmd.usecase_commands:
-        usecase_cmd.prompt_params_list = merge_two_params_lists(
-            cmd.prompt_params_list, usecase_cmd.prompt_params_list
+
+        usecase_cmd.prompt_params = merge_two_param_dicts(
+            cmd.prompt_params,
+            usecase_cmd.prompt_params,
         )
 
     usecases_items: List[TextCompletionUsecasesItem] = await asyncio.gather(
@@ -105,9 +108,9 @@ async def execute_parallel(
         ]
     )
 
-    item = __merge_output_params_lists(usecases_items)
-    output_params_list = map_output_params_list(cmd, item["output_params_list"])
-    return TextCompletionUsecasesItem(output_params_list=output_params_list)
+    item = __merge_output_params(usecases_items)
+    output_params = __map_output_params_list(cmd, item["output_params"])
+    return TextCompletionUsecasesItem(output_params=output_params)
 
 
 EXECUTION_TYPE_TO_HANDLER = {
@@ -148,20 +151,28 @@ async def handle_text_completion_usecases(
     )
 
 
-def __merge_output_params_lists(
+def __merge_output_params(
     usecase_items: List[TextCompletionUsecasesItem],
 ) -> TextCompletionUsecasesItem:
-    merged: Dict[str, List[Dict[str, Any]]] = {
-        "output_params_list": [{} for _ in usecase_items[0]["output_params_list"]]
-    }
-    for item in usecase_items:
-        for i, output_param in enumerate(item["output_params_list"]):
-            for key, value in output_param.items():
-                if key not in merged["output_params_list"][i]:
-                    merged["output_params_list"][i][key] = []
-                merged["output_params_list"][i][key].append(value)
+    output_params_dicts = [item["output_params"] for item in usecase_items]
+    key2count = {}
+    for output_params in output_params_dicts:
+        for key in output_params.keys():
+            if key not in key2count:
+                key2count[key] = 0
+            key2count[key] += 1
 
-    return cast(TextCompletionUsecasesItem, merged)
+    merged = {}
+    for output_params in output_params_dicts:
+        for key, value in output_params.items():
+            if key2count[key] == 1:
+                merged[key] = value
+            else:
+                if key not in merged:
+                    merged[key] = []
+                merged[key].append(value)
+
+    return TextCompletionUsecasesItem(output_params=merged)
 
 
 def merge_two_params_lists(
@@ -179,3 +190,16 @@ def merge_two_params_lists(
         usecase_params = params_list_2[index] if index < len(params_list_2) else {}
         all_usecase_params.append({**params, **usecase_params})
     return all_usecase_params
+
+
+def merge_two_param_dicts(
+    params_1: Optional[Dict[str, Any]],
+    params_2: Optional[Dict[str, Any]],
+) -> Dict[str, Any]:
+    if params_1 is None or params_2 is None:
+        return params_1 or params_2 or {}
+    else:
+        return {
+            **params_1,
+            **params_2,
+        }

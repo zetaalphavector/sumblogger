@@ -25,7 +25,7 @@ text_completion_router = APIRouter(tags=["text_completion"])
     response_model=TextCompletionUsecasesItem,
     status_code=200,
 )
-async def pass_through_usecase(
+async def text_completion(
     body: TextCompletionUsecasesFormBase,
     message_bus: MessageBus = Depends(get_message_bus),
 ):
@@ -39,7 +39,7 @@ async def pass_through_usecase(
                 execution_type=UsecaseCommandsExecutionType(
                     body["execution_type"].value
                 ),
-                prompt_params_list=body["prompt_params_list"],
+                prompt_params=body["prompt_params"],
             )
         )
         response: TextCompletionUsecasesItem = responses.pop(0)
@@ -64,17 +64,14 @@ def __usecase_command_from(
                 if isinstance(usecases_form["execution_type"], UsecasesExecutionType)
                 else usecases_form["execution_type"]
             ),
-            prompt_params_list=usecases_form["prompt_params_list"],
+            prompt_params=usecases_form["prompt_params"],
         )
     else:
         single_form = cast(TextCompletionSingleUsecaseForm, form)
         return ExecuteTextCompletionSingleUsecase(
             usecase=single_form["usecase"],
             variant=single_form["variant"],
-            prompt_params_list=single_form["prompt_params_list"],
-            should_flatten=single_form["should_flatten"]
-            if "should_flatten" in single_form
-            else False,
+            prompt_params=single_form["prompt_params"],
             params_mapping=single_form["params_mapping"]
             if "params_mapping" in single_form
             else None,

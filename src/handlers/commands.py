@@ -9,7 +9,7 @@ from zav.message_bus import Command
 class ExecuteTextCompletionSingleUsecase(Command):
     usecase: str
     variant: str
-    prompt_params_list: List[Dict[str, Any]]
+    prompt_params: Dict[str, Any]
     params_mapping: Optional[Dict[str, str]] = None
     should_flatten: bool = False
 
@@ -25,5 +25,5 @@ class ExecuteTextCompletionUsecases(Command):
         Union[ExecuteTextCompletionSingleUsecase, "ExecuteTextCompletionUsecases"]
     ]
     execution_type: UsecaseCommandsExecutionType
-    prompt_params_list: Optional[List[Dict[str, Any]]] = None
+    prompt_params: Optional[Dict[str, Any]] = None
     params_mapping: Optional[Dict[str, str]] = None

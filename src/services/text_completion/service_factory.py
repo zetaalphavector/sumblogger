@@ -13,7 +13,7 @@ class TextCompletionService:
 
     async def execute(
         self, request: TextCompletionServiceRequest
-    ) -> Optional[List[PromptParams]]:
+    ) -> Optional[PromptParams]:
         raise NotImplementedError
 
 

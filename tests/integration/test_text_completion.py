@@ -30,63 +30,51 @@ def summary_for(doc_id: int):
     return f"This is the summary for document {doc_id}"
 
 
-def summary_request_for(number_of_docs: int, should_flatten: bool = False):
+def summary_usecase_for(
+    number_of_docs: int,
+    params_mapping: dict = {
+        "summary": "single_doc_summary",
+    },
+):
     return {
-        "usecase": "single_doc_summary",
-        "variant": "scitldr_vanilla",
-        "prompt_params_list": [
+        "execution_type": "parallel",
+        "prompt_params": {},
+        "usecase_forms": [
             {
-                "document": document_for(doc_id),
+                "usecase": "single_doc_summary",
+                "variant": "scitldr_vanilla",
+                "prompt_params": {
+                    "document": document_for(doc_id),
+                },
+                "params_mapping": params_mapping,
             }
             for doc_id in range(number_of_docs)
         ],
-        "params_mapping": {
-            "summary": "single_doc_summary",
-        },
-        "should_flatten": should_flatten,
     }
 
 
 def second_step_multidoc_summary_request_for(
     variant: str,
     output_var_name: str,
-    should_flatten: bool = False,
 ):
     return {
         "usecase": "multi_doc_summary",
         "variant": variant,
-        "prompt_params_list": [
-            {
-                "number_of_words": NUMBER_OF_SUMMARY_WORDS,
-            }
-        ],
+        "prompt_params": {
+            "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+        },
         "params_mapping": {
             "summary": output_var_name,
             "documents": "single_doc_summaries",
         },
-        "should_flatten": should_flatten,
     }
 
 
 def expected_output_for(number_of_docs: int):
-    return [
-        {
-            "document": document_for(doc_id),
-            "single_doc_summary": summary_for(doc_id),
-        }
-        for doc_id in range(number_of_docs)
-    ]
-
-
-def expected_flattened_output_for(number_of_docs: int):
-    return [
-        {
-            "document": [document_for(doc_id) for doc_id in range(number_of_docs)],
-            "single_doc_summary": [
-                summary_for(doc_id) for doc_id in range(number_of_docs)
-            ],
-        }
-    ]
+    return {
+        "document": [document_for(doc_id) for doc_id in range(number_of_docs)],
+        "single_doc_summary": [summary_for(doc_id) for doc_id in range(number_of_docs)],
+    }
 
 
 def text_completion_response_from(answer):
@@ -118,96 +106,68 @@ def text_completion_request_for(document):
     )
 
 
-def expected_two_batch_summaries_output(number_of_docs):
-    return [
-        {
-            "output_params_list": [
-                {
-                    "document": document_for(i),
-                    "first_batch_summary": summary_for(i),
-                }
-                for i in range(number_of_docs)
-            ]
-        },
-        {
-            "output_params_list": [
-                {
-                    "document": document_for(i),
-                    "second_batch_summary": summary_for(i),
-                }
-                for i in range(number_of_docs)
-            ]
-        },
-    ]
-
-
-def expected_flattened_two_batch_summaries_output(number_of_docs):
-    return [
-        {
-            "output_params_list": [
-                {
-                    "document": 2 * [document_for(i)],
-                    "first_batch_summary": [summary_for(i)],
-                    "second_batch_summary": [summary_for(i)],
-                }
-                for i in range(number_of_docs)
-            ]
-        }
-    ]
-
-
 def expected_two_step_summary_output(number_of_docs):
-    return [
-        {
-            "input_document": document_for(i),
-            "summary_of_summary": f"This is the summary of the summary {i}",
-            "summary": summary_for(i),
-        }
-        for i in range(number_of_docs)
-    ]
+    return {
+        "input_document": [document_for(i) for i in range(number_of_docs)],
+        "summary_of_summary": [
+            f"This is the summary of the summary {i}" for i in range(number_of_docs)
+        ],
+        "summary": [summary_for(i) for i in range(number_of_docs)],
+    }
 
 
 def two_step_single_doc_summary_chain(number_of_docs):
     return [
         {
-            **summary_request_for(number_of_docs, should_flatten=False),
-            "params_mapping": {
-                "document": "input_document",
-                "summary": "document",
-            },
-        },
-        {
-            "usecase": "single_doc_summary",
-            "variant": "scitldr_vanilla",
-            "prompt_params_list": [],
-            "params_mapping": {
-                "summary": "summary_of_summary",
-                "document": "summary",
-            },
-            "should_flatten": False,
-        },
+            "execution_type": "parallel",
+            "prompt_params": {},
+            "usecase_forms": [
+                {
+                    "execution_type": "chain",
+                    "prompt_params": {},
+                    "usecase_forms": [
+                        {
+                            "usecase": "single_doc_summary",
+                            "variant": "scitldr_vanilla",
+                            "prompt_params": {
+                                "document": document_for(doc_id),
+                            },
+                            "params_mapping": {
+                                "summary": "document",
+                                "document": "input_document",
+                            },
+                        },
+                        {
+                            "usecase": "single_doc_summary",
+                            "variant": "scitldr_vanilla",
+                            "prompt_params": {},
+                            "params_mapping": {
+                                "summary": "summary_of_summary",
+                                "document": "summary",
+                            },
+                        },
+                    ],
+                }
+                for doc_id in range(number_of_docs)
+            ],
+        }
     ]
 
 
 def two_step_multi_doc_summary_chain(number_of_docs):
     return [
-        {
-            **summary_request_for(number_of_docs, should_flatten=True),
-            "params_mapping": {
-                "document": "input_documents",
-                "summary": "ref_documents",
-            },
-        },
+        summary_usecase_for(
+            number_of_docs,
+            {"document": "input_documents", "summary": "ref_documents"},
+        ),
         {
             "usecase": "multi_doc_summary",
             "variant": "multi_xscience_two_step",
-            "prompt_params_list": [
-                {
-                    "main_document": "This is the main document",
-                    "number_of_words": NUMBER_OF_SUMMARY_WORDS,
-                    "ref_document_ids": [str(i) for i in range(number_of_docs)],
-                }
-            ],
+            "prompt_params": {
+                "main_document": "This is the main document",
+                "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+                "ref_document_ids": [str(i) for i in range(number_of_docs)],
+            },
             "params_mapping": {
                 "summary": "multi_doc_summary",
             },
@@ -216,27 +176,20 @@ def two_step_multi_doc_summary_chain(number_of_docs):
 
 
 def expected_two_step_multi_doc_summary_output(number_of_docs):
-    return [
-        {
-            "input_documents": [document_for(id) for id in range(number_of_docs)],
-            "ref_documents": [summary_for(i) for i in range(number_of_docs)],
-            "main_document": "This is the main document",
-            "number_of_words": NUMBER_OF_SUMMARY_WORDS,
-            "ref_document_ids": [str(i) for i in range(number_of_docs)],
-            "multi_doc_summary": "This is the multi-doc summary",
-        }
-    ]
+    return {
+        "input_documents": [document_for(id) for id in range(number_of_docs)],
+        "ref_documents": [summary_for(i) for i in range(number_of_docs)],
+        "main_document": "This is the main document",
+        "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+        "ref_document_ids": [str(i) for i in range(number_of_docs)],
+        "multi_doc_summary": "This is the multi-doc summary",
+    }
 
 
 class TestTextCompletionUsecase:
     @mark.parametrize(
         "number_of_docs, should_flatten, expected_output",
         [
-            (
-                2,
-                True,
-                expected_flattened_output_for(number_of_docs=2),
-            ),
             (
                 2,
                 False,
@@ -261,14 +214,9 @@ class TestTextCompletionUsecase:
     ):
 
         payload = {
-            "prompt_params_list": [],
+            "prompt_params": {},
             "execution_type": "chain",
-            "usecase_forms": [
-                summary_request_for(
-                    number_of_docs=number_of_docs,
-                    should_flatten=should_flatten,
-                )
-            ],
+            "usecase_forms": [summary_usecase_for(number_of_docs)],
         }
         single_doc_summary_client_mock = text_completion_client_mock.create()
         text_completion_client_factory_mock.create.return_value = (
@@ -287,7 +235,7 @@ class TestTextCompletionUsecase:
         json_resp = resp.json()
         assert resp.status_code == 200
 
-        assert json_resp["output_params_list"] == expected_output
+        assert json_resp["output_params"] == expected_output
 
         single_doc_summary_client_mock.complete.asssert_has_calls(
             [
@@ -310,17 +258,16 @@ class TestTextCompletionUsecase:
     ):
         number_of_docs = 2
         payload = {
-            "prompt_params_list": [],
+            "prompt_params": {},
             "execution_type": "chain",
             "usecase_forms": two_step_multi_doc_summary_chain(number_of_docs),
         }
 
         single_doc_summary_client_mock = text_completion_client_mock.create()
         multi_doc_summary_client_mock = text_completion_client_mock.create()
-        text_completion_client_factory_mock.create.side_effect = [
-            single_doc_summary_client_mock,
-            multi_doc_summary_client_mock,
-        ]
+        text_completion_client_factory_mock.create.side_effect = number_of_docs * [
+            single_doc_summary_client_mock
+        ] + [multi_doc_summary_client_mock]
         single_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
@@ -337,9 +284,9 @@ class TestTextCompletionUsecase:
         assert resp.status_code == 200
         json_resp = resp.json()
 
-        assert json_resp[
-            "output_params_list"
-        ] == expected_two_step_multi_doc_summary_output(number_of_docs)
+        assert json_resp["output_params"] == expected_two_step_multi_doc_summary_output(
+            number_of_docs
+        )
 
     @patch(
         "src.services.text_completion.service_template.TextCompletionClientFactory",
@@ -356,7 +303,7 @@ class TestTextCompletionUsecase:
         number_of_docs = 2
         payload = {
             "execution_type": "chain",
-            "prompt_params_list": [],
+            "prompt_params": {},
             "usecase_forms": two_step_single_doc_summary_chain(number_of_docs),
         }
 
@@ -365,7 +312,10 @@ class TestTextCompletionUsecase:
         text_completion_client_factory_mock.create.side_effect = [
             single_doc_summary_client_mock_1,
             single_doc_summary_client_mock_2,
+            single_doc_summary_client_mock_1,
+            single_doc_summary_client_mock_2,
         ]
+
         single_doc_summary_client_mock_1.complete.side_effect = [
             text_completion_response_from(summary_for(index))
             for index in range(number_of_docs)
@@ -383,7 +333,7 @@ class TestTextCompletionUsecase:
         assert resp.status_code == 200
         json_resp = resp.json()
 
-        assert json_resp["output_params_list"] == expected_two_step_summary_output(
+        assert json_resp["output_params"] == expected_two_step_summary_output(
             number_of_docs
         )
 
@@ -402,20 +352,12 @@ class TestTextCompletionUsecase:
         number_of_docs = 2
         payload = {
             "execution_type": "parallel",
-            "prompt_params_list": [],
+            "prompt_params": {},
             "usecase_forms": [
-                {
-                    **summary_request_for(number_of_docs, should_flatten=False),
-                    "params_mapping": {
-                        "summary": "first_batch_summary",
-                    },
-                },
-                {
-                    **summary_request_for(number_of_docs, should_flatten=False),
-                    "params_mapping": {
-                        "summary": "second_batch_summary",
-                    },
-                },
+                summary_usecase_for(number_of_docs, {"summary": "first_batch_summary"}),
+                summary_usecase_for(
+                    number_of_docs, {"summary": "second_batch_summary"}
+                ),
             ],
         }
 
@@ -423,6 +365,8 @@ class TestTextCompletionUsecase:
         single_doc_summary_client_mock_2 = text_completion_client_mock.create()
         text_completion_client_factory_mock.create.side_effect = [
             single_doc_summary_client_mock_1,
+            single_doc_summary_client_mock_1,
+            single_doc_summary_client_mock_2,
             single_doc_summary_client_mock_2,
         ]
         single_doc_summary_client_mock_1.complete.side_effect = [
@@ -441,14 +385,14 @@ class TestTextCompletionUsecase:
         assert resp.status_code == 200
         json_resp = resp.json()
 
-        assert json_resp["output_params_list"] == [
-            {
-                "document": 2 * [document_for(i)],
-                "first_batch_summary": [summary_for(i)],
-                "second_batch_summary": [summary_for(i)],
-            }
-            for i in range(number_of_docs)
-        ]
+        assert json_resp["output_params"] == {
+            "document": [
+                [document_for(i) for i in range(number_of_docs)],
+                [document_for(i) for i in range(number_of_docs)],
+            ],
+            "first_batch_summary": [summary_for(i) for i in range(number_of_docs)],
+            "second_batch_summary": [summary_for(i) for i in range(number_of_docs)],
+        }
 
     @patch(
         "src.services.text_completion.service_template.TextCompletionClientFactory",
@@ -465,18 +409,15 @@ class TestTextCompletionUsecase:
         number_of_docs = 3
         payload = {
             "execution_type": "chain",
-            "prompt_params_list": [],
+            "prompt_params": {},
             "usecase_forms": [
-                {
-                    **summary_request_for(number_of_docs, should_flatten=True),
-                    "params_mapping": {
-                        "summary": "documents",
-                        "document": "input_documents",
-                    },
-                },
+                summary_usecase_for(
+                    number_of_docs,
+                    {"summary": "documents", "document": "input_documents"},
+                ),
                 {
                     "execution_type": "parallel",
-                    "prompt_params_list": [],
+                    "prompt_params": {},
                     "usecase_forms": [
                         second_step_multidoc_summary_request_for(
                             "intro_paragraph", "intro_summary"
@@ -491,11 +432,9 @@ class TestTextCompletionUsecase:
         single_doc_summary_client_mock = text_completion_client_mock.create()
         multi_doc_summary_client_mock_1 = text_completion_client_mock.create()
         multi_doc_summary_client_mock_2 = text_completion_client_mock.create()
-        text_completion_client_factory_mock.create.side_effect = [
-            single_doc_summary_client_mock,
-            multi_doc_summary_client_mock_1,
-            multi_doc_summary_client_mock_2,
-        ]
+        text_completion_client_factory_mock.create.side_effect = number_of_docs * [
+            single_doc_summary_client_mock
+        ] + [multi_doc_summary_client_mock_1, multi_doc_summary_client_mock_2]
 
         single_doc_summary_client_mock.complete.side_effect = [
             text_completion_response_from(summary_for(index))
@@ -515,21 +454,19 @@ class TestTextCompletionUsecase:
         json_resp = resp.json()
         assert resp.status_code == 200
 
-        assert json_resp["output_params_list"] == [
-            {
-                "input_documents": [
-                    [document_for(i) for i in range(number_of_docs)],
-                    [document_for(i) for i in range(number_of_docs)],
-                ],
-                "single_doc_summaries": [
-                    [summary_for(i) for i in range(number_of_docs)],
-                    [summary_for(i) for i in range(number_of_docs)],
-                ],
-                "intro_summary": ["This is the intro summary"],
-                "detailed_summary": ["This is the detailed summary"],
-                "number_of_words": [NUMBER_OF_SUMMARY_WORDS, NUMBER_OF_SUMMARY_WORDS],
-            }
-        ]
+        assert json_resp["output_params"] == {
+            "input_documents": [
+                [document_for(i) for i in range(number_of_docs)],
+                [document_for(i) for i in range(number_of_docs)],
+            ],
+            "single_doc_summaries": [
+                [summary_for(i) for i in range(number_of_docs)],
+                [summary_for(i) for i in range(number_of_docs)],
+            ],
+            "intro_summary": "This is the intro summary",
+            "detailed_summary": "This is the detailed summary",
+            "number_of_words": [NUMBER_OF_SUMMARY_WORDS, NUMBER_OF_SUMMARY_WORDS],
+        }
 
     @patch(
         "src.services.text_completion.service_template.TextCompletionClientFactory",
@@ -546,18 +483,16 @@ class TestTextCompletionUsecase:
         number_of_docs = 3
         payload = {
             "execution_type": "chain",
-            "prompt_params_list": [],
+            "prompt_params": {},
             "usecase_forms": [
                 {
                     "usecase": "title_generation",
                     "variant": "title_per_intro_summary",
-                    "prompt_params_list": [
-                        {
-                            "documents": [
-                                document_for(doc_id) for doc_id in range(number_of_docs)
-                            ],
-                        }
-                    ],
+                    "prompt_params": {
+                        "documents": [
+                            document_for(doc_id) for doc_id in range(number_of_docs)
+                        ],
+                    },
                     "should_flatten": False,
                 }
             ],
@@ -578,12 +513,10 @@ class TestTextCompletionUsecase:
         json_resp = resp.json()
         assert resp.status_code == 200
 
-        assert json_resp["output_params_list"] == [
-            {
-                "documents": [document_for(i) for i in range(number_of_docs)],
-                "titles": ["Title A", "Title B", "Title C"],
-            }
-        ]
+        assert json_resp["output_params"] == {
+            "documents": [document_for(i) for i in range(number_of_docs)],
+            "titles": ["Title A", "Title B", "Title C"],
+        }
 
     @patch(
         "src.services.text_completion.service_template.TextCompletionClientFactory",
@@ -600,20 +533,18 @@ class TestTextCompletionUsecase:
         number_of_docs = 3
         payload = {
             "execution_type": "chain",
-            "prompt_params_list": [],
+            "prompt_params": {},
             "usecase_forms": [
                 {
                     "usecase": "multi_doc_summary",
                     "variant": "refine_summary",
-                    "prompt_params_list": [
-                        {
-                            "documents": [
-                                document_for(doc_id) for doc_id in range(number_of_docs)
-                            ],
-                            "number_of_words": NUMBER_OF_SUMMARY_WORDS,
-                            "retries": 1,
-                        }
-                    ],
+                    "prompt_params": {
+                        "documents": [
+                            document_for(doc_id) for doc_id in range(number_of_docs)
+                        ],
+                        "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+                        "retries": 1,
+                    },
                     "should_flatten": False,
                 }
             ],
@@ -637,11 +568,9 @@ class TestTextCompletionUsecase:
         json_resp = resp.json()
         assert resp.status_code == 200
 
-        assert json_resp["output_params_list"] == [
-            {
-                "documents": [document_for(i) for i in range(number_of_docs)],
-                "summary": "The refined summary has all the needed citations [0], [1], [2]",  # noqa
-                "number_of_words": NUMBER_OF_SUMMARY_WORDS,
-                "retries": 1,
-            }
-        ]
+        assert json_resp["output_params"] == {
+            "documents": [document_for(i) for i in range(number_of_docs)],
+            "summary": "The refined summary has all the needed citations [0], [1], [2]",  # noqa
+            "number_of_words": NUMBER_OF_SUMMARY_WORDS,
+            "retries": 1,
+        }

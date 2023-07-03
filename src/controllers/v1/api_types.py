@@ -7,9 +7,8 @@ from typing_extensions import NotRequired, TypedDict
 class TextCompletionSingleUsecaseForm(TypedDict):
     usecase: str
     variant: str
-    prompt_params_list: List[Dict[str, Any]]
+    prompt_params: Dict[str, Any]
     params_mapping: NotRequired[Dict[str, str]]
-    should_flatten: NotRequired[bool]
 
 
 class UsecasesExecutionType(enum.Enum):
@@ -18,13 +17,16 @@ class UsecasesExecutionType(enum.Enum):
 
 
 class TextCompletionUsecasesFormBase(TypedDict):
-    prompt_params_list: List[Dict[str, Any]]
+    prompt_params: Dict[str, Any]
+    # usecase_forms should be
+    # List[Union[TextCompletionSingleUsecaseForm, "TextCompletionUsecasesForm"]]
+    # but mypy doesn't allow it
     usecase_forms: List[Any]
     execution_type: UsecasesExecutionType
 
 
 class TextCompletionUsecasesForm(TypedDict):
-    prompt_params_list: List[Dict[str, Any]]
+    prompt_params: Dict[str, Any]
     usecase_forms: List[
         Union[TextCompletionSingleUsecaseForm, "TextCompletionUsecasesForm"]
     ]
@@ -32,4 +34,4 @@ class TextCompletionUsecasesForm(TypedDict):
 
 
 class TextCompletionUsecasesItem(TypedDict):
-    output_params_list: List[Dict[str, Any]]
+    output_params: Dict[str, Any]

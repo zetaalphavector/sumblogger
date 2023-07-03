@@ -1,5 +1,4 @@
-import asyncio
-from typing import Any, Awaitable, Dict, List, Optional, cast
+from typing import List, Optional, cast
 
 from typing_extensions import TypedDict
 
@@ -47,13 +46,12 @@ class TextCompletionServiceTemplate(TextCompletionService):
 
     async def execute(
         self, request: TextCompletionServiceRequest
-    ) -> Optional[List[PromptParams]]:
+    ) -> Optional[PromptParams]:
         for param in request["usecase_config"].usecase_params:
-            for params in request["params_list"]:
-                if param not in params:
-                    raise Exception(
-                        f"Param {param} not given for usecase {request['usecase_config'].usecase}"  # noqa: E501
-                    )
+            if param not in request["params"]:
+                raise Exception(
+                    f"Param {param} not given for usecase {request['usecase_config'].usecase}"  # noqa: E501
+                )
 
         llms = iter(request["usecase_config"].llm_identifier_2_config.items())
         llm_identifier, llm_config = next(llms)
@@ -64,45 +62,20 @@ class TextCompletionServiceTemplate(TextCompletionService):
 
         try:
             client = self.text_completion_client_from(llm_identifier)
-            service_responses = await self.execute_all(request, client, llm_config)
+            service_response = await self.execute_one(
+                request["params"],
+                llm_config,
+                request["usecase_config"].output_params,
+                client,
+            )
 
-            if service_responses is None:
+            if service_response is None:
                 return None
 
-            if request["should_flatten"]:
-                flattened: Dict[str, Any] = {}
-                for response in service_responses:
-                    for key, value in response.items():
-                        if key not in flattened:
-                            flattened[key] = []
-                        flattened[key].append(value)
-                return [cast(PromptParams, flattened)]
-            else:
-                return service_responses
+            return service_response
 
         except Exception as e:
             raise e
-
-    async def execute_all(
-        self,
-        request: TextCompletionServiceRequest,
-        client: TextCompletionClient,
-        llm_config_template: LLMConfig,
-    ) -> Optional[List[PromptParams]]:
-        return await asyncio.gather(
-            *[
-                cast(
-                    Awaitable[TextCompletionResponse],
-                    self.execute_one(
-                        params,
-                        llm_config_template,
-                        request["usecase_config"].output_params,
-                        client,
-                    ),
-                )
-                for params in request["params_list"]
-            ]
-        )
 
     async def execute_one(
         self,
