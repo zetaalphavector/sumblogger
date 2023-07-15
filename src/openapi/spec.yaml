@@ -9,34 +9,42 @@ components:
           type: array
       title: HTTPValidationError
       type: object
-    TextCompletionUsecaseForm:
+    TextCompletionUsecasesFormBase:
       properties:
-        prompt_params:
-          additionalProperties:
-            type: string
-          title: Prompt Params
-          type: object
-        usecase:
-          title: Usecase
-          type: string
-        variant:
-          title: Variant
-          type: string
+        execution_type:
+          $ref: '#/components/schemas/UsecasesExecutionType'
+        prompt_params_list:
+          items:
+            type: object
+          title: Prompt Params List
+          type: array
+        usecase_forms:
+          items: {}
+          title: Usecase Forms
+          type: array
       required:
-      - usecase
-      - variant
-      - prompt_params
-      title: TextCompletionUsecaseForm
+      - prompt_params_list
+      - usecase_forms
+      - execution_type
+      title: TextCompletionUsecasesFormBase
       type: object
-    TextCompletionUsecaseItem:
+    TextCompletionUsecasesItem:
       properties:
-        response:
-          title: Response
-          type: string
+        output_params_list:
+          items:
+            type: object
+          title: Output Params List
+          type: array
       required:
-      - response
-      title: TextCompletionUsecaseItem
+      - output_params_list
+      title: TextCompletionUsecasesItem
       type: object
+    UsecasesExecutionType:
+      description: An enumeration.
+      enum:
+      - chain
+      - parallel
+      title: UsecasesExecutionType
     ValidationError:
       properties:
         loc:
@@ -61,21 +69,21 @@ info:
   version: 0.1.0
 openapi: 3.0.2
 paths:
-  /v1/text_completion/pass_through:
+  /v1/text_completion:
     post:
-      operationId: get_single_docs_summaries
+      operationId: pass_through_usecase
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/TextCompletionUsecaseForm'
+              $ref: '#/components/schemas/TextCompletionUsecasesFormBase'
         required: true
       responses:
         '200':
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/TextCompletionUsecaseItem'
+                $ref: '#/components/schemas/TextCompletionUsecasesItem'
           description: Successful Response
         '422':
           content:
@@ -83,6 +91,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HTTPValidationError'
           description: Validation Error
-      summary: Get Single Docs Summaries
+      summary: Pass Through Usecase
       tags:
       - text_completion
