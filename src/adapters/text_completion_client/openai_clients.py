@@ -8,6 +8,8 @@ from src.services.text_completion.client import (
     ClientResponse,
     ContextLengthExceededError,
     OpenAiClientConfig,
+    RateLimitExceededError,
+    ServiceUnavailableError,
     TextCompletionClient,
     TextCompletionRequest,
     TextCompletionResponse,
@@ -101,7 +103,10 @@ class OpenAiPromptClient(TextCompletionClient):
                 )
             else:
                 raise e
-
+        except openai.error.RateLimitError as e:  # type: ignore
+            raise RateLimitExceededError(e)
+        except openai.error.ServiceUnavailableError as e:  # type: ignore
+            raise ServiceUnavailableError(e)
         except Exception as e:
             return ClientResponse(response=None, error=e)
 
@@ -161,6 +166,10 @@ class OpenAiPromptWithLogitsClient(TextCompletionClient):
             else:
                 raise e
 
+        except openai.error.RateLimitError as e:  # type: ignore
+            raise RateLimitExceededError(e)
+        except openai.error.ServiceUnavailableError as e:  # type: ignore
+            raise ServiceUnavailableError(e)
         except Exception as e:
             return ClientResponse(response=None, error=e)
 
@@ -242,6 +251,10 @@ class OpenAiChatClient(TextCompletionClient):
                 raise __context_length_exception_from(str(e.user_message))
             else:
                 raise e
+        except openai.error.RateLimitError as e:  # type: ignore
+            raise RateLimitExceededError(e)
+        except openai.error.ServiceUnavailableError as e:  # type: ignore
+            raise ServiceUnavailableError(e)
 
         except Exception as e:
             raise e

@@ -1,9 +1,12 @@
 from typing import List, Optional, cast
 
+import backoff
 from typing_extensions import TypedDict
 
 from src.services.text_completion.client import (
     ClientResponse,
+    RateLimitExceededError,
+    ServiceUnavailableError,
     TextCompletionClient,
     TextCompletionClientConfig,
     TextCompletionRequest,
@@ -77,6 +80,11 @@ class TextCompletionServiceTemplate(TextCompletionService):
         except Exception as e:
             raise e
 
+    @backoff.on_exception(
+        backoff.expo,
+        (RateLimitExceededError, ServiceUnavailableError),
+        max_time=300,
+    )
     async def execute_one(
         self,
         params: PromptParams,
@@ -94,10 +102,9 @@ class TextCompletionServiceTemplate(TextCompletionService):
         if service_response is None:
             raise Exception("TextCompletionService response is None")
 
-        service_response = self.__merge_with_input_params(service_response, params)
-
         service_response = await self.postprocess_one(
             service_response,
+            params,
             client_response,
             client_request,
             client,
@@ -109,6 +116,7 @@ class TextCompletionServiceTemplate(TextCompletionService):
     async def postprocess_one(
         self,
         service_response: PromptParams,
+        params: PromptParams,
         client_response: ClientResponse[TextCompletionResponse],
         client_request: TextCompletionRequest,
         client: TextCompletionClient,
@@ -154,10 +162,3 @@ class TextCompletionServiceTemplate(TextCompletionService):
         )
 
         return TextCompletionRequest(llm_config=llm_config_merged)
-
-    def __merge_with_input_params(
-        self,
-        service_responses: PromptParams,
-        input_params_list: PromptParams,
-    ) -> PromptParams:
-        return cast(PromptParams, {**service_responses, **input_params_list})

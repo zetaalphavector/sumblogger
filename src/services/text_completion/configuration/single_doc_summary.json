@@ -155,5 +155,38 @@
                 }
             }
         }
+    },
+    {
+        "usecase": "single_doc_summary",
+        "variant": "tldr",
+        "version": 1,
+        "usecase_params": [
+            "document",
+            "number_of_words"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 256
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short, concise, comprehensive, informative, and stand-alone sentence summarizing the provided document in {{ number_of_words }} words. Be direct to the point and avoid phrases like 'this article' or 'the study' or 'this paper' or 'the paper' etc.\nThe sentence should be not only informative but also appealing to a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
     }
 ]

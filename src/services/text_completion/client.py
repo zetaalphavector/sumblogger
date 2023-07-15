@@ -42,6 +42,14 @@ class ContextLengthExceededError(Exception):
         self.extra_characters = extra_characters
 
 
+class RateLimitExceededError(Exception):
+    ...
+
+
+class ServiceUnavailableError(Exception):
+    ...
+
+
 class TextCompletionClientBaseConfig(TypedDict):
     model_name: str
 

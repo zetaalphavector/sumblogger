@@ -35,3 +35,15 @@ class TextCompletionUsecasesForm(TypedDict):
 
 class TextCompletionUsecasesItem(TypedDict):
     output_params: Dict[str, Any]
+
+
+class DocumentsClustersSummariesOutputParams(TypedDict):
+    intro_paragraphs: List[str]
+    detailed_paragraphs: List[str]
+    single_doc_summaries: List[List[str]]
+    cluster_ids: List[str]
+    doc_ids: List[List[str]]
+
+
+class DocumentsClustersSummariesItem(TypedDict):
+    output_params: DocumentsClustersSummariesOutputParams

@@ -1,5 +1,5 @@
 import asyncio
-from typing import Any, Dict, List, Optional, Union, cast
+from typing import Any, Dict, List, Optional, Set, Union, cast
 
 from zav.message_bus import EventHandlerRegistry  # noqa F401
 from zav.message_bus import CommandHandlerRegistry, Message
@@ -23,7 +23,6 @@ async def __execute_single(
         usecase=cmd.usecase,
         variant=cmd.variant,
     )
-
     prompt_params = cast(PromptParams, cmd.prompt_params)
 
     service = TextCompletionServiceFactory.create(
@@ -34,13 +33,13 @@ async def __execute_single(
         TextCompletionServiceRequest(
             usecase_config=usecase_config,
             params=prompt_params,
-            should_flatten=cmd.should_flatten,
         )
     )
     if response_params is None:
         raise ValueError("No response from text completion service.")
 
-    output_params = __map_output_params_list(cmd, response_params)
+    output_params = __merge_two_param_dicts(cmd.prompt_params, response_params)
+    output_params = __map_output_params_list(cmd, output_params)
 
     return TextCompletionUsecasesItem(output_params=output_params)
 
@@ -70,10 +69,10 @@ async def execute_chain(
     cmd: commands.ExecuteTextCompletionUsecases,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
-    params = merge_two_param_dicts(cmd.prompt_params, {})
+    params = __merge_two_param_dicts(cmd.prompt_params, {})
 
     for usecase_cmd in cmd.usecase_commands:
-        usecase_cmd.prompt_params = merge_two_param_dicts(
+        usecase_cmd.prompt_params = __merge_two_param_dicts(
             params, usecase_cmd.prompt_params
         )
 
@@ -82,7 +81,10 @@ async def execute_chain(
             text_completion_usecase_config_repo,
         )
 
-        params = usecase_item["output_params"]
+        params = __merge_two_param_dicts(
+            usecase_cmd.prompt_params,
+            usecase_item["output_params"],
+        )
 
     return TextCompletionUsecasesItem(output_params=params)
 
@@ -91,12 +93,15 @@ async def execute_parallel(
     cmd: commands.ExecuteTextCompletionUsecases,
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
+    global_param_keys = set(cmd.prompt_params.keys()) if cmd.prompt_params else set()
+    input_param_keys = set(cmd.prompt_params.keys()) if cmd.prompt_params else set()
     for usecase_cmd in cmd.usecase_commands:
 
-        usecase_cmd.prompt_params = merge_two_param_dicts(
+        usecase_cmd.prompt_params = __merge_two_param_dicts(
             cmd.prompt_params,
             usecase_cmd.prompt_params,
         )
+        input_param_keys = input_param_keys.union(set(usecase_cmd.prompt_params.keys()))
 
     usecases_items: List[TextCompletionUsecasesItem] = await asyncio.gather(
         *[
@@ -107,8 +112,12 @@ async def execute_parallel(
             for usecase_cmd in cmd.usecase_commands
         ]
     )
+    item = __merge_output_params(usecases_items, global_param_keys)
+    item["output_params"] = __merge_two_param_dicts(
+        cmd.prompt_params,
+        item["output_params"],
+    )
 
-    item = __merge_output_params(usecases_items)
     output_params = __map_output_params_list(cmd, item["output_params"])
     return TextCompletionUsecasesItem(output_params=output_params)
 
@@ -153,6 +162,7 @@ async def handle_text_completion_usecases(
 
 def __merge_output_params(
     usecase_items: List[TextCompletionUsecasesItem],
+    input_param_keys: Set[str],
 ) -> TextCompletionUsecasesItem:
     output_params_dicts = [item["output_params"] for item in usecase_items]
     key2count = {}
@@ -163,14 +173,25 @@ def __merge_output_params(
             key2count[key] += 1
 
     merged = {}
-    for output_params in output_params_dicts:
-        for key, value in output_params.items():
-            if key2count[key] == 1:
-                merged[key] = value
-            else:
-                if key not in merged:
-                    merged[key] = []
-                merged[key].append(value)
+    if len(output_params_dicts) == 1:
+        for key, value in output_params_dicts[0].items():
+            if key not in input_param_keys:
+                merged[key] = [value]
+    else:
+        for output_params in output_params_dicts:
+            for key, value in output_params.items():
+                if key in input_param_keys:
+                    continue
+
+                # if key not in merged:
+                #     merged[key] = []
+                # merged[key].append(value)
+                if key2count[key] == 1:
+                    merged[key] = value
+                else:
+                    if key not in merged:
+                        merged[key] = []
+                    merged[key].append(value)
 
     return TextCompletionUsecasesItem(output_params=merged)
 
@@ -192,7 +213,7 @@ def merge_two_params_lists(
     return all_usecase_params
 
 
-def merge_two_param_dicts(
+def __merge_two_param_dicts(
     params_1: Optional[Dict[str, Any]],
     params_2: Optional[Dict[str, Any]],
 ) -> Dict[str, Any]:

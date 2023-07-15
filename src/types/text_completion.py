@@ -68,7 +68,6 @@ class SingleDocSummaryParams(PromptParams):
 class TextCompletionServiceRequest(TypedDict):
     usecase_config: TextCompletionUsecaseConfig
     params: PromptParams
-    should_flatten: bool
 
 
 class TextCompletionServiceResponse(TypedDict):

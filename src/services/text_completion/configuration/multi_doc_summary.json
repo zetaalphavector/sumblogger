@@ -17,7 +17,7 @@
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
                     "temperature": 0.0,
-                    "max_tokens": 3200
+                    "max_tokens": 512
                 },
                 "text_completion_config": {
                     "prompt_template": null,
@@ -26,7 +26,7 @@
                         "messages": [
                             {
                                 "sender": "user",
-                                "content": "You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.\nYou want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.\nBe fluent. Avoid repetitive information.\nRefer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their abstracts.\n\nScientific Article abstract:\n{{ main_document }}\n\nReferenced documents abstracts:\n {% for i in range(ref_documents|length) %}\n[{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}\n{% endfor %}"
+                                "content": "You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.\nYou want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.\nBe fluent. Avoid repetitive information.\nRefer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their abstracts.\n\nScientific Article abstract:\n{{ main_document }}\n\nReferenced documents abstracts:\n{% for i in range(ref_documents|length) %}\n[{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}\n{% endfor %}"
                             }
                         ]
                     }
@@ -52,7 +52,7 @@
             "chat:openai:gpt-3.5-turbo": {
                 "call_params": {
                     "temperature": 0.0,
-                    "max_tokens": 3200
+                    "max_tokens": 512
                 },
                 "text_completion_config": {
                     "prompt_template": null,
@@ -62,6 +62,231 @@
                             {
                                 "sender": "user",
                                 "content": "You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.\nYou want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.\nBe fluent. Avoid repetitive information.\nRefer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their short summaries.\n\nScientific Article abstract:\n{{ main_document }}\n\nReferenced documents summaries:\n {% for i in range(ref_documents|length) %}\n[{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "intro_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents",
+            "doc_ids"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that can be used as an informative introductory paragraph the given documents.\nThe paragraph should be informative and pleasant for a reader who is an experienced researcher in this field.\nFocus on what the given documents have in common and reveal a potential underlying trend in the field. Do not reference or cite any documents. Rely on the information provided in the documents, but do not use explicitly any text from them.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "oneshot_intro_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that can be used as an informative introductory paragraph the given documents.\nThe paragraph should be informative and pleasant for a reader who is an experienced researcher in this field.\nFocus on what the given documents have in common and reveal a potential underlying trend in the field. Do not reference or cite any documents. Rely on the information provided in the documents, but do not use explicitly any text from them.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\n\nDocuments:\n[d0]: A neural codec language model called Vall-E can synthesize high-quality personalized speech with only a 3-second recording, outperforming state-of-the-art zero-shot TTS systems.\n\n[d1]: Regeneration learning is a new paradigm for data generation that generates an abstraction of the target data before generating the actual data.\n\n[d2]: Editing specific model MLP layers is a better predictor of performance than localization conclusions from representation denoising in language models.\n\n[d3]: Researchers use phonology insights from American Sign Language to improve isolated sign language recognition, achieving nearly 9% accuracy gain.\n\n[d4]: Researchers leverage BERT pre-training success to improve sign language recognition by organizing hand and body poses as triplet units and using coupling tokenization.\n\n[d5]: Language-Quantized AutoEncoder (LQAE) is a simple yet effective approach that aligns text-image data in an unsupervised manner by leveraging pretrained language models.\n\n[d6]: LoCoNet is a Long-Short Context Network that models long-term intra-speaker and short-term inter-speaker context for active speaker detection, achieving state-of-the-art performance.\n\n[d7]: The study proposes an Audio-Visual Efficient Conformer model that improves noise robustness and achieves state-of-the-art performance in speech recognition.\n\n[d8]: \"GeneFace: A high-fidelity NeRF-based talking face generation method that produces natural results with out-of-domain audio, improving 3D realness and image fidelity.\"\n\n[d9]: Researchers introduce a method to analyze how a Transformer model processes complex input by tracing and manipulating intermediate values."
+                            },
+                            {
+                                "sender": "bot",
+                                "content": "Language and speech processing techniques are transforming the way we interact and communicate with technology by synthesizing personalized speech or improving sign language recognition."
+                            },
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that can be used as an informative introductory paragraph the given documents.\nThe paragraph should be informative and pleasant for a reader who is an experienced researcher in this field.\nFocus on what the given documents have in common and reveal a potential underlying trend in the field. Do not reference or cite any documents. Rely on the information provided in the documents, but do not use explicitly any text from them.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "detailed_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "detailed_paragraph_with_refinements",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents",
+            "retries"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "refined_multi_doc_summary",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "oneshot_detailed_paragraph_with_refinements",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents",
+            "retries"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "refined_multi_doc_summary",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n[d0]: A neural codec language model called Vall-E can synthesize high-quality personalized speech with only a 3-second recording, outperforming state-of-the-art zero-shot TTS systems.\n\n[d1]: Regeneration learning is a new paradigm for data generation that generates an abstraction of the target data before generating the actual data.\n\n[d2]: Editing specific model MLP layers is a better predictor of performance than localization conclusions from representation denoising in language models.\n\n[d3]: Researchers use phonology insights from American Sign Language to improve isolated sign language recognition, achieving nearly 9% accuracy gain.\n\n[d4]: Researchers leverage BERT pre-training success to improve sign language recognition by organizing hand and body poses as triplet units and using coupling tokenization.\n\n[d5]: Language-Quantized AutoEncoder (LQAE) is a simple yet effective approach that aligns text-image data in an unsupervised manner by leveraging pretrained language models.\n\n[d6]: LoCoNet is a Long-Short Context Network that models long-term intra-speaker and short-term inter-speaker context for active speaker detection, achieving state-of-the-art performance.\n\n[d7]: The study proposes an Audio-Visual Efficient Conformer model that improves noise robustness and achieves state-of-the-art performance in speech recognition.\n\n[d8]: \"GeneFace: A high-fidelity NeRF-based talking face generation method that produces natural results with out-of-domain audio, improving 3D realness and image fidelity.\"\n\n[d9]: Researchers introduce a method to analyze how a Transformer model processes complex input by tracing and manipulating intermediate values."
+                            },
+                            {
+                                "sender": "bot",
+                                "content": "Vall-E [d0] excels at synthesizing high-quality personalized speech using just a 3-second recording, surpassing zero-shot TTS systems, and regeneration learning [d1] introduces a paradigm for data generation across various applications. Delving into the editing of specific weights in language models presents a challenge to previous work on causal tracing [d2]. The incorporation of phonology proves advantageous for isolated sign language recognition models [d3], while leveraging BERT pre-training enhances sign language recognition [d4]. Furthermore, the cutting-edge LQAE [d5] effectively aligns text-image data, LoCoNet [d6] accurately identifies speakers, and AVEC [d7] boosts noise robustness in speech recognition. Lastly, explore the generation of 3D talking faces with GeneFace [d8] and examine how Transformer models process complex input [d9]."
+                            },
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    {
+        "usecase": "multi_doc_summary",
+        "variant": "oneshot_detailed_paragraph",
+        "version": 1,
+        "usecase_params": [
+            "number_of_words",
+            "documents"
+        ],
+        "output_params": [
+            "summary"
+        ],
+        "service_name": "pass_through",
+        "llm_identifier_2_config": {
+            "chat:openai:gpt-3.5-turbo": {
+                "call_params": {
+                    "temperature": 0.0,
+                    "max_tokens": 512
+                },
+                "text_completion_config": {
+                    "prompt_template": null,
+                    "bot_conversation": {
+                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+                        "messages": [
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n[d0]: A neural codec language model called Vall-E can synthesize high-quality personalized speech with only a 3-second recording, outperforming state-of-the-art zero-shot TTS systems.\n\n[d1]: Regeneration learning is a new paradigm for data generation that generates an abstraction of the target data before generating the actual data.\n\n[d2]: Editing specific model MLP layers is a better predictor of performance than localization conclusions from representation denoising in language models.\n\n[d3]: Researchers use phonology insights from American Sign Language to improve isolated sign language recognition, achieving nearly 9% accuracy gain.\n\n[d4]: Researchers leverage BERT pre-training success to improve sign language recognition by organizing hand and body poses as triplet units and using coupling tokenization.\n\n[d5]: Language-Quantized AutoEncoder (LQAE) is a simple yet effective approach that aligns text-image data in an unsupervised manner by leveraging pretrained language models.\n\n[d6]: LoCoNet is a Long-Short Context Network that models long-term intra-speaker and short-term inter-speaker context for active speaker detection, achieving state-of-the-art performance.\n\n[d7]: The study proposes an Audio-Visual Efficient Conformer model that improves noise robustness and achieves state-of-the-art performance in speech recognition.\n\n[d8]: \"GeneFace: A high-fidelity NeRF-based talking face generation method that produces natural results with out-of-domain audio, improving 3D realness and image fidelity.\"\n\n[d9]: Researchers introduce a method to analyze how a Transformer model processes complex input by tracing and manipulating intermediate values."
+                            },
+                            {
+                                "sender": "bot",
+                                "content": "Vall-E [d0] excels at synthesizing high-quality personalized speech using just a 3-second recording, surpassing zero-shot TTS systems, and regeneration learning [d1] introduces a paradigm for data generation across various applications. Delving into the editing of specific weights in language models presents a challenge to previous work on causal tracing [d2]. The incorporation of phonology proves advantageous for isolated sign language recognition models [d3], while leveraging BERT pre-training enhances sign language recognition [d4]. Furthermore, the cutting-edge LQAE [d5] effectively aligns text-image data, LoCoNet [d6] accurately identifies speakers, and AVEC [d7] boosts noise robustness in speech recognition. Lastly, explore the generation of 3D talking faces with GeneFace [d8] and examine how Transformer models process complex input [d9]."
+                            },
+                            {
+                                "sender": "user",
+                                "content": "Write a short and concise paragraph (at most {{ number_of_words }} words) that summarizes the given documents.\nThe summary should be informative and pleasant for a reader who is an experienced researcher in this field.\nRefer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. \nEnsure completely that each citation is supported by the information provided in documents.\nInclude as many details as possible while respecting the words limit.\nUse only information from the given documents.\nDo not use generic sentences that do not refer to any document.\nDo not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.\nDo not use the citation as a the subject of any phrase or sentence.\n\nDocuments:\n{% for i in range(documents|length) %}\n[{{ doc_ids[i] }}]:{{ documents[i] }}\n{% endfor %}"
                             }
                         ]
                     }

@@ -33,6 +33,7 @@ class RefinedMultiDocSummaryCompletionService(PassThroughTextCompletionService):
     async def postprocess_one(
         self,
         service_response: PromptParams,
+        params: PromptParams,
         client_response: ClientResponse[TextCompletionResponse],
         client_request: TextCompletionRequest,
         client: TextCompletionClient,
@@ -42,15 +43,15 @@ class RefinedMultiDocSummaryCompletionService(PassThroughTextCompletionService):
         if client_response.response is None:
             raise Exception(f"Text Completion Error: {client_response.error}")
 
-        target_number_of_words = service_response["number_of_words"]
-        retries_left = service_response["retries"]
+        target_number_of_words = params["number_of_words"]
+        retries_left = params["retries"]
 
         while retries_left > 0:
             retries_left -= 1
             summary = service_response["summary"]
             for check_type, check_fn in self.__quality_check_to_fun.items():
                 if check_fn(summary, target_number_of_words):
-                    msg = self.__create_refinement_message(service_response, check_type)
+                    msg = self.__create_refinement_message(params, check_type)
                     updated_client_request = self.__enhance_bot_conversation(
                         summary, msg, client_request
                     )
@@ -64,14 +65,12 @@ class RefinedMultiDocSummaryCompletionService(PassThroughTextCompletionService):
 
         return service_response
 
-    def __create_refinement_message(self, service_response, check_type) -> str:
+    def __create_refinement_message(self, params, check_type) -> str:
         msg_template = self.__quality_check_to_refinement_message_template[check_type]
 
         refinement_message = TextCompletionConfigParser.parse_template(
             msg_template,
-            cast(
-                PromptParams, {"number_of_words": service_response["number_of_words"]}
-            ),
+            cast(PromptParams, {"number_of_words": params["number_of_words"]}),
         )
         if refinement_message is None:
             raise Exception(f"Unknown refinement message type: {check_type}")
