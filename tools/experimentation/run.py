@@ -8,19 +8,7 @@ from typing import Dict, List, Union
 import pandas as pd
 from dotenv import load_dotenv
 
-from tools.experimentation.pipelines.multi_xscience_onestep import (
-    OneStepMultiXScienceExperiment,
-)
-from tools.experimentation.pipelines.scitldr_our_prompt import (
-    OurTwoShotPromptSciTLDRExperiment,
-    OurZeroShotPromptSciTLDRExperiment,
-)
-from tools.experimentation.pipelines.scitldr_vanilla_prompt import (
-    VanillaSciTLDRExperiment,
-)
-
 load_dotenv("./dev.env")
-
 
 from zav.message_bus import MessageBus
 
@@ -28,8 +16,18 @@ from src.adapters import text_completion_client  # noqa
 from src.bootstrap import bootstrap
 from src.controllers.v1.api_types import TextCompletionUsecasesItem
 from tools.experimentation.pipelines import Experiment
+from tools.experimentation.pipelines.multi_xscience_onestep import (
+    OneStepMultiXScienceExperiment,
+)
 from tools.experimentation.pipelines.multi_xscience_twostep import (
     TwoStepMultiXScienceExperiment,
+)
+from tools.experimentation.pipelines.scitldr_our_prompt import (
+    OurTwoShotPromptSciTLDRExperiment,
+    OurZeroShotPromptSciTLDRExperiment,
+)
+from tools.experimentation.pipelines.scitldr_vanilla_prompt import (
+    VanillaSciTLDRExperiment,
 )
 
 NAME_2_EXPERIMENT = {
@@ -82,7 +80,7 @@ async def main():
     responses = await message_bus.handle(command)
     response: TextCompletionUsecasesItem = responses.pop(0)
 
-    generated_summaries_list = response["output_params_list"][0]["generated_summaries"]
+    generated_summaries_list = response["output_params"]["generated_summaries"]
     generated_summaries = [
         l[0] if isinstance(l, list) else l for l in generated_summaries_list
     ]

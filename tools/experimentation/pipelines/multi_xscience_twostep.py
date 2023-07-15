@@ -31,45 +31,46 @@ class TwoStepMultiXScienceExperiment(Experiment):
             ref_document_ids = [d.split(":", 1)[0] for d in documents[1:]]
             command = ExecuteTextCompletionUsecases(
                 execution_type=UsecaseCommandsExecutionType.CHAIN,
-                prompt_params_list=None,
+                prompt_params=None,
                 usecase_commands=[
-                    ExecuteTextCompletionSingleUsecase(
-                        usecase="single_doc_summary",
-                        variant="multi_science_sds_step",
-                        prompt_params_list=[
-                            {
-                                "main_document": main_document,
-                                "ref_document": doc,
-                            }
-                            for doc in ref_documents
+                    ExecuteTextCompletionUsecases(
+                        execution_type=UsecaseCommandsExecutionType.PARALLEL,
+                        prompt_params=None,
+                        usecase_commands=[
+                            ExecuteTextCompletionSingleUsecase(
+                                usecase="single_doc_summary",
+                                variant="multi_science_sds_step",
+                                prompt_params={
+                                    "main_document": main_document,
+                                    "ref_document": ref_doc,
+                                },
+                                params_mapping={
+                                    "summary": "ref_documents",
+                                },
+                            )
+                            for ref_doc in ref_documents
                         ],
-                        params_mapping={
-                            "summary": "ref_documents",
-                        },
-                        should_flatten=True,
                     ),
                     ExecuteTextCompletionSingleUsecase(
                         usecase="multi_doc_summary",
                         variant="multi_xscience_mds_step",
-                        prompt_params_list=[
-                            {
-                                "main_document": main_document,
-                                "ref_document_ids": ref_document_ids,
-                                "number_of_words": target_words_count,
-                            }
-                        ],
+                        prompt_params={
+                            "main_document": main_document,
+                            "ref_document_ids": ref_document_ids,
+                            "number_of_words": target_words_count,
+                        },
                         params_mapping={
                             "summary": "multi_doc_summary",
                         },
-                        should_flatten=True,
                     ),
                 ],
             )
+
             multi_doc_summary_commands.append(command)
 
         return ExecuteTextCompletionUsecases(
             execution_type=UsecaseCommandsExecutionType.PARALLEL,
-            prompt_params_list=None,
+            prompt_params=None,
             usecase_commands=multi_doc_summary_commands,
             params_mapping={
                 "multi_doc_summary": "generated_summaries",

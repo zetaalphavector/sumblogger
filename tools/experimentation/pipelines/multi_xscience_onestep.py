@@ -25,30 +25,23 @@ class OneStepMultiXScienceExperiment(Experiment):
         test_documents_list = dataset.fold_name2data[FoldName.TEST].documents_batches
 
         return ExecuteTextCompletionUsecases(
-            execution_type=UsecaseCommandsExecutionType.CHAIN,
-            prompt_params_list=None,
+            execution_type=UsecaseCommandsExecutionType.PARALLEL,
+            prompt_params=None,
             usecase_commands=[
                 ExecuteTextCompletionSingleUsecase(
                     usecase="multi_doc_summary",
                     variant="multi_xscience_one_step",
-                    prompt_params_list=[
-                        {
-                            "main_document": documents[0],
-                            "ref_documents": [
-                                d.split(":", 1)[1] for d in documents[1:]
-                            ],
-                            "ref_document_ids": [
-                                d.split(":", 1)[0] for d in documents[1:]
-                            ],
-                            "number_of_words": target_words_count,
-                        }
-                        for documents in test_documents_list
-                    ],
+                    prompt_params={
+                        "main_document": documents[0],
+                        "ref_documents": [d.split(":", 1)[1] for d in documents[1:]],
+                        "ref_document_ids": [d.split(":", 1)[0] for d in documents[1:]],
+                        "number_of_words": target_words_count,
+                    },
                     params_mapping={
                         "summary": "generated_summaries",
                     },
-                    should_flatten=True,
                 )
+                for documents in test_documents_list
             ],
         )
 

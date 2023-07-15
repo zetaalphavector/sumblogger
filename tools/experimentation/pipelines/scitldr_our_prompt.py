@@ -30,23 +30,21 @@ class OurPromptSciTLDRExperiment(Experiment):
         )
 
         return ExecuteTextCompletionUsecases(
-            execution_type=UsecaseCommandsExecutionType.CHAIN,
-            prompt_params_list=None,
+            execution_type=UsecaseCommandsExecutionType.PARALLEL,
+            prompt_params=None,
             usecase_commands=[
                 ExecuteTextCompletionSingleUsecase(
                     usecase="single_doc_summary",
                     variant=self.get_usecase_variant(),
-                    prompt_params_list=[
-                        {
-                            "document": [document for document in test_documents],
-                            "number_of_words": target_words_count,
-                        }
-                    ],
+                    prompt_params={
+                        "document": document,
+                        "number_of_words": target_words_count,
+                    },
                     params_mapping={
                         "summary": "generated_summaries",
                     },
-                    should_flatten=True,
                 )
+                for document in test_documents
             ],
         )
 

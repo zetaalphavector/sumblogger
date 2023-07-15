@@ -18,22 +18,20 @@ class VanillaSciTLDRExperiment(Experiment):
         test_documents = dataset.fold_name2data[FoldName.TEST].documents
 
         return ExecuteTextCompletionUsecases(
-            execution_type=UsecaseCommandsExecutionType.CHAIN,
-            prompt_params_list=None,
+            execution_type=UsecaseCommandsExecutionType.PARALLEL,
+            prompt_params=None,
             usecase_commands=[
                 ExecuteTextCompletionSingleUsecase(
                     usecase="single_doc_summary",
                     variant="scitldr_vanilla",
-                    prompt_params_list=[
-                        {
-                            "document": [document for document in test_documents],
-                        }
-                    ],
+                    prompt_params={
+                        "document": document,
+                    },
                     params_mapping={
                         "summary": "generated_summaries",
                     },
-                    should_flatten=True,
                 )
+                for document in test_documents
             ],
         )
 
