@@ -3,6 +3,8 @@ from typing import Any, Dict, List, Union
 
 from typing_extensions import NotRequired, TypedDict
 
+from src.types.vos import VosClusteredDocuments, VosConferenceClusteredDocuments
+
 
 class TextCompletionSingleUsecaseForm(TypedDict):
     usecase: str
@@ -47,3 +49,19 @@ class DocumentsClustersSummariesOutputParams(TypedDict):
 
 class DocumentsClustersSummariesItem(TypedDict):
     output_params: DocumentsClustersSummariesOutputParams
+
+
+class VosBlogpostOutputParams(DocumentsClustersSummariesOutputParams):
+    blog_title: str
+    blog_intro: str
+    blog_conclusion: str
+    cluster_titles: List[str]
+
+
+class VosBlogpostItem(TypedDict):
+    output_params: VosBlogpostOutputParams
+
+
+class BlogpostConferenceItem(TypedDict):
+    vos: VosConferenceClusteredDocuments
+    cluster2vos: Dict[int, VosClusteredDocuments]

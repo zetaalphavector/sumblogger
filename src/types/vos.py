@@ -2,6 +2,8 @@ from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel
 
+from src.types.conference_blog import ConferenceInfo
+
 
 class Terminology(BaseModel):
     cluster: str
@@ -82,6 +84,9 @@ class VosNetwork(BaseModel):
     items: List[Item]
     links: List[Link]
     clusters: Optional[List[Cluster]] = None
+    blog_title: Optional[str] = None
+    blog_intro: Optional[str] = None
+    blog_conclusion: Optional[str] = None
 
 
 class ClusterColor(BaseModel):
@@ -108,3 +113,7 @@ class VosConfig(BaseModel):
 class VosClusteredDocuments(BaseModel):
     config: VosConfig
     network: VosNetwork
+
+
+class VosConferenceClusteredDocuments(VosClusteredDocuments):
+    conference_info: ConferenceInfo

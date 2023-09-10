@@ -77,13 +77,20 @@ def __multi_doc_summary_usecases_for(
 def __single_doc_usecase_for(documents):
     return ExecuteTextCompletionUsecases(
         execution_type=UsecaseCommandsExecutionType.PARALLEL,
-        params_mapping={"summary": "documents", "doc_id": "doc_ids"},
+        params_mapping={
+            "summary": "documents",
+            "document_url": "document_urls",
+            "document_title": "document_titles",
+            "doc_id": "doc_ids",
+        },
         usecase_commands=[
             ExecuteTextCompletionSingleUsecase(
                 usecase="single_doc_summary",
                 variant="tldr",
                 prompt_params={
                     "document": document["content"],
+                    "document_url": document["url"],
+                    "document_title": document["title"],
                     "number_of_words": 20,
                     "doc_id": doc_index,
                 },

@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 from typing import Optional
 
 import openai
@@ -225,6 +226,9 @@ class OpenAiChatClient(TextCompletionClient):
             raise ValueError("Bot conversation is required")
 
         messages = self.__messages_from(bot_conversation)
+        # with open(f"chat_{datetime.now().strftime('%Y%m%d%H%M%S')}.txt", "w") as f:
+        #     f.write("\n".join([m["content"] for m in messages]))
+
         try:
             response = await openai.ChatCompletion.acreate(
                 **{

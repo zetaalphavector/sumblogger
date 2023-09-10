@@ -1,6 +1,6 @@
 [
     {
-        "usecase": "title_generation",
+        "usecase": "titles_generation",
         "variant": "title_per_intro_summary",
         "version": 1,
         "usecase_params": [
@@ -23,7 +23,7 @@
                         "messages": [
                             {
                                 "sender": "user",
-                                "content": "Given the following summaries, create one very short topic title for each summary using at most 2-3 words. Avoid using verbs.\nThe topic titles should be representative of the summary. Avoid repetition across topic titles and make each title unique. Focus on what makes each topic different than the others.\n\n{% for i in range(documents) %}\n{{ i }}.{{ documents[i] }}\n{% endfor %}"
+                                "content": "Given the following summaries, create one very short topic title for each summary using at most 2-3 words. Avoid using verbs.\nThe topic titles should be representative of the summary. Avoid repetition across topic titles and make each title unique. Focus on what makes each topic different than the others.\n\n{% for doc in documents %}\n{{ loop.index }}. {{ doc }}\n{% endfor %}"
                             }
                         ]
                     }
