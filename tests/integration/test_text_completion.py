@@ -130,7 +130,7 @@ def expected_two_step_summary_output(number_of_docs):
 def two_step_single_doc_summary_chain(
     number_of_docs,
 ) -> List[Union[ExecuteTextCompletionUsecases, ExecuteTextCompletionSingleUsecase]]:
-    usecase_commands = [
+    return [
         ExecuteTextCompletionUsecases(
             execution_type=UsecaseCommandsExecutionType.PARALLEL,
             prompt_params={},
@@ -165,7 +165,6 @@ def two_step_single_doc_summary_chain(
             ],
         )
     ]
-    return usecase_commands
 
 
 def two_step_multi_doc_summary_chain(number_of_docs):
