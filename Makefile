@@ -82,9 +82,6 @@ dev-test: build-dev
 dev-test-ci:
 	docker-compose up -d
 	docker-compose exec -T sumblogger_api_1 make test-ci
-run: install-prod
-	set -a; . ./dev.env; set +a; \
-	uvicorn src.app:app --host 0.0.0.0 --port 8080 --reload
 
 test: clean linter check-types unit-tests integration-tests
 test-ci: linter check-types unit-tests-ci integration-tests-ci
