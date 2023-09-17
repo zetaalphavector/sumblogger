@@ -2,10 +2,12 @@ import enum
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Union
 
-from zav.message_bus import Command
-
 from src.types.documents import DocumentsCluster
 from src.types.vos import VosNetwork
+
+
+class Command:
+    pass
 
 
 @dataclass

@@ -77,6 +77,8 @@ multidict==6.0.4
     # via
     #   aiohttp
     #   yarl
+numpy==1.24.1
+    # via -r requirements/prod.in
 openai==0.27.2
     # via -r requirements/prod.in
 pydantic==1.10.4

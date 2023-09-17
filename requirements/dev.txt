@@ -130,6 +130,8 @@ mypy-extensions==0.4.3
     # via
     #   black
     #   mypy
+numpy==1.24.1
+    # via -r requirements/prod.in
 openai==0.27.2
     # via -r requirements/prod.in
 packaging==23.0

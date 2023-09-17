@@ -1,10 +1,7 @@
 from typing import cast
 
 from src.bootstrap import RETRIEVE_DOCS_SERVICE, TEXT_COMPLETION_USECASE_CONFIG_REPO
-from src.controllers.converters.vos_converters import (
-    to_vos_clustered_documents_response,
-)
-from src.controllers.v1.api_types import DocumentsClustersSummariesItem
+from src.converters.vos_converters import to_vos_clustered_documents_response
 from src.handlers import commands
 from src.handlers.text_completion import execute
 from src.handlers.text_completion_usecases.summarize_documents_clusters import (
@@ -12,12 +9,13 @@ from src.handlers.text_completion_usecases.summarize_documents_clusters import (
 )
 from src.handlers.vos_build_docs_clusters import to_documents_cluster
 from src.handlers.vos_representative_docs import select_representative_docs
-from src.types.vos import VosClusteredDocuments
+from src.scripts.types import DocumentsClustersSummariesItem
+from src.types.vos import VosConferenceClusteredDocuments
 from src.utils import inplace_clean_vos_network_of
 
 
 async def generate_vos_summaries(
-    body: VosClusteredDocuments,
+    body: VosConferenceClusteredDocuments,
     focus_on_most_representatives: bool = True,
     summary_words_limit: int = 100,
     detailed_paragraph_usecase_variant: str = "oneshot_detailed_paragraph",

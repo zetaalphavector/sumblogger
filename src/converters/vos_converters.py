@@ -2,9 +2,8 @@ from collections import defaultdict
 from typing import Dict, List
 
 from fastapi import APIRouter
-from zav.api.errors import NotFoundException
 
-from src.controllers.v1.api_types import (
+from src.scripts.types import (
     DocumentsClustersSummariesOutputParams,
     VosBlogpostOutputParams,
 )
@@ -57,7 +56,7 @@ def cluster_from_id(
         if cluster["cluster_id"] == cluster_id:
             return cluster
 
-    raise NotFoundException(f"Could not find cluster with id: {cluster_id}")
+    raise Exception(f"Could not find cluster with id: {cluster_id}")
 
 
 def to_vos_clustered_documents_response(
@@ -68,7 +67,7 @@ def to_vos_clustered_documents_response(
     if vos_clustered_documents_request.network.clusters is None:
         return vos_clustered_documents_request
 
-    cluster_id2doc_id2summary = {}
+    cluster_id2doc_id2summary: Dict[str, Dict[str, str]] = {}
     for cluster_id, summaries, doc_ids in zip(
         output_params["cluster_ids"],
         output_params["single_doc_summaries"],
@@ -121,7 +120,7 @@ def to_vos_blogpost_response(
     vos.network.blog_conclusion = blogpost_item_params["blog_conclusion"]
 
     if vos.network.clusters is None:
-        raise NotFoundException("No clusters found")
+        raise Exception("No clusters found")
 
     for i, cluster in enumerate(vos.network.clusters):
         cluster.label = blogpost_item_params["cluster_titles"][i]
@@ -162,7 +161,7 @@ def cluster2vos_from(
     if vos.network.clusters is None:
         raise ValueError("Clusters are not defined in the VOS network")
 
-    cluster2vos = defaultdict()
+    cluster2vos: Dict[int, VosClusteredDocuments] = defaultdict()
     for cluster in vos.network.clusters:
         cluster_items = items_from(cluster.cluster, vos.network.items)
         cluster_links = links_between(cluster_items, vos.network.links)

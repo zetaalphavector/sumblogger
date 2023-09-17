@@ -15,7 +15,7 @@ from src.types.text_completion import PromptParams
 
 
 @TextCompletionServiceFactory.register("include_citation_links")
-class RefinedMultiDocSummaryCompletionService(PassThroughTextCompletionService):
+class IncludeCitationLinksCompletionService(PassThroughTextCompletionService):
     async def postprocess_one(
         self,
         service_response: PromptParams,

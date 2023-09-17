@@ -1,11 +1,7 @@
 from typing import cast
 
 from src.bootstrap import RETRIEVE_DOCS_SERVICE, TEXT_COMPLETION_USECASE_CONFIG_REPO
-from src.controllers.converters.vos_converters import (
-    cluster2vos_from,
-    to_vos_blogpost_response,
-)
-from src.controllers.v1.api_types import BlogpostConferenceItem, VosBlogpostItem
+from src.converters.vos_converters import cluster2vos_from, to_vos_blogpost_response
 from src.handlers import commands
 from src.handlers.text_completion import execute
 from src.handlers.text_completion_usecases.blogpost_creator_from_cluster_summaries import (  # noqa E501
@@ -16,6 +12,7 @@ from src.handlers.text_completion_usecases.summarize_documents_clusters import (
 )
 from src.handlers.vos_build_docs_clusters import to_documents_cluster
 from src.handlers.vos_representative_docs import select_representative_docs
+from src.scripts.types import BlogpostConferenceItem, VosBlogpostItem
 from src.types.vos import VosConferenceClusteredDocuments
 from src.utils import inplace_clean_vos_network_of
 

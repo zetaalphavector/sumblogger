@@ -2,22 +2,11 @@ from datetime import datetime
 from typing import Dict, List
 
 from numpy import exp
-from zav.logging import logger
-from zav.message_bus import CommandHandlerRegistry, Message
 
 from src.handlers import commands
 from src.types.vos import Item, Link, VosNetwork, Weights
 
 FAVOR_COVERAGE_WEIGHT = 1.0
-
-
-@CommandHandlerRegistry.register(commands.SelectVosRepresentativeDocuments)
-async def handle_select_representative_docs(
-    cmd: commands.SelectVosRepresentativeDocuments,
-    queue: List[Message],
-) -> VosNetwork:
-
-    return await select_representative_docs(cmd)
 
 
 async def select_representative_docs(
@@ -83,7 +72,7 @@ def __most_representative_items(
     top_k: int,
 ):
     cluster_items = __measure_impact_scores(__normalize_weights(cluster_items))
-    all_cluster_items_size = len(cluster_items)
+    # all_cluster_items_size = len(cluster_items)
     selected_items_ids = []
     represented_item_ids = set()
     # TODO: For performance improvement, we can use a max heap to get the top_k items
@@ -133,6 +122,8 @@ def __normalize_weights(cluster_items: List[Item]) -> List[Item]:
 def __measure_impact_scores(cluster_items: List[Item]) -> List[Item]:
     now = datetime.now()
     for item in cluster_items:
+        if item.heading is None:
+            raise ValueError("Item has no heading")
         date = datetime.strptime(item.heading.split(",")[-1].strip(), "%d %b %Y")
         age = (now - date).days
         if item.normalized_w is None:
@@ -339,4 +330,4 @@ def __log_stats(
         for cluster_id in cluster_id2items_count.keys()
     }
 
-    logger.info(f"Representative items per cluster: {cluster_id2log}")
+    print(f"Representative items per cluster: {cluster_id2log}")

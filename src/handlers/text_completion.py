@@ -1,11 +1,8 @@
 import asyncio
 from typing import Any, Dict, List, Optional, Set, Union, cast
 
-from zav.message_bus import EventHandlerRegistry  # noqa F401
-from zav.message_bus import CommandHandlerRegistry, Message
-
-from src.controllers.v1.api_types import TextCompletionUsecasesItem
 from src.handlers import commands
+from src.scripts.types import TextCompletionUsecasesItem
 from src.services.text_completion.repository.usecase_config_repo import (
     TextCompletionUsecaseConfigRepository,
 )
@@ -135,6 +132,7 @@ async def execute(
     ],
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
+
     if isinstance(cmd, commands.ExecuteTextCompletionSingleUsecase):
         return await __execute_single(
             cmd,
@@ -146,18 +144,6 @@ async def execute(
             cmd,
             text_completion_usecase_config_repo,
         )
-
-
-@CommandHandlerRegistry.register(commands.ExecuteTextCompletionUsecases)
-async def handle_text_completion_usecases(
-    cmd: commands.ExecuteTextCompletionUsecases,
-    queue: List[Message],
-    text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
-) -> TextCompletionUsecasesItem:
-    return await execute(
-        cmd,
-        text_completion_usecase_config_repo,
-    )
 
 
 def __merge_output_params(

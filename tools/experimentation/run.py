@@ -8,13 +8,14 @@ from typing import Dict, List, Union
 import pandas as pd
 from dotenv import load_dotenv
 
+from src.bootstrap import TEXT_COMPLETION_USECASE_CONFIG_REPO
+from src.handlers import text_completion
+
 load_dotenv("./dev.env")
 
-from zav.message_bus import MessageBus
 
 from src.adapters import text_completion_client  # noqa
-from src.bootstrap import bootstrap
-from src.controllers.v1.api_types import TextCompletionUsecasesItem
+from src.scripts.types import TextCompletionUsecasesItem
 from tools.experimentation.pipelines import Experiment
 from tools.experimentation.pipelines.multi_xscience_onestep import (
     OneStepMultiXScienceExperiment,
@@ -70,15 +71,15 @@ async def main():
     experiment: Experiment = NAME_2_EXPERIMENT[experiment_name]()
     data_offset = int(args["offset"]) or 0
     data_size_limit = int(args["size"]) or 1
-    message_bus = await startup_and_get_message_bus()
 
     experiment.load_dataset(offset=data_offset, size_limit=data_size_limit)
     command = experiment.build_command()
     gold_summaries = experiment.get_gold_summaries()
     input_documents = experiment.get_input_documents()
 
-    responses = await message_bus.handle(command)
-    response: TextCompletionUsecasesItem = responses.pop(0)
+    response = await text_completion.execute(
+        command, TEXT_COMPLETION_USECASE_CONFIG_REPO
+    )
 
     generated_summaries_list = response["output_params"]["generated_summaries"]
     generated_summaries = [
@@ -93,11 +94,6 @@ async def main():
         csv_filename,
     )
     summaries_df.to_csv(csv_filename)
-
-
-async def startup_and_get_message_bus() -> MessageBus:
-    await bootstrap.startup()
-    return bootstrap.message_bus
 
 
 def summaries_df_from(

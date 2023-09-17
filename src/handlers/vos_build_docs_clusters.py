@@ -1,26 +1,9 @@
-from typing import Dict, List
+from typing import Dict
 
-from zav.logging import logger
-from zav.message_bus import EventHandlerRegistry  # noqa F401
-from zav.message_bus import CommandHandlerRegistry, Message
-
-from src.handlers import commands
 from src.services.retrieval.retrieve_documents import RetrieveDocumentsService
 from src.types.documents import Document, DocumentsCluster
 from src.types.exceptions import NotFoundException
 from src.types.vos import VosNetwork
-
-
-@CommandHandlerRegistry.register(commands.BuildDocumentsClusters)
-async def build_docs_clusters(
-    cmd: commands.BuildDocumentsClusters,
-    queue: List[Message],
-    retrieve_docs_service: RetrieveDocumentsService,
-) -> Dict[str, DocumentsCluster]:
-    return await to_documents_cluster(
-        cmd.vos_network,
-        retrieve_docs_service,
-    )
 
 
 def __id_from(guid: str) -> str:
@@ -49,7 +32,7 @@ async def to_documents_cluster(
 
     for id in doc_ids:
         if id not in docid2abstract:
-            logger.warn(f"Could not find abstract for guid: {id}")
+            print(f"Could not find abstract for guid: {id}")
             # raise NotFoundException(f"Could not find abstract for guid: {id}")
 
     return {
