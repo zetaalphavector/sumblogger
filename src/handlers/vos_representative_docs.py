@@ -12,10 +12,17 @@ FAVOR_COVERAGE_WEIGHT = 1.0
 
 
 @CommandHandlerRegistry.register(commands.SelectVosRepresentativeDocuments)
-async def handle_setect_representative_docs(
+async def handle_select_representative_docs(
     cmd: commands.SelectVosRepresentativeDocuments,
     queue: List[Message],
 ) -> VosNetwork:
+
+    return await select_representative_docs(cmd)
+
+
+async def select_representative_docs(
+    cmd: commands.SelectVosRepresentativeDocuments,
+):
     cluster_id2representative_item_ids = __representative_item_ids_per_cluster(
         cmd.vos_network, cmd.top_k
     )

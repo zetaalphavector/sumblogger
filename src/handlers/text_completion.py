@@ -76,7 +76,7 @@ async def execute_chain(
             params, usecase_cmd.prompt_params
         )
 
-        usecase_item = await __execute(
+        usecase_item = await execute(
             usecase_cmd,
             text_completion_usecase_config_repo,
         )
@@ -105,7 +105,7 @@ async def execute_parallel(
 
     usecases_items: List[TextCompletionUsecasesItem] = await asyncio.gather(
         *[
-            __execute(
+            execute(
                 usecase_cmd,
                 text_completion_usecase_config_repo,
             )
@@ -128,7 +128,7 @@ EXECUTION_TYPE_TO_HANDLER = {
 }
 
 
-async def __execute(
+async def execute(
     cmd: Union[
         commands.ExecuteTextCompletionSingleUsecase,
         commands.ExecuteTextCompletionUsecases,
@@ -154,7 +154,7 @@ async def handle_text_completion_usecases(
     queue: List[Message],
     text_completion_usecase_config_repo: TextCompletionUsecaseConfigRepository,
 ) -> TextCompletionUsecasesItem:
-    return await __execute(
+    return await execute(
         cmd,
         text_completion_usecase_config_repo,
     )

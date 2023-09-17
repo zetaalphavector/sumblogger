@@ -9,21 +9,21 @@ from src.handlers import CommandHandlerRegistry, EventHandlerRegistry
 from src.services.retrieval.retrieve_documents import RetrieveDocumentsService
 from src.settings import ZAV_SEARCH_API_BASE_URL
 
-text_completion_usecase_config_repo = FileTextCompletionUsecaseConfigRepository(
+TEXT_COMPLETION_USECASE_CONFIG_REPO = FileTextCompletionUsecaseConfigRepository(
     config_dir="src/services/text_completion/configuration"
 )
-retrieve_docs_service = RetrieveDocumentsService(
+RETRIEVE_DOCS_SERVICE = RetrieveDocumentsService(
     ZavSearchClient(ZAV_SEARCH_API_BASE_URL)
 )
 
 bootstrap_deps = [
     BootstrapDependency(
         name="text_completion_usecase_config_repo",
-        value=text_completion_usecase_config_repo,
+        value=TEXT_COMPLETION_USECASE_CONFIG_REPO,
     ),
     BootstrapDependency(
         name="retrieve_docs_service",
-        value=retrieve_docs_service,
+        value=RETRIEVE_DOCS_SERVICE,
     ),
 ]
 

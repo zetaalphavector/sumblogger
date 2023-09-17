@@ -17,7 +17,7 @@ async def build_docs_clusters(
     queue: List[Message],
     retrieve_docs_service: RetrieveDocumentsService,
 ) -> Dict[str, DocumentsCluster]:
-    return await __to_documents_cluster(
+    return await to_documents_cluster(
         cmd.vos_network,
         retrieve_docs_service,
     )
@@ -27,7 +27,7 @@ def __id_from(guid: str) -> str:
     return guid.split("_")[0]
 
 
-async def __to_documents_cluster(
+async def to_documents_cluster(
     vos_network: VosNetwork,
     retrieve_documents_service: RetrieveDocumentsService,
 ) -> Dict[str, DocumentsCluster]:

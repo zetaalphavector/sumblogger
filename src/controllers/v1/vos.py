@@ -19,12 +19,12 @@ from src.handlers.text_completion_usecases.blogpost_creator_from_cluster_summari
 from src.handlers.text_completion_usecases.summarize_documents_clusters import (
     build_usecases_command as summarize_usecases_command,
 )
-from src.types.conference_blog import ConferenceInfo
 from src.types.vos import (
     VosClusteredDocuments,
     VosConferenceClusteredDocuments,
     VosNetwork,
 )
+from src.utils import inplace_clean_vos_network_of
 
 vos_summaries_router = APIRouter(tags=["vos_summaries"])
 
@@ -42,7 +42,7 @@ async def generate_vos_summaries(
     message_bus: MessageBus = Depends(get_message_bus),
 ):
     try:
-        __inplace_clean_vos_network_of(body)
+        inplace_clean_vos_network_of(body)
 
         if focus_on_most_representatives:
             vos_network = await __select_representatives(
@@ -86,7 +86,7 @@ async def generate_blogpost(
     message_bus: MessageBus = Depends(get_message_bus),
 ):
     try:
-        __inplace_clean_vos_network_of(body)
+        inplace_clean_vos_network_of(body)
 
         if focus_on_most_representatives:
             vos_network = await __select_representatives(
@@ -115,7 +115,7 @@ async def generate_blogpost(
         vos = to_vos_blogpost_response(result["output_params"], body)
 
         return BlogpostConferenceItem(
-            vos=vos, cluster2vos=cluster2vos_from(body, highlight_nodes_with_summaries)
+            vos=vos, cluster2vos=cluster2vos_from(vos, highlight_nodes_with_summaries)
         )
 
     except Exception as e:
@@ -143,16 +143,3 @@ async def __select_representatives(
         )
     ).pop(0)
     return representative_vos
-
-
-def __inplace_clean_vos_network_of(body):
-    cluster_node_ids = [item.id for item in body.network.items if item.heading is None]
-    body.network.items = [
-        item for item in body.network.items if item.heading is not None
-    ]
-    body.network.links = [
-        link
-        for link in body.network.links
-        if link.source_id not in cluster_node_ids
-        and link.target_id not in cluster_node_ids
-    ]
