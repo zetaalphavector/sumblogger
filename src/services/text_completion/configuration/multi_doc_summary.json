@@ -14,7 +14,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -49,7 +49,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -83,7 +83,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -116,7 +116,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -157,7 +157,7 @@
         ],
         "service_name": "pass_through",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -191,7 +191,7 @@
         ],
         "service_name": "refined_multi_doc_summary",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -225,7 +225,7 @@
         ],
         "service_name": "refined_multi_doc_summary",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -268,7 +268,7 @@
         ],
         "service_name": "include_citation_links",
         "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo": {
+            "chat:openai:gpt-3.5-turbo-0301": {
                 "call_params": {
                     "temperature": 0.0,
                     "max_tokens": 512
@@ -284,7 +284,7 @@
                             },
                             {
                                 "sender": "bot",
-                                "content": "Vall-E [d0] excels at synthesizing high-quality personalized speech using just a 3-second recording, surpassing zero-shot TTS systems, and regeneration learning [d1] introduces a paradigm for data generation across various applications. Delving into the editing of specific weights in language models presents a challenge to previous work on causal tracing [d2]. The incorporation of phonology proves advantageous for isolated sign language recognition models [d3], and leveraging BERT pre-training enhances sign language recognition [d4]. Furthermore, the cutting-edge LQAE [d5] effectively aligns text-image data, LoCoNet [d6] accurately identifies speakers, and AVEC [d7] boosts noise robustness in speech recognition. Lastly, explore the generation of 3D talking faces with GeneFace [d8] and examine how Transformer models process complex input [d9]."
+                                "content": "Vall-E [d0] excels at synthesizing high-quality personalized speech using just a 3-second recording, surpassing zero-shot TTS systems, and regeneration learning [d1] introduces a paradigm for data generation across various applications. Delving into the editing of specific weights in language models presents a challenge to previous work on causal tracing [d2], while the incorporation of phonology proves advantageous for isolated sign language recognition models [d3], and leveraging BERT pre-training enhances sign language recognition [d4]. Furthermore, the cutting-edge LQAE [d5] effectively aligns text-image data, LoCoNet [d6] accurately identifies speakers, and AVEC [d7] boosts noise robustness in speech recognition. Lastly, explore the generation of 3D talking faces with GeneFace [d8] and examine how Transformer models process complex input [d9]."
                             },
                             {
                                 "sender": "user",

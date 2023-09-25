@@ -242,6 +242,9 @@ class OpenAiChatClient(TextCompletionClient):
                     **request["llm_config"].call_params,
                 }
             )
+            print(
+                f"Answer from {self.__model_name}: {response.choices[0]['message']['content']}"
+            )
             return ClientResponse(
                 response=TextCompletionResponse(
                     answer=response.choices[0]["message"]["content"],
