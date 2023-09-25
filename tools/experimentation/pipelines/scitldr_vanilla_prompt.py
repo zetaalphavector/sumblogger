@@ -1,3 +1,5 @@
+from typing import List, Union
+
 from src.handlers.commands import (
     ExecuteTextCompletionSingleUsecase,
     ExecuteTextCompletionUsecases,
@@ -35,7 +37,7 @@ class VanillaSciTLDRExperiment(Experiment):
             ],
         )
 
-    def get_gold_summaries(self):
+    def get_gold_summaries(self) -> Union[List[str], List[List[str]]]:
         return self.dataset.fold_name2data[FoldName.TEST].gold_summaries
 
     def get_input_documents(self):

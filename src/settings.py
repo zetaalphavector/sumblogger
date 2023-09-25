@@ -16,6 +16,9 @@ ZAV_SEARCH_API_BASE_URL = os.getenv(
     "ZAV_SEARCH_API_BASE_URL", "https://localhost:8000/search_api/v1/"
 )
 
+HF_MODEL_API_KEY = os.getenv("HF_MODEL_API_KEY", "")
+HF_MODEL_API_URL = os.getenv("HF_MODEL_API_URL", "")
+
 DEFAULT_TEXT_COMPLETION_CLIENT_CONFIG = TextCompletionClientConfig(
     openai_api_key=OPENAI_API_KEY,
     openai_org=OPENAI_ORG,

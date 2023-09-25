@@ -14,8 +14,6 @@ from src.handlers import text_completion
 load_dotenv("./dev.env")
 
 
-from src.adapters import text_completion_client  # noqa
-from src.scripts.types import TextCompletionUsecasesItem
 from tools.experimentation.pipelines import Experiment
 from tools.experimentation.pipelines.multi_xscience_onestep import (
     OneStepMultiXScienceExperiment,
@@ -98,7 +96,7 @@ async def main():
 
 def summaries_df_from(
     input_documents: Union[List[str], List[List[str]]],
-    gold_summaries: List[str],
+    gold_summaries: Union[List[str], List[List[str]]],
     generated_summaries: List[str],
     csv_filename: str,
 ) -> pd.DataFrame:

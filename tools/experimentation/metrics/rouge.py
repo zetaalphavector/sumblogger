@@ -21,9 +21,34 @@ class RougeMetricCalculator(SummarizationMetricCalculator):
         output_summaries: List[str],
     ) -> float:
 
+        filtered_summaries = []
+        for summary in output_summaries:
+            word_tokens = word_tokenize(summary)
+            filtered_words = [
+                word for word in word_tokens if word.lower() not in self.__stop_words
+            ]
+            filtered_text = " ".join(filtered_words)
+            filtered_summaries.append(filtered_text)
+
+        filtered_gold_summaries = []
+        for summary in gold_summaries:
+            filtered_summary = []
+            for sentence in summary:
+                word_tokens = word_tokenize(sentence)
+                filtered_words = [
+                    word
+                    for word in word_tokens
+                    if word.lower() not in self.__stop_words
+                ]
+                filtered_text = " ".join(filtered_words)
+                filtered_summary.append(filtered_text)
+            filtered_gold_summaries.append(filtered_summary)
+
+        # output_summaries = filtered_summaries
+
         scores = rouge_score(
-            output_summaries,
-            gold_summaries,
+            filtered_summaries,
+            filtered_gold_summaries,
             rouge_keys=self.__rouge_key,
             accumulate="best",
             use_stemmer=True,

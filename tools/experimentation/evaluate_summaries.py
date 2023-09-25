@@ -15,7 +15,7 @@ from tools.experimentation.metrics.calculator import (
     SummarizationMetricCalculator,
 )
 from tools.experimentation.metrics.rouge import RougeMetricCalculator
-from tools.experimentation.run import summaries_csv_filename_from
+from tools.experimentation.run_intruction_tuned_llm import summaries_csv_filename_from
 
 METRIC_2_CALCULATOR: Dict[SummarizationMetric, SummarizationMetricCalculator] = {
     SummarizationMetric.ROUGE_1: RougeMetricCalculator(rouge_key="rouge1"),
