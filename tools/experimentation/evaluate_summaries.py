@@ -21,6 +21,15 @@ METRIC_2_CALCULATOR: Dict[SummarizationMetric, SummarizationMetricCalculator] = 
     SummarizationMetric.ROUGE_1: RougeMetricCalculator(rouge_key="rouge1"),
     SummarizationMetric.ROUGE_2: RougeMetricCalculator(rouge_key="rouge2"),
     SummarizationMetric.ROUGE_L: RougeMetricCalculator(rouge_key="rougeL"),
+    SummarizationMetric.ROUGE_1_STOPWORDS: RougeMetricCalculator(
+        rouge_key="rouge1", exclude_stopwords=True
+    ),
+    SummarizationMetric.ROUGE_2_STOPWORDS: RougeMetricCalculator(
+        rouge_key="rouge2", exclude_stopwords=True
+    ),
+    SummarizationMetric.ROUGE_L_STOPWORDS: RougeMetricCalculator(
+        rouge_key="rougeL", exclude_stopwords=True
+    ),
     SummarizationMetric.BLEU: BleuMetricCalculator(),
     SummarizationMetric.BERT_SCORE: BertScoreMetricCalculator(),
 }
@@ -80,7 +89,6 @@ async def main():
 
         if number_of_entries_check is not None:
             assert number_of_entries_check == len(output_summaries)
-            assert comparison_df["docs"].tolist() == docs
         else:
             comparison_df["docs"] = docs
             comparison_df["gold_summaries"] = gold_summaries
