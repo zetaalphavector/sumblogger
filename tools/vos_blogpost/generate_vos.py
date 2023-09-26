@@ -1,9 +1,16 @@
 import json
 import os
-from typing import cast
 
 from src.scripts.generate_blogpost import generate_blogpost
 from src.types.vos import VosConferenceClusteredDocuments
+
+CONFERENCE_INFO = {
+    "name": "ICLR",
+    "website": "iclr.cc",
+    "location": "Kawai",
+    "start_date": "11 May",
+    "end_date": "17 May",
+}
 
 
 async def create_blogpost(
@@ -14,22 +21,7 @@ async def create_blogpost(
 ):
     with open(input_file_path) as f:
         data = json.load(f)
-    data["conference_info"] = {
-        "name": "ICLR",
-        "website": "iclr.cc",
-        "location": "Kawai",
-        "start_date": "11 May",
-        "end_date": "17 May",
-    }
-
-    # response = requests.post(
-    #     "http://localhost:8080/v1/vos/blogpost",
-    #     json=data,
-    #     params={
-    #         "detailed_paragraph_usecase_variant": "oneshot_detailed_paragraph",
-    #         "focus_on_most_representatives": representative_docs_flag,
-    #     },
-    # ).json()
+    data["conference_info"] = CONFERENCE_INFO
 
     response = await generate_blogpost(
         body=VosConferenceClusteredDocuments.parse_obj(data),
