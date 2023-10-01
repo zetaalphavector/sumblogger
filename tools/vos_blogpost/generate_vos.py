@@ -6,10 +6,10 @@ from src.types.vos import VosConferenceClusteredDocuments
 
 CONFERENCE_INFO = {
     "name": "ICLR",
-    "website": "iclr.cc",
+    "website": "https://iclr.cc/Conferences/2023",
     "location": "Kawai",
-    "start_date": "11 May",
-    "end_date": "17 May",
+    "start_date": "11 May 2023",
+    "end_date": "17 May 2023",
 }
 
 
@@ -21,6 +21,12 @@ async def create_blogpost(
 ):
     with open(input_file_path) as f:
         data = json.load(f)
+
+    if "clusters" not in data["network"]:
+        cluster_ids = {node["cluster"] for node in data["network"]["items"]}
+        data["network"]["clusters"] = [
+            {"cluster": idx, "label": ""} for idx in cluster_ids
+        ]
     data["conference_info"] = CONFERENCE_INFO
 
     response = await generate_blogpost(

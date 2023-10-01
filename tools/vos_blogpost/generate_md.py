@@ -35,6 +35,8 @@ def __body_from(cluster, cluster_id):
 
 
 def __vos_frame_from(cluster_id):
+    # temporarily disable VOS visualizations in blogposts
+    return ""
     if cluster_id is not None:
         return f"""<div> <figure><iframe allow="fullscreen" title="VOSViewer" class="jss1373" style="align:center; width: 100%; height: 300px;" src="https://vos.zeta-alpha.com/?json=https://zav-vos-viewer.s3.eu-central-1.amazonaws.com/data/automated-blog/{OUTPUT_DIR}/vos/{cluster_id}-VOS-{CONFERENCE}.blog.json" data-dashlane-frameid="25634"></iframe> <figcaption style="font-size: 0.8em; text-align: center;">The 10 red nodes were picked as representatives of the cluster</figcaption></figure></div>"""
     else:
