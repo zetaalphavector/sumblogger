@@ -20,6 +20,10 @@ It produces a blogpost summarizing the whole collection or conference.
 ## Generate blogpost
 Follow the steps below in order to generate a blogpost for a collection of scientific articles.
 
+1. Install package independencies:
+    ~~~
+    make install-prod
+    ~~~
 1. Copy the `dev.env.sample` to a `dev.env` file:
     ~~~
     cp dev.env.sample dev.env
@@ -32,12 +36,15 @@ Follow the steps below in order to generate a blogpost for a collection of scien
 1. Go to `tools/vos_blogpost/generate_vos.py` and fill in the corresponding conference info.
 1. Replace the placeholders in the following command, and execute it:
     ~~~
-    PYTHONPATH='src' python -m tools.vos_blogpost.generate_all --input_file <path-to-vos-viewer-json> --output_dir tools/vos_blogpost/output/<output_dir>
+    PYTHONPATH='src' python -m tools.vos_blogpost.generate_all --input_file <path-to-vos-viewer-json> --output_dir <output_dir>
+
+    # example:
+    PYTHONPATH='src' python -m tools.vos_blogpost.generate_all --input_file tools/vos_blogpost/ICLR/ICLR_2023.json --output_dir tools/vos_blogpost/ICLR/blog
     ~~~
     Keep in mind that if the collection is large, the execution may take several minutes due to the RateLimit applied by open ai. The pipeline is configured to retry with exponential backoff, and it quits retrying if 300 seconds have passed. Check `src/services/text_completion/service_template.py` for more details about the retrying mechanism which is based on the `backoff` package.
 1. Open the HTML stored in `tools/vos_blogpost/output/<output_dir>` folder.
 
-Note: The vos viewer visualizations of each cluster are stored in the same output directory, but they will not be visible at the HTML page, because they have to be hosted in a public in order for the VosViewer iframe to load them in the HTML page.
+Note: The vos viewer visualizations of each cluster are stored in the same output directory, but they will not be visible at the HTML page, because they have to be hosted in a public endpoint in order for the VosViewer iframe to load them in the HTML page.
 
 
 ## Experiments
@@ -72,6 +79,26 @@ python -m tools.experimentation.evaluate_summaries --experiment-names scitldr_va
 This will generate the `scitdr_results.csv` under `tools/experimentation/results/evaluations`, with the scores of each methods on the following metrics:
 ROUGE-1, ROUGE-2, ROUGE-L, BLEU, BERTScore.
 
+
+#### Significance testing
+To check if our results are statistically significant, we perform a paired t-test between our two-shot prompt approach against both the CATTS model and the T5 model, which resulted in metric scores closer to our method.
+
+To reproduce the significance testing, firstly run the below scripts:
+~~~
+PYTHONPATH='tools' python -m tools.experimentation.scitldr_scores_per_summary --experiment-names scitldr_catts scitldr_two_shot
+
+PYTHONPATH='tools' python -m tools.experimentation.scitldr_scores_per_summary --experiment-names scitldr_t5 scitldr_two_shot
+~~~
+This will generate the metric values for each pair of summaries between the two compared pairs and will produce the corresponding csv files under  `./tools/experimentation/results/evaluations/` directory.
+
+Then you can run the paired t-test for each metric, using the following scripts:
+~~~
+PYTHONPATH='tools' python -m tools.experimentation.significance_testing --experiment-names scitldr_catts scitldr_two_shot
+
+PYTHONPATH='tools' python -m tools.experimentation.significance_testing --experiment-names scitldr_t5 scitldr_two_shot
+~~~
+The above will generate the coresponding txt files under the `./tools/experimentation/results/evaluations/` directory with the p-value results of the t-tests.
+
 ### Multi-Doc Summarization (MDS)
 We used the [Multi-XScience](https://huggingface.co/datasets/multi_x_science_sum) dataset to evaluate the MDS flow of SumBlogger.
 
@@ -89,13 +116,29 @@ To run the evaluation of the MDS flow, follow the below steps:
 
 The above will generate the summaries of each method under `tools/experimentation/results/summaries`.
 
-To evaluate the summaries run the following command:
+To evaluate the summaries run the following script:
 ~~~
 python -m tools.experimentation.evaluate_summaries --experiment-names multi_xscience_onestep multi_xscience_twostep  --metrics rouge1 rouge2 rougeL bleu bert_score --results-filename multi_xscience
 ~~~
 
 This will generate the `multi_xscience_results.csv` under `tools/experimentation/results/evaluations`, with the scores of each methods on the following metrics:
 ROUGE-1, ROUGE-2, ROUGE-L, BLEU, BERTScore.
+
+#### Significance testing
+To check if our results are statistically significant, we perform a paired t-test between the one-step
+and the two-step approaches in order to validate that the two-step approach leads to a performance gain.
+
+To reproduce the significance testing, firstly run the below script:
+~~~
+PYTHONPATH='tools' python -m tools.experimentation.scores_per_summary --experiment-names multi_xscience_onestep multi_xscience_twostep
+~~~
+This will generate the metric values for each pair of summaries between the two methods and will produce the `./tools/experimentation/results/evaluations/multi_xscience_onestep_vs_multi_xscience_twostep.csv`.
+
+Secondly you can run the paired t-test for each metric, using the following script:
+~~~
+PYTHONPATH='tools' python -m tools.experimentation.significance_testing --experiment-names multi_xscience_onestep multi_xscience_twostep
+~~~
+The above will generate the `./tools/experimentation/results/evaluations/multi_xscience_onestep_vs_multi_xscience_twostep.txt` file with the p-value results of the t-tests.
 
 ### Cited Documents experiment
 We also evaluate the ability of the LLM to select representative documents on its own.
