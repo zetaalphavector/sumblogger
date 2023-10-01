@@ -4,9 +4,7 @@
 #
 #    pip-compile --no-emit-index-url requirements/dev.in
 #
--e ./shared/api
-    # via -r requirements/prod.in
-aiohttp==3.8.4
+aiohttp==3.8.5
     # via
     #   aiohttp-jinja2
     #   aioresponses
@@ -18,21 +16,13 @@ aioresponses==0.7.2
     # via -r requirements/dev.in
 aiosignal==1.3.1
     # via aiohttp
-alembic==1.8.1
-    # via zav-domain-model-repo
-anyio==3.6.2
-    # via
-    #   httpcore
-    #   starlette
+anyio==4.0.0
+    # via httpcore
 appdirs==1.4.4
     # via black
-asgiref==3.6.0
-    # via uvicorn
-async-timeout==4.0.2
+async-timeout==4.0.3
     # via aiohttp
-asyncpg==0.25.0
-    # via zav-domain-model-repo
-attrs==22.2.0
+attrs==23.1.0
     # via
     #   aiohttp
     #   pytest
@@ -44,27 +34,25 @@ black==21.7b0
     # via
     #   -r requirements/dev.in
     #   flake8-black
-certifi==2022.12.7
+certifi==2023.7.22
     # via
     #   httpcore
     #   httpx
     #   requests
-charset-normalizer==3.0.1
+charset-normalizer==3.3.0
     # via
     #   aiohttp
     #   requests
-click==8.0.4
-    # via
-    #   black
-    #   uvicorn
+click==8.1.7
+    # via black
 colorama==0.4.6
     # via pytest-watch
-coverage==7.2.7
+coverage==7.3.1
     # via pytest-cov
 docopt==0.6.2
     # via pytest-watch
-fastapi==0.73.0
-    # via zav-api
+exceptiongroup==1.1.3
+    # via anyio
 flake8==3.9.2
     # via
     #   -r requirements/dev.in
@@ -78,18 +66,16 @@ flake8-isort==4.0.0
     # via -r requirements/dev.in
 flake8-polyfill==1.0.2
     # via pep8-naming
-frozenlist==1.3.3
+frozenlist==1.4.0
     # via
     #   aiohttp
     #   aiosignal
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.30
+gitpython==3.1.37
     # via bandit
 h11==0.14.0
-    # via
-    #   httpcore
-    #   uvicorn
+    # via httpcore
 httpcore==0.16.3
     # via httpx
 httpx==0.23.3
@@ -100,33 +86,25 @@ idna==3.4
     #   requests
     #   rfc3986
     #   yarl
-importlib-metadata==6.0.0
-    # via alembic
-importlib-resources==5.10.2
-    # via alembic
 isort==5.9.3
     # via
     #   -r requirements/dev.in
     #   flake8-isort
 jinja2==3.1.2
     # via aiohttp-jinja2
-mako==1.2.4
-    # via alembic
-markupsafe==2.1.2
-    # via
-    #   jinja2
-    #   mako
+markupsafe==2.1.3
+    # via jinja2
 mccabe==0.6.1
     # via flake8
-more-itertools==9.1.0
+more-itertools==10.1.0
     # via pytest
 multidict==6.0.4
     # via
     #   aiohttp
     #   yarl
-mypy==0.991
+mypy==1.5.1
     # via -r requirements/dev.in
-mypy-extensions==0.4.3
+mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
@@ -134,9 +112,9 @@ numpy==1.24.1
     # via -r requirements/prod.in
 openai==0.27.2
     # via -r requirements/prod.in
-packaging==23.0
+packaging==23.2
     # via pytest
-pathspec==0.11.0
+pathspec==0.11.2
     # via black
 pbr==5.11.1
     # via stevedore
@@ -148,10 +126,6 @@ py==1.11.0
     # via pytest
 pycodestyle==2.7.0
     # via flake8
-pydantic==1.10.4
-    # via
-    #   fastapi
-    #   sqlmodel
 pyflakes==2.3.1
     # via flake8
 pytest==5.4.1
@@ -175,37 +149,24 @@ pytest-only==1.2.2
     # via -r requirements/dev.in
 pytest-watch==4.2.0
     # via -r requirements/dev.in
-python-json-logger==0.1.11
-    # via zav-logging
-pyyaml==6.0
+pyyaml==6.0.1
     # via bandit
-regex==2022.10.31
+regex==2023.8.8
     # via black
-requests==2.28.2
+requests==2.31.0
     # via openai
 rfc3986[idna2008]==1.5.0
     # via httpx
 six==1.16.0
     # via bandit
-smmap==5.0.0
+smmap==5.0.1
     # via gitdb
 sniffio==1.3.0
     # via
     #   anyio
     #   httpcore
     #   httpx
-sqlalchemy==1.4.35
-    # via
-    #   alembic
-    #   sqlmodel
-    #   zav-domain-model-repo
-sqlalchemy2-stubs==0.0.2a32
-    # via sqlmodel
-sqlmodel==0.0.8
-    # via zav-domain-model-repo
-starlette==0.17.1
-    # via fastapi
-stevedore==4.1.1
+stevedore==5.1.0
     # via bandit
 testfixtures==6.18.5
     # via flake8-isort
@@ -215,35 +176,19 @@ tomli==1.2.3
     # via
     #   black
     #   mypy
-tqdm==4.65.0
+tqdm==4.66.1
     # via openai
-typing-extensions==4.4.0
+typing-extensions==4.8.0
     # via
     #   aiohttp-jinja2
     #   mypy
-    #   pydantic
-    #   sqlalchemy2-stubs
-urllib3==1.26.14
+urllib3==2.0.5
     # via requests
 urllib3-mock==0.3.3
     # via -r requirements/dev.in
-uvicorn==0.17.1
-    # via zav-api
 watchdog==3.0.0
     # via pytest-watch
-wcwidth==0.2.6
+wcwidth==0.2.8
     # via pytest
-yarl==1.8.2
+yarl==1.9.2
     # via aiohttp
--e ./shared/domain-model-repo
-    # via zav-api
--e ./shared/logging
-    # via
-    #   zav-api
-    #   zav-message-bus
--e ./shared/message-bus
-    # via zav-api
-zipp==3.12.0
-    # via
-    #   importlib-metadata
-    #   importlib-resources

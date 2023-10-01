@@ -7,9 +7,16 @@ SHELL:=/bin/bash
 dry_run = true
 
 help:
+	@echo "clean - remove all artifacts"	
+	@echo "clean-build - remove Python build artifacts"
+	@echo "clean-pyc - remove Python file artifacts"
+	@echo "clean-test - remove test artifacts"
+	@echo "install-prod - installs production dependencies"
+	@echo "prod - creates a docker environment for production"
+	@echo "build-prod - builds the docker image for production"
 	@echo "install-dev - installs test/dev dependencies"
-	@echo "run - runs the application"
 	@echo "dev - creates a docker environment for development"
+	@echo "build-dev - builds the docker image for development"
 	@echo "test - runs all tests"
 	@echo "dev-test - runs all tests inside a docker environment and exits"
 	@echo "linter - runs linter"
@@ -17,26 +24,11 @@ help:
 	@echo "unit-tests - runs unit tests"
 	@echo "integration-tests - runs integration tests"
 	@echo "coverage - runs coverage"
-	@echo "clean-build - remove Python build artifacts"
-	@echo "clean-pyc - remove Python file artifacts"
-	@echo "clean-test - remove test artifacts"
-	@echo "clean - remove all artifacts"
-	@echo "test-ci - runs all tests in CI mode (no GUI)"
-	@echo "unit-tests-ci - runs unit tests in CI mode"
-	@echo "integration-tests-ci - runs integration tests in CI mode"
-	@echo "prod - creates a docker environment for production"
-	@echo "build-prod - builds the docker image for production"
-	@echo "install-prod - installs production dependencies"
+	@echo "requirements-prod - updates production dependencies"
+	@echo "requirements-dev - updates test/dev dependencies"
+	@echo "requirements - updates all dependencies"
 
 clean: clean-build clean-pyc clean-test
-
-copy-zav-deps:
-	rm -rf shared
-	mkdir shared
-	cp -r ../backend/shared/api ./shared
-	cp -r ../backend/shared/message-bus ./shared
-	cp -r ../backend/shared/logging ./shared
-	cp -r ../backend/shared/domain-model-repo ./shared
 
 clean-build:
 	rm -fr build/
@@ -84,7 +76,6 @@ dev-test-ci:
 	docker-compose exec -T sumblogger_api_1 make test-ci
 
 test: clean linter check-types unit-tests integration-tests
-test-ci: linter check-types unit-tests-ci integration-tests-ci
 linter:
 	flake8 src tests
 check-types:
@@ -95,10 +86,6 @@ unit-tests:
 integration-tests:
 	set -a; . ./dev.env; set +a; \
 	python -m pytest tests/integration/ --cov=src --cov-append -svvv --sw
-unit-tests-ci:
-	python -m pytest tests/unit/ --cov=src --cov-append -svvv
-integration-tests-ci:
-	python -m pytest tests/integration/ --cov=src --cov-append -svvv
 coverage:
 	coverage report
 

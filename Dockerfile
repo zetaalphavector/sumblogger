@@ -10,13 +10,12 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --upgrade pip
 
 COPY ./requirements/prod.txt /opt/requirements/
-COPY ./shared /opt/shared
 
 RUN cd /opt \
- && pip install -r <(grep -v '^-e' requirements/prod.txt) 
+    && pip install -r <(grep -v '^-e' requirements/prod.txt) 
 
- RUN cd /opt \
- && pip install --no-deps -r requirements/prod.txt
+RUN cd /opt \
+    && pip install --no-deps -r requirements/prod.txt
 
 FROM python:3.8-slim-buster
 EXPOSE 8080
