@@ -1,0 +1,25 @@
+rouge_1: Paired t-test results:
+t-statistic: -4.204408187743407
+p-value: 3.006611526635267e-05
+Is it significant? True
+--------------------------------------------------
+rouge_2: Paired t-test results:
+t-statistic: -1.6422554766421738
+p-value: 0.10104825744466295
+Is it significant? False
+--------------------------------------------------
+rouge_l: Paired t-test results:
+t-statistic: -2.2877949942648876
+p-value: 0.022488011482418756
+Is it significant? True
+--------------------------------------------------
+bleu: Paired t-test results:
+t-statistic: -12.076364867798878
+p-value: 2.784591026758676e-30
+Is it significant? True
+--------------------------------------------------
+bert_score: Paired t-test results:
+t-statistic: -4.1904498688232685
+p-value: 3.192180496257795e-05
+Is it significant? True
+--------------------------------------------------
