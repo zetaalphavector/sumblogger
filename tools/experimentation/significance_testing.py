@@ -7,10 +7,6 @@ from typing import Dict
 import pandas as pd
 from scipy.stats import ttest_rel
 
-from tools.experimentation.metrics.bert_score import BertScoreMetricCalculator
-from tools.experimentation.metrics.bleu import BleuMetricCalculator
-from tools.experimentation.metrics.rouge import RougeMetricCalculator
-
 PER_SUMMARY_RESULTS_DIR = "./tools/experimentation/results/evaluations"
 PAIRED_TTEST_RESULTS_DIR = "./tools/experimentation/results/evaluations"
 
