@@ -15,7 +15,7 @@ It produces a blogpost summarizing the whole collection or conference.
     - Cluster titles generation: Prompting LLM with the `title_per_intro_summary` prompt variant of the `titles_generation` usecase as configured in `src/services/text_completion/configuration/title_generation.json`.
     - Blogpost surroundings (title, intro, conclusion): Prompting LLM with the `title_intro_conclusion` prompt variant of the `blog_surroundings` usecase as configured in `src/services/text_completion/configuration/blog_surroundings.json`.
 
-![Pipeline](pipeline.png)
+![Pipeline](docs/pipeline.png)
 
 ## Generate blogpost
 Follow the steps below in order to generate a blogpost for a collection of scientific articles.
