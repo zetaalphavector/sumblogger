@@ -51,8 +51,19 @@ Note: The vos viewer visualizations of each cluster are stored in the same outpu
 
 ### Single-Doc Summarization (SDS)
 We used the [SciTLDR](https://huggingface.co/datasets/allenai/scitldr) dataset to evaluate the SDS component of SumBlogger.
+The results table can be found below:
+| experiment_name  | rouge1_stopwords | rouge2_stopwords | rougeL_stopwords | bleu             | bert_score       |
+|------------------|------------------|------------------|------------------|------------------|------------------|
+| scitldr_catts    | 0.416            | 0.212            | 0.359            | 0.027            | 0.697            |
+| scitldr_pegasus  | 0.399            | 0.208            | 0.346            | 0.126            | 0.692            |
+| scitldr_t5       | 0.403            | 0.208            | 0.351            | 0.143            | 0.696            |
+| scitldr_vanilla  | 0.409            | 0.199            | 0.339            | 0.113            | 0.699            |
+| scitldr_zero_shot| 0.416            | 0.200            | 0.345            | 0.114            | 0.700            |
+| scitldr_two_shot | 0.445            | 0.223            | 0.375            | 0.144            | 0.708            |
 
-To run the evaluation of the SDS component, follow the below steps:
+
+
+To reproduce the evaluation of the SDS component, follow the below steps:
 1. Run the vanilla prompt:
     ~~~
     python -m tools.experimentation.run_instruction_tuned_llm --experiment-name scitldr_vanilla --size <NUMBER_OF_DATASET_ENTRIES> --offset <OFFSET_OF_DATASET_ENTRIES>
@@ -101,8 +112,13 @@ The above will generate the coresponding txt files under the `./tools/experiment
 
 ### Multi-Doc Summarization (MDS)
 We used the [Multi-XScience](https://huggingface.co/datasets/multi_x_science_sum) dataset to evaluate the MDS flow of SumBlogger.
+The results table can be found below:
+| experiment_name         | rouge1         | rouge2         | rougeL         | bleu           | bert_score     |
+|-------------------------|----------------|----------------|----------------|----------------|----------------|
+| multi_xscience_onestep  | 0.347          | 0.080          | 0.170          | 0.070          | 0.598          |
+| multi_xscience_twostep  | 0.353          | 0.084          | 0.172          | 0.092          | 0.605          |
 
-To run the evaluation of the MDS flow, follow the below steps:
+To reproduce the evaluation of the MDS flow, follow the below steps:
 1. Run the one-step MDS approach, where the full abstracts are given directly as input to the MDS component.
     ~~~
     python -m tools.experimentation.run_instruction_tuned_llm --experiment-name multi_xscience_onestep --size <NUMBER_OF_DATASET_ENTRIES> --offset <OFFSET_OF_DATASET_ENTRIES>
