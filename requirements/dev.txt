@@ -11,9 +11,9 @@ aiohttp==3.8.5
     #   openai
     #   pytest-aiohttp
 aiohttp-jinja2==1.4.2
-    # via -r requirements/prod.in
+    # via -r prod.in
 aioresponses==0.7.2
-    # via -r requirements/dev.in
+    # via -r dev.in
 aiosignal==1.3.1
     # via aiohttp
 anyio==4.0.0
@@ -27,12 +27,12 @@ attrs==23.1.0
     #   aiohttp
     #   pytest
 backoff==2.2.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 bandit==1.7.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 black==21.7b0
     # via
-    #   -r requirements/dev.in
+    #   -r dev.in
     #   flake8-black
 certifi==2023.7.22
     # via
@@ -51,19 +51,17 @@ coverage==7.3.1
     # via pytest-cov
 docopt==0.6.2
     # via pytest-watch
-exceptiongroup==1.1.3
-    # via anyio
 flake8==3.9.2
     # via
-    #   -r requirements/dev.in
+    #   -r dev.in
     #   flake8-black
     #   flake8-isort
     #   flake8-polyfill
     #   pep8-naming
 flake8-black==0.2.3
-    # via -r requirements/dev.in
+    # via -r dev.in
 flake8-isort==4.0.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 flake8-polyfill==1.0.2
     # via pep8-naming
 frozenlist==1.4.0
@@ -79,7 +77,7 @@ h11==0.14.0
 httpcore==0.16.3
     # via httpx
 httpx==0.23.3
-    # via -r requirements/prod.in
+    # via -r prod.in
 idna==3.4
     # via
     #   anyio
@@ -88,7 +86,7 @@ idna==3.4
     #   yarl
 isort==5.9.3
     # via
-    #   -r requirements/dev.in
+    #   -r dev.in
     #   flake8-isort
 jinja2==3.1.2
     # via aiohttp-jinja2
@@ -103,15 +101,15 @@ multidict==6.0.4
     #   aiohttp
     #   yarl
 mypy==1.5.1
-    # via -r requirements/dev.in
+    # via -r dev.in
 mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
 numpy==1.24.1
-    # via -r requirements/prod.in
+    # via -r prod.in
 openai==0.27.2
-    # via -r requirements/prod.in
+    # via -r prod.in
 packaging==23.2
     # via pytest
 pathspec==0.11.2
@@ -119,7 +117,7 @@ pathspec==0.11.2
 pbr==5.11.1
     # via stevedore
 pep8-naming==0.12.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 pluggy==0.13.1
     # via pytest
 py==1.11.0
@@ -130,7 +128,7 @@ pyflakes==2.3.1
     # via flake8
 pytest==5.4.1
     # via
-    #   -r requirements/dev.in
+    #   -r dev.in
     #   pytest-aiohttp
     #   pytest-asyncio
     #   pytest-cov
@@ -138,17 +136,17 @@ pytest==5.4.1
     #   pytest-only
     #   pytest-watch
 pytest-aiohttp==0.3.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 pytest-asyncio==0.10.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 pytest-cov==2.8.1
-    # via -r requirements/dev.in
+    # via -r dev.in
 pytest-mock==3.1.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 pytest-only==1.2.2
-    # via -r requirements/dev.in
+    # via -r dev.in
 pytest-watch==4.2.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 pyyaml==6.0.1
     # via bandit
 regex==2023.8.8
@@ -173,19 +171,17 @@ testfixtures==6.18.5
 toml==0.10.2
     # via flake8-black
 tomli==1.2.3
-    # via
-    #   black
-    #   mypy
+    # via black
 tqdm==4.66.1
     # via openai
 typing-extensions==4.8.0
     # via
     #   aiohttp-jinja2
     #   mypy
-urllib3==2.0.5
+urllib3==2.0.6
     # via requests
 urllib3-mock==0.3.3
-    # via -r requirements/dev.in
+    # via -r dev.in
 watchdog==3.0.0
     # via pytest-watch
 wcwidth==0.2.8
