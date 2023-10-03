@@ -46,7 +46,114 @@ Follow the steps below in order to generate a blogpost for a collection of scien
 
 Note: The vos viewer visualizations of each cluster are stored in the same output directory, but they will not be visible at the HTML page, because they have to be hosted in a public endpoint in order for the VosViewer iframe to load them in the HTML page.
 
+## Prompts
 
+### Single-Doc Summarization (SDS), SciTLDR
+- `vanilla` prompt:
+        ~~~
+        {{document}}
+        Summarize the above article in 1 sentence."
+        ~~~
+- our `0-shot` prompt:
+    - system message:
+        ~~~
+        You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.
+        ~~~
+    - user message:
+        ~~~
+        Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.
+        
+        Document:
+        {{ document }}
+        ~~~
+- our `2-shot` prompt:
+    The same as the `0-shot`, including two user-bot message pairs at the beginning of the conversation, where each user message contains a document from the training set, and the corresponding bot message contains its gold summary.
+
+### Multi-Doc Summarization (MDS), Multi-XScience
+-  `one-step summarization` prompt:
+    - system message:
+        ~~~
+        You are the most famous researcher in writing the related work section of a given scientific article. Your summaries are concise, informative and of high quality.
+        ~~~
+    - user message:
+        ~~~
+        You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.
+        You want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.
+        Be fluent. Avoid repetitive information.
+        Refer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their abstracts.
+        
+        Scientific Article abstract:
+        {{ main_document }}
+        
+        Referenced documents abstracts:
+        {% for i in range(ref_documents|length) %}
+        [{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}
+        {% endfor %}
+        ~~~
+-  `two-step summarization` prompt:
+    - system message:
+        ~~~
+        You are the most famous researcher in writing the related work section of a given scientific article. Your summaries are concise, informative and of high quality.
+        ~~~
+    - user message:
+        ~~~
+        You are the author of a scientific article. You have already written the abstract of the article, and you are currently writing the related work section of the article.
+        You want to write a paragraph of at most {{ number_of_words }} words, which will be used without modification as a paragraph in the related work section that refers to the referenced documents, either to base on their ideas or to challenge them.
+        Be fluent. Avoid repetitive information.
+        Refer to the referenced documents of the list using their $id in this format \"@cite_$id\". All documents should be cited. You are encouraged to cite more than one documents in one place if you are sure that the citation is supported by their short summaries.
+        
+        Scientific Article abstract:
+        {{ main_document }}
+        
+        Referenced documents summaries:
+         {% for i in range(ref_documents|length) %}
+        [{{ ref_document_ids[i] }}]:{{ ref_documents[i] }}
+        {% endfor %}
+        ~~~
+
+### Blogpost: cluster's intro paragraph
+The following templates were used in a 1-shot setting, where a user-bot message pair was used at the beginning of the conversation as the 1-shot example.
+
+- system message template:
+    ~~~
+    You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.
+    ~~~
+- user message template:
+    ~~~
+    Write a short and concise paragraph (at most {{ number_of_words }} words) that can be used as an informative introductory paragraph the given documents.
+    The paragraph should be informative and pleasant for a reader who is an experienced researcher in this field.
+    Focus on what the given documents have in common and reveal a potential underlying trend in the field. Do not reference or cite any documents. Rely on the information provided in the documents, but do not use explicitly any text from them.
+    Do not mention how many documents are given. Do not mention anything related to the order and the position of the documents in the list.
+    
+    Documents:
+    {% for i in range(documents|length) %}
+    [{{ doc_ids[i] }}]:{{ documents[i] }}
+    {% endfor %}
+    ~~~
+
+### Blogpost: cluster's main paragraph
+- system message template:
+    ~~~
+    You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.
+    ~~~
+- user message template:
+    ~~~
+    # Instructions
+    Write a short and concise paragraph of at most {{ number_of_words }} words that summarizes the given documents.
+    The summary should be informative and pleasant for a reader who is an experienced researcher in this field.
+    Refer to the documents using 'd' plus their index in square brackets and cite them wherever needed. All documents should be cited. 
+    Ensure that each citation is supported by the information provided in documents.
+    It is important to combine two or three citations in single sentences instead of creating one sentence for each cited document.
+    Use only information from the given documents.
+    Avoid the usage of generic sentences that do not refer to any document.
+    Avoid mentioning how many documents are given and what is the position of the documents in the list.
+    Avoid using the citation as the subject of any phrase or sentence.
+    
+    # Documents
+    {% for i in range(documents|length) %}
+    [{{ doc_ids[i] }}]:{{ documents[i] }}
+    {% endfor %}
+    ~~~
 ## Experiments
 
 ### Single-Doc Summarization (SDS)
