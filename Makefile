@@ -92,10 +92,8 @@ coverage:
 requirements-prod:
 	pip-compile --no-emit-index-url requirements/prod.in
 	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt
-	sed -i '' -E "s/zav\..* @ file:\/\/localhost\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt
 requirements-dev:
 	pip-compile --no-emit-index-url -q requirements/dev.in
 	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt
-	sed -i '' -E "s/zav\..* @ file:\/\/localhost\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt
 
 requirements: requirements-prod requirements-dev
