@@ -1,3 +1,6 @@
+# Paper
+- Accepted to [ECIR 2024 Findings](https://link.springer.com/chapter/10.1007/978-3-031-56027-9_23)
+
 # SumBlogger
 SumBlogger is a pipeline for Abstractive Summarization of large collections of scientific documents. 
 Specifically, it receives a Vos Viewer network as input, which contains a large collection of scientific documents (e.g. an AI conference) which have been already clustered.
