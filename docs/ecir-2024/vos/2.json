@@ -1,1 +1,1302 @@
-"{\"config\": {\"terminology\": {\"cluster\": \"Group\", \"clusters\": \"Groups\", \"item\": \"Document\", \"items\": \"Documents\", \"link\": \"Similarity link\", \"links\": \"Similarity links\", \"link_strength\": \"Similarity strength\", \"total_link_strength\": \"Total similarity strengths\", \"title\": \"Title of the document\", \"abstract\": \"Abstract of the document\", \"authors\": \"Authors\"}, \"color_schemes\": {\"cluster_colors\": [{\"cluster\": 1, \"color\": \"#1f77b4\"}, {\"cluster\": 2, \"color\": \"#d62728\"}]}, \"templates\": {\"item_description\": \"<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>\"}, \"styles\": {\"description_heading\": \"color: #757575; font-weight: 600;\"}, \"parameters\": {\"item_size_variation\": 0.7, \"largest_component\": true, \"attraction\": 1.0, \"repulsion\": -1.0, \"max_n_links\": 1000}}, \"network\": {\"items\": [{\"id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Improving Exposure Allocation in\\u00a0Rankings by\\u00a0Query Generation\", \"authors\": \"Thomas Jaenich, Graham McDonald, Iadh Ounis\", \"label\": \"Improving Exposure Allocation in\\u00a0Rankings by\\u00a0Query Generation\", \"abstract\": \"Deploying methods that incorporate generated queries in their retrieval process, such as Doc2Query, has been shown to be effective for retrieving the most relevant documents for a user\\u2019s query. However, to the best of our knowledge, there has been no work yet on whether generated queries can also be...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=05b0523ae05e9df34671d3da647960f22c0ddb4c\", \"img_url\": null, \"x\": 0.664779346574446, \"y\": 0.42348301704529545, \"cluster\": 1, \"weights\": {\"Influence\": 2.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Let\\u2019s Get It Started: Fostering the\\u00a0Discoverability of\\u00a0New Releases on\\u00a0Deezer\", \"authors\": \"L\\u00e9a Briand, Th\\u00e9o Bontempelli, Walid Bendada, Mathieu Morlon, Fran\\u00e7ois Rigaud, Benjamin Chapus, Thomas Bouab\\u00e7a, Guillaume Salha-Galvan\", \"label\": \"Let\\u2019s Get It Started: Fostering the\\u00a0Discoverability of\\u00a0New Releases on\\u00a0Deezer\", \"abstract\": \"This paper presents our recent initiatives to foster the discoverability of new releases on the music streaming service Deezer. After introducing our search and recommendation features dedicated to new releases, we outline our shift from editorial to personalized release suggestions using cold start...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=05fce86ca7df5163908d6d12b0ac6a68cbf97934\", \"img_url\": null, \"x\": 0.9270566441861099, \"y\": 0.5997814441387648, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Query Performance Prediction: From Fundamentals to\\u00a0Advanced Techniques\", \"authors\": \"Negar Arabzadeh, Chuan Meng, Mohammad Aliannejadi, Ebrahim Bagheri\", \"label\": \"Query Performance Prediction: From Fundamentals to\\u00a0Advanced Techniques\", \"abstract\": \"Query performance prediction (QPP) is a core task in information retrieval (IR) that aims at predicting the retrieval quality for a given query without relevance judgments. QPP has been investigated for decades and has witnessed a surge in research activity in recent years; QPP has been shown to ben...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=0c77237754e8a43b8818868273483f2e08059822\", \"img_url\": null, \"x\": 0.5471245880563609, \"y\": 0.29791819498695854, \"cluster\": 1, \"weights\": {\"Influence\": 1.3333333333333333, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.15238095238095237, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5772486766982192, \"summary\": null}, {\"id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Cascading Ranking Pipelines for\\u00a0Sensitivity-Aware Search\", \"authors\": \"Jack McKechnie\", \"label\": \"Cascading Ranking Pipelines for\\u00a0Sensitivity-Aware Search\", \"abstract\": \"Search engines are designed to make information accessible. However, some information should not be accessible, such as documents concerning citizenship applications or personal information. This  sensitive information  is often found interspersed with other potentially useful non-sensitive informat...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=13337cdd00ef6d01344a95502a6e6e817e13710d\", \"img_url\": null, \"x\": 0.37384219705842037, \"y\": 0.4108737292976462, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Countering Mainstream Bias via\\u00a0End-to-End Adaptive Local Learning\", \"authors\": \"Jinhao Pan, Ziwei Zhu, Jianling Wang, Allen Lin, James Caverlee\", \"label\": \"Countering Mainstream Bias via\\u00a0End-to-End Adaptive Local Learning\", \"abstract\": \"Collaborative filtering (CF) based recommendations suffer from mainstream bias \\u2013 where mainstream users are favored over niche users, leading to poor recommendation quality for many long-tail users. In this paper, we identify two root causes of this mainstream bias: (i) discrepancy modeling, whereby...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=2796e0b6e79314790d24319f90a570ba3fcb3cf2\", \"img_url\": null, \"x\": 1.1024132332295329, \"y\": 0.18523756152431836, \"cluster\": 1, \"weights\": {\"Influence\": 1.8333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.20952380952380953, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6057487659095753, \"summary\": null}, {\"id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"An Adaptive Framework of\\u00a0Geographical Group-Specific Network on\\u00a0O2O Recommendation\", \"authors\": \"Luo Ji, Jiayu Mao, Hailong Shi, Qian Li, Yunfei Chu, Hongxia Yang\", \"label\": \"An Adaptive Framework of\\u00a0Geographical Group-Specific Network on\\u00a0O2O Recommendation\", \"abstract\": \"Online to offline recommendation strongly correlates with the user and service\\u2019s spatiotemporal information, therefore calling for a higher degree of model personalization. The traditional methodology is based on a uniform model structure trained by collected centralized data, which is unlikely to c...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=394df2b2c1ae70629851a3ac12944155e612b264\", \"img_url\": null, \"x\": 1.1846421768357829, \"y\": 0.32878679865340044, \"cluster\": 1, \"weights\": {\"Influence\": 2.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.22857142857142856, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.615248795646694, \"summary\": null}, {\"id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Measuring Bias in\\u00a0Search Results Through Retrieval List Comparison\", \"authors\": \"Linda Ratz, Markus Schedl, Simone Kopeinik, Navid Rekabsaz\", \"label\": \"Measuring Bias in\\u00a0Search Results Through Retrieval List Comparison\", \"abstract\": \"Many IR systems project harmful societal biases, including gender bias, in their retrieved contents. Uncovering and addressing such biases requires grounded bias measurement principles. However, defining reliable bias metrics for search results is challenging, particularly due to the difficulties in...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=524d59c57bda6dfaedf0002434979e0165af9158\", \"img_url\": null, \"x\": 0.04375272929220607, \"y\": 0.50356513005931, \"cluster\": 1, \"weights\": {\"Influence\": 2.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.22857142857142856, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.615248795646694, \"summary\": null}, {\"id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Robustness in\\u00a0Fairness Against Edge-Level Perturbations in\\u00a0GNN-Based Recommendation\", \"authors\": \"Ludovico Boratto, Francesco Fabbri, Gianni Fenu, Mirko Marras, Giacomo Medda\", \"label\": \"Robustness in\\u00a0Fairness Against Edge-Level Perturbations in\\u00a0GNN-Based Recommendation\", \"abstract\": \"Efforts in the recommendation community are shifting from the sole emphasis on utility to considering beyond-utility factors, such as fairness and robustness. Robustness of recommendation models is typically linked to their ability to maintain the original utility when subjected to attacks. Limited ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=6b2e33a918a2a94b09f52c57ea3e4f3db2883adc\", \"img_url\": null, \"x\": 0.9376352877631751, \"y\": 0.40575032484781864, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Shuffling a\\u00a0Few Stalls in\\u00a0a\\u00a0Crowded Bazaar: Potential Impact of\\u00a0Document-Side Fairness on\\u00a0Unprivileged Info-Seekers\", \"authors\": \"Se\\u00e1n Healy\", \"label\": \"Shuffling a\\u00a0Few Stalls in\\u00a0a\\u00a0Crowded Bazaar: Potential Impact of\\u00a0Document-Side Fairness on\\u00a0Unprivileged Info-Seekers\", \"abstract\": \"Information systems rely on algorithmic ranking to ascertain expected relevance. Concerns about this strategy have resulted in the emergence of a field of inquiry referred to as  fair ranking . Within this field, the aim varies between one-sided and two-sided fairness across automatically generated ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=78a103d3895f269806919fb203566be68c6aa879\", \"img_url\": null, \"x\": 0.48916916081870415, \"y\": 0.5548479508914431, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Multiple Testing for\\u00a0IR and\\u00a0Recommendation System Experiments\", \"authors\": \"Ngozi Ihemelandu, Michael D. Ekstrand\", \"label\": \"Multiple Testing for\\u00a0IR and\\u00a0Recommendation System Experiments\", \"abstract\": \"While there has been significant research on statistical techniques for comparing two information retrieval (IR) systems, many IR experiments test more than two systems. This can lead to inflated false discoveries due to the multiple-comparison problem (MCP). A few IR studies have investigated multi...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=81885ae4852c07a2f76a62aa1c5864117c46df74\", \"img_url\": null, \"x\": 0.7859081189380286, \"y\": 0.60802698905088, \"cluster\": 1, \"weights\": {\"Influence\": 1.9999999999999996, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2285714285714285, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6152487956466939, \"summary\": null}, {\"id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"MOReGIn: Multi-Objective Recommendation at\\u00a0the\\u00a0Global and\\u00a0Individual Levels\", \"authors\": \"Elizabeth G\\u00f3mez, David Contreras, Ludovico Boratto, Maria Salam\\u00f3\", \"label\": \"MOReGIn: Multi-Objective Recommendation at\\u00a0the\\u00a0Global and\\u00a0Individual Levels\", \"abstract\": \"Multi-Objective Recommender Systems (MORSs) emerged as a paradigm to guarantee multiple (often conflicting) goals. Besides accuracy, a MORS can operate at the  global  level, where additional beyond-accuracy goals are met for the system as a whole, or at the  individual  level, meaning that the reco...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=81d40dcf084d77b2862046c22867d83a0b8e813f\", \"img_url\": null, \"x\": 1.0777000712090725, \"y\": 0.28474155387011396, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5615493593396541, \"summary\": null}, {\"id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"TWOLAR: A TWO-Step LLM-Augmented Distillation Method for\\u00a0Passage Reranking\", \"authors\": \"Davide Baldelli, Junfeng Jiang, Akiko Aizawa, Paolo Torroni\", \"label\": \"TWOLAR: A TWO-Step LLM-Augmented Distillation Method for\\u00a0Passage Reranking\", \"abstract\": \"In this paper, we present TWOLAR: a two-stage pipeline for passage reranking based on the distillation of knowledge from Large Language Models (LLM). TWOLAR introduces a new scoring strategy and a distillation process consisting in the creation of a novel and diverse training dataset. The dataset co...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=83b2a1b1046cd056ab2541e8299e032a1b33e9b3\", \"img_url\": null, \"x\": 0.40336615380244145, \"y\": 0.2783253186422967, \"cluster\": 1, \"weights\": {\"Influence\": 1.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.17142857142857143, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5898364974467732, \"summary\": null}, {\"id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"On-Device Query Auto-completion for\\u00a0Email Search\", \"authors\": \"Yifan Qiao, Otto Godwin, Hua Ouyang\", \"label\": \"On-Device Query Auto-completion for\\u00a0Email Search\", \"abstract\": \"Traditional query auto-completion (QAC) relies heavily on search logs collected over many users. However, in on-device email search, the scarcity of logs and the governing privacy constraints make QAC a challenging task. In this work, we propose an on-device QAC method that runs directly on users\\u2019 d...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=96568b218fbb139ca15e52ae6133f356691a9afd\", \"img_url\": null, \"x\": 0.21930687578952793, \"y\": 0.392422529304902, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5615493593396541, \"summary\": null}, {\"id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Revealing the\\u00a0Hidden Impact of\\u00a0Top-N Metrics on\\u00a0Optimization in\\u00a0Recommender Systems\", \"authors\": \"Lukas Wegmeth, Tobias Vente, Lennart Purucker\", \"label\": \"Revealing the\\u00a0Hidden Impact of\\u00a0Top-N Metrics on\\u00a0Optimization in\\u00a0Recommender Systems\", \"abstract\": \"The hyperparameters of recommender systems for top-n predictions are typically optimized to enhance the predictive performance of algorithms. Thereby, the optimization algorithm, e.g., grid search or random search, searches for the best hyperparameter configuration according to an optimization-targe...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=a5f541cbed362920186593e9dbf69a1a77269ded\", \"img_url\": null, \"x\": 1.044128567276304, \"y\": 0.3878244864173272, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5615493593396541, \"summary\": null}, {\"id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Query Obfuscation for\\u00a0Information Retrieval Through Differential Privacy\", \"authors\": \"Guglielmo Faggioli, Nicola Ferro\", \"label\": \"Query Obfuscation for\\u00a0Information Retrieval Through Differential Privacy\", \"abstract\": \"Protecting the privacy of a user querying an Information Retrieval (IR) system is of utmost importance. The problem is exacerbated when the IR system is not cooperative in satisfying the user\\u2019s privacy requirements. To address this, obfuscation techniques split the user\\u2019s sensitive query into multip...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=b429d07d2c8ebf3a067b20bf427045df7863519b\", \"img_url\": null, \"x\": 0.27749261282417886, \"y\": 0.49075975993842463, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.5615493593396541, \"summary\": null}, {\"id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Towards Optimizing Ranking in\\u00a0Grid-Layout for\\u00a0Provider-Side Fairness\", \"authors\": \"Amifa Raj, Michael D. Ekstrand\", \"label\": \"Towards Optimizing Ranking in\\u00a0Grid-Layout for\\u00a0Provider-Side Fairness\", \"abstract\": \"Information access systems, such as search engines and recommender systems, order and position results based on their estimated relevance. These results are then evaluated for a range of concerns, including provider-side fairness: whether exposure to users is fairly distributed among items and the p...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=be17acf987e3aad8528a7ca155b651489b67a232\", \"img_url\": null, \"x\": 0.816301517892321, \"y\": 0.46262335613691014, \"cluster\": 1, \"weights\": {\"Influence\": 1.9999999999999996, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2285714285714285, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6152487956466939, \"summary\": null}, {\"id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Measuring Bias in\\u00a0a\\u00a0Ranked List Using Term-Based Representations\", \"authors\": \"Amin Abolghasemi, Leif Azzopardi, Arian Askari, Maarten de Rijke, Suzan Verberne\", \"label\": \"Measuring Bias in\\u00a0a\\u00a0Ranked List Using Term-Based Representations\", \"abstract\": \"In most recent studies, gender bias in document ranking is evaluated with the NFaiRR metric, which measures bias in a ranked list based on an aggregation over the unbiasedness scores of each ranked document. This perspective in measuring the bias of a ranked list has a key limitation: individual doc...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=d7a7a6e443bea1250758f31f0589ed62d28a5126\", \"img_url\": null, \"x\": 0.6413506210193929, \"y\": 0.5513667271664658, \"cluster\": 1, \"weights\": {\"Influence\": 3.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.34285714285714286, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.672248974069406, \"summary\": null}, {\"id\": \"dd8641c0d29d85fe1c046887e2aa9612c872d044_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Can We Predict QPP? An\\u00a0Approach Based on\\u00a0Multivariate Outliers\", \"authors\": \"Adrian-Gabriel Chifu, S\\u00e9bastien D\\u00e9jean, Moncef Garouani, Josiane Mothe, Di\\u00e9go Ortiz, Md Zia Ullah\", \"label\": \"Can We Predict QPP? An\\u00a0Approach Based on\\u00a0Multivariate Outliers\", \"abstract\": \"Query performance prediction (QPP) aims to forecast the effectiveness of a search engine across a range of queries and documents. While state-of-the-art predictors offer a certain level of precision, their accuracy is not flawless. Prior research has recognized the challenges inherent in QPP but oft...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=dd8641c0d29d85fe1c046887e2aa9612c872d044\", \"img_url\": null, \"x\": 1.089887715118771, \"y\": 0.6500575303907687, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Learning-to-Rank with\\u00a0Nested Feedback\", \"authors\": \"Hitesh Sagtani, Olivier Jeunen, Aleksei Ustimenko\", \"label\": \"Learning-to-Rank with\\u00a0Nested Feedback\", \"abstract\": \"Many platforms on the web present ranked lists of content to users, typically optimized for engagement-, satisfaction- or retention- driven metrics. Advances in the Learning-to-Rank (LTR) research literature have enabled rapid growth in this application area. Several popular interfaces now include n...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=e6fe87b95b840b3be2c0ddf50199032567c8d900\", \"img_url\": null, \"x\": 0.9042890870455503, \"y\": 0.21519085977007302, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"An In-Depth Comparison of\\u00a0Neural and\\u00a0Probabilistic Tree Models for\\u00a0Learning-to-rank\", \"authors\": \"Haonan Tan, Kaiyu Yang, Haitao Yu\", \"label\": \"An In-Depth Comparison of\\u00a0Neural and\\u00a0Probabilistic Tree Models for\\u00a0Learning-to-rank\", \"abstract\": \"Learning-to-rank has been intensively studied and has demonstrated significant value in several fields, such as web search and recommender systems. Over the learning-to-rank datasets given as vectors of feature values, LambdaMART proposed more than a decade ago, and its subsequent descendants based ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=f89de125da3ad7d3658a1311b8502f5b6b9a7d3b\", \"img_url\": null, \"x\": 0.7253017748062869, \"y\": 0.17736139341734183, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"How to\\u00a0Forget Clients in\\u00a0Federated Online Learning to\\u00a0Rank?\", \"authors\": \"Shuyi Wang, Bing Liu, Guido Zuccon\", \"label\": \"How to\\u00a0Forget Clients in\\u00a0Federated Online Learning to\\u00a0Rank?\", \"abstract\": \"Data protection legislation like the European Union\\u2019s General Data Protection Regulation (GDPR) establishes the  right to be forgotten : a user (client) can request contributions made using their data to be removed from learned models. In this paper, we study how to remove the contributions made by ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c\", \"img_url\": null, \"x\": 1.113165717379873, \"y\": 0.49026605758254505, \"cluster\": 1, \"weights\": {\"Influence\": 8.75, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 1.0, \"summary\": null}, {\"id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Variance Reduction in\\u00a0Ratio Metrics for\\u00a0Efficient Online Experiments\", \"authors\": \"Shubham Baweja, Neeti Pokharna, Aleksei Ustimenko, Olivier Jeunen\", \"label\": \"Variance Reduction in\\u00a0Ratio Metrics for\\u00a0Efficient Online Experiments\", \"abstract\": \"Online controlled experiments, such as A/B-tests, are commonly used by modern tech companies to enable continuous system improvements. Despite their paramount importance, A/B-tests are expensive: by their very definition, a percentage of traffic is assigned an inferior system variant. To ensure stat...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=fbf68188846a14fb09c8493338a9be0f8daa51b3\", \"img_url\": null, \"x\": 1.0958452792492788, \"y\": 0.6011755811279967, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}, {\"id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"A Cost-Sensitive Meta-learning Strategy for\\u00a0Fair Provider Exposure in\\u00a0Recommendation\", \"authors\": \"Ludovico Boratto, Giulia Cerniglia, Mirko Marras, Alessandra Perniciano, Barbara Pes\", \"label\": \"A Cost-Sensitive Meta-learning Strategy for\\u00a0Fair Provider Exposure in\\u00a0Recommendation\", \"abstract\": \"When devising recommendation services, it is important to account for the interests of all content providers, encompassing not only newcomers but also minority demographic groups. In various instances, certain provider groups find themselves underrepresented in the item catalog, a situation that can...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=ff3fc1d3c984b9d74981c4546f9aefa86853a55b\", \"img_url\": null, \"x\": 0.9345263297815734, \"y\": 0.5204152636586984, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.11428571428571428, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.558248617223982, \"summary\": null}], \"links\": [{\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"strength\": 0.4362743224801515}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"strength\": 1.2676805205912838}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"strength\": 1.2854326619762748}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"strength\": 1.3308085327610155}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"strength\": 0.4503323189121455}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"strength\": 1.2773070311550718}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"strength\": 0.505880422952772}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 0.45921063924753097}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"strength\": 1.0957623056539099}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"strength\": 0.42288983469693975}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 1.148137881495824}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 0.4486464759515395}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 1.3728523271680695}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 1.340202210909644}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"dd8641c0d29d85fe1c046887e2aa9612c872d044_0\", \"strength\": 0.4019126215399959}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.1877053133649527}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.1237030106530195}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 0.45471263388411776}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.4365665246605011}, {\"source_id\": \"05b0523ae05e9df34671d3da647960f22c0ddb4c_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.171939684407945}, {\"source_id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"target_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"strength\": 0.38433654012482005}, {\"source_id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 0.4144098507979566}, {\"source_id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 0.44140625406218725}, {\"source_id\": \"05fce86ca7df5163908d6d12b0ac6a68cbf97934_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.8065686067681146}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"strength\": 1.0550767063893016}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"strength\": 1.0667512881956192}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"strength\": 0.4645091823205251}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"strength\": 0.49099154968753816}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"strength\": 0.48903972043278865}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 0.480873178134481}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 0.4177352298987186}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"dd8641c0d29d85fe1c046887e2aa9612c872d044_0\", \"strength\": 1.1921777228802002}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 0.49984762324325255}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.087917949095623}, {\"source_id\": \"0c77237754e8a43b8818868273483f2e08059822_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.47365570570564136}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"strength\": 1.1975250718241826}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"strength\": 0.40662879410156794}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"strength\": 0.4615218497394982}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"strength\": 0.9775150338468501}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"strength\": 0.9525823021629315}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"strength\": 0.9817158713846309}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 1.1075453715402945}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 0.46280027112270083}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.9548279401751683}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.0190571781333302}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 0.4748844401410143}, {\"source_id\": \"13337cdd00ef6d01344a95502a6e6e817e13710d_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.44246383955528507}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"strength\": 0.8058775666486336}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"strength\": 0.45253995911722117}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"strength\": 0.9796663052563307}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 1.1059026325825991}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 1.0534712398198554}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.42496635689660556}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 0.4512108477295141}, {\"source_id\": \"2796e0b6e79314790d24319f90a570ba3fcb3cf2_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.0777199056135311}, {\"source_id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"target_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"strength\": 0.8280085617513093}, {\"source_id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 1.070689787151151}, {\"source_id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 0.9547721810592619}, {\"source_id\": \"394df2b2c1ae70629851a3ac12944155e612b264_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 0.8262504824513954}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"strength\": 0.459449802804374}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"strength\": 1.2776385701438926}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"strength\": 1.137802505111929}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"strength\": 0.4623260644090268}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"strength\": 0.4291584628348834}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 0.4005859184244092}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 0.49618050173702133}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 1.5305058990312814}, {\"source_id\": \"524d59c57bda6dfaedf0002434979e0165af9158_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.5124969173563445}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"strength\": 0.9295066931579504}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 1.1792651549338202}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 1.0294861501826715}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 1.1210026852569648}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.997938468288735}, {\"source_id\": \"6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.378219933353402}, {\"source_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 0.8355528011998646}, {\"source_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 1.2425860246434457}, {\"source_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 1.1904178989304974}, {\"source_id\": \"78a103d3895f269806919fb203566be68c6aa879_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.0762535422972446}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"strength\": 1.0608551529871082}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 1.1373780573223995}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.9732893483135615}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.047288495700011}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 0.9076837884653812}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.9280300845826205}, {\"source_id\": \"81885ae4852c07a2f76a62aa1c5864117c46df74_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.8807445246362025}, {\"source_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"target_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"strength\": 1.4104126580263272}, {\"source_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 0.42332303662663073}, {\"source_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.8587442336511532}, {\"source_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.0075746477878413}, {\"source_id\": \"81d40dcf084d77b2862046c22867d83a0b8e813f_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.2586651037888388}, {\"source_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 0.40401320558247866}, {\"source_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.9940863088742353}, {\"source_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.088143412707454}, {\"source_id\": \"83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.1414902711366326}, {\"source_id\": \"96568b218fbb139ca15e52ae6133f356691a9afd_0\", \"target_id\": \"b429d07d2c8ebf3a067b20bf427045df7863519b_0\", \"strength\": 1.0230698291781724}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"strength\": 0.46687549993718747}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 0.9708773539567142}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"dd8641c0d29d85fe1c046887e2aa9612c872d044_0\", \"strength\": 0.396205473545844}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.3134310982100106}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.1160590965122081}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 0.45552270519650456}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.4627299881512269}, {\"source_id\": \"a5f541cbed362920186593e9dbf69a1a77269ded_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.1328229674010397}, {\"source_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"target_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"strength\": 1.1457145715868537}, {\"source_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 0.46709755294713495}, {\"source_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 0.4040497960098999}, {\"source_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 0.8811190447874717}, {\"source_id\": \"be17acf987e3aad8528a7ca155b651489b67a232_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.171947939589512}, {\"source_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"target_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"strength\": 1.152154554456198}, {\"source_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.1003693707183182}, {\"source_id\": \"d7a7a6e443bea1250758f31f0589ed62d28a5126_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 1.115363706501321}, {\"source_id\": \"dd8641c0d29d85fe1c046887e2aa9612c872d044_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.9557745518453867}, {\"source_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"target_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"strength\": 1.459860372299339}, {\"source_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 1.1459765631273708}, {\"source_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.40181446227095924}, {\"source_id\": \"e6fe87b95b840b3be2c0ddf50199032567c8d900_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.4377014888190315}, {\"source_id\": \"f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0\", \"target_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"strength\": 1.0048642098291143}, {\"source_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"target_id\": \"fbf68188846a14fb09c8493338a9be0f8daa51b3_0\", \"strength\": 0.8569600057223795}, {\"source_id\": \"f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0\", \"target_id\": \"ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0\", \"strength\": 0.8333012604475811}], \"clusters\": [{\"cluster\": 1, \"label\": \"Fair Personalization\", \"summary\": null}, {\"cluster\": 2, \"label\": \"Representative documents of cluster\", \"summary\": null}], \"blog_title\": null, \"blog_intro\": null, \"blog_conclusion\": null}}"
+{
+    "config": {
+        "terminology": {
+            "cluster": "Group",
+            "clusters": "Groups",
+            "item": "Document",
+            "items": "Documents",
+            "link": "Similarity link",
+            "links": "Similarity links",
+            "link_strength": "Similarity strength",
+            "total_link_strength": "Total similarity strengths",
+            "title": "Title of the document",
+            "abstract": "Abstract of the document",
+            "authors": "Authors"
+        },
+        "color_schemes": {
+            "cluster_colors": [
+                {
+                    "cluster": 1,
+                    "color": "#1f77b4"
+                },
+                {
+                    "cluster": 2,
+                    "color": "#d62728"
+                }
+            ]
+        },
+        "templates": {
+            "item_description": "<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>"
+        },
+        "styles": {
+            "description_heading": "color: #757575; font-weight: 600;"
+        },
+        "parameters": {
+            "item_size_variation": 0.7,
+            "largest_component": true,
+            "attraction": 1.0,
+            "repulsion": -1.0,
+            "max_n_links": 1000
+        }
+    },
+    "network": {
+        "items": [
+            {
+                "id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Improving Exposure Allocation in\\u00a0Rankings by\\u00a0Query Generation",
+                "authors": "Thomas Jaenich, Graham McDonald, Iadh Ounis",
+                "label": "Improving Exposure Allocation in\\u00a0Rankings by\\u00a0Query Generation",
+                "abstract": "Deploying methods that incorporate generated queries in their retrieval process, such as Doc2Query, has been shown to be effective for retrieving the most relevant documents for a user\\u2019s query. However, to the best of our knowledge, there has been no work yet on whether generated queries can also be...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=05b0523ae05e9df34671d3da647960f22c0ddb4c",
+                "img_url": null,
+                "x": 0.664779346574446,
+                "y": 0.42348301704529545,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Let\\u2019s Get It Started: Fostering the\\u00a0Discoverability of\\u00a0New Releases on\\u00a0Deezer",
+                "authors": "L\\u00e9a Briand, Th\\u00e9o Bontempelli, Walid Bendada, Mathieu Morlon, Fran\\u00e7ois Rigaud, Benjamin Chapus, Thomas Bouab\\u00e7a, Guillaume Salha-Galvan",
+                "label": "Let\\u2019s Get It Started: Fostering the\\u00a0Discoverability of\\u00a0New Releases on\\u00a0Deezer",
+                "abstract": "This paper presents our recent initiatives to foster the discoverability of new releases on the music streaming service Deezer. After introducing our search and recommendation features dedicated to new releases, we outline our shift from editorial to personalized release suggestions using cold start...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=05fce86ca7df5163908d6d12b0ac6a68cbf97934",
+                "img_url": null,
+                "x": 0.9270566441861099,
+                "y": 0.5997814441387648,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Query Performance Prediction: From Fundamentals to\\u00a0Advanced Techniques",
+                "authors": "Negar Arabzadeh, Chuan Meng, Mohammad Aliannejadi, Ebrahim Bagheri",
+                "label": "Query Performance Prediction: From Fundamentals to\\u00a0Advanced Techniques",
+                "abstract": "Query performance prediction (QPP) is a core task in information retrieval (IR) that aims at predicting the retrieval quality for a given query without relevance judgments. QPP has been investigated for decades and has witnessed a surge in research activity in recent years; QPP has been shown to ben...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=0c77237754e8a43b8818868273483f2e08059822",
+                "img_url": null,
+                "x": 0.5471245880563609,
+                "y": 0.29791819498695854,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.3333333333333333,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.15238095238095237,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5772486766982192,
+                "summary": null
+            },
+            {
+                "id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Cascading Ranking Pipelines for\\u00a0Sensitivity-Aware Search",
+                "authors": "Jack McKechnie",
+                "label": "Cascading Ranking Pipelines for\\u00a0Sensitivity-Aware Search",
+                "abstract": "Search engines are designed to make information accessible. However, some information should not be accessible, such as documents concerning citizenship applications or personal information. This  sensitive information  is often found interspersed with other potentially useful non-sensitive informat...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=13337cdd00ef6d01344a95502a6e6e817e13710d",
+                "img_url": null,
+                "x": 0.37384219705842037,
+                "y": 0.4108737292976462,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Countering Mainstream Bias via\\u00a0End-to-End Adaptive Local Learning",
+                "authors": "Jinhao Pan, Ziwei Zhu, Jianling Wang, Allen Lin, James Caverlee",
+                "label": "Countering Mainstream Bias via\\u00a0End-to-End Adaptive Local Learning",
+                "abstract": "Collaborative filtering (CF) based recommendations suffer from mainstream bias \\u2013 where mainstream users are favored over niche users, leading to poor recommendation quality for many long-tail users. In this paper, we identify two root causes of this mainstream bias: (i) discrepancy modeling, whereby...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=2796e0b6e79314790d24319f90a570ba3fcb3cf2",
+                "img_url": null,
+                "x": 1.1024132332295329,
+                "y": 0.18523756152431836,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.8333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.20952380952380953,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6057487659095753,
+                "summary": null
+            },
+            {
+                "id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "An Adaptive Framework of\\u00a0Geographical Group-Specific Network on\\u00a0O2O Recommendation",
+                "authors": "Luo Ji, Jiayu Mao, Hailong Shi, Qian Li, Yunfei Chu, Hongxia Yang",
+                "label": "An Adaptive Framework of\\u00a0Geographical Group-Specific Network on\\u00a0O2O Recommendation",
+                "abstract": "Online to offline recommendation strongly correlates with the user and service\\u2019s spatiotemporal information, therefore calling for a higher degree of model personalization. The traditional methodology is based on a uniform model structure trained by collected centralized data, which is unlikely to c...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=394df2b2c1ae70629851a3ac12944155e612b264",
+                "img_url": null,
+                "x": 1.1846421768357829,
+                "y": 0.32878679865340044,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.22857142857142856,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.615248795646694,
+                "summary": null
+            },
+            {
+                "id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Measuring Bias in\\u00a0Search Results Through Retrieval List Comparison",
+                "authors": "Linda Ratz, Markus Schedl, Simone Kopeinik, Navid Rekabsaz",
+                "label": "Measuring Bias in\\u00a0Search Results Through Retrieval List Comparison",
+                "abstract": "Many IR systems project harmful societal biases, including gender bias, in their retrieved contents. Uncovering and addressing such biases requires grounded bias measurement principles. However, defining reliable bias metrics for search results is challenging, particularly due to the difficulties in...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=524d59c57bda6dfaedf0002434979e0165af9158",
+                "img_url": null,
+                "x": 0.04375272929220607,
+                "y": 0.50356513005931,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.22857142857142856,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.615248795646694,
+                "summary": null
+            },
+            {
+                "id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Robustness in\\u00a0Fairness Against Edge-Level Perturbations in\\u00a0GNN-Based Recommendation",
+                "authors": "Ludovico Boratto, Francesco Fabbri, Gianni Fenu, Mirko Marras, Giacomo Medda",
+                "label": "Robustness in\\u00a0Fairness Against Edge-Level Perturbations in\\u00a0GNN-Based Recommendation",
+                "abstract": "Efforts in the recommendation community are shifting from the sole emphasis on utility to considering beyond-utility factors, such as fairness and robustness. Robustness of recommendation models is typically linked to their ability to maintain the original utility when subjected to attacks. Limited ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=6b2e33a918a2a94b09f52c57ea3e4f3db2883adc",
+                "img_url": null,
+                "x": 0.9376352877631751,
+                "y": 0.40575032484781864,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Shuffling a\\u00a0Few Stalls in\\u00a0a\\u00a0Crowded Bazaar: Potential Impact of\\u00a0Document-Side Fairness on\\u00a0Unprivileged Info-Seekers",
+                "authors": "Se\\u00e1n Healy",
+                "label": "Shuffling a\\u00a0Few Stalls in\\u00a0a\\u00a0Crowded Bazaar: Potential Impact of\\u00a0Document-Side Fairness on\\u00a0Unprivileged Info-Seekers",
+                "abstract": "Information systems rely on algorithmic ranking to ascertain expected relevance. Concerns about this strategy have resulted in the emergence of a field of inquiry referred to as  fair ranking . Within this field, the aim varies between one-sided and two-sided fairness across automatically generated ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=78a103d3895f269806919fb203566be68c6aa879",
+                "img_url": null,
+                "x": 0.48916916081870415,
+                "y": 0.5548479508914431,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Multiple Testing for\\u00a0IR and\\u00a0Recommendation System Experiments",
+                "authors": "Ngozi Ihemelandu, Michael D. Ekstrand",
+                "label": "Multiple Testing for\\u00a0IR and\\u00a0Recommendation System Experiments",
+                "abstract": "While there has been significant research on statistical techniques for comparing two information retrieval (IR) systems, many IR experiments test more than two systems. This can lead to inflated false discoveries due to the multiple-comparison problem (MCP). A few IR studies have investigated multi...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=81885ae4852c07a2f76a62aa1c5864117c46df74",
+                "img_url": null,
+                "x": 0.7859081189380286,
+                "y": 0.60802698905088,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.9999999999999996,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2285714285714285,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6152487956466939,
+                "summary": null
+            },
+            {
+                "id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "MOReGIn: Multi-Objective Recommendation at\\u00a0the\\u00a0Global and\\u00a0Individual Levels",
+                "authors": "Elizabeth G\\u00f3mez, David Contreras, Ludovico Boratto, Maria Salam\\u00f3",
+                "label": "MOReGIn: Multi-Objective Recommendation at\\u00a0the\\u00a0Global and\\u00a0Individual Levels",
+                "abstract": "Multi-Objective Recommender Systems (MORSs) emerged as a paradigm to guarantee multiple (often conflicting) goals. Besides accuracy, a MORS can operate at the  global  level, where additional beyond-accuracy goals are met for the system as a whole, or at the  individual  level, meaning that the reco...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=81d40dcf084d77b2862046c22867d83a0b8e813f",
+                "img_url": null,
+                "x": 1.0777000712090725,
+                "y": 0.28474155387011396,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5615493593396541,
+                "summary": null
+            },
+            {
+                "id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "TWOLAR: A TWO-Step LLM-Augmented Distillation Method for\\u00a0Passage Reranking",
+                "authors": "Davide Baldelli, Junfeng Jiang, Akiko Aizawa, Paolo Torroni",
+                "label": "TWOLAR: A TWO-Step LLM-Augmented Distillation Method for\\u00a0Passage Reranking",
+                "abstract": "In this paper, we present TWOLAR: a two-stage pipeline for passage reranking based on the distillation of knowledge from Large Language Models (LLM). TWOLAR introduces a new scoring strategy and a distillation process consisting in the creation of a novel and diverse training dataset. The dataset co...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=83b2a1b1046cd056ab2541e8299e032a1b33e9b3",
+                "img_url": null,
+                "x": 0.40336615380244145,
+                "y": 0.2783253186422967,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.17142857142857143,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5898364974467732,
+                "summary": null
+            },
+            {
+                "id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "On-Device Query Auto-completion for\\u00a0Email Search",
+                "authors": "Yifan Qiao, Otto Godwin, Hua Ouyang",
+                "label": "On-Device Query Auto-completion for\\u00a0Email Search",
+                "abstract": "Traditional query auto-completion (QAC) relies heavily on search logs collected over many users. However, in on-device email search, the scarcity of logs and the governing privacy constraints make QAC a challenging task. In this work, we propose an on-device QAC method that runs directly on users\\u2019 d...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=96568b218fbb139ca15e52ae6133f356691a9afd",
+                "img_url": null,
+                "x": 0.21930687578952793,
+                "y": 0.392422529304902,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5615493593396541,
+                "summary": null
+            },
+            {
+                "id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Revealing the\\u00a0Hidden Impact of\\u00a0Top-N Metrics on\\u00a0Optimization in\\u00a0Recommender Systems",
+                "authors": "Lukas Wegmeth, Tobias Vente, Lennart Purucker",
+                "label": "Revealing the\\u00a0Hidden Impact of\\u00a0Top-N Metrics on\\u00a0Optimization in\\u00a0Recommender Systems",
+                "abstract": "The hyperparameters of recommender systems for top-n predictions are typically optimized to enhance the predictive performance of algorithms. Thereby, the optimization algorithm, e.g., grid search or random search, searches for the best hyperparameter configuration according to an optimization-targe...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a5f541cbed362920186593e9dbf69a1a77269ded",
+                "img_url": null,
+                "x": 1.044128567276304,
+                "y": 0.3878244864173272,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5615493593396541,
+                "summary": null
+            },
+            {
+                "id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Query Obfuscation for\\u00a0Information Retrieval Through Differential Privacy",
+                "authors": "Guglielmo Faggioli, Nicola Ferro",
+                "label": "Query Obfuscation for\\u00a0Information Retrieval Through Differential Privacy",
+                "abstract": "Protecting the privacy of a user querying an Information Retrieval (IR) system is of utmost importance. The problem is exacerbated when the IR system is not cooperative in satisfying the user\\u2019s privacy requirements. To address this, obfuscation techniques split the user\\u2019s sensitive query into multip...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b429d07d2c8ebf3a067b20bf427045df7863519b",
+                "img_url": null,
+                "x": 0.27749261282417886,
+                "y": 0.49075975993842463,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.5615493593396541,
+                "summary": null
+            },
+            {
+                "id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Towards Optimizing Ranking in\\u00a0Grid-Layout for\\u00a0Provider-Side Fairness",
+                "authors": "Amifa Raj, Michael D. Ekstrand",
+                "label": "Towards Optimizing Ranking in\\u00a0Grid-Layout for\\u00a0Provider-Side Fairness",
+                "abstract": "Information access systems, such as search engines and recommender systems, order and position results based on their estimated relevance. These results are then evaluated for a range of concerns, including provider-side fairness: whether exposure to users is fairly distributed among items and the p...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=be17acf987e3aad8528a7ca155b651489b67a232",
+                "img_url": null,
+                "x": 0.816301517892321,
+                "y": 0.46262335613691014,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.9999999999999996,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2285714285714285,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6152487956466939,
+                "summary": null
+            },
+            {
+                "id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Measuring Bias in\\u00a0a\\u00a0Ranked List Using Term-Based Representations",
+                "authors": "Amin Abolghasemi, Leif Azzopardi, Arian Askari, Maarten de Rijke, Suzan Verberne",
+                "label": "Measuring Bias in\\u00a0a\\u00a0Ranked List Using Term-Based Representations",
+                "abstract": "In most recent studies, gender bias in document ranking is evaluated with the NFaiRR metric, which measures bias in a ranked list based on an aggregation over the unbiasedness scores of each ranked document. This perspective in measuring the bias of a ranked list has a key limitation: individual doc...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=d7a7a6e443bea1250758f31f0589ed62d28a5126",
+                "img_url": null,
+                "x": 0.6413506210193929,
+                "y": 0.5513667271664658,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.34285714285714286,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.672248974069406,
+                "summary": null
+            },
+            {
+                "id": "dd8641c0d29d85fe1c046887e2aa9612c872d044_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Can We Predict QPP? An\\u00a0Approach Based on\\u00a0Multivariate Outliers",
+                "authors": "Adrian-Gabriel Chifu, S\\u00e9bastien D\\u00e9jean, Moncef Garouani, Josiane Mothe, Di\\u00e9go Ortiz, Md Zia Ullah",
+                "label": "Can We Predict QPP? An\\u00a0Approach Based on\\u00a0Multivariate Outliers",
+                "abstract": "Query performance prediction (QPP) aims to forecast the effectiveness of a search engine across a range of queries and documents. While state-of-the-art predictors offer a certain level of precision, their accuracy is not flawless. Prior research has recognized the challenges inherent in QPP but oft...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=dd8641c0d29d85fe1c046887e2aa9612c872d044",
+                "img_url": null,
+                "x": 1.089887715118771,
+                "y": 0.6500575303907687,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Learning-to-Rank with\\u00a0Nested Feedback",
+                "authors": "Hitesh Sagtani, Olivier Jeunen, Aleksei Ustimenko",
+                "label": "Learning-to-Rank with\\u00a0Nested Feedback",
+                "abstract": "Many platforms on the web present ranked lists of content to users, typically optimized for engagement-, satisfaction- or retention- driven metrics. Advances in the Learning-to-Rank (LTR) research literature have enabled rapid growth in this application area. Several popular interfaces now include n...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=e6fe87b95b840b3be2c0ddf50199032567c8d900",
+                "img_url": null,
+                "x": 0.9042890870455503,
+                "y": 0.21519085977007302,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "An In-Depth Comparison of\\u00a0Neural and\\u00a0Probabilistic Tree Models for\\u00a0Learning-to-rank",
+                "authors": "Haonan Tan, Kaiyu Yang, Haitao Yu",
+                "label": "An In-Depth Comparison of\\u00a0Neural and\\u00a0Probabilistic Tree Models for\\u00a0Learning-to-rank",
+                "abstract": "Learning-to-rank has been intensively studied and has demonstrated significant value in several fields, such as web search and recommender systems. Over the learning-to-rank datasets given as vectors of feature values, LambdaMART proposed more than a decade ago, and its subsequent descendants based ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=f89de125da3ad7d3658a1311b8502f5b6b9a7d3b",
+                "img_url": null,
+                "x": 0.7253017748062869,
+                "y": 0.17736139341734183,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "How to\\u00a0Forget Clients in\\u00a0Federated Online Learning to\\u00a0Rank?",
+                "authors": "Shuyi Wang, Bing Liu, Guido Zuccon",
+                "label": "How to\\u00a0Forget Clients in\\u00a0Federated Online Learning to\\u00a0Rank?",
+                "abstract": "Data protection legislation like the European Union\\u2019s General Data Protection Regulation (GDPR) establishes the  right to be forgotten : a user (client) can request contributions made using their data to be removed from learned models. In this paper, we study how to remove the contributions made by ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c",
+                "img_url": null,
+                "x": 1.113165717379873,
+                "y": 0.49026605758254505,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 8.75,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 1.0,
+                "summary": null
+            },
+            {
+                "id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Variance Reduction in\\u00a0Ratio Metrics for\\u00a0Efficient Online Experiments",
+                "authors": "Shubham Baweja, Neeti Pokharna, Aleksei Ustimenko, Olivier Jeunen",
+                "label": "Variance Reduction in\\u00a0Ratio Metrics for\\u00a0Efficient Online Experiments",
+                "abstract": "Online controlled experiments, such as A/B-tests, are commonly used by modern tech companies to enable continuous system improvements. Despite their paramount importance, A/B-tests are expensive: by their very definition, a percentage of traffic is assigned an inferior system variant. To ensure stat...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=fbf68188846a14fb09c8493338a9be0f8daa51b3",
+                "img_url": null,
+                "x": 1.0958452792492788,
+                "y": 0.6011755811279967,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            },
+            {
+                "id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "A Cost-Sensitive Meta-learning Strategy for\\u00a0Fair Provider Exposure in\\u00a0Recommendation",
+                "authors": "Ludovico Boratto, Giulia Cerniglia, Mirko Marras, Alessandra Perniciano, Barbara Pes",
+                "label": "A Cost-Sensitive Meta-learning Strategy for\\u00a0Fair Provider Exposure in\\u00a0Recommendation",
+                "abstract": "When devising recommendation services, it is important to account for the interests of all content providers, encompassing not only newcomers but also minority demographic groups. In various instances, certain provider groups find themselves underrepresented in the item catalog, a situation that can...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=ff3fc1d3c984b9d74981c4546f9aefa86853a55b",
+                "img_url": null,
+                "x": 0.9345263297815734,
+                "y": 0.5204152636586984,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.11428571428571428,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.558248617223982,
+                "summary": null
+            }
+        ],
+        "links": [
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "strength": 0.4362743224801515
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "strength": 1.2676805205912838
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "strength": 1.2854326619762748
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "strength": 1.3308085327610155
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "strength": 0.4503323189121455
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "strength": 1.2773070311550718
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "strength": 0.505880422952772
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 0.45921063924753097
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "strength": 1.0957623056539099
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "strength": 0.42288983469693975
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 1.148137881495824
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 0.4486464759515395
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 1.3728523271680695
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 1.340202210909644
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "dd8641c0d29d85fe1c046887e2aa9612c872d044_0",
+                "strength": 0.4019126215399959
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.1877053133649527
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.1237030106530195
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 0.45471263388411776
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.4365665246605011
+            },
+            {
+                "source_id": "05b0523ae05e9df34671d3da647960f22c0ddb4c_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.171939684407945
+            },
+            {
+                "source_id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "target_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "strength": 0.38433654012482005
+            },
+            {
+                "source_id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 0.4144098507979566
+            },
+            {
+                "source_id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 0.44140625406218725
+            },
+            {
+                "source_id": "05fce86ca7df5163908d6d12b0ac6a68cbf97934_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.8065686067681146
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "strength": 1.0550767063893016
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "strength": 1.0667512881956192
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "strength": 0.4645091823205251
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "strength": 0.49099154968753816
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "strength": 0.48903972043278865
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 0.480873178134481
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 0.4177352298987186
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "dd8641c0d29d85fe1c046887e2aa9612c872d044_0",
+                "strength": 1.1921777228802002
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 0.49984762324325255
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.087917949095623
+            },
+            {
+                "source_id": "0c77237754e8a43b8818868273483f2e08059822_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.47365570570564136
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "strength": 1.1975250718241826
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "strength": 0.40662879410156794
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "strength": 0.4615218497394982
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "strength": 0.9775150338468501
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "strength": 0.9525823021629315
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "strength": 0.9817158713846309
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 1.1075453715402945
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 0.46280027112270083
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.9548279401751683
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.0190571781333302
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 0.4748844401410143
+            },
+            {
+                "source_id": "13337cdd00ef6d01344a95502a6e6e817e13710d_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.44246383955528507
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "strength": 0.8058775666486336
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "strength": 0.45253995911722117
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "strength": 0.9796663052563307
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 1.1059026325825991
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 1.0534712398198554
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.42496635689660556
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 0.4512108477295141
+            },
+            {
+                "source_id": "2796e0b6e79314790d24319f90a570ba3fcb3cf2_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.0777199056135311
+            },
+            {
+                "source_id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "target_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "strength": 0.8280085617513093
+            },
+            {
+                "source_id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 1.070689787151151
+            },
+            {
+                "source_id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 0.9547721810592619
+            },
+            {
+                "source_id": "394df2b2c1ae70629851a3ac12944155e612b264_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 0.8262504824513954
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "strength": 0.459449802804374
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "strength": 1.2776385701438926
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "strength": 1.137802505111929
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "strength": 0.4623260644090268
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "strength": 0.4291584628348834
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 0.4005859184244092
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 0.49618050173702133
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 1.5305058990312814
+            },
+            {
+                "source_id": "524d59c57bda6dfaedf0002434979e0165af9158_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.5124969173563445
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "strength": 0.9295066931579504
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 1.1792651549338202
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 1.0294861501826715
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 1.1210026852569648
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.997938468288735
+            },
+            {
+                "source_id": "6b2e33a918a2a94b09f52c57ea3e4f3db2883adc_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.378219933353402
+            },
+            {
+                "source_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 0.8355528011998646
+            },
+            {
+                "source_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 1.2425860246434457
+            },
+            {
+                "source_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 1.1904178989304974
+            },
+            {
+                "source_id": "78a103d3895f269806919fb203566be68c6aa879_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.0762535422972446
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "strength": 1.0608551529871082
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 1.1373780573223995
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.9732893483135615
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.047288495700011
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 0.9076837884653812
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.9280300845826205
+            },
+            {
+                "source_id": "81885ae4852c07a2f76a62aa1c5864117c46df74_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.8807445246362025
+            },
+            {
+                "source_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "target_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "strength": 1.4104126580263272
+            },
+            {
+                "source_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 0.42332303662663073
+            },
+            {
+                "source_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.8587442336511532
+            },
+            {
+                "source_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.0075746477878413
+            },
+            {
+                "source_id": "81d40dcf084d77b2862046c22867d83a0b8e813f_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.2586651037888388
+            },
+            {
+                "source_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 0.40401320558247866
+            },
+            {
+                "source_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.9940863088742353
+            },
+            {
+                "source_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.088143412707454
+            },
+            {
+                "source_id": "83b2a1b1046cd056ab2541e8299e032a1b33e9b3_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.1414902711366326
+            },
+            {
+                "source_id": "96568b218fbb139ca15e52ae6133f356691a9afd_0",
+                "target_id": "b429d07d2c8ebf3a067b20bf427045df7863519b_0",
+                "strength": 1.0230698291781724
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "strength": 0.46687549993718747
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 0.9708773539567142
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "dd8641c0d29d85fe1c046887e2aa9612c872d044_0",
+                "strength": 0.396205473545844
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.3134310982100106
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.1160590965122081
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 0.45552270519650456
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.4627299881512269
+            },
+            {
+                "source_id": "a5f541cbed362920186593e9dbf69a1a77269ded_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.1328229674010397
+            },
+            {
+                "source_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "target_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "strength": 1.1457145715868537
+            },
+            {
+                "source_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 0.46709755294713495
+            },
+            {
+                "source_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 0.4040497960098999
+            },
+            {
+                "source_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 0.8811190447874717
+            },
+            {
+                "source_id": "be17acf987e3aad8528a7ca155b651489b67a232_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.171947939589512
+            },
+            {
+                "source_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "target_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "strength": 1.152154554456198
+            },
+            {
+                "source_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.1003693707183182
+            },
+            {
+                "source_id": "d7a7a6e443bea1250758f31f0589ed62d28a5126_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 1.115363706501321
+            },
+            {
+                "source_id": "dd8641c0d29d85fe1c046887e2aa9612c872d044_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.9557745518453867
+            },
+            {
+                "source_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "target_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "strength": 1.459860372299339
+            },
+            {
+                "source_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 1.1459765631273708
+            },
+            {
+                "source_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.40181446227095924
+            },
+            {
+                "source_id": "e6fe87b95b840b3be2c0ddf50199032567c8d900_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.4377014888190315
+            },
+            {
+                "source_id": "f89de125da3ad7d3658a1311b8502f5b6b9a7d3b_0",
+                "target_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "strength": 1.0048642098291143
+            },
+            {
+                "source_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "target_id": "fbf68188846a14fb09c8493338a9be0f8daa51b3_0",
+                "strength": 0.8569600057223795
+            },
+            {
+                "source_id": "f970d8d83ff5fb9e7c1cfae9641eb3421a92f60c_0",
+                "target_id": "ff3fc1d3c984b9d74981c4546f9aefa86853a55b_0",
+                "strength": 0.8333012604475811
+            }
+        ],
+        "clusters": [
+            {
+                "cluster": 1,
+                "label": "Fair Personalization",
+                "summary": null
+            },
+            {
+                "cluster": 2,
+                "label": "Representative documents of cluster",
+                "summary": null
+            }
+        ],
+        "blog_title": null,
+        "blog_intro": null,
+        "blog_conclusion": null
+    }
+}

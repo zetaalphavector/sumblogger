@@ -1,1 +1,1067 @@
-"{\"config\": {\"terminology\": {\"cluster\": \"Group\", \"clusters\": \"Groups\", \"item\": \"Document\", \"items\": \"Documents\", \"link\": \"Similarity link\", \"links\": \"Similarity links\", \"link_strength\": \"Similarity strength\", \"total_link_strength\": \"Total similarity strengths\", \"title\": \"Title of the document\", \"abstract\": \"Abstract of the document\", \"authors\": \"Authors\"}, \"color_schemes\": {\"cluster_colors\": [{\"cluster\": 1, \"color\": \"#ff7f0e\"}, {\"cluster\": 2, \"color\": \"#d62728\"}]}, \"templates\": {\"item_description\": \"<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>\"}, \"styles\": {\"description_heading\": \"color: #757575; font-weight: 600;\"}, \"parameters\": {\"item_size_variation\": 0.7, \"largest_component\": true, \"attraction\": 1.0, \"repulsion\": -1.0, \"max_n_links\": 1000}}, \"network\": {\"items\": [{\"id\": \"17b28bba9e498d991ffb9aad5777d284688f8dca_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Knowledge Transfer from\\u00a0Resource-Rich to\\u00a0Resource-Scarce Environments\", \"authors\": \"Negin Ghasemi\", \"label\": \"Knowledge Transfer from\\u00a0Resource-Rich to\\u00a0Resource-Scarce Environments\", \"abstract\": \"Resource-scarce environments have limited data, creating barriers and suboptimal experiences for users, while resource-rich environments are well-stocked with comprehensive information....\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=17b28bba9e498d991ffb9aad5777d284688f8dca\", \"img_url\": null, \"x\": 0.6685734936273544, \"y\": -0.5420429740816658, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Knowledge Graph Cross-View Contrastive Learning for\\u00a0Recommendation\", \"authors\": \"Zeyuan Meng, Iadh Ounis, Craig Macdonald, Zixuan Yi\", \"label\": \"Knowledge Graph Cross-View Contrastive Learning for\\u00a0Recommendation\", \"abstract\": \"Knowledge Graphs (KGs) are useful side information that help recommendation systems improve recommendation quality by providing rich semantic information about entities and items. Recently, models based on graph neural networks (GNNs) have adopted knowledge graphs to capture further high-order struc...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=2249a201309ae1ac078d585a222776f957ee8c1e\", \"img_url\": null, \"x\": 1.091654164174007, \"y\": -0.24728735135600483, \"cluster\": 1, \"weights\": {\"Influence\": 4.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.5714285714285716, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.7843766727129251, \"summary\": null}, {\"id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"GLAD: Graph-Based Long-Term Attentive Dynamic Memory for\\u00a0Sequential Recommendation\", \"authors\": \"Deepanshu Pandey, Arindam Sarkar, Prakash Mandayam Comar\", \"label\": \"GLAD: Graph-Based Long-Term Attentive Dynamic Memory for\\u00a0Sequential Recommendation\", \"abstract\": \"Recommender systems play a crucial role in the e-commerce stores, enabling customers to explore products and facilitating the discovery of relevant items. Typical recommender systems are built using  n  most recent user interactions, where value of  n  is chosen based on trade-off between incrementa...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=230aaa44adb33c9debc5c02c24b6284648068e94\", \"img_url\": null, \"x\": 1.0995181601231199, \"y\": -0.10459590205173687, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Transformers for Sequential Recommendation\", \"authors\": \"Aleksandr V. Petrov, Craig Macdonald\", \"label\": \"Transformers for Sequential Recommendation\", \"abstract\": \"Sequential recommendation is a recommendation problem that aims to predict the next item in the sequence of user-item interactions. Sequential recommendation is similar to language modelling in terms of learning sequence structure; therefore, variants of the Transformer architecture, which has recen...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=2f1db3b126169f4463908443719848fa3122e466\", \"img_url\": null, \"x\": 0.8485461667469762, \"y\": -0.07693701568722304, \"cluster\": 1, \"weights\": {\"Influence\": 3.999999999999999, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.5714285714285714, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.784376672712925, \"summary\": null}, {\"id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"MMCRec: Towards Multi-modal Generative AI in\\u00a0Conversational Recommendation\", \"authors\": \"Tendai Mukande, Esraa Ali, Annalina Caputo, Ruihai Dong, Noel E. O\\u2019Connor\", \"label\": \"MMCRec: Towards Multi-modal Generative AI in\\u00a0Conversational Recommendation\", \"abstract\": \"Personalized recommendation systems have become integral in this digital age by facilitating content discovery to users and products tailored to their preferences. Since the Generative Artificial Intelligence (GAI) boom, research into GAI-enhanced Conversational Recommender Systems (CRSs) has sparke...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=30d34bf4ae7031df53571ee0410c7e0176c69622\", \"img_url\": null, \"x\": 0.9697420203122481, \"y\": -0.0849518972085268, \"cluster\": 1, \"weights\": {\"Influence\": 1.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.21428571428571433, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.6062511151419501, \"summary\": null}, {\"id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Lightweight Modality Adaptation to\\u00a0Sequential Recommendation via\\u00a0Correlation Supervision\", \"authors\": \"Hengchang Hu, Qijiong Liu, Chuang Li, Min-Yen Kan\", \"label\": \"Lightweight Modality Adaptation to\\u00a0Sequential Recommendation via\\u00a0Correlation Supervision\", \"abstract\": \"In Sequential Recommenders (SR),  encoding  and  utilizing  modalities in an end-to-end manner is costly in terms of modality encoder sizes. Two-stage approaches can mitigate such concerns, but they suffer from poor performance due to modality forgetting, where the sequential objective overshadows m...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=42e6e33ef0ba531074b77f958a50e94af1a1254c\", \"img_url\": null, \"x\": 0.9735887393969009, \"y\": -0.2229205288892275, \"cluster\": 1, \"weights\": {\"Influence\": 6.999999999999998, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.992537375311876, \"summary\": null}, {\"id\": \"71c61edfbe9400204700d3d3995d04886e4d1393_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"A Streaming Approach to\\u00a0Neural Team Formation Training\", \"authors\": \"Hossein Fani, Reza Barzegar, Arman Dashti, Mahdis Saeedi\", \"label\": \"A Streaming Approach to\\u00a0Neural Team Formation Training\", \"abstract\": \"Predicting  future  successful teams of experts who can effectively collaborate is challenging due to the experts\\u2019 temporality of skill sets, levels of expertise, and collaboration ties, which is overlooked by prior work. Specifically, state-of-the-art neural-based methods learn vector representatio...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=71c61edfbe9400204700d3d3995d04886e4d1393\", \"img_url\": null, \"x\": 0.7409346246324554, \"y\": -0.1908225051159129, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.5682303037050898, \"summary\": null}, {\"id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Self Contrastive Learning for\\u00a0Session-Based Recommendation\", \"authors\": \"Zhengxiang Shi, Xi Wang, Aldo Lipani\", \"label\": \"Self Contrastive Learning for\\u00a0Session-Based Recommendation\", \"abstract\": \"Session-based recommendation, which aims to predict the next item of users\\u2019 interest as per an existing sequence interaction of items, has attracted growing applications of Contrastive Learning (CL) with improved user and item representations. However, these contrastive objectives: (1) serve a simil...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=78d901e32f7c09671be3bd901840dde71b66f19a\", \"img_url\": null, \"x\": 1.2271925319460624, \"y\": -0.11737821564307964, \"cluster\": 1, \"weights\": {\"Influence\": 2.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.3214285714285715, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.656627610289837, \"summary\": null}, {\"id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Mitigating Data Sparsity via\\u00a0Neuro-Symbolic Knowledge Transfer\", \"authors\": \"Tommaso Carraro, Alessandro Daniele, Fabio Aiolli, Luciano Serafini\", \"label\": \"Mitigating Data Sparsity via\\u00a0Neuro-Symbolic Knowledge Transfer\", \"abstract\": \"Data sparsity is a well-known historical limitation of recommender systems that still impacts the performance of state-of-the-art approaches. The literature proposed various ways to mitigate the problem by providing additional information to the model (e.g., hybrid recommendation, knowledge graph-ba...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=79f48cec55538edc98bf3b2503a5b0f7a24da804\", \"img_url\": null, \"x\": 0.8059500998057108, \"y\": -0.432988865514216, \"cluster\": 1, \"weights\": {\"Influence\": 1.8333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.261904761904762, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.6300011894847467, \"summary\": null}, {\"id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"FAR-AI: A Modular Platform for\\u00a0Investment Recommendation in\\u00a0the\\u00a0Financial Domain\", \"authors\": \"Javier Sanz-Cruzado, Edward Richards, Richard McCreadie\", \"label\": \"FAR-AI: A Modular Platform for\\u00a0Investment Recommendation in\\u00a0the\\u00a0Financial Domain\", \"abstract\": \"Financial asset recommendation (FAR) is an emerging sub-domain of the wider recommendation field that is concerned with recommending suitable financial assets to customers, with the expectation that those customers will invest capital into a subset of those assets. FAR is a particularly interesting ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=929083e28c3075513edc1d235a8b7a9a75086918\", \"img_url\": null, \"x\": 1.2510735891988276, \"y\": -0.007727203279826997, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"GenRec: Large Language Model for\\u00a0Generative Recommendation\", \"authors\": \"Jianchao Ji, Zelong Li, Shuyuan Xu, Wenyue Hua, Yingqiang Ge, Juntao Tan, Yongfeng Zhang\", \"label\": \"GenRec: Large Language Model for\\u00a0Generative Recommendation\", \"abstract\": \"In recent years, Large Language Models (LLMs) have emerged as powerful tools for diverse natural language processing tasks. However, their potential for recommender systems under the generative recommendation paradigm remains relatively unexplored. This paper presents an innovative approach to recom...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=962e916cd0aacdb83f68b724e0bda99516af9c32\", \"img_url\": null, \"x\": 0.9979297697399157, \"y\": 0.026828099930774164, \"cluster\": 1, \"weights\": {\"Influence\": 2.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 4.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.3571428571428572, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.679373996372245, \"summary\": null}, {\"id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Effective and\\u00a0Efficient Transformer Models for\\u00a0Sequential Recommendation\", \"authors\": \"Aleksandr V. Petrov\", \"label\": \"Effective and\\u00a0Efficient Transformer Models for\\u00a0Sequential Recommendation\", \"abstract\": \"The focus of our work is  sequential recommender systems . Sequential recommender systems use ordered sequences of user-item interactions to predict future interactions of the user....\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=a65602adb8a5da708db8ebc06756416c6da13d05\", \"img_url\": null, \"x\": 1.1405426664703913, \"y\": 0.04629289371537649, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Lottery4CVR: Neuron-Connection Level Sharing for\\u00a0Multi-task Learning in\\u00a0Video Conversion Rate Prediction\", \"authors\": \"Xuanji Xiao, Jimmy Chen, Yuzhen Liu, Xing Yao, Pei Liu, Chaosheng Fan\", \"label\": \"Lottery4CVR: Neuron-Connection Level Sharing for\\u00a0Multi-task Learning in\\u00a0Video Conversion Rate Prediction\", \"abstract\": \"As a fundamental task of industrial ranking systems, conversion rate (CVR) prediction is suffering from data sparsity problems. Most conventional CVR modeling leverages Click-through rate (CTR) &CVR multitask learning because CTR involves far more samples than CVR. However, typical coarse-grained la...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=b1d5d88278e005d3950c843497a376549e1bc299\", \"img_url\": null, \"x\": 0.8173991954349871, \"y\": -0.26157614940374907, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Explainable Recommender Systems with\\u00a0Knowledge Graphs and\\u00a0Language Models\", \"authors\": \"Giacomo Balloccu, Ludovico Boratto, Gianni Fenu, Francesca Maridina Malloci, Mirko Marras\", \"label\": \"Explainable Recommender Systems with\\u00a0Knowledge Graphs and\\u00a0Language Models\", \"abstract\": \"In this tutorial, we delve into recent advances in explainable recommendation using Knowledge Graphs (KGs). The session begins by introducing the fundamental principles behind the increasing adoption of KGs in modern recommender systems. Then, the tutorial explores recent techniques that leverage KG...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=b599a59793fe284a6f2313472006c07ded1d4c9d\", \"img_url\": null, \"x\": 1.1179623313551559, \"y\": -0.37822333007805775, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.570626003627755, \"summary\": null}, {\"id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Federated Conversational Recommender Systems\", \"authors\": \"Allen Lin, Jianling Wang, Ziwei Zhu, James Caverlee\", \"label\": \"Federated Conversational Recommender Systems\", \"abstract\": \"Conversational Recommender Systems (CRSs) have become increasingly popular as a powerful tool for providing personalized recommendation experiences. By directly engaging with users in a conversational manner to learn their current and fine-grained preferences, a CRS can quickly derive recommendation...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=bf49a808a8631dc938eee4922bfee878bd19940d\", \"img_url\": null, \"x\": 1.2450854732341892, \"y\": 0.16258915939558227, \"cluster\": 1, \"weights\": {\"Influence\": 1.8333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.261904761904762, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.6300011894847467, \"summary\": null}, {\"id\": \"d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Learning Action Embeddings for\\u00a0Off-Policy Evaluation\", \"authors\": \"Matej Cief, Jacek Golebiowski, Philipp Schmidt, Ziawasch Abedjan, Artur Bekasov\", \"label\": \"Learning Action Embeddings for\\u00a0Off-Policy Evaluation\", \"abstract\": \"Off-policy evaluation (OPE) methods allow us to compute the expected reward of a policy by using the logged data collected by a different policy. However, when the number of actions is large, or certain actions are under-explored by the logging policy, existing estimators based on inverse-propensity...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=d7a863e970ccd55f91f5f5a709c1da11f85ac8d4\", \"img_url\": null, \"x\": 0.908356622198761, \"y\": -0.2810449721420119, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.5682303037050898, \"summary\": null}, {\"id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Align MacridVAE: Multimodal Alignment for\\u00a0Disentangled Recommendations\", \"authors\": \"Ignacio Avas, Liesbeth Allein, Katrien Laenen, Marie-Francine Moens\", \"label\": \"Align MacridVAE: Multimodal Alignment for\\u00a0Disentangled Recommendations\", \"abstract\": \"Explaining why items are recommended to users is challenging, especially when these items are described by multimodal data. Most recommendation systems fail to leverage more than one modality, preferring textual or tabular data. In this work, a new model,  Align MacridVAE , that considers the comple...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=da380888d94fa5f5668ae54a9af8db6e3c206438\", \"img_url\": null, \"x\": 0.9711696941126604, \"y\": -0.3736483610672207, \"cluster\": 1, \"weights\": {\"Influence\": 2.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.3571428571428572, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.6743070716067863, \"summary\": null}, {\"id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Hypergraphs with\\u00a0Attention on\\u00a0Reviews for\\u00a0Explainable Recommendation\", \"authors\": \"Theis E. Jendal, Trung-Hoang Le, Hady W. Lauw, Matteo Lissandrini, Peter Dolog, Katja Hose\", \"label\": \"Hypergraphs with\\u00a0Attention on\\u00a0Reviews for\\u00a0Explainable Recommendation\", \"abstract\": \"Given a recommender system based on reviews, the challenges are how to effectively represent the review data and how to explain the produced recommendations. We propose a novel review-specific Hypergraph (HG) model, and further introduce a model-agnostic explainability module. The HG model captures ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=ddc4c27ba8828eb320e2680adf30e5e47ed1bf60\", \"img_url\": null, \"x\": 1.2097183677193941, \"y\": -0.26289975141251914, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.1428571428571429, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 0.25}, \"impact_score\": 0.5682303037050898, \"summary\": null}], \"links\": [{\"source_id\": \"17b28bba9e498d991ffb9aad5777d284688f8dca_0\", \"target_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"strength\": 0.3062036788910592}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"strength\": 1.1871821819434696}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"strength\": 1.1112251445262353}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"strength\": 1.0728153328285823}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"strength\": 1.0810330592702562}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"strength\": 1.3229638967346693}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"strength\": 1.0568479729475762}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.4352847019877158}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.2135849954629983}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 0.9825148494917658}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.4191454021108736}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 1.1369479443941422}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.0903264231555667}, {\"source_id\": \"2249a201309ae1ac078d585a222776f957ee8c1e_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 1.1552577176270542}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"strength\": 1.4681738129725443}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"strength\": 1.0138056030074587}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"strength\": 1.2169575620546424}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"71c61edfbe9400204700d3d3995d04886e4d1393_0\", \"strength\": 0.3781820974660658}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"strength\": 1.2623042039371555}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"strength\": 0.9047889976476082}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.9283427390898725}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.2391547997149732}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.481435784432937}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.9142375693983955}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 0.891206026387049}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 0.8804634025979209}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.0177677627869974}, {\"source_id\": \"230aaa44adb33c9debc5c02c24b6284648068e94_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.9836235147608408}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"strength\": 1.2295174369316788}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"strength\": 1.4274393516844568}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"71c61edfbe9400204700d3d3995d04886e4d1393_0\", \"strength\": 0.3752798636986621}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"strength\": 1.332700549101516}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"strength\": 0.4256311315128721}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 1.0308056107188885}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.434690745923424}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.7699066062202833}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.4545819674391802}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 0.45755704110968004}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 1.0059691286777073}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0\", \"strength\": 0.44939575965332385}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.1146163074305067}, {\"source_id\": \"2f1db3b126169f4463908443719848fa3122e466_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.48604494884406513}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"strength\": 1.2262592457794217}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"strength\": 1.1447669286707898}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.9893526922100807}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.49482228499486}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.0626717179133953}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 1.0492408736941399}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 1.2713520081906595}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.131223973569399}, {\"source_id\": \"30d34bf4ae7031df53571ee0410c7e0176c69622_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.9304517635069726}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"strength\": 1.2535919814538086}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"strength\": 0.9744959652547893}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.43351204302133345}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.1937279069193056}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.3461111929770881}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 1.039025559569884}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 0.415069126964544}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 0.4361321544223164}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0\", \"strength\": 0.9221458898432215}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.2907472146955115}, {\"source_id\": \"42e6e33ef0ba531074b77f958a50e94af1a1254c_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.4200043236862798}, {\"source_id\": \"71c61edfbe9400204700d3d3995d04886e4d1393_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.8715789655543209}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.9063856307228629}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 1.2469736947080277}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.2981741331166818}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.9446642246366515}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 0.86907640881424}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 0.9604635453672761}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.1646890151786313}, {\"source_id\": \"78d901e32f7c09671be3bd901840dde71b66f19a_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.8656553284159739}, {\"source_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"target_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"strength\": 0.8098492708519357}, {\"source_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 0.4247997005116917}, {\"source_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 1.1171074318335668}, {\"source_id\": \"79f48cec55538edc98bf3b2503a5b0f7a24da804_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.9156514276963085}, {\"source_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"target_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"strength\": 0.47711288535195207}, {\"source_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.019793018855094}, {\"source_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 0.9326300810671999}, {\"source_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.43487206595663375}, {\"source_id\": \"929083e28c3075513edc1d235a8b7a9a75086918_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.8410609518153596}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"strength\": 1.264144754281104}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.4189609761433039}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 1.1828144051271414}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 1.0567201005913176}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.0819927547676005}, {\"source_id\": \"962e916cd0aacdb83f68b724e0bda99516af9c32_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 1.0417320868962714}, {\"source_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"target_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"strength\": 0.4147294702318031}, {\"source_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"target_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"strength\": 0.877018178538177}, {\"source_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 1.063904556414709}, {\"source_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.9768933008097139}, {\"source_id\": \"a65602adb8a5da708db8ebc06756416c6da13d05_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.9544227427362583}, {\"source_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"target_id\": \"d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0\", \"strength\": 0.8051969709973771}, {\"source_id\": \"b1d5d88278e005d3950c843497a376549e1bc299_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 1.0369500810988304}, {\"source_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"target_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"strength\": 1.0328646083009652}, {\"source_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.93159255709637}, {\"source_id\": \"b599a59793fe284a6f2313472006c07ded1d4c9d_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 1.5318691134092464}, {\"source_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.4172499717622067}, {\"source_id\": \"bf49a808a8631dc938eee4922bfee878bd19940d_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.9240564004626141}, {\"source_id\": \"d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0\", \"target_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"strength\": 0.4248743789349916}, {\"source_id\": \"da380888d94fa5f5668ae54a9af8db6e3c206438_0\", \"target_id\": \"ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0\", \"strength\": 0.9418552357379055}], \"clusters\": [{\"cluster\": 1, \"label\": \"Contrastive Recommenders\", \"summary\": null}, {\"cluster\": 2, \"label\": \"Representative documents of cluster\", \"summary\": null}], \"blog_title\": null, \"blog_intro\": null, \"blog_conclusion\": null}}"
+{
+    "config": {
+        "terminology": {
+            "cluster": "Group",
+            "clusters": "Groups",
+            "item": "Document",
+            "items": "Documents",
+            "link": "Similarity link",
+            "links": "Similarity links",
+            "link_strength": "Similarity strength",
+            "total_link_strength": "Total similarity strengths",
+            "title": "Title of the document",
+            "abstract": "Abstract of the document",
+            "authors": "Authors"
+        },
+        "color_schemes": {
+            "cluster_colors": [
+                {
+                    "cluster": 1,
+                    "color": "#ff7f0e"
+                },
+                {
+                    "cluster": 2,
+                    "color": "#d62728"
+                }
+            ]
+        },
+        "templates": {
+            "item_description": "<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>"
+        },
+        "styles": {
+            "description_heading": "color: #757575; font-weight: 600;"
+        },
+        "parameters": {
+            "item_size_variation": 0.7,
+            "largest_component": true,
+            "attraction": 1.0,
+            "repulsion": -1.0,
+            "max_n_links": 1000
+        }
+    },
+    "network": {
+        "items": [
+            {
+                "id": "17b28bba9e498d991ffb9aad5777d284688f8dca_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Knowledge Transfer from\\u00a0Resource-Rich to\\u00a0Resource-Scarce Environments",
+                "authors": "Negin Ghasemi",
+                "label": "Knowledge Transfer from\\u00a0Resource-Rich to\\u00a0Resource-Scarce Environments",
+                "abstract": "Resource-scarce environments have limited data, creating barriers and suboptimal experiences for users, while resource-rich environments are well-stocked with comprehensive information....",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=17b28bba9e498d991ffb9aad5777d284688f8dca",
+                "img_url": null,
+                "x": 0.6685734936273544,
+                "y": -0.5420429740816658,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Knowledge Graph Cross-View Contrastive Learning for\\u00a0Recommendation",
+                "authors": "Zeyuan Meng, Iadh Ounis, Craig Macdonald, Zixuan Yi",
+                "label": "Knowledge Graph Cross-View Contrastive Learning for\\u00a0Recommendation",
+                "abstract": "Knowledge Graphs (KGs) are useful side information that help recommendation systems improve recommendation quality by providing rich semantic information about entities and items. Recently, models based on graph neural networks (GNNs) have adopted knowledge graphs to capture further high-order struc...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=2249a201309ae1ac078d585a222776f957ee8c1e",
+                "img_url": null,
+                "x": 1.091654164174007,
+                "y": -0.24728735135600483,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 4.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.5714285714285716,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.7843766727129251,
+                "summary": null
+            },
+            {
+                "id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "GLAD: Graph-Based Long-Term Attentive Dynamic Memory for\\u00a0Sequential Recommendation",
+                "authors": "Deepanshu Pandey, Arindam Sarkar, Prakash Mandayam Comar",
+                "label": "GLAD: Graph-Based Long-Term Attentive Dynamic Memory for\\u00a0Sequential Recommendation",
+                "abstract": "Recommender systems play a crucial role in the e-commerce stores, enabling customers to explore products and facilitating the discovery of relevant items. Typical recommender systems are built using  n  most recent user interactions, where value of  n  is chosen based on trade-off between incrementa...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=230aaa44adb33c9debc5c02c24b6284648068e94",
+                "img_url": null,
+                "x": 1.0995181601231199,
+                "y": -0.10459590205173687,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Transformers for Sequential Recommendation",
+                "authors": "Aleksandr V. Petrov, Craig Macdonald",
+                "label": "Transformers for Sequential Recommendation",
+                "abstract": "Sequential recommendation is a recommendation problem that aims to predict the next item in the sequence of user-item interactions. Sequential recommendation is similar to language modelling in terms of learning sequence structure; therefore, variants of the Transformer architecture, which has recen...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=2f1db3b126169f4463908443719848fa3122e466",
+                "img_url": null,
+                "x": 0.8485461667469762,
+                "y": -0.07693701568722304,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.999999999999999,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.5714285714285714,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.784376672712925,
+                "summary": null
+            },
+            {
+                "id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "MMCRec: Towards Multi-modal Generative AI in\\u00a0Conversational Recommendation",
+                "authors": "Tendai Mukande, Esraa Ali, Annalina Caputo, Ruihai Dong, Noel E. O\\u2019Connor",
+                "label": "MMCRec: Towards Multi-modal Generative AI in\\u00a0Conversational Recommendation",
+                "abstract": "Personalized recommendation systems have become integral in this digital age by facilitating content discovery to users and products tailored to their preferences. Since the Generative Artificial Intelligence (GAI) boom, research into GAI-enhanced Conversational Recommender Systems (CRSs) has sparke...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=30d34bf4ae7031df53571ee0410c7e0176c69622",
+                "img_url": null,
+                "x": 0.9697420203122481,
+                "y": -0.0849518972085268,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.21428571428571433,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.6062511151419501,
+                "summary": null
+            },
+            {
+                "id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Lightweight Modality Adaptation to\\u00a0Sequential Recommendation via\\u00a0Correlation Supervision",
+                "authors": "Hengchang Hu, Qijiong Liu, Chuang Li, Min-Yen Kan",
+                "label": "Lightweight Modality Adaptation to\\u00a0Sequential Recommendation via\\u00a0Correlation Supervision",
+                "abstract": "In Sequential Recommenders (SR),  encoding  and  utilizing  modalities in an end-to-end manner is costly in terms of modality encoder sizes. Two-stage approaches can mitigate such concerns, but they suffer from poor performance due to modality forgetting, where the sequential objective overshadows m...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=42e6e33ef0ba531074b77f958a50e94af1a1254c",
+                "img_url": null,
+                "x": 0.9735887393969009,
+                "y": -0.2229205288892275,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 6.999999999999998,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.992537375311876,
+                "summary": null
+            },
+            {
+                "id": "71c61edfbe9400204700d3d3995d04886e4d1393_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "A Streaming Approach to\\u00a0Neural Team Formation Training",
+                "authors": "Hossein Fani, Reza Barzegar, Arman Dashti, Mahdis Saeedi",
+                "label": "A Streaming Approach to\\u00a0Neural Team Formation Training",
+                "abstract": "Predicting  future  successful teams of experts who can effectively collaborate is challenging due to the experts\\u2019 temporality of skill sets, levels of expertise, and collaboration ties, which is overlooked by prior work. Specifically, state-of-the-art neural-based methods learn vector representatio...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=71c61edfbe9400204700d3d3995d04886e4d1393",
+                "img_url": null,
+                "x": 0.7409346246324554,
+                "y": -0.1908225051159129,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.5682303037050898,
+                "summary": null
+            },
+            {
+                "id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Self Contrastive Learning for\\u00a0Session-Based Recommendation",
+                "authors": "Zhengxiang Shi, Xi Wang, Aldo Lipani",
+                "label": "Self Contrastive Learning for\\u00a0Session-Based Recommendation",
+                "abstract": "Session-based recommendation, which aims to predict the next item of users\\u2019 interest as per an existing sequence interaction of items, has attracted growing applications of Contrastive Learning (CL) with improved user and item representations. However, these contrastive objectives: (1) serve a simil...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=78d901e32f7c09671be3bd901840dde71b66f19a",
+                "img_url": null,
+                "x": 1.2271925319460624,
+                "y": -0.11737821564307964,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.3214285714285715,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.656627610289837,
+                "summary": null
+            },
+            {
+                "id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Mitigating Data Sparsity via\\u00a0Neuro-Symbolic Knowledge Transfer",
+                "authors": "Tommaso Carraro, Alessandro Daniele, Fabio Aiolli, Luciano Serafini",
+                "label": "Mitigating Data Sparsity via\\u00a0Neuro-Symbolic Knowledge Transfer",
+                "abstract": "Data sparsity is a well-known historical limitation of recommender systems that still impacts the performance of state-of-the-art approaches. The literature proposed various ways to mitigate the problem by providing additional information to the model (e.g., hybrid recommendation, knowledge graph-ba...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=79f48cec55538edc98bf3b2503a5b0f7a24da804",
+                "img_url": null,
+                "x": 0.8059500998057108,
+                "y": -0.432988865514216,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.8333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.261904761904762,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.6300011894847467,
+                "summary": null
+            },
+            {
+                "id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "FAR-AI: A Modular Platform for\\u00a0Investment Recommendation in\\u00a0the\\u00a0Financial Domain",
+                "authors": "Javier Sanz-Cruzado, Edward Richards, Richard McCreadie",
+                "label": "FAR-AI: A Modular Platform for\\u00a0Investment Recommendation in\\u00a0the\\u00a0Financial Domain",
+                "abstract": "Financial asset recommendation (FAR) is an emerging sub-domain of the wider recommendation field that is concerned with recommending suitable financial assets to customers, with the expectation that those customers will invest capital into a subset of those assets. FAR is a particularly interesting ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=929083e28c3075513edc1d235a8b7a9a75086918",
+                "img_url": null,
+                "x": 1.2510735891988276,
+                "y": -0.007727203279826997,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "GenRec: Large Language Model for\\u00a0Generative Recommendation",
+                "authors": "Jianchao Ji, Zelong Li, Shuyuan Xu, Wenyue Hua, Yingqiang Ge, Juntao Tan, Yongfeng Zhang",
+                "label": "GenRec: Large Language Model for\\u00a0Generative Recommendation",
+                "abstract": "In recent years, Large Language Models (LLMs) have emerged as powerful tools for diverse natural language processing tasks. However, their potential for recommender systems under the generative recommendation paradigm remains relatively unexplored. This paper presents an innovative approach to recom...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=962e916cd0aacdb83f68b724e0bda99516af9c32",
+                "img_url": null,
+                "x": 0.9979297697399157,
+                "y": 0.026828099930774164,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 4.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.3571428571428572,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.679373996372245,
+                "summary": null
+            },
+            {
+                "id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Effective and\\u00a0Efficient Transformer Models for\\u00a0Sequential Recommendation",
+                "authors": "Aleksandr V. Petrov",
+                "label": "Effective and\\u00a0Efficient Transformer Models for\\u00a0Sequential Recommendation",
+                "abstract": "The focus of our work is  sequential recommender systems . Sequential recommender systems use ordered sequences of user-item interactions to predict future interactions of the user....",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a65602adb8a5da708db8ebc06756416c6da13d05",
+                "img_url": null,
+                "x": 1.1405426664703913,
+                "y": 0.04629289371537649,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Lottery4CVR: Neuron-Connection Level Sharing for\\u00a0Multi-task Learning in\\u00a0Video Conversion Rate Prediction",
+                "authors": "Xuanji Xiao, Jimmy Chen, Yuzhen Liu, Xing Yao, Pei Liu, Chaosheng Fan",
+                "label": "Lottery4CVR: Neuron-Connection Level Sharing for\\u00a0Multi-task Learning in\\u00a0Video Conversion Rate Prediction",
+                "abstract": "As a fundamental task of industrial ranking systems, conversion rate (CVR) prediction is suffering from data sparsity problems. Most conventional CVR modeling leverages Click-through rate (CTR) &CVR multitask learning because CTR involves far more samples than CVR. However, typical coarse-grained la...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b1d5d88278e005d3950c843497a376549e1bc299",
+                "img_url": null,
+                "x": 0.8173991954349871,
+                "y": -0.26157614940374907,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Explainable Recommender Systems with\\u00a0Knowledge Graphs and\\u00a0Language Models",
+                "authors": "Giacomo Balloccu, Ludovico Boratto, Gianni Fenu, Francesca Maridina Malloci, Mirko Marras",
+                "label": "Explainable Recommender Systems with\\u00a0Knowledge Graphs and\\u00a0Language Models",
+                "abstract": "In this tutorial, we delve into recent advances in explainable recommendation using Knowledge Graphs (KGs). The session begins by introducing the fundamental principles behind the increasing adoption of KGs in modern recommender systems. Then, the tutorial explores recent techniques that leverage KG...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b599a59793fe284a6f2313472006c07ded1d4c9d",
+                "img_url": null,
+                "x": 1.1179623313551559,
+                "y": -0.37822333007805775,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.570626003627755,
+                "summary": null
+            },
+            {
+                "id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Federated Conversational Recommender Systems",
+                "authors": "Allen Lin, Jianling Wang, Ziwei Zhu, James Caverlee",
+                "label": "Federated Conversational Recommender Systems",
+                "abstract": "Conversational Recommender Systems (CRSs) have become increasingly popular as a powerful tool for providing personalized recommendation experiences. By directly engaging with users in a conversational manner to learn their current and fine-grained preferences, a CRS can quickly derive recommendation...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=bf49a808a8631dc938eee4922bfee878bd19940d",
+                "img_url": null,
+                "x": 1.2450854732341892,
+                "y": 0.16258915939558227,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.8333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.261904761904762,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.6300011894847467,
+                "summary": null
+            },
+            {
+                "id": "d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Learning Action Embeddings for\\u00a0Off-Policy Evaluation",
+                "authors": "Matej Cief, Jacek Golebiowski, Philipp Schmidt, Ziawasch Abedjan, Artur Bekasov",
+                "label": "Learning Action Embeddings for\\u00a0Off-Policy Evaluation",
+                "abstract": "Off-policy evaluation (OPE) methods allow us to compute the expected reward of a policy by using the logged data collected by a different policy. However, when the number of actions is large, or certain actions are under-explored by the logging policy, existing estimators based on inverse-propensity...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=d7a863e970ccd55f91f5f5a709c1da11f85ac8d4",
+                "img_url": null,
+                "x": 0.908356622198761,
+                "y": -0.2810449721420119,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.5682303037050898,
+                "summary": null
+            },
+            {
+                "id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Align MacridVAE: Multimodal Alignment for\\u00a0Disentangled Recommendations",
+                "authors": "Ignacio Avas, Liesbeth Allein, Katrien Laenen, Marie-Francine Moens",
+                "label": "Align MacridVAE: Multimodal Alignment for\\u00a0Disentangled Recommendations",
+                "abstract": "Explaining why items are recommended to users is challenging, especially when these items are described by multimodal data. Most recommendation systems fail to leverage more than one modality, preferring textual or tabular data. In this work, a new model,  Align MacridVAE , that considers the comple...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=da380888d94fa5f5668ae54a9af8db6e3c206438",
+                "img_url": null,
+                "x": 0.9711696941126604,
+                "y": -0.3736483610672207,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.3571428571428572,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.6743070716067863,
+                "summary": null
+            },
+            {
+                "id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Hypergraphs with\\u00a0Attention on\\u00a0Reviews for\\u00a0Explainable Recommendation",
+                "authors": "Theis E. Jendal, Trung-Hoang Le, Hady W. Lauw, Matteo Lissandrini, Peter Dolog, Katja Hose",
+                "label": "Hypergraphs with\\u00a0Attention on\\u00a0Reviews for\\u00a0Explainable Recommendation",
+                "abstract": "Given a recommender system based on reviews, the challenges are how to effectively represent the review data and how to explain the produced recommendations. We propose a novel review-specific Hypergraph (HG) model, and further introduce a model-agnostic explainability module. The HG model captures ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=ddc4c27ba8828eb320e2680adf30e5e47ed1bf60",
+                "img_url": null,
+                "x": 1.2097183677193941,
+                "y": -0.26289975141251914,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.1428571428571429,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 0.25
+                },
+                "impact_score": 0.5682303037050898,
+                "summary": null
+            }
+        ],
+        "links": [
+            {
+                "source_id": "17b28bba9e498d991ffb9aad5777d284688f8dca_0",
+                "target_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "strength": 0.3062036788910592
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "strength": 1.1871821819434696
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "strength": 1.1112251445262353
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "strength": 1.0728153328285823
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "strength": 1.0810330592702562
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "strength": 1.3229638967346693
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "strength": 1.0568479729475762
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.4352847019877158
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.2135849954629983
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 0.9825148494917658
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.4191454021108736
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 1.1369479443941422
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.0903264231555667
+            },
+            {
+                "source_id": "2249a201309ae1ac078d585a222776f957ee8c1e_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 1.1552577176270542
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "strength": 1.4681738129725443
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "strength": 1.0138056030074587
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "strength": 1.2169575620546424
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "71c61edfbe9400204700d3d3995d04886e4d1393_0",
+                "strength": 0.3781820974660658
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "strength": 1.2623042039371555
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "strength": 0.9047889976476082
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.9283427390898725
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.2391547997149732
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.481435784432937
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.9142375693983955
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 0.891206026387049
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 0.8804634025979209
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.0177677627869974
+            },
+            {
+                "source_id": "230aaa44adb33c9debc5c02c24b6284648068e94_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.9836235147608408
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "strength": 1.2295174369316788
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "strength": 1.4274393516844568
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "71c61edfbe9400204700d3d3995d04886e4d1393_0",
+                "strength": 0.3752798636986621
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "strength": 1.332700549101516
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "strength": 0.4256311315128721
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 1.0308056107188885
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.434690745923424
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.7699066062202833
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.4545819674391802
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 0.45755704110968004
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 1.0059691286777073
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0",
+                "strength": 0.44939575965332385
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.1146163074305067
+            },
+            {
+                "source_id": "2f1db3b126169f4463908443719848fa3122e466_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.48604494884406513
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "strength": 1.2262592457794217
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "strength": 1.1447669286707898
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.9893526922100807
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.49482228499486
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.0626717179133953
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 1.0492408736941399
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 1.2713520081906595
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.131223973569399
+            },
+            {
+                "source_id": "30d34bf4ae7031df53571ee0410c7e0176c69622_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.9304517635069726
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "strength": 1.2535919814538086
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "strength": 0.9744959652547893
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.43351204302133345
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.1937279069193056
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.3461111929770881
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 1.039025559569884
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 0.415069126964544
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 0.4361321544223164
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0",
+                "strength": 0.9221458898432215
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.2907472146955115
+            },
+            {
+                "source_id": "42e6e33ef0ba531074b77f958a50e94af1a1254c_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.4200043236862798
+            },
+            {
+                "source_id": "71c61edfbe9400204700d3d3995d04886e4d1393_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.8715789655543209
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.9063856307228629
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 1.2469736947080277
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.2981741331166818
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.9446642246366515
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 0.86907640881424
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 0.9604635453672761
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.1646890151786313
+            },
+            {
+                "source_id": "78d901e32f7c09671be3bd901840dde71b66f19a_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.8656553284159739
+            },
+            {
+                "source_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "target_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "strength": 0.8098492708519357
+            },
+            {
+                "source_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 0.4247997005116917
+            },
+            {
+                "source_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 1.1171074318335668
+            },
+            {
+                "source_id": "79f48cec55538edc98bf3b2503a5b0f7a24da804_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.9156514276963085
+            },
+            {
+                "source_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "target_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "strength": 0.47711288535195207
+            },
+            {
+                "source_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.019793018855094
+            },
+            {
+                "source_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 0.9326300810671999
+            },
+            {
+                "source_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.43487206595663375
+            },
+            {
+                "source_id": "929083e28c3075513edc1d235a8b7a9a75086918_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.8410609518153596
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "strength": 1.264144754281104
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.4189609761433039
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 1.1828144051271414
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 1.0567201005913176
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.0819927547676005
+            },
+            {
+                "source_id": "962e916cd0aacdb83f68b724e0bda99516af9c32_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 1.0417320868962714
+            },
+            {
+                "source_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "target_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "strength": 0.4147294702318031
+            },
+            {
+                "source_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "target_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "strength": 0.877018178538177
+            },
+            {
+                "source_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 1.063904556414709
+            },
+            {
+                "source_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.9768933008097139
+            },
+            {
+                "source_id": "a65602adb8a5da708db8ebc06756416c6da13d05_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.9544227427362583
+            },
+            {
+                "source_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "target_id": "d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0",
+                "strength": 0.8051969709973771
+            },
+            {
+                "source_id": "b1d5d88278e005d3950c843497a376549e1bc299_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 1.0369500810988304
+            },
+            {
+                "source_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "target_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "strength": 1.0328646083009652
+            },
+            {
+                "source_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.93159255709637
+            },
+            {
+                "source_id": "b599a59793fe284a6f2313472006c07ded1d4c9d_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 1.5318691134092464
+            },
+            {
+                "source_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.4172499717622067
+            },
+            {
+                "source_id": "bf49a808a8631dc938eee4922bfee878bd19940d_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.9240564004626141
+            },
+            {
+                "source_id": "d7a863e970ccd55f91f5f5a709c1da11f85ac8d4_0",
+                "target_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "strength": 0.4248743789349916
+            },
+            {
+                "source_id": "da380888d94fa5f5668ae54a9af8db6e3c206438_0",
+                "target_id": "ddc4c27ba8828eb320e2680adf30e5e47ed1bf60_0",
+                "strength": 0.9418552357379055
+            }
+        ],
+        "clusters": [
+            {
+                "cluster": 1,
+                "label": "Contrastive Recommenders",
+                "summary": null
+            },
+            {
+                "cluster": 2,
+                "label": "Representative documents of cluster",
+                "summary": null
+            }
+        ],
+        "blog_title": null,
+        "blog_intro": null,
+        "blog_conclusion": null
+    }
+}

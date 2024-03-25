@@ -1,1 +1,751 @@
-"{\"config\": {\"terminology\": {\"cluster\": \"Group\", \"clusters\": \"Groups\", \"item\": \"Document\", \"items\": \"Documents\", \"link\": \"Similarity link\", \"links\": \"Similarity links\", \"link_strength\": \"Similarity strength\", \"total_link_strength\": \"Total similarity strengths\", \"title\": \"Title of the document\", \"abstract\": \"Abstract of the document\", \"authors\": \"Authors\"}, \"color_schemes\": {\"cluster_colors\": [{\"cluster\": 1, \"color\": \"#2ca02c\"}, {\"cluster\": 2, \"color\": \"#d62728\"}]}, \"templates\": {\"item_description\": \"<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>\"}, \"styles\": {\"description_heading\": \"color: #757575; font-weight: 600;\"}, \"parameters\": {\"item_size_variation\": 0.7, \"largest_component\": true, \"attraction\": 1.0, \"repulsion\": -1.0, \"max_n_links\": 1000}}, \"network\": {\"items\": [{\"id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"VADIS \\u2013 A Variable Detection, Interlinking and\\u00a0Summarization System\", \"authors\": \"Yavuz Selim Kartal, Muhammad Ahsan Shahid, Sotaro Takeshita, Tornike Tsereteli, Andrea Zielinski, Benjamin Zapilko, Philipp Mayr\", \"label\": \"VADIS \\u2013 A Variable Detection, Interlinking and\\u00a0Summarization System\", \"abstract\": \"The VADIS system addresses the demand of providing enhanced information access in the domain of the social sciences. This is achieved by allowing users to search and use survey variables in context of their underlying research data and scholarly publications which have been interlinked with each oth...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=014481e04bb92d9b6a1a5c55aceccb564cbf7d1a\", \"img_url\": null, \"x\": -0.7086922908673702, \"y\": -0.3996023735198713, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"The CLEF 2024 Monster Track: One Lab to\\u00a0Rule Them All\", \"authors\": \"Nicola Ferro, Julio Gonzalo, Jussi Karlgren, Henning M\\u00fcller\", \"label\": \"The CLEF 2024 Monster Track: One Lab to\\u00a0Rule Them All\", \"abstract\": \"Generative  Artificial Intelligence (AI)  and  Large Language Models (LLMs)  are revolutionizing technology and society thanks to their versatility and applicability to a wide array of tasks and use cases, in multiple media and modalities. As a new and relatively untested technology, LLMs raise seve...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=0ee79f24ad210d19d073657665958f1d048c940b\", \"img_url\": null, \"x\": -0.5262227587266352, \"y\": -0.0805759321298697, \"cluster\": 1, \"weights\": {\"Influence\": 2.625, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.75, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.876243770781354, \"summary\": null}, {\"id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Selma: A Semantic Local Code Search Platform\", \"authors\": \"Anja Reusch, Guilherme C. Lopes, Wilhelm Pertsch, Hannes Ueck, Julius Gonsior, Wolfgang Lehner\", \"label\": \"Selma: A Semantic Local Code Search Platform\", \"abstract\": \"Searching for the right code snippet is cumbersome and not a trivial task. Online platforms such as Github.com or searchcode.com provide tools to search, but they are limited to publicly available and internet-hosted code. However, during the development of research prototypes or confidential tools,...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=1e690e2658ce056710a67dd266deac0d28fdf08c\", \"img_url\": null, \"x\": -0.5389147358370674, \"y\": -0.565649779635308, \"cluster\": 1, \"weights\": {\"Influence\": 1.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.35714285714285715, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.679373996372245, \"summary\": null}, {\"id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"First International Workshop on\\u00a0Graph-Based Approaches in\\u00a0Information Retrieval (IRonGraphs 2024)\", \"authors\": \"Ludovico Boratto, Daniele Malitesta, Mirko Marras, Giacomo Medda, Cataldo Musto, Erasmo Purificato\", \"label\": \"First International Workshop on\\u00a0Graph-Based Approaches in\\u00a0Information Retrieval (IRonGraphs 2024)\", \"abstract\": \"In the dynamic field of information retrieval, the adoption of graph-based approaches has become a notable research trend. Fueled by the growing research on Knowledge Graphs and Graph Neural Networks, these approaches rooted in graph theory have shown significant promise in enhancing the effectivene...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=28f794818b9aac9283ec2ea5f60ea91bfbdfc64f\", \"img_url\": null, \"x\": 0.06770874641624892, \"y\": -0.4287810700366889, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"1 $$^{st}$$ Workshop on\\u00a0Information Retrieval for\\u00a0Understudied Users (IR4U2)\", \"authors\": \"Maria Soledad Pera, Federica Cena, Theo Huibers, Monica Landoni, Noemi Mauro, Emiliana Murgia\", \"label\": \"1 $$^{st}$$ Workshop on\\u00a0Information Retrieval for\\u00a0Understudied Users (IR4U2)\", \"abstract\": \"Information Retrieval (IR) remains an active, fast-paced area of research. However, most advances in IR have predominantly benefited the so-called \\u201cclassical\\u201d users, e.g., English-speaking adults. We envision  IR4U2 as a forum to spotlight efforts that, while sparse, consider  diverse , and often  u...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=2e10c93a8c2f3843d221acc5aa03677f7ed32cfd\", \"img_url\": null, \"x\": 0.01968312579571985, \"y\": -0.2901544437056852, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"The Search Futures Workshop\", \"authors\": \"Leif Azzopardi, Charles L. A. Clarke, Paul B. Kantor, Bhaskar Mitra, Johanne R. Trippas, Zhaochun Ren\", \"label\": \"The Search Futures Workshop\", \"abstract\": \"The field and community of Information Retrieval (IR) are changing and evolving in response to the latest developments and advances in Artificial Intelligence (AI) and research culture. As the field and community re-oriented and re-consider its positioning within computing and information sciences m...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3\", \"img_url\": null, \"x\": -0.058262498426066844, \"y\": -0.432542012954144, \"cluster\": 1, \"weights\": {\"Influence\": 3.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 1.0, \"summary\": null}, {\"id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"eval-rationales: An End-to-End Toolkit to\\u00a0Explain and\\u00a0Evaluate Transformers-Based Models\", \"authors\": \"Khalil Maachou, Jes\\u00fas Lov\\u00f3n-Melgarejo, Jose G. Moreno, Lynda Tamine\", \"label\": \"eval-rationales: An End-to-End Toolkit to\\u00a0Explain and\\u00a0Evaluate Transformers-Based Models\", \"abstract\": \"State-of-the-art (SOTA) transformer-based models in the domains of Natural Language Processing (NLP) and Information Retrieval (IR) are often characterized by their opacity in terms of decision-making processes. This limitation has given rise to various techniques for enhancing model interpretabilit...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=3cef7118f1dd42175143ff586375e8b2e3da4d7a\", \"img_url\": null, \"x\": -0.43525716490371, \"y\": -0.4204922067866406, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"PhD Candidacy: A Tutorial on\\u00a0Overcoming Challenges and\\u00a0Achieving Success\", \"authors\": \"Johanne R. Trippas, David Maxwell\", \"label\": \"PhD Candidacy: A Tutorial on\\u00a0Overcoming Challenges and\\u00a0Achieving Success\", \"abstract\": \"Undertaking a PhD is a demanding yet rewarding experience. PhD candidates develop a deep understanding of their research topic and acquire a wide range of skills, including  (i)  formulating research questions;  (ii)  conducting research ethically and rigorously;  (iii)  communicating research findi...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=3fb061467606757dad6fbe274330d6d9df66dd84\", \"img_url\": null, \"x\": -0.3283483562705926, \"y\": -0.30939005471609465, \"cluster\": 1, \"weights\": {\"Influence\": 1.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.35714285714285715, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.679373996372245, \"summary\": null}, {\"id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"KnowFIRES: A Knowledge-Graph Framework for\\u00a0Interpreting Retrieved Entities from\\u00a0Search\", \"authors\": \"Negar Arabzadeh, Kiarash Golzadeh, Christopher Risi, Charles L. A. Clarke, Jian Zhao\", \"label\": \"KnowFIRES: A Knowledge-Graph Framework for\\u00a0Interpreting Retrieved Entities from\\u00a0Search\", \"abstract\": \"Entity retrieval is essential in information access domains where people search for specific entities, such as individuals, organizations, and places. While entity retrieval is an active research topic in Information Retrieval, it is necessary to explore the explainability and interpretability of th...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=476ab517359c32cf54bebc04fe48d6338e321230\", \"img_url\": null, \"x\": -0.0936005939569313, \"y\": -0.6326244249550486, \"cluster\": 1, \"weights\": {\"Influence\": 2.8333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.8095238095238095, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9049997026288134, \"summary\": null}, {\"id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"LongEval: Longitudinal Evaluation of\\u00a0Model Performance at\\u00a0CLEF 2024\", \"authors\": \"Rabab Alkhalifa, Hsuvas Borkakoty, Romain Deveaud, Alaa El-Ebshihy, Luis Espinosa-Anke, Tobias Fink, Gabriela Gonzalez-Saez, Petra Galu\\u0161\\u010d\\u00e1kov\\u00e1, Lorraine Goeuriot, David Iommi, Maria Liakata, Harish Tayyar Madabushi, Pablo Medina-Alias, Philippe Mulhem, Florina Piroi, Martin Popel, Christophe Servan, Arkaitz Zubiaga\", \"label\": \"LongEval: Longitudinal Evaluation of\\u00a0Model Performance at\\u00a0CLEF 2024\", \"abstract\": \"This paper introduces the planned second LongEval Lab, part of the CLEF 2024 conference. The aim of the lab\\u2019s two tasks is to give researchers test data for addressing temporal effectiveness persistence challenges in both information retrieval and text classification, motivated by the fact that mode...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=4ab25988371098b7d59d0efef93961c2dc543ec5\", \"img_url\": null, \"x\": -0.48055995264758694, \"y\": -0.1711793529982028, \"cluster\": 1, \"weights\": {\"Influence\": 2.1666666666666665, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.619047619047619, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.8114190792858728, \"summary\": null}, {\"id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"indxr: A Python Library for\\u00a0Indexing File Lines\", \"authors\": \"Elias Bassani, Nicola Tonellotto\", \"label\": \"indxr: A Python Library for\\u00a0Indexing File Lines\", \"abstract\": \"indxr  is a Python utility for indexing file lines that allows users to dynamically access specific ones, avoiding loading the entire file in the computer\\u2019s main memory.  indxr  addresses two main issues related to working with textual data. First, users who do not have plenty of RAM at their dispos...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=4efd36172999c1d240ce06679deefea145f5561c\", \"img_url\": null, \"x\": -0.5999474694413096, \"y\": -0.519521463188818, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Bibliometric-Enhanced Information Retrieval: 14th International BIR Workshop (BIR 2024)\", \"authors\": \"Ingo Frommholz, Philipp Mayr, Guillaume Cabanac, Suzan Verberne\", \"label\": \"Bibliometric-Enhanced Information Retrieval: 14th International BIR Workshop (BIR 2024)\", \"abstract\": \"The  14th iteration of the Bibliometric-enhanced Information Retrieval (BIR) workshop  series takes place at ECIR\\u00a02024 as a full-day workshop. BIR addresses research topics related to academic search and recommendation, at the intersection of Information Retrieval, Natural Language Processing, and B...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=5a62500fdd3468417cfb1d442735d209c0cc3c65\", \"img_url\": null, \"x\": -0.4404597698620027, \"y\": -0.29757226484942345, \"cluster\": 1, \"weights\": {\"Influence\": 1.625, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.4642857142857143, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7328116636435376, \"summary\": null}, {\"id\": \"6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"CLEF 2024 SimpleText Track\", \"authors\": \"Liana Ermakova, Eric SanJuan, St\\u00e9phane Huet, Hosein Azarbonyad, Giorgio Maria Di Nunzio, Federica Vezzani, Jennifer D\\u2019Souza, Salomon Kabongo, Hamed Babaei Giglou, Yue Zhang, S\\u00f6ren Auer, Jaap Kamps\", \"label\": \"CLEF 2024 SimpleText Track\", \"abstract\": \"Everyone agrees on the importance of objective scientific information. However, relevant scientific documents tend to be inherently difficult to find and understand either because of intricate terminology or the potential absence of prior knowledge among their readers. Can we improve accessibility f...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd\", \"img_url\": null, \"x\": -0.6217476765015958, \"y\": -0.20871346635460794, \"cluster\": 1, \"weights\": {\"Influence\": 2.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.5714285714285714, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7878464641966069, \"summary\": null}, {\"id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Reproduction and\\u00a0Simulation of\\u00a0Interactive Retrieval Experiments\", \"authors\": \"Jana Isabelle Friese\", \"label\": \"Reproduction and\\u00a0Simulation of\\u00a0Interactive Retrieval Experiments\", \"abstract\": \"The reproducibility crisis, spanning across various scientific fields, substantially affects information retrieval research [ 1 ]....\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=7bf8a971eded30cd5db9f90e54ae607fed8429f1\", \"img_url\": null, \"x\": -0.009593097744436422, \"y\": -0.15709351499248267, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Building and\\u00a0Evaluating a\\u00a0WebApp for\\u00a0Effortless Deep Learning Model Deployment\", \"authors\": \"Ruikun Wu, Jiaxuan Han, Jerome Ramos, Aldo Lipani\", \"label\": \"Building and\\u00a0Evaluating a\\u00a0WebApp for\\u00a0Effortless Deep Learning Model Deployment\", \"abstract\": \"In the field of deep learning, particularly Natural Language Processing (NLP), model deployment is a key process for public testing and analysis. However, developing a deployment pipeline is often difficult and time-consuming. To address this challenge, we developed SUD.DL, a web application to simp...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=8526dfedef64b8ee05cd846157694f429f142155\", \"img_url\": null, \"x\": -0.5094198801250277, \"y\": -0.4581270036503235, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"SciSpace Literature Review: Harnessing AI for\\u00a0Effortless Scientific Discovery\", \"authors\": \"Siddhant Jain, Asheesh Kumar, Trinita Roy, Kartik Shinde, Goutham Vignesh, Rohan Tondulkar\", \"label\": \"SciSpace Literature Review: Harnessing AI for\\u00a0Effortless Scientific Discovery\", \"abstract\": \"In the rapidly evolving landscape of academia, the scientific research community barely copes with the challenges posed by a surging volume of scientific literature. Nevertheless, discovering research remains an important step in the research workflow which is also proven to be a challenging one to ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=8c8b964f76f6320227dabcc37b4cdca1920fef65\", \"img_url\": null, \"x\": -0.5788570670536052, \"y\": -0.35673404168382566, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Interactive Topic Tagging in\\u00a0Community Question Answering Platforms\", \"authors\": \"Radin Hamidi Rad, Silviu Cucerzan, Nirupama Chandrasekaran, Michael Gamon\", \"label\": \"Interactive Topic Tagging in\\u00a0Community Question Answering Platforms\", \"abstract\": \"Community question-answering platforms offer new opportunities for users to share knowledge online. Such platforms allow building communities around areas of interest, and enable community members to post questions and have other members answer them. In this paper, we investigate a novel, interactiv...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=8fe0493b09850830cc0d819ad6641343ccea0e8c\", \"img_url\": null, \"x\": -0.26022359232018266, \"y\": -0.7039496224747239, \"cluster\": 1, \"weights\": {\"Influence\": 3.1666666666666665, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.9047619047619048, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9524998513144066, \"summary\": null}, {\"id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Investigating the\\u00a0Usage of\\u00a0Formulae in\\u00a0Mathematical Answer Retrieval\", \"authors\": \"Anja Reusch, Julius Gonsior, Claudio Hartmann, Wolfgang Lehner\", \"label\": \"Investigating the\\u00a0Usage of\\u00a0Formulae in\\u00a0Mathematical Answer Retrieval\", \"abstract\": \"This work focuses on the task of Mathematical Answer Retrieval and studies the factors a recent Transformer-Encoder-based Language Model (LM) uses to assess the relevance of an answer for a given mathematical question. Mainly, we investigate three factors: (1) the general influence of mathematical f...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4\", \"img_url\": null, \"x\": -0.7500823050991533, \"y\": -0.5856681969938096, \"cluster\": 1, \"weights\": {\"Influence\": 1.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.35714285714285715, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6817696962949102, \"summary\": null}, {\"id\": \"99a67a9cb11d64be00ae789d0ffc60d806f56769_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"LifeCLEF 2024 Teaser: Challenges on\\u00a0Species Distribution Prediction and\\u00a0Identification\", \"authors\": \"Alexis Joly, Luk\\u00e1\\u0161 Picek, Stefan Kahl, Herv\\u00e9 Go\\u00ebau, Vincent Espitalier, Christophe Botella, Benjamin Deneu, Diego Marcos, Joaquim Estopinan, Cesar Leblanc, Th\\u00e9o Larcher, Milan \\u0160ulc, Marek Hr\\u00faz, Maximilien Servajean, Ji\\u0159\\u00ed Matas, Herv\\u00e9 Glotin, Robert Planqu\\u00e9, Willem-Pier Vellinga, Holger Klinck, Tom Denton, Andrew M. Durso, Ivan Eggel, Pierre Bonnet, Henning M\\u00fcller\", \"label\": \"LifeCLEF 2024 Teaser: Challenges on\\u00a0Species Distribution Prediction and\\u00a0Identification\", \"abstract\": \"Building accurate knowledge of the identity, the geographic distribution and the evolution of species is essential for the sustainable development of humanity, as well as for biodiversity conservation. However, species identification and inventory is a difficult and costly task, requiring large-scal...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=99a67a9cb11d64be00ae789d0ffc60d806f56769\", \"img_url\": null, \"x\": -0.5471181513194756, \"y\": -0.02101453299129864, \"cluster\": 1, \"weights\": {\"Influence\": 1.6176470588235294, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.46218487394957986, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7337681119329968, \"summary\": null}, {\"id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"XSearchKG: A Platform for\\u00a0Explainable Keyword Search over\\u00a0Knowledge Graphs\", \"authors\": \"Leila Feddoul, Martin Birke, Sirko Schindler\", \"label\": \"XSearchKG: A Platform for\\u00a0Explainable Keyword Search over\\u00a0Knowledge Graphs\", \"abstract\": \"One of the most user-friendly methods to search over knowledge graphs is the usage of keyword queries. They offer a simple text input that requires no technical or domain knowledge. Most existing approaches for keyword search over graph-shaped data rely on graph traversal algorithms to find connecti...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=9faae7119514ca10269e448b5701267757755063\", \"img_url\": null, \"x\": -0.2984892881594072, \"y\": -0.585336150990394, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Semantic Content Search on\\u00a0IKEA.com\", \"authors\": \"Mateusz Slominski, Ezgi Y\\u0131ld\\u0131r\\u0131m, Martin Tegner\", \"label\": \"Semantic Content Search on\\u00a0IKEA.com\", \"abstract\": \"In this paper, we present an approach to  content search . The aim is to increase customer engagement with content recommendations on  IKEA.com . As an alternative to Boolean search, we introduce a method based on semantic textual similarity between content pages and search queries. Our approach imp...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=a080c64c801af2112377e45ea0c009124db20602\", \"img_url\": null, \"x\": 0.027671929144111422, \"y\": -0.5388673802118392, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Towards Robust Expert Finding in\\u00a0Community Question Answering Platforms\", \"authors\": \"Maddalena Amendola, Andrea Passarella, Raffaele Perego\", \"label\": \"Towards Robust Expert Finding in\\u00a0Community Question Answering Platforms\", \"abstract\": \"This paper introduces TUEF, a topic-oriented user-interaction model for fair Expert Finding in Community Question Answering (CQA) platforms. The Expert Finding task in CQA platforms involves identifying proficient users capable of providing accurate answers to questions from the community. To this a...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=c2b505d9939156407832d01989ba5d4b69bc55fc\", \"img_url\": null, \"x\": -0.3888521493415877, \"y\": -0.6959166702352613, \"cluster\": 1, \"weights\": {\"Influence\": 1.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.42857142857142855, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7149991078864399, \"summary\": null}, {\"id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"MathMex: Search Engine for\\u00a0Math Definitions\", \"authors\": \"Shea Durgin, James Gore, Behrooz Mansouri\", \"label\": \"MathMex: Search Engine for\\u00a0Math Definitions\", \"abstract\": \"This paper introduces MathMex, an open-source search engine for math definitions. With MathMex, users can search for definitions of mathematical concepts extracted from a variety of data sources and types including text, images, and videos. Definitions are extracted using a fine-tuned SciBERT classi...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=de279a22ed9965261be09e32415c88fb057dd57d\", \"img_url\": null, \"x\": -0.6944922080503111, \"y\": -0.5998903116945427, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Result Assessment Tool: Software to Support Studies Based on Data from Search Engines\", \"authors\": \"Sebastian S\\u00fcnkler, Nurce Yagci, Sebastian Schulthei\\u00df, Sonja von Mach, Dirk Lewandowski\", \"label\": \"Result Assessment Tool: Software to Support Studies Based on Data from Search Engines\", \"abstract\": \"The Result Assessment Tool (RAT) is a software toolkit for conducting research with results from commercial search engines and other information retrieval (IR) systems. The software integrates modules for study design and management, automatic collection of search results via web scraping, and evalu...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b\", \"img_url\": null, \"x\": -0.27311956112769775, \"y\": -0.21855932803467273, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"The Open Web Index\", \"authors\": \"Gijs Hendriksen, Michael Dinzinger, Sheikh Mastura Farzana, Noor Afshan Fathima, Maik Fr\\u00f6be, Sebastian Schmidt, Saber Zerhoudi, Michael Granitzer, Matthias Hagen, Djoerd Hiemstra, Martin Potthast, Benno Stein\", \"label\": \"The Open Web Index\", \"abstract\": \"Only few search engines index the Web at scale. Third parties who want to develop downstream applications based on web search fully depend on the terms and conditions of the few vendors. The public availability of the large-scale Common Crawl does not alleviate the situation, as it is often cheaper ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=e497c3aa4b379a8fab56b198fe41b21a36ec4fd2\", \"img_url\": null, \"x\": -0.19922858597919627, \"y\": -0.38802283117635533, \"cluster\": 1, \"weights\": {\"Influence\": 2.9375, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.8392857142857143, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9198434990930613, \"summary\": null}, {\"id\": \"ec0e3f4756e3313850577d12a6bb18dba3367b5f_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Analyzing Mathematical Content for\\u00a0Plagiarism and\\u00a0Recommendations\", \"authors\": \"Ankit Satpute\", \"label\": \"Analyzing Mathematical Content for\\u00a0Plagiarism and\\u00a0Recommendations\", \"abstract\": \"Defined as \\u201cthe use of ideas, concepts, words, or structures without appropriately acknowledging the source to benefit in a setting where originality is expected\\\"\\u00a0[ 6 ], plagiarism poses a severe concern in the rapidly increasing number of scientific publications....\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=ec0e3f4756e3313850577d12a6bb18dba3367b5f\", \"img_url\": null, \"x\": -0.7700555895636237, \"y\": -0.6277358324545269, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.2857142857142857, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6437488848580499, \"summary\": null}, {\"id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"QuantPlorer: Exploration of\\u00a0Quantities in\\u00a0Text\", \"authors\": \"Satya Almasian, Alexander Kosnac, Michael Gertz\", \"label\": \"QuantPlorer: Exploration of\\u00a0Quantities in\\u00a0Text\", \"abstract\": \"Quantities play an important role in documents of various domains such as finance, business, and medicine. Despite the role of quantities, only a limited number of works focus on their extraction from text and even less on creating respective user-friendly document exploration frameworks. In this wo...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=f6e024b22fb8994a046e1ffacee91ce8c35623e5\", \"img_url\": null, \"x\": -0.723369619099744, \"y\": -0.5100235189731127, \"cluster\": 1, \"weights\": {\"Influence\": 1.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.42857142857142855, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7149991078864399, \"summary\": null}, {\"id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"The First International Workshop on\\u00a0Open Web Search (WOWS)\", \"authors\": \"Sheikh Mastura Farzana, Maik Fr\\u00f6be, Michael Granitzer, Gijs Hendriksen, Djoerd Hiemstra, Martin Potthast, Saber Zerhoudi\", \"label\": \"The First International Workshop on\\u00a0Open Web Search (WOWS)\", \"abstract\": \"We organize the first international Workshop on Open Web Search (WOWS) at ECIR\\u00a02024 with two calls for contributions. The first call targets scientific contributions on cooperative search engine development.This includes cooperative crawling of the web and cooperative deployment and evaluation of se...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=fa916aff252d54c23ca227c41f6fbd7377675664\", \"img_url\": null, \"x\": -0.1168425283774036, \"y\": -0.2982185832190202, \"cluster\": 1, \"weights\": {\"Influence\": 3.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.8571428571428571, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.92874977697161, \"summary\": null}], \"links\": [{\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"strength\": 0.4628807474537599}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"strength\": 0.40942020084047326}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"strength\": 1.0599641902385424}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"strength\": 0.40834840333079586}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0\", \"strength\": 0.8826843589494845}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 0.42924084583691374}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.9530325282032919}, {\"source_id\": \"014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.9604335262142846}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"strength\": 0.8189913980528344}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"strength\": 1.1591908480732849}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0\", \"strength\": 0.961594126574737}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"strength\": 0.8703776207880105}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 0.4024815806158352}, {\"source_id\": \"0ee79f24ad210d19d073657665958f1d048c940b_0\", \"target_id\": \"99a67a9cb11d64be00ae789d0ffc60d806f56769_0\", \"strength\": 0.8525607064841854}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"strength\": 0.41029610017935064}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"strength\": 0.9451121831819425}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"strength\": 0.8123855922156813}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"strength\": 0.40514788497140813}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.9162552133177472}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"strength\": 0.8229889385081761}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.41192215855828895}, {\"source_id\": \"1e690e2658ce056710a67dd266deac0d28fdf08c_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.41816833625254973}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"strength\": 1.1132979591615755}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"strength\": 1.0847499189516596}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"strength\": 1.2421792214337382}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"strength\": 0.4026285481958849}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"strength\": 1.1584674740469805}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 0.4600250280158313}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 0.4260414627912544}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"strength\": 0.44378680874397625}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 1.18893370335954}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 0.9134796797264034}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.4549679455340511}, {\"source_id\": \"28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.0122308644536995}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"strength\": 1.2323676018944958}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"strength\": 0.3020100653708412}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"strength\": 1.1158283953163366}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"strength\": 0.4479081566349195}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"strength\": 1.1123669150054953}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 1.3346036244710238}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"strength\": 0.5303382254722773}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.47486930073627137}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 0.5206436867038465}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 0.47561272815723993}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 1.1194642917868738}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.4778709938236593}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.42242405539574657}, {\"source_id\": \"2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.1550828112114984}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"strength\": 0.37059039111509273}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"strength\": 0.498037069722576}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"strength\": 0.40997062710783805}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"strength\": 0.4027740326383849}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"strength\": 1.0517021050770887}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 1.1341964272036935}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 1.034963069066882}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.5025854430630641}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 1.0686775757856966}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 1.1264145806422101}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 1.0926695621185807}, {\"source_id\": \"332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.3867346433214043}, {\"source_id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"target_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"strength\": 0.9692813595556347}, {\"source_id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"target_id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"strength\": 0.9492814070962428}, {\"source_id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"target_id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"strength\": 0.8189717028320815}, {\"source_id\": \"3cef7118f1dd42175143ff586375e8b2e3da4d7a_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.41369787548932546}, {\"source_id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"target_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"strength\": 0.2922562215934751}, {\"source_id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"target_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"strength\": 0.3411057888239363}, {\"source_id\": \"3fb061467606757dad6fbe274330d6d9df66dd84_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.3547729752884204}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 0.49156422625420054}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"strength\": 0.9486938821885141}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 1.480935993387334}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 0.9524570891466448}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 0.9667813565603056}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.9456209489193262}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.9521900109788305}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.4046808492537946}, {\"source_id\": \"476ab517359c32cf54bebc04fe48d6338e321230_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.0531641086746306}, {\"source_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"target_id\": \"6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0\", \"strength\": 0.9170764329596481}, {\"source_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 0.4691292164680302}, {\"source_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"target_id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"strength\": 0.8154791015238376}, {\"source_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"target_id\": \"99a67a9cb11d64be00ae789d0ffc60d806f56769_0\", \"strength\": 0.34305515043447293}, {\"source_id\": \"4ab25988371098b7d59d0efef93961c2dc543ec5_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.4203947761683965}, {\"source_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 0.41422068539673956}, {\"source_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.40274818402878315}, {\"source_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.9142830992482357}, {\"source_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.8373291443158128}, {\"source_id\": \"4efd36172999c1d240ce06679deefea145f5561c_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.408599000473152}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"strength\": 1.0433505244435433}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 1.2252534159222588}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.44932972441544233}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 0.9431052674607017}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 1.077490994423733}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"ec0e3f4756e3313850577d12a6bb18dba3367b5f_0\", \"strength\": 0.3450560648266987}, {\"source_id\": \"5a62500fdd3468417cfb1d442735d209c0cc3c65_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.9948591800435489}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 0.48136660692416583}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"strength\": 0.41612598954779734}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 0.44965712198447955}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 1.2492613222105562}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.44747098482944153}, {\"source_id\": \"7bf8a971eded30cd5db9f90e54ae607fed8429f1_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.1365084386518414}, {\"source_id\": \"8526dfedef64b8ee05cd846157694f429f142155_0\", \"target_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"strength\": 0.8311178382813349}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"99a67a9cb11d64be00ae789d0ffc60d806f56769_0\", \"strength\": 0.34223885325764475}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 1.0156105372303486}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 0.4110205726629514}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"strength\": 0.8515588646593124}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.9969563461337229}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"ec0e3f4756e3313850577d12a6bb18dba3367b5f_0\", \"strength\": 0.40030465540734994}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.4088994533150067}, {\"source_id\": \"8c8b964f76f6320227dabcc37b4cdca1920fef65_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.9485657568656425}, {\"source_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"target_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"strength\": 0.9456598289402849}, {\"source_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 1.3181766974858462}, {\"source_id\": \"8fe0493b09850830cc0d819ad6641343ccea0e8c_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.45399880288974437}, {\"source_id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"target_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"strength\": 1.289863107391219}, {\"source_id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"target_id\": \"ec0e3f4756e3313850577d12a6bb18dba3367b5f_0\", \"strength\": 0.8467312441217267}, {\"source_id\": \"99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 0.9880739687822514}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"strength\": 0.9462597495310792}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"strength\": 0.899037907579191}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"strength\": 0.4345032475924064}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.4550700830365386}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.9759205050303814}, {\"source_id\": \"9faae7119514ca10269e448b5701267757755063_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.0658782176730242}, {\"source_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"target_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"strength\": 0.44492212606999076}, {\"source_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 0.9963323431605544}, {\"source_id\": \"a080c64c801af2112377e45ea0c009124db20602_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.1081957587820443}, {\"source_id\": \"c2b505d9939156407832d01989ba5d4b69bc55fc_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 0.436822668238024}, {\"source_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"target_id\": \"ec0e3f4756e3313850577d12a6bb18dba3367b5f_0\", \"strength\": 0.3956478168880283}, {\"source_id\": \"de279a22ed9965261be09e32415c88fb057dd57d_0\", \"target_id\": \"f6e024b22fb8994a046e1ffacee91ce8c35623e5_0\", \"strength\": 1.091671706875885}, {\"source_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"target_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"strength\": 1.0735339515301165}, {\"source_id\": \"deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.2513665848822617}, {\"source_id\": \"e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0\", \"target_id\": \"fa916aff252d54c23ca227c41f6fbd7377675664_0\", \"strength\": 1.7108998313394337}], \"clusters\": [{\"cluster\": 1, \"label\": \"AI-Driven Search\", \"summary\": null}, {\"cluster\": 2, \"label\": \"Representative documents of cluster\", \"summary\": null}], \"blog_title\": null, \"blog_intro\": null, \"blog_conclusion\": null}}"
+{
+    "config": {
+        "terminology": {
+            "cluster": "Group",
+            "clusters": "Groups",
+            "item": "Document",
+            "items": "Documents",
+            "link": "Similarity link",
+            "links": "Similarity links",
+            "link_strength": "Similarity strength",
+            "total_link_strength": "Total similarity strengths",
+            "title": "Title of the document",
+            "abstract": "Abstract of the document",
+            "authors": "Authors"
+        },
+        "color_schemes": {
+            "cluster_colors": [
+                {
+                    "cluster": 1,
+                    "color": "#2ca02c"
+                },
+                {
+                    "cluster": 2,
+                    "color": "#d62728"
+                }
+            ]
+        },
+        "templates": {
+            "item_description": "<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>"
+        },
+        "styles": {
+            "description_heading": "color: #757575; font-weight: 600;"
+        },
+        "parameters": {
+            "item_size_variation": 0.7,
+            "largest_component": true,
+            "attraction": 1.0,
+            "repulsion": -1.0,
+            "max_n_links": 1000
+        }
+    },
+    "network": {
+        "items": [
+            {
+                "id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "VADIS \\u2013 A Variable Detection, Interlinking and\\u00a0Summarization System",
+                "authors": "Yavuz Selim Kartal, Muhammad Ahsan Shahid, Sotaro Takeshita, Tornike Tsereteli, Andrea Zielinski, Benjamin Zapilko, Philipp Mayr",
+                "label": "VADIS \\u2013 A Variable Detection, Interlinking and\\u00a0Summarization System",
+                "abstract": "The VADIS system addresses the demand of providing enhanced information access in the domain of the social sciences. This is achieved by allowing users to search and use survey variables in context of their underlying research data and scholarly publications which have been interlinked with each oth...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=014481e04bb92d9b6a1a5c55aceccb564cbf7d1a",
+                "img_url": null,
+                "x": -0.7086922908673702,
+                "y": -0.3996023735198713,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "0ee79f24ad210d19d073657665958f1d048c940b_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "The CLEF 2024 Monster Track: One Lab to\\u00a0Rule Them All",
+                "authors": "Nicola Ferro, Julio Gonzalo, Jussi Karlgren, Henning M\\u00fcller",
+                "label": "The CLEF 2024 Monster Track: One Lab to\\u00a0Rule Them All",
+                "abstract": "Generative  Artificial Intelligence (AI)  and  Large Language Models (LLMs)  are revolutionizing technology and society thanks to their versatility and applicability to a wide array of tasks and use cases, in multiple media and modalities. As a new and relatively untested technology, LLMs raise seve...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=0ee79f24ad210d19d073657665958f1d048c940b",
+                "img_url": null,
+                "x": -0.5262227587266352,
+                "y": -0.0805759321298697,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.625,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.75,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.876243770781354,
+                "summary": null
+            },
+            {
+                "id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Selma: A Semantic Local Code Search Platform",
+                "authors": "Anja Reusch, Guilherme C. Lopes, Wilhelm Pertsch, Hannes Ueck, Julius Gonsior, Wolfgang Lehner",
+                "label": "Selma: A Semantic Local Code Search Platform",
+                "abstract": "Searching for the right code snippet is cumbersome and not a trivial task. Online platforms such as Github.com or searchcode.com provide tools to search, but they are limited to publicly available and internet-hosted code. However, during the development of research prototypes or confidential tools,...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1e690e2658ce056710a67dd266deac0d28fdf08c",
+                "img_url": null,
+                "x": -0.5389147358370674,
+                "y": -0.565649779635308,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.35714285714285715,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.679373996372245,
+                "summary": null
+            },
+            {
+                "id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "First International Workshop on\\u00a0Graph-Based Approaches in\\u00a0Information Retrieval (IRonGraphs 2024)",
+                "authors": "Ludovico Boratto, Daniele Malitesta, Mirko Marras, Giacomo Medda, Cataldo Musto, Erasmo Purificato",
+                "label": "First International Workshop on\\u00a0Graph-Based Approaches in\\u00a0Information Retrieval (IRonGraphs 2024)",
+                "abstract": "In the dynamic field of information retrieval, the adoption of graph-based approaches has become a notable research trend. Fueled by the growing research on Knowledge Graphs and Graph Neural Networks, these approaches rooted in graph theory have shown significant promise in enhancing the effectivene...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=28f794818b9aac9283ec2ea5f60ea91bfbdfc64f",
+                "img_url": null,
+                "x": 0.06770874641624892,
+                "y": -0.4287810700366889,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "1 $$^{st}$$ Workshop on\\u00a0Information Retrieval for\\u00a0Understudied Users (IR4U2)",
+                "authors": "Maria Soledad Pera, Federica Cena, Theo Huibers, Monica Landoni, Noemi Mauro, Emiliana Murgia",
+                "label": "1 $$^{st}$$ Workshop on\\u00a0Information Retrieval for\\u00a0Understudied Users (IR4U2)",
+                "abstract": "Information Retrieval (IR) remains an active, fast-paced area of research. However, most advances in IR have predominantly benefited the so-called \\u201cclassical\\u201d users, e.g., English-speaking adults. We envision  IR4U2 as a forum to spotlight efforts that, while sparse, consider  diverse , and often  u...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=2e10c93a8c2f3843d221acc5aa03677f7ed32cfd",
+                "img_url": null,
+                "x": 0.01968312579571985,
+                "y": -0.2901544437056852,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "The Search Futures Workshop",
+                "authors": "Leif Azzopardi, Charles L. A. Clarke, Paul B. Kantor, Bhaskar Mitra, Johanne R. Trippas, Zhaochun Ren",
+                "label": "The Search Futures Workshop",
+                "abstract": "The field and community of Information Retrieval (IR) are changing and evolving in response to the latest developments and advances in Artificial Intelligence (AI) and research culture. As the field and community re-oriented and re-consider its positioning within computing and information sciences m...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3",
+                "img_url": null,
+                "x": -0.058262498426066844,
+                "y": -0.432542012954144,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 1.0,
+                "summary": null
+            },
+            {
+                "id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "eval-rationales: An End-to-End Toolkit to\\u00a0Explain and\\u00a0Evaluate Transformers-Based Models",
+                "authors": "Khalil Maachou, Jes\\u00fas Lov\\u00f3n-Melgarejo, Jose G. Moreno, Lynda Tamine",
+                "label": "eval-rationales: An End-to-End Toolkit to\\u00a0Explain and\\u00a0Evaluate Transformers-Based Models",
+                "abstract": "State-of-the-art (SOTA) transformer-based models in the domains of Natural Language Processing (NLP) and Information Retrieval (IR) are often characterized by their opacity in terms of decision-making processes. This limitation has given rise to various techniques for enhancing model interpretabilit...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=3cef7118f1dd42175143ff586375e8b2e3da4d7a",
+                "img_url": null,
+                "x": -0.43525716490371,
+                "y": -0.4204922067866406,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "3fb061467606757dad6fbe274330d6d9df66dd84_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "PhD Candidacy: A Tutorial on\\u00a0Overcoming Challenges and\\u00a0Achieving Success",
+                "authors": "Johanne R. Trippas, David Maxwell",
+                "label": "PhD Candidacy: A Tutorial on\\u00a0Overcoming Challenges and\\u00a0Achieving Success",
+                "abstract": "Undertaking a PhD is a demanding yet rewarding experience. PhD candidates develop a deep understanding of their research topic and acquire a wide range of skills, including  (i)  formulating research questions;  (ii)  conducting research ethically and rigorously;  (iii)  communicating research findi...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=3fb061467606757dad6fbe274330d6d9df66dd84",
+                "img_url": null,
+                "x": -0.3283483562705926,
+                "y": -0.30939005471609465,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.35714285714285715,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.679373996372245,
+                "summary": null
+            },
+            {
+                "id": "476ab517359c32cf54bebc04fe48d6338e321230_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "KnowFIRES: A Knowledge-Graph Framework for\\u00a0Interpreting Retrieved Entities from\\u00a0Search",
+                "authors": "Negar Arabzadeh, Kiarash Golzadeh, Christopher Risi, Charles L. A. Clarke, Jian Zhao",
+                "label": "KnowFIRES: A Knowledge-Graph Framework for\\u00a0Interpreting Retrieved Entities from\\u00a0Search",
+                "abstract": "Entity retrieval is essential in information access domains where people search for specific entities, such as individuals, organizations, and places. While entity retrieval is an active research topic in Information Retrieval, it is necessary to explore the explainability and interpretability of th...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=476ab517359c32cf54bebc04fe48d6338e321230",
+                "img_url": null,
+                "x": -0.0936005939569313,
+                "y": -0.6326244249550486,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.8333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.8095238095238095,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9049997026288134,
+                "summary": null
+            },
+            {
+                "id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "LongEval: Longitudinal Evaluation of\\u00a0Model Performance at\\u00a0CLEF 2024",
+                "authors": "Rabab Alkhalifa, Hsuvas Borkakoty, Romain Deveaud, Alaa El-Ebshihy, Luis Espinosa-Anke, Tobias Fink, Gabriela Gonzalez-Saez, Petra Galu\\u0161\\u010d\\u00e1kov\\u00e1, Lorraine Goeuriot, David Iommi, Maria Liakata, Harish Tayyar Madabushi, Pablo Medina-Alias, Philippe Mulhem, Florina Piroi, Martin Popel, Christophe Servan, Arkaitz Zubiaga",
+                "label": "LongEval: Longitudinal Evaluation of\\u00a0Model Performance at\\u00a0CLEF 2024",
+                "abstract": "This paper introduces the planned second LongEval Lab, part of the CLEF 2024 conference. The aim of the lab\\u2019s two tasks is to give researchers test data for addressing temporal effectiveness persistence challenges in both information retrieval and text classification, motivated by the fact that mode...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=4ab25988371098b7d59d0efef93961c2dc543ec5",
+                "img_url": null,
+                "x": -0.48055995264758694,
+                "y": -0.1711793529982028,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.1666666666666665,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.619047619047619,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.8114190792858728,
+                "summary": null
+            },
+            {
+                "id": "4efd36172999c1d240ce06679deefea145f5561c_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "indxr: A Python Library for\\u00a0Indexing File Lines",
+                "authors": "Elias Bassani, Nicola Tonellotto",
+                "label": "indxr: A Python Library for\\u00a0Indexing File Lines",
+                "abstract": "indxr  is a Python utility for indexing file lines that allows users to dynamically access specific ones, avoiding loading the entire file in the computer\\u2019s main memory.  indxr  addresses two main issues related to working with textual data. First, users who do not have plenty of RAM at their dispos...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=4efd36172999c1d240ce06679deefea145f5561c",
+                "img_url": null,
+                "x": -0.5999474694413096,
+                "y": -0.519521463188818,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Bibliometric-Enhanced Information Retrieval: 14th International BIR Workshop (BIR 2024)",
+                "authors": "Ingo Frommholz, Philipp Mayr, Guillaume Cabanac, Suzan Verberne",
+                "label": "Bibliometric-Enhanced Information Retrieval: 14th International BIR Workshop (BIR 2024)",
+                "abstract": "The  14th iteration of the Bibliometric-enhanced Information Retrieval (BIR) workshop  series takes place at ECIR\\u00a02024 as a full-day workshop. BIR addresses research topics related to academic search and recommendation, at the intersection of Information Retrieval, Natural Language Processing, and B...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=5a62500fdd3468417cfb1d442735d209c0cc3c65",
+                "img_url": null,
+                "x": -0.4404597698620027,
+                "y": -0.29757226484942345,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.625,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.4642857142857143,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7328116636435376,
+                "summary": null
+            },
+            {
+                "id": "6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "CLEF 2024 SimpleText Track",
+                "authors": "Liana Ermakova, Eric SanJuan, St\\u00e9phane Huet, Hosein Azarbonyad, Giorgio Maria Di Nunzio, Federica Vezzani, Jennifer D\\u2019Souza, Salomon Kabongo, Hamed Babaei Giglou, Yue Zhang, S\\u00f6ren Auer, Jaap Kamps",
+                "label": "CLEF 2024 SimpleText Track",
+                "abstract": "Everyone agrees on the importance of objective scientific information. However, relevant scientific documents tend to be inherently difficult to find and understand either because of intricate terminology or the potential absence of prior knowledge among their readers. Can we improve accessibility f...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd",
+                "img_url": null,
+                "x": -0.6217476765015958,
+                "y": -0.20871346635460794,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.5714285714285714,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7878464641966069,
+                "summary": null
+            },
+            {
+                "id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Reproduction and\\u00a0Simulation of\\u00a0Interactive Retrieval Experiments",
+                "authors": "Jana Isabelle Friese",
+                "label": "Reproduction and\\u00a0Simulation of\\u00a0Interactive Retrieval Experiments",
+                "abstract": "The reproducibility crisis, spanning across various scientific fields, substantially affects information retrieval research [ 1 ]....",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=7bf8a971eded30cd5db9f90e54ae607fed8429f1",
+                "img_url": null,
+                "x": -0.009593097744436422,
+                "y": -0.15709351499248267,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "8526dfedef64b8ee05cd846157694f429f142155_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Building and\\u00a0Evaluating a\\u00a0WebApp for\\u00a0Effortless Deep Learning Model Deployment",
+                "authors": "Ruikun Wu, Jiaxuan Han, Jerome Ramos, Aldo Lipani",
+                "label": "Building and\\u00a0Evaluating a\\u00a0WebApp for\\u00a0Effortless Deep Learning Model Deployment",
+                "abstract": "In the field of deep learning, particularly Natural Language Processing (NLP), model deployment is a key process for public testing and analysis. However, developing a deployment pipeline is often difficult and time-consuming. To address this challenge, we developed SUD.DL, a web application to simp...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8526dfedef64b8ee05cd846157694f429f142155",
+                "img_url": null,
+                "x": -0.5094198801250277,
+                "y": -0.4581270036503235,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "SciSpace Literature Review: Harnessing AI for\\u00a0Effortless Scientific Discovery",
+                "authors": "Siddhant Jain, Asheesh Kumar, Trinita Roy, Kartik Shinde, Goutham Vignesh, Rohan Tondulkar",
+                "label": "SciSpace Literature Review: Harnessing AI for\\u00a0Effortless Scientific Discovery",
+                "abstract": "In the rapidly evolving landscape of academia, the scientific research community barely copes with the challenges posed by a surging volume of scientific literature. Nevertheless, discovering research remains an important step in the research workflow which is also proven to be a challenging one to ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8c8b964f76f6320227dabcc37b4cdca1920fef65",
+                "img_url": null,
+                "x": -0.5788570670536052,
+                "y": -0.35673404168382566,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Interactive Topic Tagging in\\u00a0Community Question Answering Platforms",
+                "authors": "Radin Hamidi Rad, Silviu Cucerzan, Nirupama Chandrasekaran, Michael Gamon",
+                "label": "Interactive Topic Tagging in\\u00a0Community Question Answering Platforms",
+                "abstract": "Community question-answering platforms offer new opportunities for users to share knowledge online. Such platforms allow building communities around areas of interest, and enable community members to post questions and have other members answer them. In this paper, we investigate a novel, interactiv...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8fe0493b09850830cc0d819ad6641343ccea0e8c",
+                "img_url": null,
+                "x": -0.26022359232018266,
+                "y": -0.7039496224747239,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.1666666666666665,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.9047619047619048,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9524998513144066,
+                "summary": null
+            },
+            {
+                "id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Investigating the\\u00a0Usage of\\u00a0Formulae in\\u00a0Mathematical Answer Retrieval",
+                "authors": "Anja Reusch, Julius Gonsior, Claudio Hartmann, Wolfgang Lehner",
+                "label": "Investigating the\\u00a0Usage of\\u00a0Formulae in\\u00a0Mathematical Answer Retrieval",
+                "abstract": "This work focuses on the task of Mathematical Answer Retrieval and studies the factors a recent Transformer-Encoder-based Language Model (LM) uses to assess the relevance of an answer for a given mathematical question. Mainly, we investigate three factors: (1) the general influence of mathematical f...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4",
+                "img_url": null,
+                "x": -0.7500823050991533,
+                "y": -0.5856681969938096,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.35714285714285715,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6817696962949102,
+                "summary": null
+            },
+            {
+                "id": "99a67a9cb11d64be00ae789d0ffc60d806f56769_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "LifeCLEF 2024 Teaser: Challenges on\\u00a0Species Distribution Prediction and\\u00a0Identification",
+                "authors": "Alexis Joly, Luk\\u00e1\\u0161 Picek, Stefan Kahl, Herv\\u00e9 Go\\u00ebau, Vincent Espitalier, Christophe Botella, Benjamin Deneu, Diego Marcos, Joaquim Estopinan, Cesar Leblanc, Th\\u00e9o Larcher, Milan \\u0160ulc, Marek Hr\\u00faz, Maximilien Servajean, Ji\\u0159\\u00ed Matas, Herv\\u00e9 Glotin, Robert Planqu\\u00e9, Willem-Pier Vellinga, Holger Klinck, Tom Denton, Andrew M. Durso, Ivan Eggel, Pierre Bonnet, Henning M\\u00fcller",
+                "label": "LifeCLEF 2024 Teaser: Challenges on\\u00a0Species Distribution Prediction and\\u00a0Identification",
+                "abstract": "Building accurate knowledge of the identity, the geographic distribution and the evolution of species is essential for the sustainable development of humanity, as well as for biodiversity conservation. However, species identification and inventory is a difficult and costly task, requiring large-scal...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=99a67a9cb11d64be00ae789d0ffc60d806f56769",
+                "img_url": null,
+                "x": -0.5471181513194756,
+                "y": -0.02101453299129864,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.6176470588235294,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.46218487394957986,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7337681119329968,
+                "summary": null
+            },
+            {
+                "id": "9faae7119514ca10269e448b5701267757755063_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "XSearchKG: A Platform for\\u00a0Explainable Keyword Search over\\u00a0Knowledge Graphs",
+                "authors": "Leila Feddoul, Martin Birke, Sirko Schindler",
+                "label": "XSearchKG: A Platform for\\u00a0Explainable Keyword Search over\\u00a0Knowledge Graphs",
+                "abstract": "One of the most user-friendly methods to search over knowledge graphs is the usage of keyword queries. They offer a simple text input that requires no technical or domain knowledge. Most existing approaches for keyword search over graph-shaped data rely on graph traversal algorithms to find connecti...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=9faae7119514ca10269e448b5701267757755063",
+                "img_url": null,
+                "x": -0.2984892881594072,
+                "y": -0.585336150990394,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "a080c64c801af2112377e45ea0c009124db20602_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Semantic Content Search on\\u00a0IKEA.com",
+                "authors": "Mateusz Slominski, Ezgi Y\\u0131ld\\u0131r\\u0131m, Martin Tegner",
+                "label": "Semantic Content Search on\\u00a0IKEA.com",
+                "abstract": "In this paper, we present an approach to  content search . The aim is to increase customer engagement with content recommendations on  IKEA.com . As an alternative to Boolean search, we introduce a method based on semantic textual similarity between content pages and search queries. Our approach imp...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a080c64c801af2112377e45ea0c009124db20602",
+                "img_url": null,
+                "x": 0.027671929144111422,
+                "y": -0.5388673802118392,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Towards Robust Expert Finding in\\u00a0Community Question Answering Platforms",
+                "authors": "Maddalena Amendola, Andrea Passarella, Raffaele Perego",
+                "label": "Towards Robust Expert Finding in\\u00a0Community Question Answering Platforms",
+                "abstract": "This paper introduces TUEF, a topic-oriented user-interaction model for fair Expert Finding in Community Question Answering (CQA) platforms. The Expert Finding task in CQA platforms involves identifying proficient users capable of providing accurate answers to questions from the community. To this a...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=c2b505d9939156407832d01989ba5d4b69bc55fc",
+                "img_url": null,
+                "x": -0.3888521493415877,
+                "y": -0.6959166702352613,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.42857142857142855,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7149991078864399,
+                "summary": null
+            },
+            {
+                "id": "de279a22ed9965261be09e32415c88fb057dd57d_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "MathMex: Search Engine for\\u00a0Math Definitions",
+                "authors": "Shea Durgin, James Gore, Behrooz Mansouri",
+                "label": "MathMex: Search Engine for\\u00a0Math Definitions",
+                "abstract": "This paper introduces MathMex, an open-source search engine for math definitions. With MathMex, users can search for definitions of mathematical concepts extracted from a variety of data sources and types including text, images, and videos. Definitions are extracted using a fine-tuned SciBERT classi...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=de279a22ed9965261be09e32415c88fb057dd57d",
+                "img_url": null,
+                "x": -0.6944922080503111,
+                "y": -0.5998903116945427,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Result Assessment Tool: Software to Support Studies Based on Data from Search Engines",
+                "authors": "Sebastian S\\u00fcnkler, Nurce Yagci, Sebastian Schulthei\\u00df, Sonja von Mach, Dirk Lewandowski",
+                "label": "Result Assessment Tool: Software to Support Studies Based on Data from Search Engines",
+                "abstract": "The Result Assessment Tool (RAT) is a software toolkit for conducting research with results from commercial search engines and other information retrieval (IR) systems. The software integrates modules for study design and management, automatic collection of search results via web scraping, and evalu...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b",
+                "img_url": null,
+                "x": -0.27311956112769775,
+                "y": -0.21855932803467273,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.2857142857142857,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6437488848580499,
+                "summary": null
+            },
+            {
+                "id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "The Open Web Index",
+                "authors": "Gijs Hendriksen, Michael Dinzinger, Sheikh Mastura Farzana, Noor Afshan Fathima, Maik Fr\\u00f6be, Sebastian Schmidt, Saber Zerhoudi, Michael Granitzer, Matthias Hagen, Djoerd Hiemstra, Martin Potthast, Benno Stein",
+                "label": "The Open Web Index",
+                "abstract": "Only few search engines index the Web at scale. Third parties who want to develop downstream applications based on web search fully depend on the terms and conditions of the few vendors. The public availability of the large-scale Common Crawl does not alleviate the situation, as it is often cheaper ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=e497c3aa4b379a8fab56b198fe41b21a36ec4fd2",
+                "img_url": null,
+                "x": -0.19922858597919627,
+                "y": -0.38802283117635533,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.9375,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.8392857142857143,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9198434990930613,
+                "summary": null
+            },
+            {
+                "id": "ec0e3f4756e3313850577d12a6bb18dba3367b5f_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Analyzing Mathematical Content for\\u00a0Plagiarism and\\u00a0Recommendations",
+                "authors": "Ankit Satpute",
+                "label": "Analyzing Mathematical Content for\\u00a0Plagiarism and\\u00a0Recommendations",
+                "abstract": "Defined as \\u201cthe use of ideas, concepts, words, or structures without appropriately acknowledging the source to benefit in a setting where originality is expected\\\\u00a0[6
+            ], plagiarism poses a severe concern in the rapidly increasing number of scientific publications....", "uri": "https: //search.zeta-alpha.com/?doc_ids=ec0e3f4756e3313850577d12a6bb18dba3367b5f", "img_url": null, "x": -0.7700555895636237, "y": -0.6277358324545269, "cluster": 1, "weights": {"Influence": 1.0, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "type": null, "normalized_w": {"Influence": 0.2857142857142857, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "impact_score": 0.6437488848580499, "summary": null}, {"id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "heading": "European Conference on IR Research, 23 Mar 2024", "title": "QuantPlorer: Exploration of\\u00a0Quantities in\\u00a0Text", "authors": "Satya Almasian, Alexander Kosnac, Michael Gertz", "label": "QuantPlorer: Exploration of\\u00a0Quantities in\\u00a0Text", "abstract": "Quantities play an important role in documents of various domains such as finance, business, and medicine. Despite the role of quantities, only a limited number of works focus on their extraction from text and even less on creating respective user-friendly document exploration frameworks. In this wo...", "uri": "https://search.zeta-alpha.com/?doc_ids=f6e024b22fb8994a046e1ffacee91ce8c35623e5", "img_url": null, "x": -0.723369619099744, "y": -0.5100235189731127, "cluster": 1, "weights": {"Influence": 1.5, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "type": null, "normalized_w": {"Influence": 0.42857142857142855, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "impact_score": 0.7149991078864399, "summary": null}, {"id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "heading": "European Conference on IR Research, 23 Mar 2024", "title": "The First International Workshop on\\u00a0Open Web Search (WOWS)", "authors": "Sheikh Mastura Farzana, Maik Fr\\u00f6be, Michael Granitzer, Gijs Hendriksen, Djoerd Hiemstra, Martin Potthast, Saber Zerhoudi", "label": "The First International Workshop on\\u00a0Open Web Search (WOWS)", "abstract": "We organize the first international Workshop on Open Web Search (WOWS) at ECIR\\u00a02024 with two calls for contributions. The first call targets scientific contributions on cooperative search engine development.This includes cooperative crawling of the web and cooperative deployment and evaluation of se...", "uri": "https://search.zeta-alpha.com/?doc_ids=fa916aff252d54c23ca227c41f6fbd7377675664", "img_url": null, "x": -0.1168425283774036, "y": -0.2982185832190202, "cluster": 1, "weights": {"Influence": 3.0, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "type": null, "normalized_w": {"Influence": 0.8571428571428571, "Relevance": 1.0, "Popularity": 1.0, "Citations": 1.0}, "impact_score": 0.92874977697161, "summary": null}], "links": [{"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "strength": 0.4628807474537599}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "strength": 0.40942020084047326}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "strength": 1.0599641902385424}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "strength": 0.40834840333079586}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0", "strength": 0.8826843589494845}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 0.42924084583691374}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.9530325282032919}, {"source_id": "014481e04bb92d9b6a1a5c55aceccb564cbf7d1a_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.9604335262142846}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0", "strength": 0.8189913980528344}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "strength": 1.1591908480732849}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0", "strength": 0.961594126574737}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "8526dfedef64b8ee05cd846157694f429f142155_0", "strength": 0.8703776207880105}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 0.4024815806158352}, {"source_id": "0ee79f24ad210d19d073657665958f1d048c940b_0", "target_id": "99a67a9cb11d64be00ae789d0ffc60d806f56769_0", "strength": 0.8525607064841854}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "strength": 0.41029610017935064}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "strength": 0.9451121831819425}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "8526dfedef64b8ee05cd846157694f429f142155_0", "strength": 0.8123855922156813}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "strength": 0.40514788497140813}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.9162552133177472}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "strength": 0.8229889385081761}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.41192215855828895}, {"source_id": "1e690e2658ce056710a67dd266deac0d28fdf08c_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.41816833625254973}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "strength": 1.1132979591615755}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "strength": 1.0847499189516596}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "strength": 1.2421792214337382}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "strength": 0.4026285481958849}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "strength": 1.1584674740469805}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 0.4600250280158313}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 0.4260414627912544}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "strength": 0.44378680874397625}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 1.18893370335954}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 0.9134796797264034}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.4549679455340511}, {"source_id": "28f794818b9aac9283ec2ea5f60ea91bfbdfc64f_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.0122308644536995}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "strength": 1.2323676018944958}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "3fb061467606757dad6fbe274330d6d9df66dd84_0", "strength": 0.3020100653708412}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "strength": 1.1158283953163366}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "strength": 0.4479081566349195}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "strength": 1.1123669150054953}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 1.3346036244710238}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "strength": 0.5303382254722773}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.47486930073627137}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 0.5206436867038465}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 0.47561272815723993}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 1.1194642917868738}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.4778709938236593}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.42242405539574657}, {"source_id": "2e10c93a8c2f3843d221acc5aa03677f7ed32cfd_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.1550828112114984}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "3fb061467606757dad6fbe274330d6d9df66dd84_0", "strength": 0.37059039111509273}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "strength": 0.498037069722576}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "strength": 0.40997062710783805}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "strength": 0.4027740326383849}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "strength": 1.0517021050770887}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 1.1341964272036935}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 1.034963069066882}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.5025854430630641}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 1.0686775757856966}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 1.1264145806422101}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 1.0926695621185807}, {"source_id": "332e0c9d314c43c8fd489b68d4ed67a64f8eb3b3_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.3867346433214043}, {"source_id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0", "target_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "strength": 0.9692813595556347}, {"source_id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0", "target_id": "8526dfedef64b8ee05cd846157694f429f142155_0", "strength": 0.9492814070962428}, {"source_id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0", "target_id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0", "strength": 0.8189717028320815}, {"source_id": "3cef7118f1dd42175143ff586375e8b2e3da4d7a_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.41369787548932546}, {"source_id": "3fb061467606757dad6fbe274330d6d9df66dd84_0", "target_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "strength": 0.2922562215934751}, {"source_id": "3fb061467606757dad6fbe274330d6d9df66dd84_0", "target_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "strength": 0.3411057888239363}, {"source_id": "3fb061467606757dad6fbe274330d6d9df66dd84_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.3547729752884204}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 0.49156422625420054}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "strength": 0.9486938821885141}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 1.480935993387334}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 0.9524570891466448}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 0.9667813565603056}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.9456209489193262}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.9521900109788305}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.4046808492537946}, {"source_id": "476ab517359c32cf54bebc04fe48d6338e321230_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.0531641086746306}, {"source_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "target_id": "6ff0ffc6a8be5e7674450dfe4cccb3c54e7330bd_0", "strength": 0.9170764329596481}, {"source_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 0.4691292164680302}, {"source_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "target_id": "8526dfedef64b8ee05cd846157694f429f142155_0", "strength": 0.8154791015238376}, {"source_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "target_id": "99a67a9cb11d64be00ae789d0ffc60d806f56769_0", "strength": 0.34305515043447293}, {"source_id": "4ab25988371098b7d59d0efef93961c2dc543ec5_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.4203947761683965}, {"source_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 0.41422068539673956}, {"source_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.40274818402878315}, {"source_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.9142830992482357}, {"source_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.8373291443158128}, {"source_id": "4efd36172999c1d240ce06679deefea145f5561c_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.408599000473152}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "strength": 1.0433505244435433}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 1.2252534159222588}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.44932972441544233}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 0.9431052674607017}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 1.077490994423733}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "ec0e3f4756e3313850577d12a6bb18dba3367b5f_0", "strength": 0.3450560648266987}, {"source_id": "5a62500fdd3468417cfb1d442735d209c0cc3c65_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.9948591800435489}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 0.48136660692416583}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0", "strength": 0.41612598954779734}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 0.44965712198447955}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 1.2492613222105562}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.44747098482944153}, {"source_id": "7bf8a971eded30cd5db9f90e54ae607fed8429f1_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.1365084386518414}, {"source_id": "8526dfedef64b8ee05cd846157694f429f142155_0", "target_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "strength": 0.8311178382813349}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "99a67a9cb11d64be00ae789d0ffc60d806f56769_0", "strength": 0.34223885325764475}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 1.0156105372303486}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 0.4110205726629514}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "strength": 0.8515588646593124}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.9969563461337229}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "ec0e3f4756e3313850577d12a6bb18dba3367b5f_0", "strength": 0.40030465540734994}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.4088994533150067}, {"source_id": "8c8b964f76f6320227dabcc37b4cdca1920fef65_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.9485657568656425}, {"source_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "target_id": "9faae7119514ca10269e448b5701267757755063_0", "strength": 0.9456598289402849}, {"source_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 1.3181766974858462}, {"source_id": "8fe0493b09850830cc0d819ad6641343ccea0e8c_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.45399880288974437}, {"source_id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0", "target_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "strength": 1.289863107391219}, {"source_id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0", "target_id": "ec0e3f4756e3313850577d12a6bb18dba3367b5f_0", "strength": 0.8467312441217267}, {"source_id": "99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 0.9880739687822514}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "a080c64c801af2112377e45ea0c009124db20602_0", "strength": 0.9462597495310792}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "strength": 0.899037907579191}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "strength": 0.4345032475924064}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.4550700830365386}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.9759205050303814}, {"source_id": "9faae7119514ca10269e448b5701267757755063_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.0658782176730242}, {"source_id": "a080c64c801af2112377e45ea0c009124db20602_0", "target_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "strength": 0.44492212606999076}, {"source_id": "a080c64c801af2112377e45ea0c009124db20602_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 0.9963323431605544}, {"source_id": "a080c64c801af2112377e45ea0c009124db20602_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.1081957587820443}, {"source_id": "c2b505d9939156407832d01989ba5d4b69bc55fc_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 0.436822668238024}, {"source_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "target_id": "ec0e3f4756e3313850577d12a6bb18dba3367b5f_0", "strength": 0.3956478168880283}, {"source_id": "de279a22ed9965261be09e32415c88fb057dd57d_0", "target_id": "f6e024b22fb8994a046e1ffacee91ce8c35623e5_0", "strength": 1.091671706875885}, {"source_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "target_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "strength": 1.0735339515301165}, {"source_id": "deda5f96cc30a755cb5ed66b7330d3ed6ddaed3b_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.2513665848822617}, {"source_id": "e497c3aa4b379a8fab56b198fe41b21a36ec4fd2_0", "target_id": "fa916aff252d54c23ca227c41f6fbd7377675664_0", "strength": 1.7108998313394337}], "clusters": [{"cluster": 1, "label": "AI-Driven Search", "summary": null}, {"cluster": 2, "label": "Representative documents of cluster", "summary": null}], "blog_title": null, "blog_intro": null, "blog_conclusion": null}}

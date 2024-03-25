@@ -1,1 +1,925 @@
-"{\"config\": {\"terminology\": {\"cluster\": \"Group\", \"clusters\": \"Groups\", \"item\": \"Document\", \"items\": \"Documents\", \"link\": \"Similarity link\", \"links\": \"Similarity links\", \"link_strength\": \"Similarity strength\", \"total_link_strength\": \"Total similarity strengths\", \"title\": \"Title of the document\", \"abstract\": \"Abstract of the document\", \"authors\": \"Authors\"}, \"color_schemes\": {\"cluster_colors\": [{\"cluster\": 1, \"color\": \"#17becf\"}, {\"cluster\": 2, \"color\": \"#d62728\"}]}, \"templates\": {\"item_description\": \"<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>\"}, \"styles\": {\"description_heading\": \"color: #757575; font-weight: 600;\"}, \"parameters\": {\"item_size_variation\": 0.7, \"largest_component\": true, \"attraction\": 1.0, \"repulsion\": -1.0, \"max_n_links\": 1000}}, \"network\": {\"items\": [{\"id\": \"061748a46aa998a696652567412ca308ce769023_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Displaying Evolving Events Via\\u00a0Hierarchical Information Threads for\\u00a0Sensitivity Review\", \"authors\": \"Hitarth Narvala, Graham McDonald, Iadh Ounis\", \"label\": \"Displaying Evolving Events Via\\u00a0Hierarchical Information Threads for\\u00a0Sensitivity Review\", \"abstract\": \"Many government documents contain sensitive (e.g. personal or confidential) information that must be protected before the documents can be released to the public. However, reviewing documents to identify sensitive information is a complex task, which often requires analysing multiple related documen...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=061748a46aa998a696652567412ca308ce769023\", \"img_url\": null, \"x\": -0.987966428275299, \"y\": -0.20355653101011717, \"cluster\": 1, \"weights\": {\"Influence\": 2.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.7575757575757576, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.8790905306184896, \"summary\": null}, {\"id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Interactive Document Summarization\", \"authors\": \"Raoufdine Said, Adrien Guille\", \"label\": \"Interactive Document Summarization\", \"abstract\": \"With the advent of modern chatbots, automatic summarization is becoming common practice to quicken access to information. However the summaries they generate can be biased, unhelpful or untruthful. Hence, in sensitive scenarios, extractive summarization remains a more reliable approach. In this pape...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=1b1e6b28b87577649f802ccbc2ee627b23f5fbc5\", \"img_url\": null, \"x\": -0.7926481654826718, \"y\": -0.24445927839472778, \"cluster\": 1, \"weights\": {\"Influence\": 1.9999999999999996, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.606060606060606, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.8035221122550457, \"summary\": null}, {\"id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Third Workshop on\\u00a0Augmented Intelligence in\\u00a0Technology-Assisted Review Systems (ALTARS)\", \"authors\": \"Giorgio Maria Di Nunzio, Evangelos Kanoulas, Prasenjit Majumder\", \"label\": \"Third Workshop on\\u00a0Augmented Intelligence in\\u00a0Technology-Assisted Review Systems (ALTARS)\", \"abstract\": \"In this third edition of the workshop on Augmented Intelligence in Technology-Assisted Review Systems (ALTARS), we focus on the capacity of building test collections for the evaluation of High-recall Information Retrieval (IR) systems which tackle challenging tasks that require the finding of (nearl...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=1b80eb45f81a8a4f82d06c728f67ba840fb356e9\", \"img_url\": null, \"x\": -0.8417472013612849, \"y\": -0.33512927362375805, \"cluster\": 1, \"weights\": {\"Influence\": 1.3333333333333333, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.40404040404040403, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7027642211037871, \"summary\": null}, {\"id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"A Study on\\u00a0Hierarchical Text Classification as\\u00a0a\\u00a0Seq2seq Task\", \"authors\": \"Fatos Torba, Christophe Gravier, Charlotte Laclau, Abderrhammen Kammoun, Julien Subercaze\", \"label\": \"A Study on\\u00a0Hierarchical Text Classification as\\u00a0a\\u00a0Seq2seq Task\", \"abstract\": \"With the progress of generative neural models, Hierarchical Text Classification (HTC) can be cast as a generative task. In this case, given an input text, the model generates the sequence of predicted class labels taken from a label tree of arbitrary width and depth. Treating HTC as a generative tas...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=25a6786a977a7cec7fdd0c77de381a50019a8d60\", \"img_url\": null, \"x\": -0.551501609015907, \"y\": 0.08933359371251255, \"cluster\": 1, \"weights\": {\"Influence\": 1.1666666666666667, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.3535353535353536, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6775747483159725, \"summary\": null}, {\"id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"The 7th International Workshop on Narrative Extraction from Texts: Text2Story 2024\", \"authors\": \"Ricardo Campos, Al\\u00edpio Jorge, Adam Jatowt, Sumit Bhatia, Marina Litvak\", \"label\": \"The 7th International Workshop on Narrative Extraction from Texts: Text2Story 2024\", \"abstract\": \"The Text2Story Workshop series, dedicated to Narrative Extraction from Texts, has been running successfully since 2018. Over the past six years, significant progress, largely propelled by Transformers and Large Language Models, has advanced our understanding of natural language text. Nevertheless, t...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=34abef05eba0dcb66279a9d8fd2dfa08bdef84d3\", \"img_url\": null, \"x\": -1.0350512823602187, \"y\": -0.052285083718058664, \"cluster\": 1, \"weights\": {\"Influence\": 2.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.6060606060606061, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.8035221122550457, \"summary\": null}, {\"id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Role-Guided Contrastive Learning for\\u00a0Event Argument Extraction\", \"authors\": \"Chunyu Yao, Yi Guo, Xue Chen, Zhenzhen Duan, Jiaojiao Fu\", \"label\": \"Role-Guided Contrastive Learning for\\u00a0Event Argument Extraction\", \"abstract\": \"Event argument extraction is a subtask of information extraction. Recent efforts have predominantly focused on mitigating the issue of error propagation associated with pipeline methods for extracting event arguments, such as machine reading comprehension and generative approaches. However, these af...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=3b8c37800c120af0729dcfb8d271a6b9f1e0653c\", \"img_url\": null, \"x\": -0.9420850906491839, \"y\": 0.0165047374002891, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6549826336934716, \"summary\": null}, {\"id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"News Gathering: Leveraging Transformers to\\u00a0Rank News\", \"authors\": \"Carlos Mu\\u00f1oz, Mar\\u00eda Jos\\u00e9 Apolo, Maximiliano Ojeda, Hans Lobel, Marcelo Mendoza\", \"label\": \"News Gathering: Leveraging Transformers to\\u00a0Rank News\", \"abstract\": \"News media outlets disseminate information across various platforms. Often, these posts present complementary content and perspectives on the same news story. However, to compile a set of related news articles, users must thoroughly scour multiple sources and platforms, manually identifying which pu...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=47b89bd20272a5febeb27de87d9f4bceb75d9eb9\", \"img_url\": null, \"x\": -0.30015320524110933, \"y\": 0.3919403853007481, \"cluster\": 1, \"weights\": {\"Influence\": 1.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.3787878787878788, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6901694847098798, \"summary\": null}, {\"id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"A Phrase-Level Attention Enhanced CRF for\\u00a0Keyphrase Extraction\", \"authors\": \"Shinian Li, Tao Jiang, Yuxiang Zhang\", \"label\": \"A Phrase-Level Attention Enhanced CRF for\\u00a0Keyphrase Extraction\", \"abstract\": \"Since sequence labeling-based methods take into account the dependencies between neighbouring labels, they have been widely used for keyphrase prediction. Existing methods mainly focus on the word-level sequence labeling over the word-level features, and fail to capture the phrase-level information ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=6ab712328b4783acc4770217a9929c947e8193bd\", \"img_url\": null, \"x\": -0.3559622667831366, \"y\": -0.10010100641331125, \"cluster\": 1, \"weights\": {\"Influence\": 2.5, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.7575757575757576, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.8799939595455554, \"summary\": null}, {\"id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Enhancing Legal Named Entity Recognition Using RoBERTa-GCN with\\u00a0CRF: A Nuanced Approach for\\u00a0Fine-Grained Entity Recognition\", \"authors\": \"Arihant Jain, Raksha Sharma\", \"label\": \"Enhancing Legal Named Entity Recognition Using RoBERTa-GCN with\\u00a0CRF: A Nuanced Approach for\\u00a0Fine-Grained Entity Recognition\", \"abstract\": \"Accurate identification of named entities is pivotal for the advancement of sophisticated legal Artificial Intelligence (AI) applications. However, the legal domain presents distinct challenges due to the presence of fine-grained, domain-specific entities, including  lawyers, judges, courts , and  p...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=724ed07d30f89b0ef3f03046855e55e6d8def610\", \"img_url\": null, \"x\": -0.8142676600270851, \"y\": 0.07280216599612802, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6523852755281578, \"summary\": null}, {\"id\": \"8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"WebSAM-Adapter: Adapting Segment Anything Model for\\u00a0Web Page Segmentation\", \"authors\": \"Bowen Ren, Zefeng Qian, Yuchen Sun, Chao Gao, Chongyang Zhang\", \"label\": \"WebSAM-Adapter: Adapting Segment Anything Model for\\u00a0Web Page Segmentation\", \"abstract\": \"With the advancement of internet technology, web page segmentation, which aims to divide web pages into semantically coherent units, has become increasingly crucial for web-related applications. Conventional purely visual web page segmentation approaches, which depend on traditional edge detection, ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda\", \"img_url\": null, \"x\": 0.2003142551982378, \"y\": -0.3750519894681598, \"cluster\": 1, \"weights\": {\"Influence\": 3.25, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.9848484848484849, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9924996224715972, \"summary\": null}, {\"id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Translating Justice: A Cross-Lingual Information Retrieval System for\\u00a0Maltese Case Law Documents\", \"authors\": \"Joel Azzopardi\", \"label\": \"Translating Justice: A Cross-Lingual Information Retrieval System for\\u00a0Maltese Case Law Documents\", \"abstract\": \"In jurisdictions adhering to the Common Law system, previous court judgements inform future rulings based on the Stare Decisis principle. For enhanced accessibility and retrieval of such judgements, we introduced a cross-lingual Legal Information Retrieval system prototype focused on Malta\\u2019s small c...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50\", \"img_url\": null, \"x\": -0.9265406141828606, \"y\": 0.13678646052801272, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6523852755281578, \"summary\": null}, {\"id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"SumBlogger: Abstractive Summarization of\\u00a0Large Collections of\\u00a0Scientific Articles\", \"authors\": \"Pavlos Zakkas, Suzan Verberne, Jakub Zavrel\", \"label\": \"SumBlogger: Abstractive Summarization of\\u00a0Large Collections of\\u00a0Scientific Articles\", \"abstract\": \"We propose a prompt-based pipeline for extreme summarization of large collections of scientific articles, which facilitates the consumption of scientific knowledge in high-volume fast-paced fields like AI. Although prompting of generative large language models (LLMs) has been applied to news summari...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a\", \"img_url\": null, \"x\": -0.7265148630823944, \"y\": -0.1658811286571528, \"cluster\": 1, \"weights\": {\"Influence\": 2.75, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.8333333333333334, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9174958471875694, \"summary\": null}, {\"id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Answer Retrieval in\\u00a0Legal Community Question Answering\", \"authors\": \"Arian Askari, Zihui Yang, Zhaochun Ren, Suzan Verberne\", \"label\": \"Answer Retrieval in\\u00a0Legal Community Question Answering\", \"abstract\": \"The task of answer retrieval in the legal domain aims to help users to seek relevant legal advice from massive amounts of professional responses. Two main challenges hinder applying existing answer retrieval approaches in other domains to the legal domain: (1) a huge knowledge gap between lawyers an...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=b018e498d6e76e67fcec10e47be1501e3568741a\", \"img_url\": null, \"x\": -0.7982821943313814, \"y\": -0.04158468365648677, \"cluster\": 1, \"weights\": {\"Influence\": 2.3333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.7070707070707072, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.853901057830675, \"summary\": null}, {\"id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"DQNC2S: DQN-Based Cross-Stream Crisis Event Summarizer\", \"authors\": \"Daniele Rege Cambrin, Luca Cagliero, Paolo Garza\", \"label\": \"DQNC2S: DQN-Based Cross-Stream Crisis Event Summarizer\", \"abstract\": \"Summarizing multiple disaster-relevant data streams simultaneously is particularly challenging as existing Retrieve &Re-ranking strategies suffer from the inherent redundancy of multi-stream data and limited scalability in a multi-query setting. This work proposes an online approach to crisis timeli...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=b128e7c1b63cfe41cb60c01118aede8f5818d9ef\", \"img_url\": null, \"x\": -0.929306050798855, \"y\": -0.18442255698900567, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6523852755281578, \"summary\": null}, {\"id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"Document Level Event Extraction from\\u00a0Narratives\", \"authors\": \"Lu\\u00eds Filipe Cunha\", \"label\": \"Document Level Event Extraction from\\u00a0Narratives\", \"abstract\": \"One of the fundamental tasks in Information Extraction (IE) is Event Extraction (EE), an extensively studied and challenging task [ 13 ,  15 ], which aims to identify and classify events from the text....\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=d0990340c7b0467e2298c9f5e57b4b918a98e797\", \"img_url\": null, \"x\": -1.0309808633904334, \"y\": -0.1299937919646833, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6523852755281578, \"summary\": null}, {\"id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Empowering Legal Citation Recommendation via\\u00a0Efficient Instruction-Tuning of\\u00a0Pre-trained Language Models\", \"authors\": \"Jie Wang, Kanha Bansal, Ioannis Arapakis, Xuri Ge, Joemon M. Jose\", \"label\": \"Empowering Legal Citation Recommendation via\\u00a0Efficient Instruction-Tuning of\\u00a0Pre-trained Language Models\", \"abstract\": \"The escalating volume of cases in legal adjudication has amplified the complexity of citing relevant regulations and authoritative cases, posing an increasing challenge for legal professionals. Current legal citation prediction methods, which are predominantly reliant on keyword or interest-based re...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=dcd5f3fffebc4a59352cfbc2b286e453ca0370e4\", \"img_url\": null, \"x\": -0.7069573763842109, \"y\": 0.08298253755006935, \"cluster\": 1, \"weights\": {\"Influence\": 3.1666666666666665, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.9595959595959596, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.9799989932575925, \"summary\": null}, {\"id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"ARElight: Context Sampling of\\u00a0Large Texts for\\u00a0Deep Learning Relation Extraction\", \"authors\": \"Nicolay Rusnachenko, Huizhi Liang, Maksim Kalameyets, Lei Shi\", \"label\": \"ARElight: Context Sampling of\\u00a0Large Texts for\\u00a0Deep Learning Relation Extraction\", \"abstract\": \"The escalating volume of textual data necessitates adept and scalable Information Extraction (IE) systems in the field of Natural Language Processing (NLP) to analyse massive text collections in a detailed manner. While most deep learning systems are designed to handle textual information as it is, ...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=e87dc5eae4c98fbc597488dc600d67b6e311fd5e\", \"img_url\": null, \"x\": -0.6871834864082077, \"y\": -0.04748705062221418, \"cluster\": 1, \"weights\": {\"Influence\": 1.8333333333333335, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.5555555555555556, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.7783326394672311, \"summary\": null}, {\"id\": \"f8118eae91a99acc8a23a698c5ef62865ef18f93_0\", \"heading\": \"European Conference on IR Research, 23 Mar 2024\", \"title\": \"2nd International Workshop on\\u00a0Geographic Information Extraction from\\u00a0Texts (GeoExT 2024)\", \"authors\": \"Xuke Hu, Ross Purves, Ludovic Moncla, Jens Kersten, Kristin Stock\", \"label\": \"2nd International Workshop on\\u00a0Geographic Information Extraction from\\u00a0Texts (GeoExT 2024)\", \"abstract\": \"A wealth of unstructured textual content contains valuable geographic insights. This geographic information holds significance across diverse domains, including geographic information retrieval, disaster management, and spatial humanities. Despite significant progress in the extraction of geographic...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=f8118eae91a99acc8a23a698c5ef62865ef18f93\", \"img_url\": null, \"x\": -1.0879892399516433, \"y\": -0.06989795286280066, \"cluster\": 1, \"weights\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 0.30303030303030304, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 0.6523852755281578, \"summary\": null}, {\"id\": \"f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0\", \"heading\": \"European Conference on IR Research, 20 Mar 2024\", \"title\": \"Zero-Shot Generative Large Language Models for\\u00a0Systematic Review Screening Automation\", \"authors\": \"Shuai Wang, Harrisen Scells, Shengyao Zhuang, Martin Potthast, Bevan Koopman, Guido Zuccon\", \"label\": \"Zero-Shot Generative Large Language Models for\\u00a0Systematic Review Screening Automation\", \"abstract\": \"Systematic reviews are crucial for evidence-based medicine as they comprehensively analyse published research findings on specific questions. Conducting such reviews is often resource- and time-intensive, especially in the screening phase, where abstracts of publications are assessed for inclusion i...\", \"uri\": \"https://search.zeta-alpha.com/?doc_ids=f892b9696fc1c1169c5618b1b3edc9187b6db1f2\", \"img_url\": null, \"x\": -0.46874722043272765, \"y\": 0.18044030129386654, \"cluster\": 1, \"weights\": {\"Influence\": 3.3, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"type\": null, \"normalized_w\": {\"Influence\": 1.0, \"Relevance\": 1.0, \"Popularity\": 1.0, \"Citations\": 1.0}, \"impact_score\": 1.0, \"summary\": null}], \"links\": [{\"source_id\": \"061748a46aa998a696652567412ca308ce769023_0\", \"target_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"strength\": 0.40576206144244953}, {\"source_id\": \"061748a46aa998a696652567412ca308ce769023_0\", \"target_id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"strength\": 0.37757507138633506}, {\"source_id\": \"061748a46aa998a696652567412ca308ce769023_0\", \"target_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"strength\": 0.8471087933207007}, {\"source_id\": \"061748a46aa998a696652567412ca308ce769023_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 0.8262528066966935}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"strength\": 0.8794738131381759}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"strength\": 0.8456165609290466}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"strength\": 0.41325407350972215}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"strength\": 1.002136006507565}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"strength\": 0.40786162626312283}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0\", \"strength\": 0.3800600874108019}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"strength\": 1.325464481176814}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"strength\": 0.873984790715811}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 0.9080751731652855}, {\"source_id\": \"1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.0473369066761662}, {\"source_id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"target_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"strength\": 0.40499323942656246}, {\"source_id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"target_id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"strength\": 0.4107029926925537}, {\"source_id\": \"1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 0.8525642965592409}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"strength\": 0.45764598986028643}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"strength\": 0.8328106442088268}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"strength\": 0.832088706749792}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"strength\": 0.8312853307921141}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 0.8816023776836834}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 0.9443639880315151}, {\"source_id\": \"25a6786a977a7cec7fdd0c77de381a50019a8d60_0\", \"target_id\": \"f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0\", \"strength\": 0.9412594607046258}, {\"source_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"target_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"strength\": 1.20020083536202}, {\"source_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"target_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"strength\": 0.8518897974065944}, {\"source_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 1.5008963309232122}, {\"source_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.0818495436623659}, {\"source_id\": \"34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0\", \"target_id\": \"f8118eae91a99acc8a23a698c5ef62865ef18f93_0\", \"strength\": 0.8459400951775186}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"strength\": 0.44974972479199293}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"strength\": 0.8742571362664929}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"strength\": 0.8558214852011814}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"strength\": 0.8795416226285466}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 1.4237644672150949}, {\"source_id\": \"3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.0788541030495533}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"strength\": 0.42634949948189305}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"strength\": 0.40590014975737987}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"strength\": 1.146043735100876}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"strength\": 1.033788143023847}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"strength\": 1.092903722101909}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 0.4310354133826787}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 0.43196363530330306}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 0.46078250560934303}, {\"source_id\": \"47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0\", \"target_id\": \"f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0\", \"strength\": 0.43386556706443147}, {\"source_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"target_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"strength\": 0.9311271854265095}, {\"source_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"target_id\": \"8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0\", \"strength\": 0.4057778099025256}, {\"source_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"target_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"strength\": 0.8215304129770745}, {\"source_id\": \"6ab712328b4783acc4770217a9929c947e8193bd_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.0304272953068876}, {\"source_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"target_id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"strength\": 1.0372149147854441}, {\"source_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"target_id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"strength\": 1.0338338962236708}, {\"source_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 1.1745121283096107}, {\"source_id\": \"724ed07d30f89b0ef3f03046855e55e6d8def610_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.1108441019189073}, {\"source_id\": \"8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 0.41866501255103256}, {\"source_id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"target_id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"strength\": 1.1895540711077675}, {\"source_id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 1.1837666233681534}, {\"source_id\": \"9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0\", \"target_id\": \"f8118eae91a99acc8a23a698c5ef62865ef18f93_0\", \"strength\": 0.36798045045792743}, {\"source_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"target_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"strength\": 0.8926833660073397}, {\"source_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 0.4010777145928989}, {\"source_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 0.9880094802038021}, {\"source_id\": \"a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0\", \"target_id\": \"f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0\", \"strength\": 1.0116495961040761}, {\"source_id\": \"b018e498d6e76e67fcec10e47be1501e3568741a_0\", \"target_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"strength\": 1.2532629278862715}, {\"source_id\": \"b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0\", \"target_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"strength\": 0.9001597548284472}, {\"source_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 1.075992601598695}, {\"source_id\": \"d0990340c7b0467e2298c9f5e57b4b918a98e797_0\", \"target_id\": \"f8118eae91a99acc8a23a698c5ef62865ef18f93_0\", \"strength\": 0.8470984744487093}, {\"source_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"target_id\": \"e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0\", \"strength\": 0.8733058326357326}, {\"source_id\": \"dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0\", \"target_id\": \"f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0\", \"strength\": 1.0021069053546494}], \"clusters\": [{\"cluster\": 1, \"label\": \"Neural Summarization\", \"summary\": null}, {\"cluster\": 2, \"label\": \"Representative documents of cluster\", \"summary\": null}], \"blog_title\": null, \"blog_intro\": null, \"blog_conclusion\": null}}"
+{
+    "config": {
+        "terminology": {
+            "cluster": "Group",
+            "clusters": "Groups",
+            "item": "Document",
+            "items": "Documents",
+            "link": "Similarity link",
+            "links": "Similarity links",
+            "link_strength": "Similarity strength",
+            "total_link_strength": "Total similarity strengths",
+            "title": "Title of the document",
+            "abstract": "Abstract of the document",
+            "authors": "Authors"
+        },
+        "color_schemes": {
+            "cluster_colors": [
+                {
+                    "cluster": 1,
+                    "color": "#17becf"
+                },
+                {
+                    "cluster": 2,
+                    "color": "#d62728"
+                }
+            ]
+        },
+        "templates": {
+            "item_description": "<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>"
+        },
+        "styles": {
+            "description_heading": "color: #757575; font-weight: 600;"
+        },
+        "parameters": {
+            "item_size_variation": 0.7,
+            "largest_component": true,
+            "attraction": 1.0,
+            "repulsion": -1.0,
+            "max_n_links": 1000
+        }
+    },
+    "network": {
+        "items": [
+            {
+                "id": "061748a46aa998a696652567412ca308ce769023_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Displaying Evolving Events Via\\u00a0Hierarchical Information Threads for\\u00a0Sensitivity Review",
+                "authors": "Hitarth Narvala, Graham McDonald, Iadh Ounis",
+                "label": "Displaying Evolving Events Via\\u00a0Hierarchical Information Threads for\\u00a0Sensitivity Review",
+                "abstract": "Many government documents contain sensitive (e.g. personal or confidential) information that must be protected before the documents can be released to the public. However, reviewing documents to identify sensitive information is a complex task, which often requires analysing multiple related documen...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=061748a46aa998a696652567412ca308ce769023",
+                "img_url": null,
+                "x": -0.987966428275299,
+                "y": -0.20355653101011717,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.7575757575757576,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.8790905306184896,
+                "summary": null
+            },
+            {
+                "id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Interactive Document Summarization",
+                "authors": "Raoufdine Said, Adrien Guille",
+                "label": "Interactive Document Summarization",
+                "abstract": "With the advent of modern chatbots, automatic summarization is becoming common practice to quicken access to information. However the summaries they generate can be biased, unhelpful or untruthful. Hence, in sensitive scenarios, extractive summarization remains a more reliable approach. In this pape...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1b1e6b28b87577649f802ccbc2ee627b23f5fbc5",
+                "img_url": null,
+                "x": -0.7926481654826718,
+                "y": -0.24445927839472778,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.9999999999999996,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.606060606060606,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.8035221122550457,
+                "summary": null
+            },
+            {
+                "id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Third Workshop on\\u00a0Augmented Intelligence in\\u00a0Technology-Assisted Review Systems (ALTARS)",
+                "authors": "Giorgio Maria Di Nunzio, Evangelos Kanoulas, Prasenjit Majumder",
+                "label": "Third Workshop on\\u00a0Augmented Intelligence in\\u00a0Technology-Assisted Review Systems (ALTARS)",
+                "abstract": "In this third edition of the workshop on Augmented Intelligence in Technology-Assisted Review Systems (ALTARS), we focus on the capacity of building test collections for the evaluation of High-recall Information Retrieval (IR) systems which tackle challenging tasks that require the finding of (nearl...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1b80eb45f81a8a4f82d06c728f67ba840fb356e9",
+                "img_url": null,
+                "x": -0.8417472013612849,
+                "y": -0.33512927362375805,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.3333333333333333,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.40404040404040403,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7027642211037871,
+                "summary": null
+            },
+            {
+                "id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "A Study on\\u00a0Hierarchical Text Classification as\\u00a0a\\u00a0Seq2seq Task",
+                "authors": "Fatos Torba, Christophe Gravier, Charlotte Laclau, Abderrhammen Kammoun, Julien Subercaze",
+                "label": "A Study on\\u00a0Hierarchical Text Classification as\\u00a0a\\u00a0Seq2seq Task",
+                "abstract": "With the progress of generative neural models, Hierarchical Text Classification (HTC) can be cast as a generative task. In this case, given an input text, the model generates the sequence of predicted class labels taken from a label tree of arbitrary width and depth. Treating HTC as a generative tas...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=25a6786a977a7cec7fdd0c77de381a50019a8d60",
+                "img_url": null,
+                "x": -0.551501609015907,
+                "y": 0.08933359371251255,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.1666666666666667,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.3535353535353536,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6775747483159725,
+                "summary": null
+            },
+            {
+                "id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "The 7th International Workshop on Narrative Extraction from Texts: Text2Story 2024",
+                "authors": "Ricardo Campos, Al\\u00edpio Jorge, Adam Jatowt, Sumit Bhatia, Marina Litvak",
+                "label": "The 7th International Workshop on Narrative Extraction from Texts: Text2Story 2024",
+                "abstract": "The Text2Story Workshop series, dedicated to Narrative Extraction from Texts, has been running successfully since 2018. Over the past six years, significant progress, largely propelled by Transformers and Large Language Models, has advanced our understanding of natural language text. Nevertheless, t...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=34abef05eba0dcb66279a9d8fd2dfa08bdef84d3",
+                "img_url": null,
+                "x": -1.0350512823602187,
+                "y": -0.052285083718058664,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.6060606060606061,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.8035221122550457,
+                "summary": null
+            },
+            {
+                "id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Role-Guided Contrastive Learning for\\u00a0Event Argument Extraction",
+                "authors": "Chunyu Yao, Yi Guo, Xue Chen, Zhenzhen Duan, Jiaojiao Fu",
+                "label": "Role-Guided Contrastive Learning for\\u00a0Event Argument Extraction",
+                "abstract": "Event argument extraction is a subtask of information extraction. Recent efforts have predominantly focused on mitigating the issue of error propagation associated with pipeline methods for extracting event arguments, such as machine reading comprehension and generative approaches. However, these af...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=3b8c37800c120af0729dcfb8d271a6b9f1e0653c",
+                "img_url": null,
+                "x": -0.9420850906491839,
+                "y": 0.0165047374002891,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6549826336934716,
+                "summary": null
+            },
+            {
+                "id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "News Gathering: Leveraging Transformers to\\u00a0Rank News",
+                "authors": "Carlos Mu\\u00f1oz, Mar\\u00eda Jos\\u00e9 Apolo, Maximiliano Ojeda, Hans Lobel, Marcelo Mendoza",
+                "label": "News Gathering: Leveraging Transformers to\\u00a0Rank News",
+                "abstract": "News media outlets disseminate information across various platforms. Often, these posts present complementary content and perspectives on the same news story. However, to compile a set of related news articles, users must thoroughly scour multiple sources and platforms, manually identifying which pu...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=47b89bd20272a5febeb27de87d9f4bceb75d9eb9",
+                "img_url": null,
+                "x": -0.30015320524110933,
+                "y": 0.3919403853007481,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.3787878787878788,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6901694847098798,
+                "summary": null
+            },
+            {
+                "id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "A Phrase-Level Attention Enhanced CRF for\\u00a0Keyphrase Extraction",
+                "authors": "Shinian Li, Tao Jiang, Yuxiang Zhang",
+                "label": "A Phrase-Level Attention Enhanced CRF for\\u00a0Keyphrase Extraction",
+                "abstract": "Since sequence labeling-based methods take into account the dependencies between neighbouring labels, they have been widely used for keyphrase prediction. Existing methods mainly focus on the word-level sequence labeling over the word-level features, and fail to capture the phrase-level information ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=6ab712328b4783acc4770217a9929c947e8193bd",
+                "img_url": null,
+                "x": -0.3559622667831366,
+                "y": -0.10010100641331125,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.5,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.7575757575757576,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.8799939595455554,
+                "summary": null
+            },
+            {
+                "id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Enhancing Legal Named Entity Recognition Using RoBERTa-GCN with\\u00a0CRF: A Nuanced Approach for\\u00a0Fine-Grained Entity Recognition",
+                "authors": "Arihant Jain, Raksha Sharma",
+                "label": "Enhancing Legal Named Entity Recognition Using RoBERTa-GCN with\\u00a0CRF: A Nuanced Approach for\\u00a0Fine-Grained Entity Recognition",
+                "abstract": "Accurate identification of named entities is pivotal for the advancement of sophisticated legal Artificial Intelligence (AI) applications. However, the legal domain presents distinct challenges due to the presence of fine-grained, domain-specific entities, including  lawyers, judges, courts , and  p...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=724ed07d30f89b0ef3f03046855e55e6d8def610",
+                "img_url": null,
+                "x": -0.8142676600270851,
+                "y": 0.07280216599612802,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6523852755281578,
+                "summary": null
+            },
+            {
+                "id": "8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "WebSAM-Adapter: Adapting Segment Anything Model for\\u00a0Web Page Segmentation",
+                "authors": "Bowen Ren, Zefeng Qian, Yuchen Sun, Chao Gao, Chongyang Zhang",
+                "label": "WebSAM-Adapter: Adapting Segment Anything Model for\\u00a0Web Page Segmentation",
+                "abstract": "With the advancement of internet technology, web page segmentation, which aims to divide web pages into semantically coherent units, has become increasingly crucial for web-related applications. Conventional purely visual web page segmentation approaches, which depend on traditional edge detection, ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda",
+                "img_url": null,
+                "x": 0.2003142551982378,
+                "y": -0.3750519894681598,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.25,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.9848484848484849,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9924996224715972,
+                "summary": null
+            },
+            {
+                "id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Translating Justice: A Cross-Lingual Information Retrieval System for\\u00a0Maltese Case Law Documents",
+                "authors": "Joel Azzopardi",
+                "label": "Translating Justice: A Cross-Lingual Information Retrieval System for\\u00a0Maltese Case Law Documents",
+                "abstract": "In jurisdictions adhering to the Common Law system, previous court judgements inform future rulings based on the Stare Decisis principle. For enhanced accessibility and retrieval of such judgements, we introduced a cross-lingual Legal Information Retrieval system prototype focused on Malta\\u2019s small c...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50",
+                "img_url": null,
+                "x": -0.9265406141828606,
+                "y": 0.13678646052801272,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6523852755281578,
+                "summary": null
+            },
+            {
+                "id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "SumBlogger: Abstractive Summarization of\\u00a0Large Collections of\\u00a0Scientific Articles",
+                "authors": "Pavlos Zakkas, Suzan Verberne, Jakub Zavrel",
+                "label": "SumBlogger: Abstractive Summarization of\\u00a0Large Collections of\\u00a0Scientific Articles",
+                "abstract": "We propose a prompt-based pipeline for extreme summarization of large collections of scientific articles, which facilitates the consumption of scientific knowledge in high-volume fast-paced fields like AI. Although prompting of generative large language models (LLMs) has been applied to news summari...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a",
+                "img_url": null,
+                "x": -0.7265148630823944,
+                "y": -0.1658811286571528,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.75,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.8333333333333334,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9174958471875694,
+                "summary": null
+            },
+            {
+                "id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Answer Retrieval in\\u00a0Legal Community Question Answering",
+                "authors": "Arian Askari, Zihui Yang, Zhaochun Ren, Suzan Verberne",
+                "label": "Answer Retrieval in\\u00a0Legal Community Question Answering",
+                "abstract": "The task of answer retrieval in the legal domain aims to help users to seek relevant legal advice from massive amounts of professional responses. Two main challenges hinder applying existing answer retrieval approaches in other domains to the legal domain: (1) a huge knowledge gap between lawyers an...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b018e498d6e76e67fcec10e47be1501e3568741a",
+                "img_url": null,
+                "x": -0.7982821943313814,
+                "y": -0.04158468365648677,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 2.3333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.7070707070707072,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.853901057830675,
+                "summary": null
+            },
+            {
+                "id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "DQNC2S: DQN-Based Cross-Stream Crisis Event Summarizer",
+                "authors": "Daniele Rege Cambrin, Luca Cagliero, Paolo Garza",
+                "label": "DQNC2S: DQN-Based Cross-Stream Crisis Event Summarizer",
+                "abstract": "Summarizing multiple disaster-relevant data streams simultaneously is particularly challenging as existing Retrieve &Re-ranking strategies suffer from the inherent redundancy of multi-stream data and limited scalability in a multi-query setting. This work proposes an online approach to crisis timeli...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b128e7c1b63cfe41cb60c01118aede8f5818d9ef",
+                "img_url": null,
+                "x": -0.929306050798855,
+                "y": -0.18442255698900567,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6523852755281578,
+                "summary": null
+            },
+            {
+                "id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "Document Level Event Extraction from\\u00a0Narratives",
+                "authors": "Lu\\u00eds Filipe Cunha",
+                "label": "Document Level Event Extraction from\\u00a0Narratives",
+                "abstract": "One of the fundamental tasks in Information Extraction (IE) is Event Extraction (EE), an extensively studied and challenging task [ 13 ,  15 ], which aims to identify and classify events from the text....",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=d0990340c7b0467e2298c9f5e57b4b918a98e797",
+                "img_url": null,
+                "x": -1.0309808633904334,
+                "y": -0.1299937919646833,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6523852755281578,
+                "summary": null
+            },
+            {
+                "id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Empowering Legal Citation Recommendation via\\u00a0Efficient Instruction-Tuning of\\u00a0Pre-trained Language Models",
+                "authors": "Jie Wang, Kanha Bansal, Ioannis Arapakis, Xuri Ge, Joemon M. Jose",
+                "label": "Empowering Legal Citation Recommendation via\\u00a0Efficient Instruction-Tuning of\\u00a0Pre-trained Language Models",
+                "abstract": "The escalating volume of cases in legal adjudication has amplified the complexity of citing relevant regulations and authoritative cases, posing an increasing challenge for legal professionals. Current legal citation prediction methods, which are predominantly reliant on keyword or interest-based re...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=dcd5f3fffebc4a59352cfbc2b286e453ca0370e4",
+                "img_url": null,
+                "x": -0.7069573763842109,
+                "y": 0.08298253755006935,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.1666666666666665,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.9595959595959596,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.9799989932575925,
+                "summary": null
+            },
+            {
+                "id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "ARElight: Context Sampling of\\u00a0Large Texts for\\u00a0Deep Learning Relation Extraction",
+                "authors": "Nicolay Rusnachenko, Huizhi Liang, Maksim Kalameyets, Lei Shi",
+                "label": "ARElight: Context Sampling of\\u00a0Large Texts for\\u00a0Deep Learning Relation Extraction",
+                "abstract": "The escalating volume of textual data necessitates adept and scalable Information Extraction (IE) systems in the field of Natural Language Processing (NLP) to analyse massive text collections in a detailed manner. While most deep learning systems are designed to handle textual information as it is, ...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=e87dc5eae4c98fbc597488dc600d67b6e311fd5e",
+                "img_url": null,
+                "x": -0.6871834864082077,
+                "y": -0.04748705062221418,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.8333333333333335,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.5555555555555556,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.7783326394672311,
+                "summary": null
+            },
+            {
+                "id": "f8118eae91a99acc8a23a698c5ef62865ef18f93_0",
+                "heading": "European Conference on IR Research, 23 Mar 2024",
+                "title": "2nd International Workshop on\\u00a0Geographic Information Extraction from\\u00a0Texts (GeoExT 2024)",
+                "authors": "Xuke Hu, Ross Purves, Ludovic Moncla, Jens Kersten, Kristin Stock",
+                "label": "2nd International Workshop on\\u00a0Geographic Information Extraction from\\u00a0Texts (GeoExT 2024)",
+                "abstract": "A wealth of unstructured textual content contains valuable geographic insights. This geographic information holds significance across diverse domains, including geographic information retrieval, disaster management, and spatial humanities. Despite significant progress in the extraction of geographic...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=f8118eae91a99acc8a23a698c5ef62865ef18f93",
+                "img_url": null,
+                "x": -1.0879892399516433,
+                "y": -0.06989795286280066,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 0.30303030303030304,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 0.6523852755281578,
+                "summary": null
+            },
+            {
+                "id": "f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0",
+                "heading": "European Conference on IR Research, 20 Mar 2024",
+                "title": "Zero-Shot Generative Large Language Models for\\u00a0Systematic Review Screening Automation",
+                "authors": "Shuai Wang, Harrisen Scells, Shengyao Zhuang, Martin Potthast, Bevan Koopman, Guido Zuccon",
+                "label": "Zero-Shot Generative Large Language Models for\\u00a0Systematic Review Screening Automation",
+                "abstract": "Systematic reviews are crucial for evidence-based medicine as they comprehensively analyse published research findings on specific questions. Conducting such reviews is often resource- and time-intensive, especially in the screening phase, where abstracts of publications are assessed for inclusion i...",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=f892b9696fc1c1169c5618b1b3edc9187b6db1f2",
+                "img_url": null,
+                "x": -0.46874722043272765,
+                "y": 0.18044030129386654,
+                "cluster": 1,
+                "weights": {
+                    "Influence": 3.3,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "type": null,
+                "normalized_w": {
+                    "Influence": 1.0,
+                    "Relevance": 1.0,
+                    "Popularity": 1.0,
+                    "Citations": 1.0
+                },
+                "impact_score": 1.0,
+                "summary": null
+            }
+        ],
+        "links": [
+            {
+                "source_id": "061748a46aa998a696652567412ca308ce769023_0",
+                "target_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "strength": 0.40576206144244953
+            },
+            {
+                "source_id": "061748a46aa998a696652567412ca308ce769023_0",
+                "target_id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "strength": 0.37757507138633506
+            },
+            {
+                "source_id": "061748a46aa998a696652567412ca308ce769023_0",
+                "target_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "strength": 0.8471087933207007
+            },
+            {
+                "source_id": "061748a46aa998a696652567412ca308ce769023_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 0.8262528066966935
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "strength": 0.8794738131381759
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "strength": 0.8456165609290466
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "strength": 0.41325407350972215
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "strength": 1.002136006507565
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "strength": 0.40786162626312283
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0",
+                "strength": 0.3800600874108019
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "strength": 1.325464481176814
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "strength": 0.873984790715811
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 0.9080751731652855
+            },
+            {
+                "source_id": "1b1e6b28b87577649f802ccbc2ee627b23f5fbc5_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.0473369066761662
+            },
+            {
+                "source_id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "target_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "strength": 0.40499323942656246
+            },
+            {
+                "source_id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "target_id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "strength": 0.4107029926925537
+            },
+            {
+                "source_id": "1b80eb45f81a8a4f82d06c728f67ba840fb356e9_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 0.8525642965592409
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "strength": 0.45764598986028643
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "strength": 0.8328106442088268
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "strength": 0.832088706749792
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "strength": 0.8312853307921141
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 0.8816023776836834
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 0.9443639880315151
+            },
+            {
+                "source_id": "25a6786a977a7cec7fdd0c77de381a50019a8d60_0",
+                "target_id": "f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0",
+                "strength": 0.9412594607046258
+            },
+            {
+                "source_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "target_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "strength": 1.20020083536202
+            },
+            {
+                "source_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "target_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "strength": 0.8518897974065944
+            },
+            {
+                "source_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 1.5008963309232122
+            },
+            {
+                "source_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.0818495436623659
+            },
+            {
+                "source_id": "34abef05eba0dcb66279a9d8fd2dfa08bdef84d3_0",
+                "target_id": "f8118eae91a99acc8a23a698c5ef62865ef18f93_0",
+                "strength": 0.8459400951775186
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "strength": 0.44974972479199293
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "strength": 0.8742571362664929
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "strength": 0.8558214852011814
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "strength": 0.8795416226285466
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 1.4237644672150949
+            },
+            {
+                "source_id": "3b8c37800c120af0729dcfb8d271a6b9f1e0653c_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.0788541030495533
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "strength": 0.42634949948189305
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "strength": 0.40590014975737987
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "strength": 1.146043735100876
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "strength": 1.033788143023847
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "strength": 1.092903722101909
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 0.4310354133826787
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 0.43196363530330306
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 0.46078250560934303
+            },
+            {
+                "source_id": "47b89bd20272a5febeb27de87d9f4bceb75d9eb9_0",
+                "target_id": "f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0",
+                "strength": 0.43386556706443147
+            },
+            {
+                "source_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "target_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "strength": 0.9311271854265095
+            },
+            {
+                "source_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "target_id": "8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0",
+                "strength": 0.4057778099025256
+            },
+            {
+                "source_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "target_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "strength": 0.8215304129770745
+            },
+            {
+                "source_id": "6ab712328b4783acc4770217a9929c947e8193bd_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.0304272953068876
+            },
+            {
+                "source_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "target_id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "strength": 1.0372149147854441
+            },
+            {
+                "source_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "target_id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "strength": 1.0338338962236708
+            },
+            {
+                "source_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 1.1745121283096107
+            },
+            {
+                "source_id": "724ed07d30f89b0ef3f03046855e55e6d8def610_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.1108441019189073
+            },
+            {
+                "source_id": "8a9ad3adfe4c1c5b2b7e4b0b8696b77069755cda_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 0.41866501255103256
+            },
+            {
+                "source_id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "target_id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "strength": 1.1895540711077675
+            },
+            {
+                "source_id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 1.1837666233681534
+            },
+            {
+                "source_id": "9e1b8499c9589d1290ca5cd0aed4c2b55cfb8b50_0",
+                "target_id": "f8118eae91a99acc8a23a698c5ef62865ef18f93_0",
+                "strength": 0.36798045045792743
+            },
+            {
+                "source_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "target_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "strength": 0.8926833660073397
+            },
+            {
+                "source_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 0.4010777145928989
+            },
+            {
+                "source_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 0.9880094802038021
+            },
+            {
+                "source_id": "a9f2cbb3576532a2cfb2c2029e2336b6a1c9a80a_0",
+                "target_id": "f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0",
+                "strength": 1.0116495961040761
+            },
+            {
+                "source_id": "b018e498d6e76e67fcec10e47be1501e3568741a_0",
+                "target_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "strength": 1.2532629278862715
+            },
+            {
+                "source_id": "b128e7c1b63cfe41cb60c01118aede8f5818d9ef_0",
+                "target_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "strength": 0.9001597548284472
+            },
+            {
+                "source_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 1.075992601598695
+            },
+            {
+                "source_id": "d0990340c7b0467e2298c9f5e57b4b918a98e797_0",
+                "target_id": "f8118eae91a99acc8a23a698c5ef62865ef18f93_0",
+                "strength": 0.8470984744487093
+            },
+            {
+                "source_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "target_id": "e87dc5eae4c98fbc597488dc600d67b6e311fd5e_0",
+                "strength": 0.8733058326357326
+            },
+            {
+                "source_id": "dcd5f3fffebc4a59352cfbc2b286e453ca0370e4_0",
+                "target_id": "f892b9696fc1c1169c5618b1b3edc9187b6db1f2_0",
+                "strength": 1.0021069053546494
+            }
+        ],
+        "clusters": [
+            {
+                "cluster": 1,
+                "label": "Neural Summarization",
+                "summary": null
+            },
+            {
+                "cluster": 2,
+                "label": "Representative documents of cluster",
+                "summary": null
+            }
+        ],
+        "blog_title": null,
+        "blog_intro": null,
+        "blog_conclusion": null
+    }
+}
