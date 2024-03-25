@@ -11500,25 +11500,7 @@
         "clusters": [
             {
                 "cluster": 1,
-                "label": "AI-Driven Search",
-                "summary": {
-                    "keywords": null,
-                    "topic": null,
-                    "long_summary": null,
-                    "tldr_summary": "Emerging trends in information retrieval and natural language processing are driving innovations in search efficiency, inclusivity, and interdisciplinary collaboration, with a focus on enhancing the research experience through advanced AI and user-centric tools.\\n\\nVADIS [[1]](https://search.zeta-alpha.com/?doc_ids=014481e04bb92d9b6a1a5c55aceccb564cbf7d1a \\"[VADIS \\u2013 A Variable Detection, Interlinking and\\u00a0Summarization System
-                    ]: VADIS revolutionizes social science research by interlinking survey variables with corresponding data and publications, enabling contextualized searches and usage.\\") and Scispace Literature Review [[4]](https://search.zeta-alpha.com/?doc_ids=8c8b964f76f6320227dabcc37b4cdca1920fef65 \\"[SciSpace Literature Review: Harnessing AI for\\u00a0Effortless Scientific Discovery
-                    ]: Scispace Literature Review revolutionizes literature exploration with AI-driven search, multilingual support, and tailored insights, significantly enhancing academic research efficiency.\\") are transforming social science and academic research by linking data with publications and providing AI-driven, multilingual literature search capabilities, respectively. IR4U2 [[2]](https://search.zeta-alpha.com/?doc_ids=2e10c93a8c2f3843d221acc5aa03677f7ed32cfd \\"[
-                        1 $$^{st
-                        }$$ Workshop on\\u00a0Information Retrieval for\\u00a0Understudied Users (IR4U2)
-                    ]: IR4U2 champions inclusive Information Retrieval advancements, spotlighting and addressing the unique needs of diverse, traditionally marginalized user groups.\\") is pioneering inclusive Information Retrieval by focusing on the needs of diverse user groups, while ECIR 2024 promotes collaboration through workshops on academic search and bibliometrics [[3]](https://search.zeta-alpha.com/?doc_ids=5a62500fdd3468417cfb1d442735d209c0cc3c65 \\"[Bibliometric-Enhanced Information Retrieval: 14th International BIR Workshop (BIR 2024)
-                    ]: ECIR 2024's full-day BIR workshop will convene experts in academic search, recommendation systems, and bibliometrics, fostering interdisciplinary collaboration in scientometrics and NLP.\\") and on cooperative search engine development [[5]](https://search.zeta-alpha.com/?doc_ids=fa916aff252d54c23ca227c41f6fbd7377675664 \\"[The First International Workshop on\\u00a0Open Web Search (WOWS)
-                    ]: ECIR 2024's inaugural WOWS workshop invites submissions on cooperative search engine development and practical evaluation via TIREx, fostering innovation in tailored search solutions.\\"). MathMex [[6]](https://search.zeta-alpha.com/?doc_ids=de279a22ed9965261be09e32415c88fb057dd57d \\"[MathMex: Search Engine for\\u00a0Math Definitions
-                    ]: MathMex revolutionizes mathematical research with an open-source engine leveraging SciBERT and Sentence-BERT for multifaceted definition retrieval from texts, images, and videos.\\") and the toolkit mentioned in [[7]](https://search.zeta-alpha.com/?doc_ids=3cef7118f1dd42175143ff586375e8b2e3da4d7a \\"[eval-rationales: An End-to-End Toolkit to\\u00a0Explain and\\u00a0Evaluate Transformers-Based Models
-                    ]: Advancements in NLP and IR transformer model interpretability are integrated into a user-friendly toolkit for robust evaluation of decision rationale quality.\\") are advancing mathematical research and NLP model interpretability, respectively. LongEval Lab [[8]](https://search.zeta-alpha.com/?doc_ids=4ab25988371098b7d59d0efef93961c2dc543ec5 \\"[LongEval: Longitudinal Evaluation of\\u00a0Model Performance at\\u00a0CLEF 2024
-                    ]: LongEval Lab at CLEF 2024 targets temporal effectiveness in IR and text classification, focusing on model resilience to data aging.\\") emphasizes the importance of model resilience over time, SUD.DL [[9]](https://search.zeta-alpha.com/?doc_ids=8526dfedef64b8ee05cd846157694f429f142155 \\"[Building and\\u00a0Evaluating a\\u00a0WebApp for\\u00a0Effortless Deep Learning Model Deployment
-                    ]: SUD.DL revolutionizes NLP model deployment, offering a web application that enhances efficiency, functionality, and discoverability for streamlined public testing.\\") streamlines NLP model deployment, and recent research on Transformer-Encoder LMs [[10]](https://search.zeta-alpha.com/?doc_ids=99456cc0800015a07b9d9d0fa3e4062f9b7ca6e4 \\"[Investigating the\\u00a0Usage of\\u00a0Formulae in\\u00a0Mathematical Answer Retrieval
-                    ]: Exploring Transformer-Encoder LMs for Mathematical Answer Retrieval, researchers found variable overlap key, identified a detrimental shortcut, and enhanced model accuracy by its removal.\\") improves mathematical answer retrieval by addressing model shortcuts."
-                }
+                "label": "AI-Driven Search"
             },
             {
                 "cluster": 2,
