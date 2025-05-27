@@ -30,7 +30,7 @@ async def create_blogpost(
     data["conference_info"] = CONFERENCE_INFO
 
     response = await generate_blogpost(
-        body=VosConferenceClusteredDocuments.parse_obj(data),
+        body=VosConferenceClusteredDocuments.model_validate(data, strict=False),
         focus_on_most_representatives=representative_docs_flag,
         detailed_paragraph_usecase_variant="oneshot_detailed_paragraph",
     )

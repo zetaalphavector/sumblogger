@@ -1,37 +1,30 @@
 [
-    {
-        "usecase": "blog_surroundings",
-        "variant": "title_intro_conclusion",
-        "version": 1,
-        "usecase_params": [
-            "topic_summaries",
-            "conference_info"
-        ],
-        "output_params": [
-            "title",
-            "intro",
-            "conclusion"
-        ],
-        "service_name": "blog_surroundings",
-        "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo-0301": {
-                "call_params": {
-                    "temperature": 0.0,
-                    "max_tokens": 512
-                },
-                "text_completion_config": {
-                    "prompt_template": null,
-                    "bot_conversation": {
-                        "bot_setup_description": null,
-                        "messages": [
-                            {
-                                "sender": "user",
-                                "content": "You are asked to write a blogpost about an upcoming conference, that will be published in a very popular online journal read by experienced researchers.\n\nI have already written all the main sections of the blogpost, but I am still missing the title, the introduction and the conclusion.\nGiven the following conference general information and the given topic summaries, complete the following tasks:\nA. Write a short but appealing title for the blogpost, that differentiates it from other conferences.\nB. Write a couple of paragraphs as the introductory section of the blogpost about the upcoming conference that will be placed before the blogpost sections I have already written. The introductory section should include: the link to the conference website, the most important information about the conference. Focus also, on the underlying trends and the common aspects of the conference. Make it informative and appealing in order to motivate the reader continue reading the blogpost. Avoid repetitive information.\nC. Write a very short conclusion about the upcoming conference that will be placed after the blogpost sections I have already written.\n\n- Conference info:\nName: {{ conference_info.name }}\nWebsite: {{ conference_info.website }}\nLocation: {{ conference_info.location }}\nStart Date: {{ conference_info.start_date }}\nEnd date: {{ conference_info.end_date }}\n\n- Topic summaries:\n{% for summary in topic_summaries %}\n{{ summary }}\n{% endfor %}"
-                            }
-                        ]
-                    }
-                }
-            }
+  {
+    "usecase": "blog_surroundings",
+    "variant": "title_intro_conclusion",
+    "version": 1,
+    "usecase_params": ["topic_summaries", "conference_info"],
+    "output_params": ["title", "intro", "conclusion"],
+    "service_name": "blog_surroundings",
+    "llm_identifier_2_config": {
+      "chat:openai:gpt-4o-mini": {
+        "call_params": {
+          "temperature": 0.0,
+          "max_tokens": 512
+        },
+        "text_completion_config": {
+          "prompt_template": null,
+          "bot_conversation": {
+            "bot_setup_description": null,
+            "messages": [
+              {
+                "sender": "user",
+                "content": "You are asked to write a blogpost about an upcoming conference, that will be published in a very popular online journal read by experienced researchers.\n\nI have already written all the main sections of the blogpost, but I am still missing the title, the introduction and the conclusion.\nGiven the following conference general information and the given topic summaries, complete the following tasks:\nA. Write a short but appealing title for the blogpost, that differentiates it from other conferences.\nB. Write a couple of paragraphs as the introductory section of the blogpost about the upcoming conference that will be placed before the blogpost sections I have already written. The introductory section should include: the link to the conference website, the most important information about the conference. Focus also, on the underlying trends and the common aspects of the conference. Make it informative and appealing in order to motivate the reader continue reading the blogpost. Avoid repetitive information.\nC. Write a very short conclusion about the upcoming conference that will be placed after the blogpost sections I have already written.\n\n- Conference info:\nName: {{ conference_info.name }}\nWebsite: {{ conference_info.website }}\nLocation: {{ conference_info.location }}\nStart Date: {{ conference_info.start_date }}\nEnd date: {{ conference_info.end_date }}\n\n- Topic summaries:\n{% for summary in topic_summaries %}\n{{ summary }}\n{% endfor %}"
+              }
+            ]
+          }
         }
+      }
     }
+  }
 ]

@@ -30,7 +30,7 @@ class TextCompletionConfigParser:
 
     @staticmethod
     def __parse_chat_message(message: ChatMessage, params: PromptParams):
-        return ChatMessage.parse_obj(
+        return ChatMessage.model_validate(
             {
                 **message.dict(exclude={"content"}),
                 "content": TextCompletionConfigParser.parse_template(
@@ -46,7 +46,7 @@ class TextCompletionConfigParser:
         if bot_conversation is None:
             return None
 
-        return BotConversation.parse_obj(
+        return BotConversation.model_validate(
             {
                 **bot_conversation.dict(exclude={"bot_setup_description", "messages"}),
                 "bot_setup_description": TextCompletionConfigParser.__parse_bot_setup_description(  # noqa: E501
@@ -63,7 +63,7 @@ class TextCompletionConfigParser:
     def parse(
         config: TextCompletionConfig, params: PromptParams
     ) -> TextCompletionConfig:
-        return TextCompletionConfig.parse_obj(
+        return TextCompletionConfig.model_validate(
             {
                 **config.dict(exclude={"prompt_template", "bot_conversation"}),
                 "prompt_template": TextCompletionConfigParser.parse_template(

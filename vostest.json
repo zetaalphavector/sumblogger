@@ -1,0 +1,1926 @@
+{
+    "config": {
+        "terminology": {
+            "cluster": "Group",
+            "clusters": "Groups",
+            "item": "Document",
+            "items": "Documents",
+            "link": "Similarity link",
+            "links": "Similarity links",
+            "link_strength": "Similarity strength",
+            "total_link_strength": "Total similarity strengths",
+            "title": "Title of the document",
+            "abstract": "Abstract of the document",
+            "authors": "Authors"
+        },
+        "templates": {
+            "item_description": "<div style='display:flex'><div style='padding-left:16px'><div class='description_heading'>{heading}</div><div class='description_title'><a class='description_url'href='{uri}'target='_blank'>{title}</a></div><div class='description_authors'style='margin:4px 0;font-weight:500px;color:#757575'>{authors}</div><div class='description_abstract'>{abstract}</div></div></div>"
+        },
+        "styles": {
+            "description_heading": "color: #757575; font-weight: 600;"
+        },
+        "parameters": {
+            "item_size_variation": 0.7,
+            "largest_component": true,
+            "attraction": 1,
+            "repulsion": 1,
+            "max_label_length": 50
+        }
+    },
+    "network": {
+        "items": [
+            {
+                "id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Whole-body Multi-contact Motion Control for Humanoid Robots Based on Distributed Tactile Sensors",
+                "authors": "Masaki Murooka, Kensuke Fukumitsu, Marwan Hamze, Mitsuharu Morisawa, Hiroshi Kaminaga, Fumio Kanehiro, Eiichi Yoshida",
+                "label": "Whole-body Multi-contact Motion Control for Humanoid Robots Based on Distributed Tactile Sensors",
+                "abstract": "To enable humanoid robots to work robustly in confined environments, multi-contact motion that makes contacts not only at extremities, such as hands and feet, but also at intermediate areas of the limbs, such as knees and elbows, is essential. We develop a method to realize such whole-body multi-con...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=07c9b95b44375386675414717b4b34c16f6b6aec",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/07c9b95b44375386675414717b4b34c16f6b6aec/image_url?tenant=zetaalpha",
+                "x": -0.7738698259363421,
+                "y": 0.36096236424112205,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "Is The New GPT-4 Deep Research Tool Any Good? Here’s What I Found",
+                "authors": "John Loewen, PhD",
+                "label": "Is The New GPT-4 Deep Research Tool Any Good? Here’s What I Found",
+                "abstract": "As a data science professor, I have been using GPT-4 daily for more than 2 years to help me with my work. And wow, it really is an outstanding and indispensable tool for many data science and writing tasks. And, oh my god is it ever terrible at some other tasks — like performing deep research. But w...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=08314d70449d41ec0044302d93601ea79eeb615c",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/08314d70449d41ec0044302d93601ea79eeb615c/image_url?tenant=zetaalpha",
+                "x": 1.379611928882259,
+                "y": -0.06407021389936393,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "How to Talk to AI: A Guide to Prompting, Language Processing, and Chain Prompting",
+                "authors": "Murat Girgin",
+                "label": "How to Talk to AI: A Guide to Prompting, Language Processing, and Chain Prompting",
+                "abstract": "From chatbots to code assistants, language models are only as smart as the prompts we give them . This guide unpacks the invisible mechanics behind those interactions — prompting, parsing, tokenization, and more — revealing how understanding the structure of language can help us craft better convers...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a/image_url?tenant=zetaalpha",
+                "x": 1.3408633012425926,
+                "y": 0.009889406743079778,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Weak-Jamming Detection in IEEE 802.11 Networks: Techniques, Scenarios and Mobility",
+                "authors": "Martijn Hanegraaf, Savio Sciancalepore, Gabriele Oligeri",
+                "label": "Weak-Jamming Detection in IEEE 802.11 Networks: Techniques, Scenarios and Mobility",
+                "abstract": "State-of-the-art solutions detect jamming attacks ex-post, i.e., only when jamming has already disrupted the wireless communication link. In many scenarios, e.g., mobile networks or static deployments distributed over a large geographical area, it is often desired to detect jamming at the early stag...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=0ba56adee96290dd338dee3ca4d535305a7bc305",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/0ba56adee96290dd338dee3ca4d535305a7bc305/image_url?tenant=zetaalpha",
+                "x": -0.6557667047791521,
+                "y": -0.2041014609202704,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Room Impulse Response as a Prompt for Acoustic Echo Cancellation",
+                "authors": "Fei Zhao, Shulin He, Xueliang Zhang",
+                "label": "Room Impulse Response as a Prompt for Acoustic Echo Cancellation",
+                "abstract": "Data-driven acoustic echo cancellation (AEC) methods, predominantly trained on synthetic or constrained real-world datasets, encounter performance declines in unseen echo scenarios, especially in real environments where echo paths are not directly observable. Our proposed method counters this limita...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=13a0d349fa6632f34b4ff4336df044c3f7d00c50",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/13a0d349fa6632f34b4ff4336df044c3f7d00c50/image_url?tenant=zetaalpha",
+                "x": -0.7426030733619875,
+                "y": -0.384143377296948,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Rethinking Gating Mechanism in Sparse MoE: Handling Arbitrary Modality Inputs with Confidence-Guided Gate",
+                "authors": "Liangwei Nathan Zheng, Wei Emma Zhang, Mingyu Guo, Miao Xu, Olaf Maennel, Weitong Chen",
+                "label": "Rethinking Gating Mechanism in Sparse MoE: Handling Arbitrary Modality Inputs with Confidence-Guided Gate",
+                "abstract": "Effectively managing missing modalities is a fundamental challenge in real-world multimodal learning scenarios, where data incompleteness often results from systematic collection errors or sensor failures. Sparse Mixture-of-Experts (SMoE) architectures have the potential to naturally handle multimod...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=146106bdd65d9522c63c5471920ea1ffda8c796c",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/146106bdd65d9522c63c5471920ea1ffda8c796c/image_url?tenant=zetaalpha",
+                "x": -0.8222915128115846,
+                "y": 0.11797937541387302,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Lego Sketch: A Scalable Memory-augmented Neural Network for Sketching Data Streams",
+                "authors": "Yuan Feng, Yukun Cao, Hairu Wang, Xike Xie, S Kevin Zhou",
+                "label": "Lego Sketch: A Scalable Memory-augmented Neural Network for Sketching Data Streams",
+                "abstract": "Sketches, probabilistic structures for estimating item frequencies in infinite data streams with limited space, are widely used across various domains. Recent studies have shifted the focus from handcrafted sketches to neural sketches, leveraging memory-augmented neural networks (MANNs) to enhance t...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=156619dc2f5c1ad6f0221cb717c968402be921e0",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/156619dc2f5c1ad6f0221cb717c968402be921e0/image_url?tenant=zetaalpha",
+                "x": -0.03606342503114385,
+                "y": -0.2585169455784312,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Interleaved Reasoning for Large Language Models via Reinforcement Learning",
+                "authors": "Roy Xie, David Qiu, Deepak Gopinath, Dong Lin, Yanchao Sun, Chong Wang, Saloni Potdar, Bhuwan Dhingra",
+                "label": "Interleaved Reasoning for Large Language Models via Reinforcement Learning",
+                "abstract": "Long chain-of-thought (CoT) significantly enhances large language models' (LLM) reasoning capabilities. However, the extensive reasoning traces lead to inefficiencies and an increased time-to-first-token (TTFT). We propose a novel training paradigm that uses reinforcement learning (RL) to guide reas...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=161271d2f35a292deb0dbdc61cf861ef670ffa4b",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/161271d2f35a292deb0dbdc61cf861ef670ffa4b/image_url?tenant=zetaalpha",
+                "x": 0.1307531089496736,
+                "y": 0.19883702806147524,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.0833333333333335,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Learning Dynamics under Environmental Constraints via Measurement-Induced Bundle Structures",
+                "authors": "Dongzhe Zheng, Wenjie Mei",
+                "label": "Learning Dynamics under Environmental Constraints via Measurement-Induced Bundle Structures",
+                "abstract": "Learning unknown dynamics under environmental (or external) constraints is fundamental to many fields (e.g., modern robotics), particularly challenging when constraint information is only locally available and uncertain. Existing approaches requiring global constraints or using probabilistic filteri...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1905cec95b4337eae8ab68a79502dd12ddf16358",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/1905cec95b4337eae8ab68a79502dd12ddf16358/image_url?tenant=zetaalpha",
+                "x": -0.8763778431293304,
+                "y": 0.24974914420141636,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "On scalable and efficient training of diffusion samplers",
+                "authors": "Minkyu Kim, Kiyoung Seong, Dongyeop Woo, Sungsoo Ahn, Minsu Kim",
+                "label": "On scalable and efficient training of diffusion samplers",
+                "abstract": "We address the challenge of training diffusion models to sample from unnormalized energy distributions in the absence of data, the so-called diffusion samplers. Although these approaches have shown promise, they struggle to scale in more demanding scenarios where energy evaluations are expensive and...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1951eeda694a63fcb111a0c1a73502d09608f3c0",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/1951eeda694a63fcb111a0c1a73502d09608f3c0/image_url?tenant=zetaalpha",
+                "x": -0.7233454265211285,
+                "y": 0.0141732607540587,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "Want to Build with AI But Don’t Know Where to Start? Try Hugging Face",
+                "authors": "Prisca Ekhaeyemhe",
+                "label": "Want to Build with AI But Don’t Know Where to Start? Try Hugging Face",
+                "abstract": "#### The Beginner-Friendly Platform Behind Chatbots, Translators, and More.\n\nImage edited by author — using DALE\n\nIf you’ve been curious about artificial intelligence but feel overwhelmed by the jargon, complex math, or massive models, then you’re not alone, and you’re not too late. There’s a beginn...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=1e53da72cecef6f526a3c8c99127ebe31d54d08e",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/1e53da72cecef6f526a3c8c99127ebe31d54d08e/image_url?tenant=zetaalpha",
+                "x": 1.6066156357254873,
+                "y": -0.039265270617674604,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Concise Reasoning, Big Gains: Pruning Long Reasoning Trace with Difficulty-Aware Prompting",
+                "authors": "Yifan Wu, Jingze Shi, Bingheng Wu, Jiayi Zhang, Xiaotian Lin, Nan Tang, Yuyu Luo",
+                "label": "Concise Reasoning, Big Gains: Pruning Long Reasoning Trace with Difficulty-Aware Prompting",
+                "abstract": "Existing chain-of-thought (CoT) distillation methods can effectively transfer reasoning abilities to base models but suffer from two major limitations: excessive verbosity of reasoning traces and inadequate adaptability to problem difficulty. Long reasoning traces significantly increase inference co...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=209e3e101d3f5fd6053de9001ee385899609dea5",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/209e3e101d3f5fd6053de9001ee385899609dea5/image_url?tenant=zetaalpha",
+                "x": -0.3807161126503931,
+                "y": 0.16567330303328637,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Model Agnostic Differentially Private Causal Inference",
+                "authors": "Christiant Lebeda, Mathieu Even, Aurélien Bellet, Julie Josse",
+                "label": "Model Agnostic Differentially Private Causal Inference",
+                "abstract": "Estimating causal effects from observational data is essential in fields such as medicine, economics and social sciences, where privacy concerns are paramount. We propose a general, model-agnostic framework for differentially private estimation of average treatment effects (ATE) that avoids strong s...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=227e51fa2305d9bf0aee403934560330919d9886",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/227e51fa2305d9bf0aee403934560330919d9886/image_url?tenant=zetaalpha",
+                "x": -0.8598917473675665,
+                "y": 0.1445386102628422,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.5,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "JailBound: Jailbreaking Internal Safety Boundaries of Vision-Language Models",
+                "authors": "Jiaxin Song, Yixu Wang, Jie Li, Rui Yu, Yan Teng, Xingjun Ma, Yingchun Wang",
+                "label": "JailBound: Jailbreaking Internal Safety Boundaries of Vision-Language Models",
+                "abstract": "Vision-Language Models (VLMs) exhibit impressive performance, yet the integration of powerful vision encoders has significantly broadened their attack surface, rendering them increasingly susceptible to jailbreak attacks. However, lacking well-defined attack objectives, existing jailbreak methods of...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=278ce5996339005ff44884452eac6b463c54066a",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/278ce5996339005ff44884452eac6b463c54066a/image_url?tenant=zetaalpha",
+                "x": -0.7435723453449008,
+                "y": 0.11908651810833776,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.833333333333333,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Deep learning based spatial aliasing reduction in beamforming for audio capture",
+                "authors": "Mateusz Guzik, Giulio Cengarle, Daniel Arteaga",
+                "label": "Deep learning based spatial aliasing reduction in beamforming for audio capture",
+                "abstract": "Spatial aliasing affects spaced microphone arrays, causing directional ambiguity above certain frequencies, degrading spatial and spectral accuracy of beamformers. Given the limitations of conventional signal processing and the scarcity of deep learning approaches to spatial aliasing mitigation, we ...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=292a8744af4ed6dfe4af8158c2bc2a3811598e15",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/292a8744af4ed6dfe4af8158c2bc2a3811598e15/image_url?tenant=zetaalpha",
+                "x": -0.5694008967217562,
+                "y": -0.3562536963503807,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "heading": "Towards AI, 27 May 2025",
+                "title": "The End of the Click? NLWeb and the Quiet War on Search",
+                "authors": "Pawel Rzeszucinski, PhD",
+                "label": "The End of the Click? NLWeb and the Quiet War on Search",
+                "abstract": "Are we seeing a search paradigm shift? Time will tell. (Source: Author)\n\n### NLWeb is born\n\nLast week at Microsoft’s Build conference, many exciting announcements were made, from open-sourcing GitHub Copilot to major upgrades for Microsoft Copilot, but one that could prove the most disruptive went l...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=30d6de66c0621de0c646c0841391a319763493ae",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/30d6de66c0621de0c646c0841391a319763493ae/image_url?tenant=zetaalpha",
+                "x": 1.005915061106248,
+                "y": -0.1581803935937647,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Mel-McNet: A Mel-Scale Framework for Online Multichannel Speech Enhancement",
+                "authors": "Yujie Yang, Bing Yang, Xiaofei Li",
+                "label": "Mel-McNet: A Mel-Scale Framework for Online Multichannel Speech Enhancement",
+                "abstract": "Online multichannel speech enhancement has been intensively studied recently. Though Mel-scale frequency is more matched with human auditory perception and computationally efficient than linear frequency, few works are implemented in a Mel-frequency domain. To this end, this work proposes a Mel-scal...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb/image_url?tenant=zetaalpha",
+                "x": -0.28291310084789284,
+                "y": -0.40729077100565797,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Accelerating Prefilling for Long-Context LLMs via Sparse Pattern Sharing",
+                "authors": "Dan Peng, Zhihui Fu, Zewen Ye, Zhuoran Song, Jun Wang",
+                "label": "Accelerating Prefilling for Long-Context LLMs via Sparse Pattern Sharing",
+                "abstract": "Sparse attention methods exploit the inherent sparsity in attention to speed up the prefilling phase of long-context inference, mitigating the quadratic complexity of full attention computation. While existing sparse attention methods rely on predefined patterns or inaccurate estimations to approxim...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=4ed33847f2a42c302018a01623716c93eb1fa003",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/4ed33847f2a42c302018a01623716c93eb1fa003/image_url?tenant=zetaalpha",
+                "x": -0.2788480943200491,
+                "y": -0.059137380377944256,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 5.5,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Cross-Sequence Semi-Supervised Learning for Multi-Parametric MRI-Based Visual Pathway Delineation",
+                "authors": "Alou Diakite, Cheng Li, Lei Xie, Yuanjing Feng, Ruoyou Wu, Jianzhong He, Hairong Zheng, Shanshan Wang",
+                "label": "Cross-Sequence Semi-Supervised Learning for Multi-Parametric MRI-Based Visual Pathway Delineation",
+                "abstract": "Accurately delineating the visual pathway (VP) is crucial for understanding the human visual system and diagnosing related disorders. Exploring multi-parametric MR imaging data has been identified as an important way to delineate VP. However, due to the complex cross-sequence relationships, existing...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=582567fbf4f89ef8a02b93ba1cc5788dbe0f1863",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/582567fbf4f89ef8a02b93ba1cc5788dbe0f1863/image_url?tenant=zetaalpha",
+                "x": -0.7413624295026994,
+                "y": -0.3159173887723223,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.5,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Understanding the Performance Gap in Preference Learning: A Dichotomy of RLHF and DPO",
+                "authors": "Ruizhe Shi, Minhak Song, Runlong Zhou, Zihan Zhang, Maryam Fazel, Simon S. Du",
+                "label": "Understanding the Performance Gap in Preference Learning: A Dichotomy of RLHF and DPO",
+                "abstract": "We present a fine-grained theoretical analysis of the performance gap between reinforcement learning from human feedback (RLHF) and direct preference optimization (DPO) under a representation gap. Our study decomposes this gap into two sources: an explicit representation gap under exact optimization...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=59ad24750a9e4f736dac6ab9d4d7a457fbd3da38",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/59ad24750a9e4f736dac6ab9d4d7a457fbd3da38/image_url?tenant=zetaalpha",
+                "x": 0.04647598702827913,
+                "y": 0.440140016347676,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 5.166666666666667,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Training-Free Multi-Step Audio Source Separation",
+                "authors": "Yongyi Zang, Jingyi Li, Qiuqiang Kong",
+                "label": "Training-Free Multi-Step Audio Source Separation",
+                "abstract": "Audio source separation aims to separate a mixture into target sources. Previous audio source separation systems usually conduct one-step inference, which does not fully explore the separation ability of models. In this work, we reveal that pretrained one-step audio source separation models can be l...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=5a5e809405f3affe956651407298ad1e9604b2be",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/5a5e809405f3affe956651407298ad1e9604b2be/image_url?tenant=zetaalpha",
+                "x": -0.6477524486719192,
+                "y": -0.40525703151752,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "AI Waterfall: How to spend less money on LLMs using tiered intelligence",
+                "authors": "Petros Demetrakopoulos",
+                "label": "AI Waterfall: How to spend less money on LLMs using tiered intelligence",
+                "abstract": "### AI Waterfall: How to Spend Less Money on LLMs Using Tiered Intelligence\n\nPhoto by Growtika on Unsplash\n\nLet’s face it. Gen AI and LLMs have changed forever the way we develop software and write code. Morever, the recent developments in AI have not only changed the way we write code, they have al...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=5e81e54f3250974e8d934b8c0c6d3d8cdf511368",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/5e81e54f3250974e8d934b8c0c6d3d8cdf511368/image_url?tenant=zetaalpha",
+                "x": 1.5034147732554786,
+                "y": -0.029330711754658633,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "MFA-KWS: Effective Keyword Spotting with Multi-head Frame-asynchronous Decoding",
+                "authors": "Yu Xi, Haoyu Li, Xiaoyu Gu, Yidi Jiang, Kai Yu",
+                "label": "MFA-KWS: Effective Keyword Spotting with Multi-head Frame-asynchronous Decoding",
+                "abstract": "Keyword spotting (KWS) is essential for voice-driven applications, demanding both accuracy and efficiency. Traditional ASR-based KWS methods, such as greedy and beam search, explore the entire search space without explicitly prioritizing keyword detection, often leading to suboptimal performance. In...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8199ce7b39c359baf49db5540a1f5ec3a38264d8",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/8199ce7b39c359baf49db5540a1f5ec3a38264d8/image_url?tenant=zetaalpha",
+                "x": 0.13972058263699066,
+                "y": -0.28725818557012106,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.666666666666667,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Deep Actor-Critics with Tight Risk Certificates",
+                "authors": "Bahareh Tasdighi, Manuel Haussmann, Yi-Shan Wu, Andres R. Masegosa, Melih Kandemir",
+                "label": "Deep Actor-Critics with Tight Risk Certificates",
+                "abstract": "After a period of research, deep actor-critic algorithms have reached a level where they influence our everyday lives. They serve as the driving force behind the continual improvement of large language models through user-collected feedback. However, their deployment in physical systems is not yet w...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=82f844e5831aa697eff62285f442c2f2460aabc3",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/82f844e5831aa697eff62285f442c2f2460aabc3/image_url?tenant=zetaalpha",
+                "x": -0.8431268128036782,
+                "y": 0.19104224479646945,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.125,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Advancements in Medical Image Classification through Fine-Tuning Natural Domain Foundation Models",
+                "authors": "Mobina Mansoori, Sajjad Shahabodini, Farnoush Bayatmakou, Jamshid Abouei, Konstantinos N. Plataniotis, Arash Mohammadi",
+                "label": "Advancements in Medical Image Classification through Fine-Tuning Natural Domain Foundation Models",
+                "abstract": "Using massive datasets, foundation models are large-scale, pre-trained models that perform a wide range of tasks. These models have shown consistently improved results with the introduction of new methods. It is crucial to analyze how these trends impact the medical field and determine whether these...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8538a87a7806b9884f29b6a5ea79fc55aa56908b",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/8538a87a7806b9884f29b6a5ea79fc55aa56908b/image_url?tenant=zetaalpha",
+                "x": -0.5770278638414728,
+                "y": -0.22553339449945925,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.6666666666666665,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Bias in Political Dialogue: Tagging U.S. Presidential Debates with an Extended DAMSL Framework",
+                "authors": "Lavanya Prahallad, Radhika Mamidi",
+                "label": "Bias in Political Dialogue: Tagging U.S. Presidential Debates with an Extended DAMSL Framework",
+                "abstract": "We present a critical discourse analysis of the 2024 U.S. presidential debates, examining Donald Trump's rhetorical strategies in his interactions with Joe Biden and Kamala Harris. We introduce a novel annotation framework, BEADS (Bias Enriched Annotation for Dialogue Structure), which systematicall...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=873802ed4e51876cec4a40dfb05b2269b02b0c79",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/873802ed4e51876cec4a40dfb05b2269b02b0c79/image_url?tenant=zetaalpha",
+                "x": 0.7033514163413668,
+                "y": 0.15868801275352817,
+                "cluster": 6,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.9999999999999996,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "LLA-MPC: Fast Adaptive Control for Autonomous Racing",
+                "authors": "Maitham F. AL-Sunni, Hassan Almubarak, Katherine Horng, John M. Dolan",
+                "label": "LLA-MPC: Fast Adaptive Control for Autonomous Racing",
+                "abstract": "We present Look-Back and Look-Ahead Adaptive Model Predictive Control (LLA-MPC), a real-time adaptive control framework for autonomous racing that addresses the challenge of rapidly changing tire-surface interactions. Unlike existing approaches requiring substantial data collection or offline traini...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8b2579c2d2070f96e1e0124c522789e975e5336c",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/8b2579c2d2070f96e1e0124c522789e975e5336c/image_url?tenant=zetaalpha",
+                "x": -0.6904319662022687,
+                "y": 0.4200806688543431,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2.999999999999999,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Rep3D: Re-parameterize Large 3D Kernels with Low-Rank Receptive Modeling for Medical Imaging",
+                "authors": "Ho Hin Lee, Quan Liu, Shunxing Bao, Yuankai Huo, Bennett A. Landman",
+                "label": "Rep3D: Re-parameterize Large 3D Kernels with Low-Rank Receptive Modeling for Medical Imaging",
+                "abstract": "In contrast to vision transformers, which model long-range dependencies through global self-attention, large kernel convolutions provide a more efficient and scalable alternative, particularly in high-resolution 3D volumetric settings. However, naively increasing kernel size often leads to optimizat...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8b2b4f4a640536a2cd1e37d53e8f982092a51201",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/8b2b4f4a640536a2cd1e37d53e8f982092a51201/image_url?tenant=zetaalpha",
+                "x": -0.20149237249126592,
+                "y": -0.23756191021522033,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2.6,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "What You Perceive Is What You Conceive: A Cognition-Inspired Framework for Open Vocabulary Image Segmentation",
+                "authors": "Jianghang Lin, Yue Hu, Jiangtao Shen, Yunhang Shen, Liujuan Cao, Shengchuan Zhang, Rongrong Ji",
+                "label": "What You Perceive Is What You Conceive: A Cognition-Inspired Framework for Open Vocabulary Image Segmentation",
+                "abstract": "Open vocabulary image segmentation tackles the challenge of recognizing dynamically adjustable, predefined novel categories at inference time by leveraging vision-language alignment. However, existing paradigms typically perform class-agnostic region segmentation followed by category matching, which...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=8bca0233cffde2db214c9e0478ff7f368b95051f",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/8bca0233cffde2db214c9e0478ff7f368b95051f/image_url?tenant=zetaalpha",
+                "x": -0.5125359062209163,
+                "y": -0.14826713901576627,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2.8,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "MCP 101: Why This Protocol Matters in the Age of AI Agents",
+                "authors": "Afaque Umer",
+                "label": "MCP 101: Why This Protocol Matters in the Age of AI Agents",
+                "abstract": "#### A beginner-friendly dive into the protocol that’s shaping the future of AI agents\n\nPhoto by Artur Tumasjan on Unsplash\n\nBeen hearing MCP tossed around in GenAI circles and thinking, “Okay, what is this sorcery?” 😅  \nNo worries — I’ve got you. In this blog, we’re diving into Model Context Protoc...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=9236c1e508a7d26843c9fc5c819e4ae281d8ce27",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/9236c1e508a7d26843c9fc5c819e4ae281d8ce27/image_url?tenant=zetaalpha",
+                "x": 1.5596778329893348,
+                "y": -0.04503409023960572,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Energy-based Preference Optimization for Test-time Adaptation",
+                "authors": "Yewon Han, Seoyun Yang, Taesup Kim",
+                "label": "Energy-based Preference Optimization for Test-time Adaptation",
+                "abstract": "Test-Time Adaptation (TTA) enhances model robustness by enabling adaptation to target distributions that differ from training distributions, improving real-world generalizability. Existing TTA approaches focus on adjusting the conditional distribution; however these methods often depend on uncertain...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa/image_url?tenant=zetaalpha",
+                "x": -0.31875568163542556,
+                "y": 0.4358509504267694,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3.999999999999999,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Think Again! The Effect of Test-Time Compute on Preferences, Opinions, and Beliefs of Large Language Models",
+                "authors": "George Kour, Itay Nakash, Ateret Anaby-Tavor, Michal Shmueli-Scheuer",
+                "label": "Think Again! The Effect of Test-Time Compute on Preferences, Opinions, and Beliefs of Large Language Models",
+                "abstract": "As Large Language Models (LLMs) become deeply integrated into human life and increasingly influence decision-making, it's crucial to evaluate whether and to what extent they exhibit subjective preferences, opinions, and beliefs. These tendencies may stem from biases within the models, which may shap...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=99313b95ed693b4dff60ff9623eb3e92b4732749",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/99313b95ed693b4dff60ff9623eb3e92b4732749/image_url?tenant=zetaalpha",
+                "x": 0.6558532429025393,
+                "y": 0.33065379184816845,
+                "cluster": 6,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Distilling Closed-Source LLM's Knowledge for Locally Stable and Economic Biomedical Entity Linking",
+                "authors": "Yihao Ai, Zhiyuan Ning, Weiwei Dai, Pengfei Wang, Yi Du, Wenjuan Cui, Kunpeng Liu, Yuanchun Zhou",
+                "label": "Distilling Closed-Source LLM's Knowledge for Locally Stable and Economic Biomedical Entity Linking",
+                "abstract": "Biomedical entity linking aims to map nonstandard entities to standard entities in a knowledge base. Traditional supervised methods perform well but require extensive annotated data to transfer, limiting their usage in low-resource scenarios. Large language models (LLMs), especially closed-source LL...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=9cd8520f86776ed777c1442e8513280b1231cc05",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/9cd8520f86776ed777c1442e8513280b1231cc05/image_url?tenant=zetaalpha",
+                "x": 0.35990718862363524,
+                "y": -0.07740443550495238,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Unlocking the Power of Diffusion Models in Sequential Recommendation: A Simple and Effective Approach",
+                "authors": "Jialei Chen, Yuanbo Xu, Yiheng Jiang",
+                "label": "Unlocking the Power of Diffusion Models in Sequential Recommendation: A Simple and Effective Approach",
+                "abstract": "In this paper, we focus on the often-overlooked issue of embedding collapse in existing diffusion-based sequential recommendation models and propose ADRec, an innovative framework designed to mitigate this problem. Diverging from previous diffusion-based methods, ADRec applies an independent noise p...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7/image_url?tenant=zetaalpha",
+                "x": -0.6161357898515604,
+                "y": -0.0006650460633664639,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization",
+                "authors": "Dingyu Yao, Bowen Shen, Zheng Lin, Wei Liu, Jian Luan, Bin Wang, Weiping Wang",
+                "label": "TailorKV: A Hybrid Framework for Long-Context Inference via Tailored KV Cache Optimization",
+                "abstract": "The Key-Value (KV) cache in generative large language models (LLMs) introduces substantial memory overhead. Existing works mitigate this burden by offloading or compressing the KV cache. However, loading the entire cache incurs significant latency due to PCIe bandwidth bottlenecks in CPU-GPU communi...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=a4028ca48708f48c57d2698e25b7d0221f6f3a3a",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/a4028ca48708f48c57d2698e25b7d0221f6f3a3a/image_url?tenant=zetaalpha",
+                "x": 0.004005685891262077,
+                "y": -0.10753028471036102,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 5.2,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Analyzing Political Bias in LLMs via Target-Oriented Sentiment Classification",
+                "authors": "Akram Elbouanani, Evan Dufraisse, Adrian Popescu",
+                "label": "Analyzing Political Bias in LLMs via Target-Oriented Sentiment Classification",
+                "abstract": "Political biases encoded by LLMs might have detrimental effects on downstream applications. Existing bias analysis methods rely on small-size intermediate tasks (questionnaire answering or political content generation) and rely on the LLMs themselves for analysis, thus propagating bias. We propose a...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=ae03d62a24169efca2d2be86161b73bbea19e550",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/ae03d62a24169efca2d2be86161b73bbea19e550/image_url?tenant=zetaalpha",
+                "x": 0.8443552669723214,
+                "y": 0.2313635271581683,
+                "cluster": 6,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.9999999999999996,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Aggregated Structural Representation with Large Language Models for Human-Centric Layout Generation",
+                "authors": "Jiongchao Jin, Shengchu Zhao, Dajun Chen, Wei Jiang, Yong Li",
+                "label": "Aggregated Structural Representation with Large Language Models for Human-Centric Layout Generation",
+                "abstract": "Time consumption and the complexity of manual layout design make automated layout generation a critical task, especially for multiple applications across different mobile devices. Existing graph-based layout generation approaches suffer from limited generative capability, often resulting in unreason...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b21c68d4b86d93ff5a355b65469595893fbbc26e",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b21c68d4b86d93ff5a355b65469595893fbbc26e/image_url?tenant=zetaalpha",
+                "x": -0.11495179642781912,
+                "y": -0.00006105020782435756,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2.8333333333333335,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "$0.0001 vs $10: How Micro-Priced Prompts Are Outperforming Premium APIs in Real AI Deployments…",
+                "authors": "R. Thompson",
+                "label": "$0.0001 vs $10: How Micro-Priced Prompts Are Outperforming Premium APIs in Real AI Deployments…",
+                "abstract": "Why Cost Control Is Central to AI Democratization For many, AI feels inaccessible due to high compute expenses. Proprietary LLM APIs can cost upward of $10 per 1,000 queries. Multiply that by daily user…...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b3135e12a04e175e841ec4f90b5aacf42f3afade",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b3135e12a04e175e841ec4f90b5aacf42f3afade/image_url?tenant=zetaalpha",
+                "x": 1.6100899695211783,
+                "y": 0.02471493856445609,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Alpay Algebra III: Observer-Coupled Collapse and the Temporal Drift of Identity",
+                "authors": "Faruk Alpay",
+                "label": "Alpay Algebra III: Observer-Coupled Collapse and the Temporal Drift of Identity",
+                "abstract": "This paper introduces a formal framework for modeling observer-dependent collapse dynamics and temporal identity drift within artificial and mathematical systems, grounded entirely in the symbolic foundations of Alpay Algebra. Building upon the fixed-point emergence structures developed in Alpay Alg...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b5596ab6207070d179652196ffa504e324e3ac56",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b5596ab6207070d179652196ffa504e324e3ac56/image_url?tenant=zetaalpha",
+                "x": -0.9713419949930069,
+                "y": 0.20931658061847544,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+                "authors": "Chaoyi Xiang, Chunhua Liu, Simon De Deyne, Lea Frermann",
+                "label": "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+                "abstract": "As the impact of large language models increases, understanding the moral values they reflect becomes ever more important. Assessing the nature of moral values as understood by these models via direct prompting is challenging due to potential leakage of human norms into model training data, and thei...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b59f277efde226dd4570d7d5bc8a1328f4a997f0",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b59f277efde226dd4570d7d5bc8a1328f4a997f0/image_url?tenant=zetaalpha",
+                "x": 0.8482716398285606,
+                "y": 0.27368468185507816,
+                "cluster": 6,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.1666666666666667,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Automated CAD Modeling Sequence Generation from Text Descriptions via Transformer-Based Large Language Models",
+                "authors": "Jianxing Liao, Junyan Xu, Yatao Sun, Maowen Tang, Sicheng He, Jingxian Liao, Shui Yu, Yun Li, Hongguan Xiao",
+                "label": "Automated CAD Modeling Sequence Generation from Text Descriptions via Transformer-Based Large Language Models",
+                "abstract": "Designing complex computer-aided design (CAD) models is often time-consuming due to challenges such as computational inefficiency and the difficulty of generating precise models. We propose a novel language-guided framework for industrial design automation to address these issues, integrating large ...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b5e27b7efbfb1e1cafb1b643183d7478c56af456",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b5e27b7efbfb1e1cafb1b643183d7478c56af456/image_url?tenant=zetaalpha",
+                "x": 0.551671749611599,
+                "y": -0.04472737828364693,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection",
+                "authors": "Juxin Niu, Xiangfeng Liu, Dan Niu, Xi Wang, Zhe Jiang, Nan Guan",
+                "label": "ReChisel: Effective Automatic Chisel Code Generation by LLM with Reflection",
+                "abstract": "Coding with hardware description languages (HDLs) such as Verilog is a time-intensive and laborious task. With the rapid advancement of large language models (LLMs), there is increasing interest in applying LLMs to assist with HDL coding. Recent efforts have demonstrated the potential of LLMs in tra...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=b6b6978a30e7b34060d60e49f4ef9c35670eaaed",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/b6b6978a30e7b34060d60e49f4ef9c35670eaaed/image_url?tenant=zetaalpha",
+                "x": 0.27772913724872617,
+                "y": 0.016372376257692167,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.8333333333333335,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "heading": "Towards AI, 26 May 2025",
+                "title": "n8n: The Future of Workflow Automation",
+                "authors": "Kalash Vasaniya",
+                "label": "n8n: The Future of Workflow Automation",
+                "abstract": "If you’re not a member but want to read this article, see this friend link here . Today, companies are being bombarded with APIs, webhooks, and tedious tasks. Whether you’re big, small, or somewhere in between, integrating disparate services such as CRM, marketing software, databases, and custom app...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=bc0089312d0e8b323a2ef9aa05e958b3c1f526c9",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/bc0089312d0e8b323a2ef9aa05e958b3c1f526c9/image_url?tenant=zetaalpha",
+                "x": 0.9274227094267644,
+                "y": -0.16408264214936116,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+                "authors": "Bingrui Sima, Linhua Cong, Wenxuan Wang, Kun He",
+                "label": "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+                "abstract": "The emergence of Multimodal Large Language Models (MLRMs) has enabled sophisticated visual reasoning capabilities by integrating reinforcement learning and Chain-of-Thought (CoT) supervision. However, while these enhanced reasoning capabilities improve performance, they also introduce new and undere...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877/image_url?tenant=zetaalpha",
+                "x": -0.6201240005379071,
+                "y": 0.19729786267637006,
+                "cluster": 3,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.6666666666666665,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Machine Learning Algorithm for Noise Reduction and Disease-Causing Gene Feature Extraction in Gene Sequencing Data",
+                "authors": "Weichen Si, Yihao Ou, Zhen Tian",
+                "label": "Machine Learning Algorithm for Noise Reduction and Disease-Causing Gene Feature Extraction in Gene Sequencing Data",
+                "abstract": "In this study, we propose a machine learning-based method for noise reduction and disease-causing gene feature extraction in gene sequencing DeepSeqDenoise algorithm combines CNN and RNN to effectively remove the sequencing noise, and improves the signal-to-noise ratio by 9.4 dB. We screened 17 key ...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=c7044f64d3b12d0e27d36cb3d742496c4228135e",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/c7044f64d3b12d0e27d36cb3d742496c4228135e/image_url?tenant=zetaalpha",
+                "x": -0.798784967082858,
+                "y": -0.36820631289218675,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "SMART-PC: Skeletal Model Adaptation for Robust Test-Time Training in Point Clouds",
+                "authors": "Ali Bahri, Moslem Yazdanpanah, Sahar Dastani, Mehrdad Noori, Gustavo Adolfo Vargas Hakim, David Osowiechi, Farzad Beizaee, Ismail Ben Ayed, Christian Desrosiers",
+                "label": "SMART-PC: Skeletal Model Adaptation for Robust Test-Time Training in Point Clouds",
+                "abstract": "Test-Time Training (TTT) has emerged as a promising solution to address distribution shifts in 3D point cloud classification. However, existing methods often rely on computationally expensive backpropagation during adaptation, limiting their applicability in real-world, time-sensitive scenarios. In ...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=d08ac5cace8aa84a25ac8ce0e2252123713706c9",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/d08ac5cace8aa84a25ac8ce0e2252123713706c9/image_url?tenant=zetaalpha",
+                "x": -0.7137475539807351,
+                "y": 0.38123553002215826,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.5,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Improving Heart Rejection Detection in XPCI Images Using Synthetic Data Augmentation",
+                "authors": "Jakov Samardžija, Donik Vršnak, Sven Lončarić",
+                "label": "Improving Heart Rejection Detection in XPCI Images Using Synthetic Data Augmentation",
+                "abstract": "Accurate identification of acute cellular rejection (ACR) in endomyocardial biopsies is essential for effective management of heart transplant patients. However, the rarity of high-grade rejection cases (3R) presents a significant challenge for training robust deep learning models. This work address...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=df32bf7771ecb926ea38b374a85fc55cd8f010e1",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/df32bf7771ecb926ea38b374a85fc55cd8f010e1/image_url?tenant=zetaalpha",
+                "x": -0.7149938056850859,
+                "y": -0.22388046875751105,
+                "cluster": 2,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 2.999999999999999,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "K-Buffers: A Plug-in Method for Enhancing Neural Fields with Multiple Buffers",
+                "authors": "Haofan Ren, Zunjie Zhu, Xiang Chen, Ming Lu, Rongfeng Lu, Chenggang Yan",
+                "label": "K-Buffers: A Plug-in Method for Enhancing Neural Fields with Multiple Buffers",
+                "abstract": "Neural fields are now the central focus of research in 3D vision and computer graphics. Existing methods mainly focus on various scene representations, such as neural points and 3D Gaussians. However, few works have studied the rendering process to enhance the neural fields. In this work, we propose...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=e38dc5f5026d2feb74f478d58974f1b04c8cae75",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/e38dc5f5026d2feb74f478d58974f1b04c8cae75/image_url?tenant=zetaalpha",
+                "x": 0.265068270820447,
+                "y": -0.26648507192416054,
+                "cluster": 1,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 3,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "heading": "Towards AI, 27 May 2025",
+                "title": "Choosing the Right LLM for Your AI Project: What No One Tells You",
+                "authors": "Prisca Ekhaeyemhe",
+                "label": "Choosing the Right LLM for Your AI Project: What No One Tells You",
+                "abstract": "Choosing the right large language model (LLM) can make or break your AI project. Whether you’re building a chatbot, summarizer, or coding assistant, understanding the trade-offs between open-source and closed-source models is key. Let me share a quick story. I built a neat little app that turns audi...",
+                "source": "Towards AI",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=e3a378095dcae97abda2f3a5f40e292cae18a12e",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/e3a378095dcae97abda2f3a5f40e292cae18a12e/image_url?tenant=zetaalpha",
+                "x": 1.2596536043721274,
+                "y": 0.012112892899631265,
+                "cluster": 4,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            },
+            {
+                "id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "heading": "arXiv, 26 May 2025",
+                "title": "Learning for Dynamic Combinatorial Optimization without Training Data",
+                "authors": "Yiqiao Liao, Farinaz Koushanfar, Parinaz Naghizadeh",
+                "label": "Learning for Dynamic Combinatorial Optimization without Training Data",
+                "abstract": "We introduce DyCO-GNN, a novel unsupervised learning framework for Dynamic Combinatorial Optimization that requires no training data beyond the problem instance itself. DyCO-GNN leverages structural similarities across time-evolving graph snapshots to accelerate optimization while maintaining soluti...",
+                "source": "arXiv",
+                "uri": "https://search.zeta-alpha.com/?doc_ids=ea9492133a34a03448110531dc2c90834a017a72",
+                "image_url": "https://api.zeta-alpha.com/v0/service/document-assets/ea9492133a34a03448110531dc2c90834a017a72/image_url?tenant=zetaalpha",
+                "x": -0.19220259462501513,
+                "y": 0.17471896582000992,
+                "cluster": 5,
+                "weights": {
+                    "Relevance": 1,
+                    "Influence": 1.75,
+                    "Popularity": 1,
+                    "Citations": 1
+                }
+            }
+        ],
+        "links": [
+            {
+                "source_id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "target_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "strength": 0.3268915540743574
+            },
+            {
+                "source_id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "target_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "strength": 0.2485031171860003
+            },
+            {
+                "source_id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "target_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "strength": 0.2923272275616964
+            },
+            {
+                "source_id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.226596077134196
+            },
+            {
+                "source_id": "07c9b95b44375386675414717b4b34c16f6b6aec_0",
+                "target_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "strength": 0.22545013442292855
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "strength": 0.3548744221506407
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "strength": 0.7437813435117793
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "strength": 0.31201381597105526
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "strength": 0.3583859672141087
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.882345498258467
+            },
+            {
+                "source_id": "08314d70449d41ec0044302d93601ea79eeb615c_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.35485170320803017
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "strength": 0.8135306185779337
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "strength": 0.9953426878850146
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "strength": 0.29713696921547206
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "strength": 1.0081341400514294
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "strength": 0.36597767128438347
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "strength": 0.7961394173554392
+            },
+            {
+                "source_id": "09c28cfe7b1f889602dd8c12bf0e6e2b4020fd6a_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.9735663630999469
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "strength": 0.3392171866305588
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "strength": 0.38070470108036747
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "strength": 0.3655725489413541
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "strength": 0.7653615700397575
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "strength": 0.8105941420980873
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.37184821794401046
+            },
+            {
+                "source_id": "0ba56adee96290dd338dee3ca4d535305a7bc305_0",
+                "target_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "strength": 0.33892406204322256
+            },
+            {
+                "source_id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "target_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "strength": 0.8382621545754719
+            },
+            {
+                "source_id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "target_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "strength": 0.3560989167484565
+            },
+            {
+                "source_id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.3314710679316776
+            },
+            {
+                "source_id": "13a0d349fa6632f34b4ff4336df044c3f7d00c50_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.33491237026847853
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "strength": 0.7685339833139806
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "strength": 0.8099900709369999
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "strength": 0.8469852338682505
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.9798405443335672
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.3982575728343558
+            },
+            {
+                "source_id": "146106bdd65d9522c63c5471920ea1ffda8c796c_0",
+                "target_id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "strength": 0.3186147081443343
+            },
+            {
+                "source_id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "target_id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "strength": 0.7963673533187988
+            },
+            {
+                "source_id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.9267153708009324
+            },
+            {
+                "source_id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.9097997946428026
+            },
+            {
+                "source_id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.7849662427361008
+            },
+            {
+                "source_id": "156619dc2f5c1ad6f0221cb717c968402be921e0_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.8017042775070512
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "strength": 0.3902101283933639
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "strength": 1.1798906494716368
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "strength": 0.8383273004316789
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.8820357066673651
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "strength": 0.8855266840630107
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "strength": 0.812244674994134
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "strength": 0.38671176895003123
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "strength": 0.9812139759974242
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.8594018453027588
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "strength": 0.876678490493868
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.8473793994267346
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "strength": 0.3388995248693639
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "strength": 0.3861076956646343
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "strength": 0.3813305651784124
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "strength": 1.0513272066796437
+            },
+            {
+                "source_id": "161271d2f35a292deb0dbdc61cf861ef670ffa4b_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.8450360383451896
+            },
+            {
+                "source_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "target_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "strength": 0.9112070481495537
+            },
+            {
+                "source_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "target_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "strength": 0.3706922123005794
+            },
+            {
+                "source_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "target_id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "strength": 0.7742008583810056
+            },
+            {
+                "source_id": "1905cec95b4337eae8ab68a79502dd12ddf16358_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.9473569502179264
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "strength": 0.8658251129695524
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.9882516063221021
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "strength": 0.882103134032972
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "strength": 0.9172104997987293
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 1.2142503342075244
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "strength": 0.3827379270926825
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.8455326746516617
+            },
+            {
+                "source_id": "1951eeda694a63fcb111a0c1a73502d09608f3c0_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 1.0656212162157876
+            },
+            {
+                "source_id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "target_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "strength": 0.8085204690432614
+            },
+            {
+                "source_id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "target_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "strength": 0.7878484632058684
+            },
+            {
+                "source_id": "1e53da72cecef6f526a3c8c99127ebe31d54d08e_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 1.1606861366905086
+            },
+            {
+                "source_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "target_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "strength": 0.9938374754163518
+            },
+            {
+                "source_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.8938836708082826
+            },
+            {
+                "source_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "target_id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "strength": 0.36469182367058633
+            },
+            {
+                "source_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "target_id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "strength": 0.39902382628218824
+            },
+            {
+                "source_id": "209e3e101d3f5fd6053de9001ee385899609dea5_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.8479110427119134
+            },
+            {
+                "source_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "target_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "strength": 0.7828502680130721
+            },
+            {
+                "source_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "target_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "strength": 0.3696990138905833
+            },
+            {
+                "source_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.361266173953406
+            },
+            {
+                "source_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "target_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "strength": 0.3503875419947938
+            },
+            {
+                "source_id": "227e51fa2305d9bf0aee403934560330919d9886_0",
+                "target_id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "strength": 0.2963326729110327
+            },
+            {
+                "source_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "target_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "strength": 0.7621894698817837
+            },
+            {
+                "source_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "target_id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "strength": 0.7999167789726376
+            },
+            {
+                "source_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "target_id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "strength": 0.30141673706520805
+            },
+            {
+                "source_id": "278ce5996339005ff44884452eac6b463c54066a_0",
+                "target_id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "strength": 1.2498613483046133
+            },
+            {
+                "source_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "target_id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "strength": 0.8551119330659098
+            },
+            {
+                "source_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "target_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "strength": 1.0671251445804952
+            },
+            {
+                "source_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "target_id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "strength": 0.3140986019929049
+            },
+            {
+                "source_id": "292a8744af4ed6dfe4af8158c2bc2a3811598e15_0",
+                "target_id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "strength": 0.8779289512306506
+            },
+            {
+                "source_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "target_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "strength": 0.30610843811332356
+            },
+            {
+                "source_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "target_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "strength": 0.33346078869064855
+            },
+            {
+                "source_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "target_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "strength": 0.29944023729842495
+            },
+            {
+                "source_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "target_id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "strength": 0.29617463488020435
+            },
+            {
+                "source_id": "30d6de66c0621de0c646c0841391a319763493ae_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.3183621499036169
+            },
+            {
+                "source_id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "target_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "strength": 0.8436857082544443
+            },
+            {
+                "source_id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "target_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "strength": 0.7446067271062968
+            },
+            {
+                "source_id": "35bea5f8dda4db31c6ac5d3e6e2e3be7264c52bb_0",
+                "target_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "strength": 0.32490417918532566
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "strength": 0.38931108862299896
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "strength": 0.358815169828133
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "strength": 0.3750686399822284
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "strength": 0.8405129032005437
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "strength": 0.9037801690037605
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.9834728741690791
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "strength": 0.9184280268318096
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.8783830288924191
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.3673958060298547
+            },
+            {
+                "source_id": "4ed33847f2a42c302018a01623716c93eb1fa003_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.9396633544501293
+            },
+            {
+                "source_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "target_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "strength": 0.3873761933987684
+            },
+            {
+                "source_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "target_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "strength": 0.8398588303738038
+            },
+            {
+                "source_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "target_id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "strength": 0.8444513964064203
+            },
+            {
+                "source_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.8395659603533007
+            },
+            {
+                "source_id": "582567fbf4f89ef8a02b93ba1cc5788dbe0f1863_0",
+                "target_id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "strength": 0.8974356056905098
+            },
+            {
+                "source_id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "target_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "strength": 0.8097252678797576
+            },
+            {
+                "source_id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "target_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "strength": 0.8572477633954502
+            },
+            {
+                "source_id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.39048687084935796
+            },
+            {
+                "source_id": "59ad24750a9e4f736dac6ab9d4d7a457fbd3da38_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.853035622284603
+            },
+            {
+                "source_id": "5a5e809405f3affe956651407298ad1e9604b2be_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.8500582777414891
+            },
+            {
+                "source_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "target_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "strength": 0.8567992117136141
+            },
+            {
+                "source_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "target_id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "strength": 1.058313851632715
+            },
+            {
+                "source_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "target_id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "strength": 0.2783280876620797
+            },
+            {
+                "source_id": "5e81e54f3250974e8d934b8c0c6d3d8cdf511368_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 1.2684772821674264
+            },
+            {
+                "source_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "target_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "strength": 0.8723460355055888
+            },
+            {
+                "source_id": "8199ce7b39c359baf49db5540a1f5ec3a38264d8_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.7435472970323789
+            },
+            {
+                "source_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "target_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "strength": 0.37427025114929546
+            },
+            {
+                "source_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.38403673171915276
+            },
+            {
+                "source_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "target_id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "strength": 0.7583733587716621
+            },
+            {
+                "source_id": "82f844e5831aa697eff62285f442c2f2460aabc3_0",
+                "target_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "strength": 0.3713342885634569
+            },
+            {
+                "source_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "target_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "strength": 0.8706311516447964
+            },
+            {
+                "source_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "target_id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "strength": 0.8120373729797077
+            },
+            {
+                "source_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "target_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "strength": 0.8794036512582946
+            },
+            {
+                "source_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "target_id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "strength": 0.805622507940669
+            },
+            {
+                "source_id": "8538a87a7806b9884f29b6a5ea79fc55aa56908b_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 1.0285034106619346
+            },
+            {
+                "source_id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "target_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "strength": 0.36278546365357117
+            },
+            {
+                "source_id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.2991389451752784
+            },
+            {
+                "source_id": "873802ed4e51876cec4a40dfb05b2269b02b0c79_0",
+                "target_id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "strength": 1.007863837334806
+            },
+            {
+                "source_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "target_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "strength": 0.3915856414282606
+            },
+            {
+                "source_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "target_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "strength": 0.3792796431483505
+            },
+            {
+                "source_id": "8b2579c2d2070f96e1e0124c522789e975e5336c_0",
+                "target_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "strength": 0.9131987049338565
+            },
+            {
+                "source_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "target_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "strength": 0.8498859973661346
+            },
+            {
+                "source_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.3963257279606717
+            },
+            {
+                "source_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.8244921562618888
+            },
+            {
+                "source_id": "8b2b4f4a640536a2cd1e37d53e8f982092a51201_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.35719496360274733
+            },
+            {
+                "source_id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "target_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "strength": 0.8144623379983522
+            },
+            {
+                "source_id": "8bca0233cffde2db214c9e0478ff7f368b95051f_0",
+                "target_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "strength": 0.3693638165023339
+            },
+            {
+                "source_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "target_id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "strength": 0.8342687677017134
+            },
+            {
+                "source_id": "9236c1e508a7d26843c9fc5c819e4ae281d8ce27_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.951074536865277
+            },
+            {
+                "source_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "target_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "strength": 0.8618125577173876
+            },
+            {
+                "source_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "target_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "strength": 0.8983966736912392
+            },
+            {
+                "source_id": "92ee9aaf7daa0510eacf1183a6cb06ddf28f96fa_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.8809770669369383
+            },
+            {
+                "source_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "target_id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "strength": 1.0737529070847842
+            },
+            {
+                "source_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "target_id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "strength": 0.3269517976452287
+            },
+            {
+                "source_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "target_id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "strength": 0.853187061303861
+            },
+            {
+                "source_id": "99313b95ed693b4dff60ff9623eb3e92b4732749_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.9047674365072056
+            },
+            {
+                "source_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "target_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "strength": 0.8370233559655548
+            },
+            {
+                "source_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "target_id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "strength": 0.3823933794295397
+            },
+            {
+                "source_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "target_id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "strength": 0.36045310929346697
+            },
+            {
+                "source_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "target_id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "strength": 0.3694685314242953
+            },
+            {
+                "source_id": "9cd8520f86776ed777c1442e8513280b1231cc05_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.921575034974853
+            },
+            {
+                "source_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "target_id": "b5596ab6207070d179652196ffa504e324e3ac56_0",
+                "strength": 0.31897335798716664
+            },
+            {
+                "source_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "target_id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "strength": 0.3775238931310643
+            },
+            {
+                "source_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.8102084308553845
+            },
+            {
+                "source_id": "a1370bcd1af6e02315ff2649a9abc28a8fe4f3a7_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.9033770062495476
+            },
+            {
+                "source_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.39598344935237273
+            },
+            {
+                "source_id": "a4028ca48708f48c57d2698e25b7d0221f6f3a3a_0",
+                "target_id": "ea9492133a34a03448110531dc2c90834a017a72_0",
+                "strength": 0.8218226196228924
+            },
+            {
+                "source_id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "target_id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "strength": 0.9342261344207424
+            },
+            {
+                "source_id": "ae03d62a24169efca2d2be86161b73bbea19e550_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.8429221549840386
+            },
+            {
+                "source_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "target_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "strength": 1.1646069697144366
+            },
+            {
+                "source_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "target_id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "strength": 0.8063681759872408
+            },
+            {
+                "source_id": "b21c68d4b86d93ff5a355b65469595893fbbc26e_0",
+                "target_id": "c2bb63ec3a00b5b28fcc55c78600d80b0cd5d877_0",
+                "strength": 0.8458899152893652
+            },
+            {
+                "source_id": "b3135e12a04e175e841ec4f90b5aacf42f3afade_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 1.090713687551113
+            },
+            {
+                "source_id": "b59f277efde226dd4570d7d5bc8a1328f4a997f0_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.3544221926267211
+            },
+            {
+                "source_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "target_id": "b6b6978a30e7b34060d60e49f4ef9c35670eaaed_0",
+                "strength": 0.9493607671961719
+            },
+            {
+                "source_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "target_id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "strength": 0.3025987830103709
+            },
+            {
+                "source_id": "b5e27b7efbfb1e1cafb1b643183d7478c56af456_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.833321205377263
+            },
+            {
+                "source_id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "target_id": "e38dc5f5026d2feb74f478d58974f1b04c8cae75_0",
+                "strength": 0.2786315768898011
+            },
+            {
+                "source_id": "bc0089312d0e8b323a2ef9aa05e958b3c1f526c9_0",
+                "target_id": "e3a378095dcae97abda2f3a5f40e292cae18a12e_0",
+                "strength": 0.32454415543719284
+            },
+            {
+                "source_id": "c7044f64d3b12d0e27d36cb3d742496c4228135e_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.8002720839651847
+            },
+            {
+                "source_id": "d08ac5cace8aa84a25ac8ce0e2252123713706c9_0",
+                "target_id": "df32bf7771ecb926ea38b374a85fc55cd8f010e1_0",
+                "strength": 0.3768784975096771
+            }
+        ]
+    }
+}
