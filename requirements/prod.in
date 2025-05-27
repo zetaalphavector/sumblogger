@@ -1,6 +1,6 @@
 httpx==0.23.3
 backoff==2.2.1
-openai==0.27.2
+openai==1.30.0
 numpy==1.24.1
 aiohttp-jinja2==1.4.2
 aiohttp==3.9.4
