@@ -56,7 +56,7 @@ class OpenAiPromptClient(TextCompletionClient):
         self.__organization = config["openai_org"]
         self.__api_key = config["openai_api_key"]
         self.__api_version = config["openai_api_version"] or openai.api_version
-        self.__api_base = config["openai_api_base"] or openai.api_base
+        self.__api_base = config["openai_api_base"] or openai.base_url
         self.__api_type = config["openai_api_type"] or openai.api_type
         self.__model_name = config["model_name"]
         self.__model_temperature = config["openai_temperature"]
@@ -75,16 +75,11 @@ class OpenAiPromptClient(TextCompletionClient):
             raise ValueError("Prompt template is required")
 
         try:
-            response = await openai.Completion.acreate(
+            response = await openai.completions.create(
                 **{
                     "model": self.__model_name,
                     "prompt": prompt_template,
                     "temperature": self.__model_temperature,
-                    "organization": self.__organization,
-                    "api_key": self.__api_key,
-                    "api_version": self.__api_version,
-                    "api_base": self.__api_base,
-                    "api_type": self.__api_type,
                     **request["llm_config"].call_params,
                 }
             )
@@ -95,17 +90,17 @@ class OpenAiPromptClient(TextCompletionClient):
                 ),
                 error=None,
             )
-        except openai.InvalidRequestError as e:
+        except openai.BadRequestError as e:
             if e.code == "context_length_exceeded":
                 return ClientResponse(
                     response=None,
-                    error=__context_length_exception_from(str(e.user_message)),
+                    error=__context_length_exception_from(str(e.message)),
                 )
             else:
                 raise e
-        except openai.error.RateLimitError as e:  # type: ignore
+        except openai.RateLimitError as e:
             raise RateLimitExceededError(e)
-        except openai.error.ServiceUnavailableError as e:  # type: ignore
+        except openai.InternalServerError as e:
             raise ServiceUnavailableError(e)
         except Exception as e:
             return ClientResponse(response=None, error=e)
@@ -122,7 +117,7 @@ class OpenAiPromptWithLogitsClient(TextCompletionClient):
         self.__organization = config["openai_org"]
         self.__api_key = config["openai_api_key"]
         self.__api_version = config["openai_api_version"] or openai.api_version
-        self.__api_base = config["openai_api_base"] or openai.api_base
+        self.__api_base = config["openai_api_base"] or openai.base_url
         self.__api_type = config["openai_api_type"] or openai.api_type
         self.__model_name = config["model_name"]
         self.__model_temperature = config["openai_temperature"]
@@ -141,34 +136,29 @@ class OpenAiPromptWithLogitsClient(TextCompletionClient):
             raise ValueError("Prompt template is required")
 
         try:
-            response = await openai.Completion.acreate(
+            response = await openai.completions.create(
                 **{
                     "model": self.__model_name,
                     "prompt": prompt_template,
                     "logprobs": self.__INCLUDE_LOGPROBS_FOR_MOST_LIKELY_TOKEN,
                     "temperature": self.__model_temperature,
-                    "organization": self.__organization,
-                    "api_key": self.__api_key,
-                    "api_version": self.__api_version,
-                    "api_base": self.__api_base,
-                    "api_type": self.__api_type,
                     **request["llm_config"].call_params,
                 }
             )
             return self.__text_completion_response_from(response)
 
-        except openai.InvalidRequestError as e:
+        except openai.BadRequestError as e:
             if e.code == "context_length_exceeded":
                 return ClientResponse(
                     response=None,
-                    error=__context_length_exception_from(str(e.user_message)),
+                    error=__context_length_exception_from(str(e.message)),
                 )
             else:
                 raise e
 
-        except openai.error.RateLimitError as e:  # type: ignore
+        except openai.RateLimitError as e:
             raise RateLimitExceededError(e)
-        except openai.error.ServiceUnavailableError as e:  # type: ignore
+        except openai.InternalServerError as e:
             raise ServiceUnavailableError(e)
         except Exception as e:
             return ClientResponse(response=None, error=e)
@@ -207,10 +197,15 @@ class OpenAiChatClient(TextCompletionClient):
         self.__organization = config["openai_org"]
         self.__api_key = config["openai_api_key"]
         self.__api_version = config["openai_api_version"] or openai.api_version
-        self.__api_base = config["openai_api_base"] or openai.api_base
+        self.__api_base = config["openai_api_base"] or openai.base_url
         self.__api_type = config["openai_api_type"] or openai.api_type
         self.__model_name = config["model_name"]
         self.__model_temperature = config["openai_temperature"]
+        self.__client = openai.AsyncOpenAI(
+            api_key=self.__api_key,
+            organization=self.__organization,
+            base_url=self.__api_base,
+        )
 
     async def complete(
         self, request: TextCompletionRequest
@@ -229,38 +224,33 @@ class OpenAiChatClient(TextCompletionClient):
         #     f.write("\n".join([m["content"] for m in messages]))
 
         try:
-            response = await openai.ChatCompletion.acreate(
+            response = await self.__client.chat.completions.create(
                 **{
                     "model": self.__model_name,
                     "messages": messages,
                     "temperature": self.__model_temperature,
-                    "organization": self.__organization,
-                    "api_key": self.__api_key,
-                    "api_version": self.__api_version,
-                    "api_base": self.__api_base,
-                    "api_type": self.__api_type,
                     **request["llm_config"].call_params,
                 }
             )
             print(f"Request: {messages[-1]}")
             print(
-                f"Answer from {self.__model_name}: {response.choices[0]['message']['content']}"  # noqa E501
+                f"Answer from {self.__model_name}: {response.choices[0].message.content}"  # noqa E501
             )
             return ClientResponse(
                 response=TextCompletionResponse(
-                    answer=response.choices[0]["message"]["content"],
+                    answer=response.choices[0].message.content,
                     token_scores=None,
                 ),
                 error=None,
             )
-        except openai.InvalidRequestError as e:
+        except openai.BadRequestError as e:
             if e.code == "context_length_exceeded":
-                raise __context_length_exception_from(str(e.user_message))
+                raise __context_length_exception_from(str(e.message))
             else:
                 raise e
-        except openai.error.RateLimitError as e:  # type: ignore
+        except openai.RateLimitError as e:
             raise RateLimitExceededError(e)
-        except openai.error.ServiceUnavailableError as e:  # type: ignore
+        except openai.InternalServerError as e:
             raise ServiceUnavailableError(e)
 
         except Exception as e:

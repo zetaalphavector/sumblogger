@@ -154,9 +154,9 @@ class TextCompletionServiceTemplate(TextCompletionService):
         text_completion_config = TextCompletionConfigParser.parse(
             llm_config_template.text_completion_config, params
         )
-        llm_config_merged = LLMConfig.parse_obj(
+        llm_config_merged = LLMConfig.model_validate(
             {
-                **llm_config_template.dict(exclude={"text_completion_config"}),
+                **llm_config_template.model_dump(exclude={"text_completion_config"}),
                 "text_completion_config": text_completion_config,
             }
         )

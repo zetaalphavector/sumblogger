@@ -1,126 +1,112 @@
 [
-    {
-        "usecase": "single_doc_summary",
-        "variant": "scitldr_vanilla",
-        "version": 1,
-        "usecase_params": [
-            "document"
-        ],
-        "output_params": [
-            "summary"
-        ],
-        "service_name": "pass_through",
-        "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo-0301": {
-                "call_params": {
-                    "temperature": 0.0,
-                    "max_tokens": 100
-                },
-                "text_completion_config": {
-                    "prompt_template": null,
-                    "bot_conversation": {
-                        "bot_setup_description": null,
-                        "messages": [
-                            {
-                                "sender": "user",
-                                "content": "{{document}}\nSummarize the above article in 1 sentence."
-                            }
-                        ]
-                    }
-                }
-            },
-            "prompt:openai:text_davinci-003": {
-                "call_params": {
-                    "temperature": 0.0,
-                    "max_tokens": 200
-                },
-                "text_completion_config": {
-                    "prompt_template": "{{document}}\nSummarize the above article in 1 sentence.",
-                    "bot_conversation": null
-                }
-            }
+  {
+    "usecase": "single_doc_summary",
+    "variant": "scitldr_vanilla",
+    "version": 1,
+    "usecase_params": ["document"],
+    "output_params": ["summary"],
+    "service_name": "pass_through",
+    "llm_identifier_2_config": {
+      "chat:openai:gpt-4o-mini": {
+        "call_params": {
+          "temperature": 0.0,
+          "max_tokens": 100
+        },
+        "text_completion_config": {
+          "prompt_template": null,
+          "bot_conversation": {
+            "bot_setup_description": null,
+            "messages": [
+              {
+                "sender": "user",
+                "content": "{{document}}\nSummarize the above article in 1 sentence."
+              }
+            ]
+          }
         }
-    },
-    {
-        "usecase": "single_doc_summary",
-        "variant": "scitldr_zero_shot",
-        "version": 1,
-        "usecase_params": [
-            "document",
-            "number_of_words"
-        ],
-        "output_params": [
-            "summary"
-        ],
-        "service_name": "pass_through",
-        "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo-0301": {
-                "call_params": {
-                    "temperature": 0.0,
-                    "max_tokens": 200
-                },
-                "text_completion_config": {
-                    "prompt_template": null,
-                    "bot_conversation": {
-                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
-                        "messages": [
-                            {
-                                "sender": "user",
-                                "content": "Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
-                            }
-                        ]
-                    }
-                }
-            }
+      },
+      "prompt:openai:text_davinci-003": {
+        "call_params": {
+          "temperature": 0.0,
+          "max_tokens": 200
+        },
+        "text_completion_config": {
+          "prompt_template": "{{document}}\nSummarize the above article in 1 sentence.",
+          "bot_conversation": null
         }
-    },
-    {
-        "usecase": "single_doc_summary",
-        "variant": "scitldr_two_shot",
-        "version": 1,
-        "usecase_params": [
-            "document",
-            "number_of_words"
-        ],
-        "output_params": [
-            "summary"
-        ],
-        "service_name": "pass_through",
-        "llm_identifier_2_config": {
-            "chat:openai:gpt-3.5-turbo-0301": {
-                "call_params": {
-                    "temperature": 0.0,
-                    "max_tokens": 200
-                },
-                "text_completion_config": {
-                    "prompt_template": null,
-                    "bot_conversation": {
-                        "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
-                        "messages": [
-                            {
-                                "sender": "user",
-                                "content": "Write a short and concise phrase summarizing the provided document in 20 words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\nDue to the success of deep learning to solving a variety of challenging machine learning tasks, there is a rising interest in understanding loss functions for training neural networks from a theoretical aspect. Particularly, the properties of critical points and the landscape around them are of importance to determine the convergence performance of optimization algorithms. In this paper, we provide a necessary and sufficient characterization of the analytical forms for the critical points (as well as global minimizers) of the square loss functions for linear neural networks. We show that the analytical forms of the critical points characterize the values of the corresponding loss functions as well as the necessary and sufficient conditions to achieve global minimum. Furthermore, we exploit the analytical forms of the critical points to characterize the landscape properties for the loss functions of linear neural networks and shallow ReLU networks. One particular conclusion is that: While the loss function of linear networks has no spurious local minimum, the loss function of one-hidden-layer nonlinear networks with ReLU activation function does have local minimum that is not global minimum."
-                            },
-                            {
-                                "sender": "bot",
-                                "content": "We provide necessary and sufficient analytical forms for the critical points of the square loss functions for various neural networks, and exploit the analytical forms to characterize the landscape properties for the loss functions of these neural networks."
-                            },
-                            {
-                                "sender": "user",
-                                "content": "We present Tensor-Train RNN (TT-RNN), a novel family of neural sequence architectures for multivariate forecasting in environments with nonlinear dynamics. Long-term forecasting in such systems is highly challenging, since there exist long-term temporal dependencies, higher-order correlations and sensitivity to error propagation. Our proposed tensor recurrent architecture addresses these issues by learning the nonlinear dynamics directly using higher order moments and high-order state transition functions. Furthermore, we decompose the higher-order structure using the tensor-train (TT) decomposition to reduce the number of parameters while preserving the model performance. We theoretically establish the approximation properties of Tensor-Train RNNs for general sequence inputs, and such guarantees are not available for usual RNNs. We also demonstrate significant long-term prediction improvements over general RNN and LSTM architectures on a range of simulated environments with nonlinear dynamics, as well on real-world climate and traffic data."
-                            },
-                            {
-                                "sender": "bot",
-                                "content": "Accurate forecasting over very long time horizons using tensor-train RNNs"
-                            },
-                            {
-                                "sender": "user",
-                                "content": "Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
-                            }
-                        ]
-                    }
-                }
-            }
-        }
+      }
     }
+  },
+  {
+    "usecase": "single_doc_summary",
+    "variant": "scitldr_zero_shot",
+    "version": 1,
+    "usecase_params": ["document", "number_of_words"],
+    "output_params": ["summary"],
+    "service_name": "pass_through",
+    "llm_identifier_2_config": {
+      "chat:openai:gpt-4o-mini": {
+        "call_params": {
+          "temperature": 0.0,
+          "max_tokens": 200
+        },
+        "text_completion_config": {
+          "prompt_template": null,
+          "bot_conversation": {
+            "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+            "messages": [
+              {
+                "sender": "user",
+                "content": "Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "usecase": "single_doc_summary",
+    "variant": "scitldr_two_shot",
+    "version": 1,
+    "usecase_params": ["document", "number_of_words"],
+    "output_params": ["summary"],
+    "service_name": "pass_through",
+    "llm_identifier_2_config": {
+      "chat:openai:gpt-4o-mini": {
+        "call_params": {
+          "temperature": 0.0,
+          "max_tokens": 200
+        },
+        "text_completion_config": {
+          "prompt_template": null,
+          "bot_conversation": {
+            "bot_setup_description": "You are the most famous research journalist in writing summaries of scientific articles. Your summaries are not only concise, informative and of high quality but they are also very appealing and pleasant to read. You are also an expert in grammar and vocabulary and you can adapt your writing style following the given instructions.",
+            "messages": [
+              {
+                "sender": "user",
+                "content": "Write a short and concise phrase summarizing the provided document in 20 words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\nDue to the success of deep learning to solving a variety of challenging machine learning tasks, there is a rising interest in understanding loss functions for training neural networks from a theoretical aspect. Particularly, the properties of critical points and the landscape around them are of importance to determine the convergence performance of optimization algorithms. In this paper, we provide a necessary and sufficient characterization of the analytical forms for the critical points (as well as global minimizers) of the square loss functions for linear neural networks. We show that the analytical forms of the critical points characterize the values of the corresponding loss functions as well as the necessary and sufficient conditions to achieve global minimum. Furthermore, we exploit the analytical forms of the critical points to characterize the landscape properties for the loss functions of linear neural networks and shallow ReLU networks. One particular conclusion is that: While the loss function of linear networks has no spurious local minimum, the loss function of one-hidden-layer nonlinear networks with ReLU activation function does have local minimum that is not global minimum."
+              },
+              {
+                "sender": "bot",
+                "content": "We provide necessary and sufficient analytical forms for the critical points of the square loss functions for various neural networks, and exploit the analytical forms to characterize the landscape properties for the loss functions of these neural networks."
+              },
+              {
+                "sender": "user",
+                "content": "We present Tensor-Train RNN (TT-RNN), a novel family of neural sequence architectures for multivariate forecasting in environments with nonlinear dynamics. Long-term forecasting in such systems is highly challenging, since there exist long-term temporal dependencies, higher-order correlations and sensitivity to error propagation. Our proposed tensor recurrent architecture addresses these issues by learning the nonlinear dynamics directly using higher order moments and high-order state transition functions. Furthermore, we decompose the higher-order structure using the tensor-train (TT) decomposition to reduce the number of parameters while preserving the model performance. We theoretically establish the approximation properties of Tensor-Train RNNs for general sequence inputs, and such guarantees are not available for usual RNNs. We also demonstrate significant long-term prediction improvements over general RNN and LSTM architectures on a range of simulated environments with nonlinear dynamics, as well on real-world climate and traffic data."
+              },
+              {
+                "sender": "bot",
+                "content": "Accurate forecasting over very long time horizons using tensor-train RNNs"
+              },
+              {
+                "sender": "user",
+                "content": "Write a short and concise phrase summarizing the provided document in {{ number_of_words }} words. The summary should be informative for a reader who is an experienced researcher in this field.\n\nDocument:\n{{ document }}"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
 ]

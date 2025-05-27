@@ -32,7 +32,7 @@ class Parameters(BaseModel):
     largest_component: bool
     attraction: float
     repulsion: float
-    max_n_links: Optional[int]
+    max_n_links: Optional[int] = None
 
 
 class Weights(BaseModel):
@@ -57,13 +57,13 @@ class Summary(BaseModel):
 
 class Item(BaseModel):
     id: str
-    heading: Optional[str]
+    heading: Optional[str] = None
     title: str
-    authors: Optional[str]
+    authors: Optional[str] = None
     label: str
     abstract: str
-    uri: Optional[str]
-    img_url: Optional[str]
+    uri: Optional[str] = None
+    img_url: Optional[str] = None
     x: float
     y: float
     cluster: int
@@ -76,7 +76,7 @@ class Item(BaseModel):
 
 class Cluster(BaseModel):
     cluster: int
-    label: Optional[str]
+    label: Optional[str] = None
     summary: Optional[Summary] = None
 
 
@@ -100,7 +100,7 @@ class ColorSchemes(BaseModel):
 
 class VosConfig(BaseModel):
     terminology: Terminology
-    color_schemes: Optional[ColorSchemes]
+    color_schemes: Optional[ColorSchemes] = None
     templates: Templates
     styles: Styles
     parameters: Parameters
