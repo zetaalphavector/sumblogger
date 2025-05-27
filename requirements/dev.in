@@ -1,12 +1,12 @@
 # Code format
-black==21.7b0
+black==24.3.0
 isort==5.9.3
 
 # Lint
 flake8==3.9.2
 flake8-isort==4.0.0
 pep8-naming==0.12.0
-flake8-black==0.2.3
+flake8-black==0.3.6
 
 # Type check
 mypy>=0.931
