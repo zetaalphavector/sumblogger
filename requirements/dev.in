@@ -15,7 +15,7 @@ mypy>=0.931
 bandit==1.7.10
 
 # Test
-pytest==6.1.0
+pytest==7.2.0  # bumped to remove dependency on vulnerable py library (ReDoS via SVN)
 pytest-watch==4.2.0
 pytest-aiohttp==1.0.5
 pytest-asyncio>=0.17.2
