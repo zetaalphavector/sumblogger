@@ -6,6 +6,9 @@ SHELL:=/bin/bash
 
 dry_run = true
 
+# Use uv when available (e.g. local Python 3.13), otherwise pip (e.g. Docker)
+PIP_INSTALL := $(shell command -v uv >/dev/null 2>&1 && echo 'uv pip' || echo 'pip')
+
 help:
 	@echo "clean - remove all artifacts"	
 	@echo "clean-build - remove Python build artifacts"
@@ -35,7 +38,7 @@ clean-build:
 	rm -fr dist/
 	rm -fr .eggs/
 	find . -name '*.egg-info' -exec rm -fr {} +
-	find . -name '*.egg' -exec rm -f {} +
+	find . -name '*.egg' -exec rm -fr {} +
 
 clean-pyc:
 	find . -name '*.pyc' -exec rm -f {} +
@@ -50,7 +53,7 @@ clean-test:
 	rm -fr tests/.pytest_cache/
 
 install-prod:
-	pip install --no-deps -r requirements/prod.txt
+	$(PIP_INSTALL) install --no-deps -r requirements/prod.txt
 build-prod:
 	docker buildx build --platform linux/amd64 -f Dockerfile -t sumblogger .
 prod: build-prod
@@ -59,7 +62,7 @@ prod: build-prod
 	docker-compose down
 
 install-dev:
-	pip install --no-deps -r requirements/dev.txt
+	$(PIP_INSTALL) install --no-deps -r requirements/dev.txt
 build-dev:
 	docker buildx build --platform linux/amd64 -f test.Dockerfile -t sumblogger .
 dev: build-dev
@@ -80,20 +83,22 @@ linter:
 	flake8 src tests
 check-types:
 	mypy --install-types --enable-incomplete-features --non-interactive  src tests
+# Use venv Python when present (e.g. after uv venv && make install-dev)
+PYTHON := $(shell [ -x .venv/bin/python ] && echo .venv/bin/python || echo python3)
 unit-tests:
-	set -a; . ./dev.env; set +a; \
-	python -m pytest tests/unit/ --cov=src --cov-append -svvv --sw
+	set -a; [ -f ./dev.env ] && . ./dev.env; set +a; \
+	$(PYTHON) -m pytest tests/unit/ --cov=src --cov-append -svvv --sw
 integration-tests:
-	set -a; . ./dev.env; set +a; \
-	python -m pytest tests/integration/ --cov=src --cov-append -svvv --sw
+	set -a; [ -f ./dev.env ] && . ./dev.env; set +a; \
+	$(PYTHON) -m pytest tests/integration/ --cov=src --cov-append -svvv --sw
 coverage:
 	coverage report
 
 requirements-prod:
-	pip-compile --no-emit-index-url requirements/prod.in
-	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt
+	uv pip compile requirements/prod.in -o requirements/prod.txt
+	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt 2>/dev/null || true
 requirements-dev:
-	pip-compile --resolver=backtracking --no-emit-index-url -q requirements/dev.in
-	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt
+	uv pip compile requirements/dev.in -o requirements/dev.txt
+	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt 2>/dev/null || true
 
 requirements: requirements-prod requirements-dev

@@ -1,6 +1,4 @@
-# syntax = docker/dockerfile:1.2.1
-
-FROM python:3.8-buster
+FROM python:3.13-bookworm
 SHELL ["/bin/bash", "-c"]
 
 COPY ./setup-scripts/system-requirements.sh /
@@ -12,7 +10,6 @@ RUN --mount=type=secret,id=pipconf echo "$(cat /run/secrets/pipconf)" > /root/.c
 COPY ./requirements/dev.txt /opt/app/requirements/
 COPY .flake8 .isort.cfg mypy.ini /opt/app/
 COPY . /opt/app
-COPY ./shared /opt/app/shared
 
 RUN cd /opt/app \
  && make install-dev

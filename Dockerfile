@@ -1,5 +1,4 @@
-# syntax = docker/dockerfile:1.2.1
-FROM python:3.8-buster AS builder
+FROM python:3.13-bookworm AS builder
 SHELL ["/bin/bash", "-c"]
 
 RUN mkdir -p /root/.config/pip/
@@ -17,7 +16,7 @@ RUN cd /opt \
 RUN cd /opt \
     && pip install --no-deps -r requirements/prod.txt
 
-FROM python:3.8-slim-buster
+FROM python:3.13-slim-bookworm
 EXPOSE 8080
 
 COPY setup-scripts/system-requirements.sh /

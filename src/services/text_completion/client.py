@@ -42,12 +42,10 @@ class ContextLengthExceededError(Exception):
         self.extra_characters = extra_characters
 
 
-class RateLimitExceededError(Exception):
-    ...
+class RateLimitExceededError(Exception): ...  # noqa: E701
 
 
-class ServiceUnavailableError(Exception):
-    ...
+class ServiceUnavailableError(Exception): ...  # noqa: E701
 
 
 class TextCompletionClientBaseConfig(TypedDict):
@@ -63,8 +61,7 @@ class OpenAiClientConfig(TextCompletionClientBaseConfig):
     openai_temperature: float
 
 
-class TextCompletionClientConfig(OpenAiClientConfig):
-    ...
+class TextCompletionClientConfig(OpenAiClientConfig): ...  # noqa: E701
 
 
 class TextCompletionClient(ABC):
