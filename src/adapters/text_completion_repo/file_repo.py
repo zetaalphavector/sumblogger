@@ -25,9 +25,9 @@ class FileTextCompletionUsecaseConfigRepository(TextCompletionUsecaseConfigRepos
     def __load_text_completion_usecase_config(
         self, prompt_configuration_dir: str
     ) -> Dict[str, Dict[str, TextCompletionUsecaseConfig]]:
-        usecase2variant2config: Dict[
-            str, Dict[str, TextCompletionUsecaseConfig]
-        ] = defaultdict()
+        usecase2variant2config: Dict[str, Dict[str, TextCompletionUsecaseConfig]] = (
+            defaultdict()
+        )
 
         for file in os.listdir(prompt_configuration_dir):
             if file.endswith(".json"):

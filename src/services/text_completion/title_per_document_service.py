@@ -31,6 +31,6 @@ class TitlePerDocumentService(TextCompletionServiceTemplate):
     def __titles_from(self, answer: str, params: PromptParams) -> List[str]:
         titles = []
         for index, _ in enumerate(params["documents"]):
-            title = answer.split(f"{index+1}.")[1].split("\n")[0].strip()
+            title = answer.split(f"{index + 1}.")[1].split("\n")[0].strip()
             titles.append(title)
         return titles

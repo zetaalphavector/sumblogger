@@ -1,0 +1,29 @@
+# Not needed in image (saves ~420MB+ context)
+tools/
+
+# Virtual envs and caches
+.venv
+venv
+__pycache__
+.pytest_cache
+.mypy_cache
+*.pyc
+.cache
+
+# Git and IDE
+.git
+.gitignore
+.idea
+.vscode
+
+# Docs and dev artifacts (not needed at runtime)
+docs/
+*.md
+.coverage
+htmlcov/
+
+# Local env and secrets
+dev.env
+*.env
+!.env.sample
+!dev.env.sample

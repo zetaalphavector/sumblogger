@@ -56,8 +56,7 @@ class TextCompletionUsecaseConfig(BaseModel):
     llm_identifier_2_config: Dict[str, LLMConfig]
 
 
-class PromptParams(Dict[str, Any]):
-    ...
+class PromptParams(Dict[str, Any]): ...  # noqa: E701
 
 
 class SingleDocSummaryParams(PromptParams):
@@ -70,5 +69,4 @@ class TextCompletionServiceRequest(TypedDict):
     params: PromptParams
 
 
-class TextCompletionServiceResponse(TypedDict):
-    ...
+class TextCompletionServiceResponse(TypedDict): ...  # noqa: E701
