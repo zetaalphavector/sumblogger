@@ -1,7 +1,6 @@
 httpx==0.28.1
 backoff==2.2.1
 openai==1.72.0
-# Python 3.13: numpy 1.24.x needs distutils (removed in 3.12+)
 numpy>=1.26.0
 aiohttp-jinja2==1.6.0
 aiohttp>=3.13.3
