@@ -50,7 +50,7 @@ clean-test:
 	rm -fr tests/.pytest_cache/
 
 install-prod:
-	pip install --no-deps -r requirements/prod.txt
+	uv pip install --no-deps -r requirements/prod.txt
 build-prod:
 	docker buildx build --platform linux/amd64 -f Dockerfile -t sumblogger .
 prod: build-prod
@@ -59,7 +59,7 @@ prod: build-prod
 	docker-compose down
 
 install-dev:
-	pip install --no-deps -r requirements/dev.txt
+	uv pip install --no-deps -r requirements/dev.txt
 build-dev:
 	docker buildx build --platform linux/amd64 -f test.Dockerfile -t sumblogger .
 dev: build-dev
@@ -90,10 +90,10 @@ coverage:
 	coverage report
 
 requirements-prod:
-	pip-compile --no-emit-index-url requirements/prod.in
-	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt
+	uv pip compile requirements/prod.in -o requirements/prod.txt
+	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/prod.txt 2>/dev/null || true
 requirements-dev:
-	pip-compile --resolver=backtracking --no-emit-index-url -q requirements/dev.in
-	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt
+	uv pip compile requirements/dev.in -o requirements/dev.txt
+	sed -i '' -E "s/-e file:\/\/\/.*\/sumblogger\/(.*)/-e .\/\1/g" requirements/dev.txt 2>/dev/null || true
 
 requirements: requirements-prod requirements-dev
