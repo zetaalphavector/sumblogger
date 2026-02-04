@@ -59,8 +59,9 @@ flake8-isort==4.0.0
     # via -r requirements/dev.in
 flake8-polyfill==1.0.2
     # via pep8-naming
-frozenlist==1.4.0
+frozenlist==1.8.0
     # via
+    #   -r requirements/prod.in
     #   aiohttp
     #   aiosignal
 h11==0.14.0
@@ -105,7 +106,7 @@ mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-numpy==1.24.1
+numpy==2.4.2
     # via -r requirements/prod.in
 openai==1.72.0
     # via -r requirements/prod.in

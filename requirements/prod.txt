@@ -26,8 +26,9 @@ certifi==2023.7.22
     #   httpx
 distro==1.9.0
     # via openai
-frozenlist==1.4.0
+frozenlist==1.8.0
     # via
+    #   -r requirements/prod.in
     #   aiohttp
     #   aiosignal
 h11==0.16.0
@@ -54,7 +55,7 @@ multidict==6.7.1
     #   -r requirements/prod.in
     #   aiohttp
     #   yarl
-numpy==1.24.1
+numpy==2.4.2
     # via -r requirements/prod.in
 openai==1.72.0
     # via -r requirements/prod.in
